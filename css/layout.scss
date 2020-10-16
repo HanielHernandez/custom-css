@@ -1,0 +1,109 @@
+.container,.row,.col{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 100%;
+    padding: $container-padding;
+}
+.row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: top;
+}
+
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.col{
+    &*{
+        width: 100;
+    }
+}
+
+
+@mixin  create-columns-for-breakpoint($breakpoint,$prefix) {
+    @media (max-width: $breakpoint) {
+        @include create-columns($prefix);
+    }
+}
+
+
+@mixin create-columns($prefix) {
+    @for $i from 1 through 12 {
+        .col-#{$prefix}-#{$i}{
+            flex:  8.33% * $i;
+            max-width: 8.33% * $i ;
+        }
+    }
+}
+
+
+@for $i from 1 through 12 {
+    .col-#{$i} { 
+        flex: 8.33% * $i;
+        max-width:8.33% * $i ;
+    }
+}
+
+
+@include create-columns-for-breakpoint($xl-breakpoint,"xl");
+@include create-columns-for-breakpoint($lg-breakpoint,"lg");
+@include create-columns-for-breakpoint($md-breakpoint,"md");
+@include create-columns-for-breakpoint($sm-breakpoint,"sm");
+
+
+@mixin create-hide-show-from-breakpoint($breakpoint,$prefix) {
+    @media (max-width:$breakpoint){
+        .hide-#{$prefix}{
+            display: none;
+        }
+        .show-#{$prefix}{
+            display: block;
+        }
+    }
+}
+
+@include create-hide-show-from-breakpoint($md-breakpoint,"md");
+@include create-hide-show-from-breakpoint($sm-breakpoint,"sm");
+@include create-hide-show-from-breakpoint($lg-breakpoint,"lg");
+@include create-hide-show-from-breakpoint($xl-breakpoint,"xl");
+
+
+.align-content-content-center{
+    align-content: center;   
+}
+.align-content-content-end{
+    align-content: flex-end;
+}
+.align-content-content-start{
+    align-content: flex-start;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-items-start{
+    justify-items: flex-start;
+}
+.justify-items-end{
+    justify-content:flex-start;
+}
+
+.justify-items-center{
+    justify-items: center;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+
+
