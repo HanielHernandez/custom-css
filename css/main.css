@@ -4123,112 +4123,42 @@ nav {
   width: 100%;
 }
 
-.nav-primary {
-  background-color: #3385ff;
-}
-
-.nav-primary .nav-brand {
-  color: #eee;
-}
-
-.nav-primary .nav-link {
-  color: #fff;
-}
-
-.nav-secondary {
-  background-color: #eee;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.nav-bar {
+.navbar {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  min-height: 56px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.nav-bar .nav-brand {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  padding: 0.5rem 1rem;
-  min-height: 3.5rem;
-  font-size: 1.5rem;
-}
-
-.nav-bar .nav-brand a {
-  text-decoration: none;
-  color: #eee;
-}
-
-.nav-bar .nav,
-.nav-bar .nav-end {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.navbar ul.nav {
   list-style: none;
 }
 
-.nav-bar .nav .nav-bar-item,
-.nav-bar .nav-end .nav-bar-item {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.5rem 1rem;
+.navbar .nav-item, .navbar .nav li {
+  display: inline-block;
+  list-style-type: none;
+  height: 100%;
 }
 
-.nav-bar .nav .nav-bar-item .nav-link,
-.nav-bar .nav-end .nav-bar-item .nav-link {
-  line-height: 1.5;
+.navbar .nav-link {
+  height: 100%;
+  display: block;
+  padding: 1rem 0.5rem;
   text-decoration: none;
+  color: #212121;
 }
 
-.nav-bar .nav .nav-bar-item:hover,
-.nav-bar .nav-end .nav-bar-item:hover {
+.navbar .nav-link:hover {
   background-color: rgba(0, 0, 0, 0.2);
-}
-
-.nav-bar .nav {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.nav-bar .nav-end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .p-0, .px-0, .pr-0 {
