@@ -19,7 +19,7 @@ nav {
   align-items: center;
   flex-direction: row;
   justify-content:  space-between;
-  border:  $nav-bar-border-width solid $nav-bar-border-color ;
+  border-bottom:  $nav-bar-border-width solid $nav-bar-border-color ;
 
   & ul.nav{
     list-style: none;
@@ -34,16 +34,15 @@ nav {
   }
 
   .nav{
-
     &-item, li{
       display: inline-block;
       list-style-type: none;
       height: 100%;
     }
+
     &-item,&-link{
       line-height: $nav-line-height;
     }
-
     &-link{
       height: 100%;
       display: block;
