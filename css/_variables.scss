@@ -1,5 +1,8 @@
 
-$xl-breakpoint:1200px;
+@import "_colors-maps.scss";
+
+
+$xl-breakpoint:1200px; 
 $lg-breakpoint:992px;
 $md-breakpoint:768px;
 $sm-breakpoint:576px;
@@ -12,6 +15,7 @@ $navbar-link-background-color:rgba(255,255,255,0.12);
 $navbar-link-padding:1rem 0.5rem;
 $navbar-link-font-size:1rem;
 $navbar-link-line-height:1.4;
+$nav-primary-link-color:#fff;
 //contianer
 $container-padding:1rem;
 
@@ -51,3 +55,5 @@ $font-family:Arial, Helvetica, sans-serif;
 $nav-bar-padding:1rem 1rem;
 
 $font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+
+

@@ -2,10 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-.container{
-    width: 100%;
-    padding: $container-padding;
-}
+
 .row{
     display: flex;
     width: 100%;
@@ -76,34 +73,46 @@
 @include create-hide-show-from-breakpoint($xl-breakpoint,"xl");
 
 
-.align-content-content-center{
-    align-content: center;   
-}
-.align-content-content-end{
-    align-content: flex-end;
-}
-.align-content-content-start{
-    align-content: flex-start;
+
+
+$postfixes: ('i':"items","c":'content');
+$flex-values: ('start':flex-start,'end':flex-end,'center':center,"arround": space-around,'between':space-between);
+$prefixes: "justify","align";
+$justify:'justify';
+$align:'align';
+$content:'content';
+$items:'items';
+$red:#eee;
+@each  $prefix in $prefixes{
+    @each  $postfix, $postfix-name in  $postfixes{
+
+        @each  $flex-value, $value in $flex-values{
+               
+            .#{$prefix}-#{$postfix}-#{$flex-value}{
+
+                @if $prefix==$justify && $postfix-name==$items {
+                    justify-items: $value;
+                }
+                @if $prefix==$justify && $postfix-name==$content {
+                    justify-content: $value;
+                }
+
+                @if $prefix==$align && $postfix-name==$items {
+                    align-items: $value;
+                }
+                @if $prefix==$align && $postfix-name==$content {
+                    align-items: $content;
+                }
+            }
+            
+        }
+
+    }
+
 }
 
-.align-items-center{
-    align-items: center;
-}
 
-.justify-items-start{
-    justify-items: flex-start;
-}
-.justify-items-end{
-    justify-content:flex-start;
-}
 
-.justify-items-center{
-    justify-items: center;
-}
-
-.justify-content-center{
-    justify-content: center;
-}
 
 
 
