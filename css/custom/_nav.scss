@@ -14,8 +14,8 @@ nav {
 .nav-secondary {
   background-color: $secondary;
 }
-.fixed{
-    position: fixed;
+.fixed {
+  position: fixed;
 }
 
 .nav-bar {
@@ -23,7 +23,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: stretch;
-align-items: center;
+  align-items: center;
   .nav-brand {
     align-items: stretch;
     display: flex;
@@ -37,32 +37,32 @@ align-items: center;
       color: $secondary;
     }
   }
-  .nav, .nav-end{
+  .nav,
+  .nav-end {
     display: flex !important;
     flex-direction: row;
     align-items: center;
     list-style: none;
-    
-        .nav-bar-item {
-            list-style: none;
-            display: flex;
-            align-items: center;
-            padding: $nav-bar-padding;
-      
-            .nav-link {
-              line-height: 1.5;
-              text-decoration: none;
-            }
-          }
-          .nav-bar-item:hover {
-            background-color: rgba($color: #000000, $alpha: 0.2);
-          }
-    
+
+    .nav-bar-item {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      padding: $nav-bar-padding;
+
+      .nav-link {
+        line-height: 1.5;
+        text-decoration: none;
+      }
+    }
+    .nav-bar-item:hover {
+      background-color: rgba($color: #000000, $alpha: 0.2);
+    }
   }
   .nav {
     justify-content: flex-start;
   }
-  .nav-end{
+  .nav-end {
     justify-content: flex-end;
   }
 }
