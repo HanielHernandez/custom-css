@@ -7,8 +7,11 @@
         color:  $value;
     }
     .bg-#{$color-name}-#{$variant}{
-          background-color:  $value;
-      }
+      background-color:  $value;
+      color: set-color($value);
+    }
+
+    @include create-theme(#{$color-name}-#{$variant},$value)
   }
     
   }

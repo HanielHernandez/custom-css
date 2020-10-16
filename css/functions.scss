@@ -1,0 +1,22 @@
+@function set-color($color) {
+    @if (lightness($color) > 40) {
+      @return #000;
+    }
+    @else {
+      @return #FFF;
+    }
+}
+
+
+@mixin create-navbar($name,$color) {
+  .navbar-#{$name}{
+    background-color: $color;
+    color:set-color($color);
+  }
+
+}
+
+
+@mixin create-theme($name,$color) {
+    @include create-navbar($name,$color )
+}

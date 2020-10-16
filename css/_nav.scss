@@ -1,3 +1,10 @@
+ul{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0pp;
+}
 nav {
   width: 100%;
 }
@@ -18,7 +25,6 @@ nav {
 }
 
 .nav-bar {
-  min-height: 3.5rem;
   display: flex;
   flex-direction: row;
   justify-content: stretch;
@@ -29,8 +35,8 @@ nav {
     align-items: center;
     flex-shrink: 0;
     padding: $nav-bar-padding;
-    min-height: 3.25rem;
-    font-size: 1.5rem;
+    min-height: $nav-bar-min-heigth;
+    font-size: $nav-bar-font-size;
     a {
       text-decoration: none;
       color: $secondary;

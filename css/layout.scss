@@ -1,3 +1,13 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    margin: 0px;
+    padding: 0px;
+}
+
 .container,.row,.col{
     margin: 0px;
     padding: 0px;
@@ -75,41 +85,33 @@
 
 
 
-$postfixes: ('i':"items","c":'content');
-$flex-values: ('start':flex-start,'end':flex-end,'center':center,"arround": space-around,'between':space-between);
-$prefixes: "justify","align";
-$justify:'justify';
-$align:'align';
-$content:'content';
-$items:'items';
-$red:#eee;
-@each  $prefix in $prefixes{
-    @each  $postfix, $postfix-name in  $postfixes{
 
-        @each  $flex-value, $value in $flex-values{
-               
-            .#{$prefix}-#{$postfix}-#{$flex-value}{
-
-                @if $prefix==$justify && $postfix-name==$items {
-                    justify-items: $value;
-                }
-                @if $prefix==$justify && $postfix-name==$content {
-                    justify-content: $value;
-                }
-
-                @if $prefix==$align && $postfix-name==$items {
-                    align-items: $value;
-                }
-                @if $prefix==$align && $postfix-name==$content {
-                    align-items: $content;
-                }
+    $justify-positions: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        around: space-around,
+        between: space-between,
+        evenly: space-evenly
+    );
+      $align-positions: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        stretch: stretch,
+        baseline: baseline
+    );
+  
+    @mixin just-align($name,$prop,$arr) {
+        @each $mod, $dir in $arr {
+            &.#{$name}-#{$mod} {
+                #{$prop}: #{$dir};
             }
-            
         }
-
     }
-
-}
+  
+    @include just-align('align','align-items', $align-positions);
+    @include just-align('justify','justify-content', $justify-positions);
 
 
 
