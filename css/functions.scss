@@ -7,16 +7,21 @@
     }
 }
 
+@function is-map($var){
+  @return type-of($var) == 'map';
+}
+
+
 
 @mixin create-navbar($name,$color) {
   .navbar-#{$name}{
     background-color: $color;
     color:set-color($color);
+    border: $nav-bar-border-width solid  rgba($color, 0.12)  ;
   }
-
 }
 
 
 @mixin create-theme($name,$color) {
     @include create-navbar($name,$color )
-}
+} 

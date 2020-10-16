@@ -10,15 +10,27 @@ $sm-breakpoint:576px;
 $link-color:#1976D2;
 $border-radius:5px;
 //navs
-$navbar-link-color:#fff;
-$navbar-link-background-color:rgba(255,255,255,0.12);
-$nav-link-padding:1rem 0.5rem;
+
+$theme-colors: (
+    "dark":#212121,
+    "light":#E0E0E0
+);
+
+
+
+
+$nav-bar-default-bg-color:#fff;
+$nav-bar-border-color: #e0e0e0;
+$nav-bar-border-width:1px;
+$nav-brand-font-size: 1.5rem;
+$nav-brand-font-weight: 700;
+$nav-brand-padding: 0rem 1rem;
+
+$nav-link-padding:1rem;
 $navbar-link-font-size:1rem;
-$navbar-link-line-height:1.4;
-$nav-primary-link-color:#fff;
-$nav-bar-min-heigth:3.5rem;
-$nav-bar-font-size:1.5rem;
 $nav-link-default-color:#212121;
+$nav-link-hover-bg-color:rgba(0, 0, 0, 0.12);
+$nav-line-height:1.5;
 //contianer
 $container-padding:1rem;
 
