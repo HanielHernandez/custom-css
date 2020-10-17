@@ -1,21 +1,22 @@
 
 @import "_colors-maps.scss";
 
-
-$xl-breakpoint:1200px; 
-$lg-breakpoint:992px;
-$md-breakpoint:768px;
-$sm-breakpoint:576px;
-
-$link-color:#1976D2;
-$border-radius:5px;
-//navs
-
 $theme-colors: (
     "dark":#212121,
     "light":#E0E0E0
 );
 
+//breakpoints
+$xl-breakpoint:1200px; 
+$lg-breakpoint:992px;
+$md-breakpoint:768px;
+$sm-breakpoint:576px;
+$breakpoints: ('xl':$xl-breakpoint,'lg':$lg-breakpoint,'md':$md-breakpoint,'sm':$sm-breakpoint);
+
+
+$link-color:#1976D2; 
+$border-radius:5px;
+//navs
 
 
 
@@ -51,10 +52,17 @@ $message-danger-border :#f44336;
 $message-danger-background:#ffebee;
 
 $color-error:#f44336;
-
-
-
 $background:#fff;
+
+//headins h1
+$heading-font-weigth:700;
+$heading-font-base-size:64px; 
+$base-font-weigth:400;
+$base-font-size:16px;
+
+//borders 
+$border-default-color:#e0e0e0;
+
 
 $primary:rgb(51, 133, 255);
 $secondary: #eee;
@@ -65,7 +73,6 @@ $info: rgb(17, 227, 255);
 $bg-color:#fff;
 
 $font-size:16px;
-$font-family:Arial, Helvetica, sans-serif;
 
 $nav-bar-padding:0.5rem 1rem;
 

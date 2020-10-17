@@ -1,0 +1,45 @@
+$locations : ("t":top,"l":left,"b":bottom,'r':right);
+
+.b{
+    border-width: 1px;
+    border-style: solid;
+    border-color: $border-default-color;
+}
+.bx{
+    border-left-width: 1px;
+    border-right-width: 1px;
+
+}
+.by{
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+ 
+.bx-0{
+    border-left-width: 0px;
+    border-right-width: 0px;
+
+}  
+.by-0{
+    border-top-width: 0px; 
+    border-bottom-width: 0px;
+}
+@each $name ,$location in $locations{
+    .b#{$name}{
+        border-#{$location}-width:1px;
+    }
+
+
+    .b#{$name}-0{
+        border-#{$location}-width:0px;
+    }
+}
+ 
+
+.r-full{
+    border-radius: 50%;
+}
+.r{
+    border-radius: 0.25rem;
+}
+

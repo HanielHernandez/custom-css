@@ -1,3 +1,27 @@
 *{
-    font-family: $font-family
+    font-family: $font-family;
+    font-size:$base-font-size;
 }
+
+h1,h2,h3,h4,h5,h6{ 
+    font-weight: $heading-font-weigth;
+}
+p{
+    width: 100%;
+} 
+.bold{
+    font-weight: bold;
+}  
+
+ // amount of px headings grow from h6 to h1
+
+ $heading-scale: 8px; // amount of px headings grow from h6 to h1
+ 
+ @for $i from 1 through 6 { 
+   h#{$i} {
+     font-size: $base-font-size + $heading-scale * (6 - $i);
+   }
+ }
+ // amount of px headings grow from h6 to h1
+ 
+
