@@ -72,34 +72,35 @@ p{
 }
 
 @mixin  create-width-fraction-for-breakpoint($breakpoint,$prefix,$width) {
-    @media (max-width: $breakpoint) {
-        .#{$prefix}{
+    @media (min-width: $breakpoint) {
+        .#{$prefix}{ 
             width: $width;
         }
     }
 }
 
 @mixin  create-height-fraction-for-breakpoint($breakpoint,$prefix,$width) {
-    @media (max-width: $breakpoint) {
+    @media (min-width: $breakpoint) {
         .#{$prefix}{
             width: $width;
         }
     }
 }
 
-@mixin  create-fraction-width($base) {
+@mixin  create-fraction-width($base) { 
     @for $i from 1 through $base {
         $width:$i*100%/$base;
         $fraction:#{$i}\/#{$base};
+
         .w-#{$fraction} { 
-           width: $width ;
+           width: $width; 
         }
         .h-#{$fraction} { 
-            width:  $width ;
+            width:  $width ; 
         }
 
         @each $prefix , $value in $breakpoints{
-            @include create-width-fraction-for-breakpoint($value,$prefix+"-w-"+$fraction ,$width )
+            @include create-width-fraction-for-breakpoint($value,"w-"+$prefix+"-"+$fraction ,$width )
         }
         
     }
@@ -108,32 +109,12 @@ p{
 
 
 @include create-fraction-width(12);
+@include create-fraction-width(6);
+@include create-fraction-width(4);
+@include create-fraction-width(2);
+@include create-fraction-width(3);
 
-@for $i from 1 through 4 {
-    .w-#{$i}\/4 { 
-       width: ($i*100%/4) ;
-    }
-    .h-#{$i}\/4 { 
-        width: ($i*100%/4) ;
-     }
-}
 
-@for $i from 1 through 3 {
-    .w-#{$i}\/4 { 
-        width: ($i*100%/4) ;
-     }
-     .h-#{$i}\/4 { 
-        width: ($i*100%/4) ;
-     }
-}
-@for $i from 1 through 6 {
-    .w-#{$i}\/6 { 
-       width: ($i*100%/6) ;
-    }
-    .wh-#{$i}\/6 { 
-        width: ($i*100%/6) ;
-     }
-}
 
 
 @include create-columns-for-breakpoint($lg-breakpoint,"lg");

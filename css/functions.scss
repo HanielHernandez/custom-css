@@ -1,16 +1,25 @@
-@function set-color($color) {
-    @if (lightness($color) > 40) {
-      @return #000;
+@import "./mixins/buttons";
+
+@function set-color($background) {
+    $r: red($background);
+    $g: green($background);
+    $b: blue($background);
+    $yiq: (($r*299) + ($g*587) + ($b*114))/1000;
+    
+    @if ($yiq >= 128) {
+     @return  #212121;
     }
     @else {
-      @return #FFF;
+      @return #FFFFFF;
     }
 }
-
 @function is-map($var){
   @return type-of($var) == 'map';
 }
 
+@function create-border($color){
+  @return 1px solid $color; 
+}
 
 
 @mixin create-navbar($name,$color) {
@@ -27,6 +36,8 @@
 }
 
 
+
 @mixin create-theme($name,$color) {
-    @include create-navbar($name,$color )
+    @include create-navbar($name,$color );
+    @include create-button-for-theme($name,$color); 
 } 

@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5,h6{
 }
 p{
     width: 100%;
-} 
+}  
 .bold{
     font-weight: bold;
 }  
@@ -22,6 +22,12 @@ p{
      font-size: $base-font-size + $heading-scale * (6 - $i);
    }
  }
- // amount of px headings grow from h6 to h1
+ // amount of px headings grow from h6 to h1+
+
+
+ i,span.material-icons{
+  vertical-align:middle;
+} 
+
  
 

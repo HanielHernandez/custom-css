@@ -3,8 +3,11 @@
 
 $theme-colors: (
     "dark":#212121,
-    "light":#E0E0E0
+    "light":#E0E0E0,
+    "primary":#1e88e5,
 );
+
+$default-border-color: rgba(0,0,0,0.12);
 
 //breakpoints
 $xl-breakpoint:1200px; 
@@ -13,13 +16,10 @@ $md-breakpoint:768px;
 $sm-breakpoint:576px;
 $breakpoints: ('xl':$xl-breakpoint,'lg':$lg-breakpoint,'md':$md-breakpoint,'sm':$sm-breakpoint);
 
-
+//links
 $link-color:#1976D2; 
 $border-radius:5px;
 //navs
-
-
-
 $nav-bar-default-bg-color:#fff;
 $nav-bar-border-color: #e0e0e0;
 $nav-bar-border-width:1px;
@@ -71,6 +71,35 @@ $success:rgb(60, 223, 114);
 $warning:rgb(255, 200, 20);
 $info: rgb(17, 227, 255);
 $bg-color:#fff;
+
+//Buttons
+$button-padding:0.5rem 1rem;
+$button-bg-color:#fff;
+$button-border-color:#e0e0e0;
+$button-radius:0.25rem;
+
+//Forms
+$form-field-margin-bottom:1rem;
+$form-field-label-size:1rem;
+$form-field-label-weigth:700;
+$form-field-label-mb:0.5rem;
+$form-field-label-heigth:1.25;
+$form-field-label-color: rgba(0,0,0,0.87);
+
+$form-input-padding:0.5rem 1rem;
+$font-input-font-size:1rem;
+$font-input-font-color:rgba(0,0,0,0.60);
+$font-input-placeholder-color:rgba(0,0,0,0.12);
+$font-input-border-width:1px;
+$font-input-border-color:$default-border-color;
+$font-input-border-radius:0.25rem;
+$font-input-background-color:#fff;
+$font-input-active-border-width:$font-input-border-width;
+$font-input-active-border-color: rgba(0,0,0,0.60);
+$form-input-invalid-color: red;
+
+$form-text-color:rgba(0,0,0,0.60);
+ $form-text-size:0.75rem;
 
 $font-size:16px;
 
