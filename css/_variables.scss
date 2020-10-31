@@ -96,15 +96,21 @@ $font-input-border-radius:0.25rem;
 $font-input-background-color:#fff;
 $font-input-active-border-width:$font-input-border-width;
 $font-input-active-border-color: rgba(0,0,0,0.60);
-$form-input-invalid-color: red;
+$form-input-invalid-color: #b71c1c;
 
 $form-text-color:rgba(0,0,0,0.60);
- $form-text-size:0.75rem;
+$form-text-size:0.75rem;
 
+/*TABLES*/
+$table-bg-color:#fff;
+$table-heading-font-size:1rem;
+$table-heading-font-weight:700;
+$table-cell-padding:0.5em 0.75em;
+$table-border:1px solid rgba(0,0,0,0.12);
+$table-striped-bg-color:#f5f5f5;
+$table-hover-bg-color:#e0e0e0;
 $font-size:16px;
-
 $nav-bar-padding:0.5rem 1rem;
-
 $font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 
 

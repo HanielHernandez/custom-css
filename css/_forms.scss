@@ -32,10 +32,11 @@
     border: $font-input-border-width solid $font-input-border-color ;
     border-radius: $font-input-border-radius;
     background-color: $font-input-background-color;
-    :active{
-        border: $font-input-active-border-width solid $font-input-active-border-color ;
-        ;
+    &:active,&:focus{
+        outline: none;
+        border-color:  $font-input-active-border-color ;
     }
+
     ::placeholder{
         color:$font-input-placeholder-color;
     }
