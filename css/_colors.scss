@@ -1,11 +1,21 @@
 
 
+
+.bg-white{
+  background-color: #fff;
+}
+
+.bg-black{
+  background-color: #000;
+}
+
 @each $color-name, $variants in $colors {
 
   @each  $variant, $value in $variants{
     .text-#{$color-name}-#{$variant} {
         color:  $value;
     }
+    
     .bg-#{$color-name}-#{$variant}{
       background-color:  $value;
       color: set-color($value);

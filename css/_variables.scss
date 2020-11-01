@@ -8,13 +8,18 @@ $theme-colors: (
 );
 
 $default-border-color: rgba(0,0,0,0.12);
-
+$default-border-radius:0.5rem;
 //breakpoints
 $xl-breakpoint:1200px; 
 $lg-breakpoint:992px;
 $md-breakpoint:768px;
 $sm-breakpoint:576px;
-$breakpoints: ('xl':$xl-breakpoint,'lg':$lg-breakpoint,'md':$md-breakpoint,'sm':$sm-breakpoint);
+$breakpoints: ('sm':$sm-breakpoint,'md':$md-breakpoint,'lg':$lg-breakpoint, 'xl':$xl-breakpoint);
+$locations : ("t":top,"l":left,"b":bottom,'r':right);
+$corners : ("t":top,"b":bottom);
+$sides : ("l":left,"r":right);
+$positions:('fixed','absolute','relative','sticky','initial','inherit');
+$displays:('fixed','absolute','relative','sticky','initial','inherit');
 
 //links
 $link-color:#1976D2; 
@@ -112,5 +117,9 @@ $table-hover-bg-color:#e0e0e0;
 $font-size:16px;
 $nav-bar-padding:0.5rem 1rem;
 $font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+
+
+
+
 
 

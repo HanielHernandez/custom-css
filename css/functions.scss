@@ -1,4 +1,5 @@
 @import "./mixins/buttons";
+@import "./mixins/borders";
 
 @function set-color($background) {
     $r: red($background);
@@ -35,9 +36,24 @@
   }
 }
 
+@mixin create-background-for-theme($name,$color) {
+  .bg-#{$name}{
+    background-color:$color;
+    color: set-color($color);
+  }
+}
+
+@mixin create-text-for-theme($name,$color){
+  .text-#{$name}{
+    color:$color  ;
+  }
+}
 
 
 @mixin create-theme($name,$color) {
     @include create-navbar($name,$color );
     @include create-button-for-theme($name,$color); 
+    @include create-background-for-theme($name,$color);
+    @include create-text-for-theme($name,$color);
+    @include create-borders($name,$color);
 } 

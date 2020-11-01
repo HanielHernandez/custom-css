@@ -41,7 +41,8 @@
                 <h4 class="mb-4">
                     Grid sistem
                 </h4> 
-                <div #grids>
+                <!--###  GRID SYSTEM ### -->
+                <div id="grids">
                     <h5 class="text-grey-600">
                         Row and col
                     </h5>
@@ -168,9 +169,11 @@
                       
                     </div>
 
+                
                 </div>
-                <!--### BUTTONS SECTIONS -->  
-                <div class="" id="buttons">
+                
+                <!--### BUTTONS SECTIONS ### -->  
+                <div id="buttons" class="" >
 
                     <h4 class="mb-4 ">
                         Buttons
@@ -247,7 +250,8 @@
 
                 </div>
                 </div>   
-                <!--### FORMS SECTIONS -->  
+
+                <!--### FORMS SECTIONS ### -->  
                 <div id="forms" >
                     <h4 class="mb-4">Forms</h4>
     
@@ -263,9 +267,10 @@
                         <input type="text" name="" placeholder="" class="form-input" id="">
                       
                     </div>
+                
                 </div>
-
-                <div id="tables">
+                <!-- ### TABLES ### -->
+                <div id="tables " class="mb-4">
                     <h5 class="mb-4">
                         Tables
                     </h5>
@@ -358,11 +363,199 @@
                         </tbody>
                     </table>
                 </div>
+                <!-- ### BORDERS ###  -->
+
+                <div id="borders" class="mb-4">
+
+                    <h5 class="mb-4">
+                        Borders
+                    </h5>
+
+                    <div class="mb-4">
+                        <p>You can use borders helpers like the class <b>.b </b> in order to asing borders </p>    
+                    </div>
+                    
+                    <div class="b p-4 mb-4">
+                        <span class="text-gray-600"> div with .b class</span>
+                    </div>
+
+
+                    <div class="mb-4">
+                        <p>You can also change border-color to a theme color by using the class <b>.b-{theme-color} </b> </p>    
+                    </div>
+                    <div class="b b-blue-600 p-4 mb-4">
+                        <span class="text-gray-600"> div with <b>  .b + .b-blue-600</b> class</span>
+                    </div>
+                    <div class="mb-4">
+                        <p>The border radius can also be change by using the classes <b>.r</b>  or  <b>r-{number from 2 - 12}</b>  </b> </p>    
+                    </div>
+                    <div class="b r p-4 mb-4">
+                        <span class="text-gray-600"> div with <b>  .r </b> class</span>
+                    </div>
+                    <div class="b r-2 p-4 mb-4">
+                        <span class="text-gray-600"> div with <b>  .r-2 </b> class</span>
+                    </div>
+                    <div class="b r-3 p-4 mb-4">
+                        <span class="text-gray-600"> div with <b>  .r-3 </b> class</span>
+                    </div>
+                    <div class="b r-4 p-4 mb-4">
+                        <span class="text-gray-600"> div with <b>  .r-4 </b> class</span>
+                    </div>
+                    <div class="mb-4">
+                        <p>You can change the border radius of and expecific radius by using  <b>r-{t for top, b for bottom }-{ l for left , r for right}-{  number from 2 - 12}  </b> class  </b> </p>    
+                    </div>
+                    <div class="b r-t-l-4 p-4 mb-4">
+                        <span class="text-gray-600"> div with a rounded top left corner,  <b>.r-t-l</b>    <b> </b> class</span>
+                    </div>
+
+                    <div class="b r-t p-4 mb-4">
+                        <span class="text-gray-600"> div with rounded top corners,  <b>.r-t</b>   <b> </b> class</span>
+                    </div>
+
+                    <div class="b r-b p-4 mb-4">
+                        <span class="text-gray-600"> div with rounded botom corners, <b>.r-b</b>   <b> </b> class</span>
+                    </div>
+
+                    <div class="b r r-t-l-4  p-4 mb-4">
+                        <span class="text-gray-600"> div with <b>.r </b> and </b> .r-t-l-4 </b>   <b> </b> class</span>
+                    </div>
+                </div> 
+
+                <!-- ###  PADDING AND MARGIN ### -->
+                <div   id="padding_and_margin" class="mb-4">
+                    
+                    <h5 class="mb-4">Padding and Margin</h5>
+
+                    <p class="mb-4"> You can set padding and margin by using the class  <b> p-{number from 1 to 12} </b>    or   <b>m-{number from 1 to 12}</b> , youn can also use modifers like b for botom or, t for top, r for right and l for left in order to spiciy the side of the div to add padding  </p>
+                    
+                    <table class="table table-border  mb-4">
+                        <thead>
+                            <tr>
+                                <th> Class </th>
+                                <th> Property </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                  m-*{0-12} /  p-*{0-12}
+                                </td>
+                                <td>
+                                    padding / margin: number * 0.25rem;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    mt-*{0-12} /  pt-*{0-12}
+                                </td>
+                                <td>
+                                    padding-top / margin-top: number * 0.25rem;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    mb-*{0-12} /  pb-*{0-12}
+                                </td>
+                                <td>
+                                    padding-bottom / margin-bottom: number * 0.25rem;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ml-*{0-12} /  pl-*{0-12}  
+                                </td>
+                                <td>
+                                    padding-left / / margin-left: number * 0.25rem;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    mr-*{0-12}  / pr-*{0-12}
+                                </td>
+                                <td>
+                                    padding-right / margin-right: number * 0.25rem;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="b p-2 mb-4">
+                        im a  div with <b>.p-2 </b>  class
+                </div>
+                    <div class="b p-4 mb-4">
+                            im a  div with <b>.p-4 </b>  class
+                    </div>
+
+                    <div class="b p-8 mb-4">
+                        im a  div with <b>.p-8 </b>  class
+                </div>
+
+                    <div class="bg-grey-100 p-4 mb-4">
+                        <div class="b bg-white p-4 mb-2">
+                                im a  div with <b>.mb-2 </b>  class
+                        </div>
+                        
+                        <div class="b bg-white p-4 mb-4">
+                            im a  div with <b>.mb-4 </b>  class
+                        </div>
+                        <div class="b bg-white p-6 mb-4">
+                            im a  div with <b>.mb-6 </b>  class
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- ### POSITIONS ### -->
+                <div id="position">
+                    <h5 class="mb-4">Positions </h5>
+                    <p class="mb-4">
+                        you can set the position property of a div by using the classes  <b>.fixed </b> <b>.sticky </b>. <b>.absolute</b>   etc.
+                    </p>
+                </div>
+                  
+                <!-- ### COLORS ### -->
+                <div id="position">
+                    <h5 class="mb-4">Color </h5>
+                    <p class="mb-4">
+                        you change background color property of a div by using the classes  <b>.bg-{theme name} </b>.
+                    </p>
+                    <div class="row mb-4">
+                        <div class="inline-block p-12 bg-dark w-1/2 w-md-12/12">
+                            <p class="">
+                                div with <b>.bg-dark</b> 
+                            </p>
+                        </div>
+                        <div class="inline-block p-12 bg-primary w-1/2 w-md-12/12">
+                            <p class="">
+                                div with <b>.bg-primary</b> 
+                            </p>
+                        </div>
+                    </div>
+                    <p class="mb-4">
+                        you change text color property of a div by using the classes  <b>.text-{theme name} </b>.
+                    </p>
+                    <div class="b p-4 mb-4"> 
+                        <p class="text-primary ">
+                          text with primary color
+                        </p>
+                        <p class="text-red-600 ">
+                            text with text-red-600 color
+                          </p>
+                          <p class="text-green-800 ">
+                            text with green 800
+                          </p>
+                    </div>
+                    
+
+                </div>
+              
     
             </div>
            
         
 
         </div>
+
+      
 </body>
 </html>
