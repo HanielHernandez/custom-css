@@ -10,21 +10,32 @@
 </head>
 <body>
     
-        <nav class="navbar ">
+        <nav class="text-grey-900 navbar fixed navbar-white nav-collapse-md ">
 
 
             <a class=" brand">Brand</a>
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">About</a>
-                </li>
-            </ul>
+
+            <button class="btn nav-toggler b-0" data-target='navbar_navigation'>
+                <i class="material-icons nav-toggler-icon" data-target='navbar_navigation'>
+                    menu
+                </i>
+            </button>
+
+              <div class="nav-menu hidden" id="navbar_navigation">
+                <ul class="nav " >
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About</a>
+                    </li>
+                </ul>  
+              </div>
+               
+           
         </nav>
 
-        <div class="container h-100  pr-4 pb row w-12/12 justify-content-start">
+        <div class="container h-100 pt-14  pr-4 pb row w-12/12 justify-content-start">
             <div class="col  w-1/4 p-4 bg-grey-100">
 
             </div>
@@ -514,7 +525,7 @@
                 </div>
                   
                 <!-- ### COLORS ### -->
-                <div id="position">
+                <div id="colors">
                     <h5 class="mb-4">Color </h5>
                     <p class="mb-4">
                         you change background color property of a div by using the classes  <b>.bg-{theme name} </b>.
@@ -548,6 +559,18 @@
                     
 
                 </div>
+                
+                <!-- ### TRANSITIONS ### -->
+
+                <div id="transitions" class="mb-4">
+                    <h5 class="mb-4">
+                        Transitions
+                    </h5>
+                    <p>You can send transitions-property property by using the class <b>.transition-all</b>  </p>
+                    <p>You can send transitions-duration property by using the class <b>.duration-{ number from 100 to 1000}</b>  </p>
+                    <p>You can send transitions-timing property by using the class <b>.timing-{linear,ease-in,ease-out,easin-out}</b></p>
+
+                </div>
               
     
             </div>
@@ -558,4 +581,6 @@
 
       
 </body>
+
+<script src="js/main.js"></script>
 </html>

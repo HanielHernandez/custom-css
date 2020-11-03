@@ -55,7 +55,9 @@
 .r{
     border-radius: 0.25rem;
 }
-
+.b-0{
+    border: none;
+}
 @each $breakpoint, $name in $breakpoints{
     $i: index($breakpoints, $breakpoint $name);
     .r-#{$breakpoint}{ border-radius:0.5rem*$i;}

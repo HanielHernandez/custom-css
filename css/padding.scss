@@ -13,10 +13,10 @@
         padding-bottom: 0.25rem * $padding-size !important;
     }
 
-}
+} 
 
-
-@for $i from 0 through 12{
+ 
+@for $i from 0 through 24{
     @include create-padding($i)
 }
 

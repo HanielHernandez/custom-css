@@ -5,16 +5,20 @@ $theme-colors: (
     "dark":#212121,
     "light":#E0E0E0,
     "primary":#1e88e5,
+    "transparent":rgba(0,0,0,0)
 );
 
 $default-border-color: rgba(0,0,0,0.12);
 $default-border-radius:0.5rem;
-//breakpoints
+
+$lop-size:24; //breakpoints
 $xl-breakpoint:1200px; 
 $lg-breakpoint:992px;
 $md-breakpoint:768px;
 $sm-breakpoint:576px;
+
 $breakpoints: ('sm':$sm-breakpoint,'md':$md-breakpoint,'lg':$lg-breakpoint, 'xl':$xl-breakpoint);
+
 $locations : ("t":top,"l":left,"b":bottom,'r':right);
 $corners : ("t":top,"b":bottom);
 $sides : ("l":left,"r":right);
