@@ -5,9 +5,3 @@ $alignments: (left, center, right, justify);
     text-align: $aligment;
   }
 }
-
-@each $font-size-prefix, $font-size in $font-sizes {
-  .text-#{$font-size-prefix} {
-    text-align: $font-size;
-  }
-}

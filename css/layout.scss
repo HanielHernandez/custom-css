@@ -17,12 +17,6 @@ dl,
 dt,
 fieldset,
 figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 hr,
 html,
 iframe,
@@ -192,4 +186,14 @@ $align-positions: (
   .h-#{$i}vh {
     height: #{$i}vh;
   }
+}
+
+@for $i from 1 to 5 {
+  h#{i} {
+    padding-bottom: 1rem;
+  }
+}
+p,
+table {
+  margin-bottom: 1rem;
 }

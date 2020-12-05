@@ -1,4 +1,5 @@
 @import "_colors-maps.scss";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 
 $theme-colors: (
   "dark": #212121,
@@ -9,12 +10,30 @@ $theme-colors: (
 );
 
 $font-sizes: (
-  "3xl": 6rem,
-  "2xl": 4rem,
-  "xl": 2rem,
-  "md": 1rem,
-  "sm": 0.875,
-  "xs": 0.75rem,
+  "normal": 1rem,
+  "small": 0.875,
+  "caption": 0.75rem,
+);
+
+$font-weights: (
+  "thin": 100,
+  "extralight": 200,
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+  "extra-black": 800,
+  "black": 900,
+);
+
+$heading-font-sizes: (
+  "h1": 6rem,
+  "h2": 3.75rem,
+  "h3": 3rem,
+  "h4": 2rem,
+  "h5": 1.5rem,
+  "h6": 1.25rem,
 );
 
 $viewport-from: 1;

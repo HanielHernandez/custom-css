@@ -1,33 +1,55 @@
-*{
-    font-family: $font-family;
-    font-size:$base-font-size;
+* {
+  font-family: $font-family;
+  font-size: $base-font-size;
 }
 
-h1,h2,h3,h4,h5,h6{ 
+@for $i from 1 through 6 {
+  h#{$i} {
+    margin-top: 0px;
+  }
+}
+
+@for $i from 1 through 6 {
+  .h#{$i},
+  h#{$i} {
     font-weight: $heading-font-weigth;
+    margin-bottom: 1rem;
+  }
 }
-p{
-    width: 100%;
-}  
-.bold{
-    font-weight: bold;
-}  
 
- // amount of px headings grow from h6 to h1
+p {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
 
- $heading-scale: 8px; // amount of px headings grow from h6 to h1
- 
- @for $i from 1 through 6 { 
-   h#{$i} {
-     font-size: $base-font-size + $heading-scale * (6 - $i);
-   }
- }
- // amount of px headings grow from h6 to h1+
+@each $text-font-target, $text-font-size in $heading-font-sizes {
+  #{$text-font-target} {
+    font-size: $text-font-size;
+  }
+  .#{$text-font-target} {
+    font-size: $text-font-size;
+  }
+}
 
+@each $font-size-name, $font-size in $font-sizes {
+  .#{$font-size-name} {
+    font-size: $font-size;
+  }
+}
 
- i,span.material-icons{
-  vertical-align:middle;
-} 
+@each $font-weight-prefix, $font-weight in $font-weights {
+  .font-#{$font-weight-prefix} {
+    font-weight: $font-weight;
+  }
+}
 
- 
-
+i,
+span.material-icons {
+  vertical-align: middle;
+}
