@@ -61,7 +61,41 @@
                     Row and col
                 </h5>
                 <p class="mb-4 w-12"> the <b>.row</b> set display to <b>flex</b> and <b> flex-direction</b> to
-                    <b>flex-row</b></p>
+                    <b>flex-row</b>
+                </p>
+
+<pre>
+<code data-lang="html"><span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"row bg-grey-200 p-4 mb-4"</span> <span class="tag">></span>
+    <span class="tag">&lt;p </span><span class="prop">class=</span><span class="val">"mb-4 w-12"</span><span class="tag">></span> 
+        I'm a div .row
+    <span class="tag">&lt;/p></span>  
+    <span class="tag">&lt;div </span> <span class="prop">class=</span><span class="val">"col b p-4 bg-grey-400 col-4"</span><span class="tag">></span>
+        I'm a div .col
+    <span class="tag">&lt;/div> </span>
+    <span class="tag">&lt;div </span> <span class="prop">class=</span><span class="val">"col b p-4 bg-grey-400 col-4"</span><span class="tag">></span>
+        I'm a div .col
+    <span class="tag">&lt;/div> </span>
+    <span class="tag">&lt;div </span> <span class="prop">class=</span><span class="val">"col b p-4 bg-grey-400 col-4"</span><span class="tag">></span>
+        I'm a div .col
+    <span class="tag">&lt;/div> </span>
+<span class="tag">&lt;/div> </span>
+</code>
+</pre>
+                <!-- <div class="row bg-grey-200 p-4 mb-4">
+                            <p class="mb-4  w-12">
+                                I'm a div .row
+                            </p>
+                            <div class="col b p-4 bg-grey-400  b  br  col-4">
+                                I'm a div .col
+        
+                            </div>
+                            <div class="col b p-4 bg-grey-400  col-4">
+                                I'm a div .col
+                            </div>
+                            <div class="col b p-4 bg-grey-400  col-4">
+                                I'm a div .col
+                            </div>
+                        </div> -->
                 <div class="row bg-grey-200 p-4 mb-4">
                     <p class="mb-4  w-12">
                         I'm a div .row
@@ -79,7 +113,8 @@
                 </div>
 
                 <p class="mb-4"> the <b> .col </b> class set <b> display </b>to <b> flex</b> and <b>flex-direction</b>to
-                    <b> flex-column</b> </span> </p>
+                    <b> flex-column</b> </span>
+                </p>
                 <div class="row bg-grey-200 p-4 mb-4">
                     <p class="mb-4  w-12">
                         I'm a div .col
@@ -450,7 +485,8 @@
 
                 <p class="mb-4"> You can set padding and margin by using the class <b> p-{number from 1 to 12} </b> or
                     <b>m-{number from 1 to 12}</b> , youn can also use modifers like b for botom or, t for top, r for
-                    right and l for left in order to spiciy the side of the div to add padding </p>
+                    right and l for left in order to spiciy the side of the div to add padding
+                </p>
 
                 <table class="table table-border  mb-4">
                     <thead>
@@ -584,7 +620,8 @@
                 <p>You can send transitions-duration property by using the class <b>.duration-{ number from 100 to
                         1000}</b> </p>
                 <p>You can send transitions-timing property by using the class
-                    <b>.timing-{linear,ease-in,ease-out,easin-out}</b></p>
+                    <b>.timing-{linear,ease-in,ease-out,easin-out}</b>
+                </p>
 
             </div>
             <!-- ### TEXT AND FONTS ### -->
@@ -598,7 +635,7 @@
                     Text aligment
                 </h5>
 
-                <table class="table w-12/12 table-border" >
+                <table class="table w-12/12 table-border">
                     <thead>
 
                         <tr>
@@ -647,20 +684,23 @@
                             </td>
                             <td>
                                 <p class="text-justify">
-                                     .text-justify d .text-justify  d .text-justify
+                                    .text-justify d .text-justify d .text-justify
                                 </p>
                             </td>
                         </tr>
                     </tbody>
 
                 </table>
-                
+
                 <!-- Font Sizes -->
 
                 <div>
                     <h5>
                         Font sizes
                     </h5>
+                    <p>
+                       You can use the default font sizes as follow
+                    </p>
                     <table class="table-border table w-2/2">
                         <thead>
                             <tr>
@@ -784,8 +824,104 @@
                             </tr>
                         </tbody>
                     </table>
+                    <p>
+                        Or your can use a font size base con rem values
+                    </p>
                 </div>
-
+            
+                <!--Font Weigth-->
+                <div>
+                    <h5>
+                        Font Weight
+                    </h5>
+                    
+                    <table class="table-border table w-2/2">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Class
+                                </th>
+                                <th>
+                                    Result
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p class="bold">
+                                        .font-extra-black
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="font-extra-black">
+                                        I'm a text with .font-extra-black
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="bold">
+                                        .font-black
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="font-black">
+                                        I'm a text with .font-black
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="bold">
+                                        .font-bold
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="font-bold">
+                                        I'm a text with .font-bold
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="bold">
+                                        .font-semibold
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="font-semibold">
+                                        I'm a text with .font-semibold
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="bold">
+                                        .font-medium
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="font-medium">
+                                        I'm a text with .font-medium
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="bold">
+                                        .font-normal
+                                    </p>
+                                </td>
+                                <td>
+                                    <div class="font-normal">
+                                        I'm a text with .font-normal
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
 
