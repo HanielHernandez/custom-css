@@ -175,23 +175,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                none
-                            </td>
-                            <td>
-                            <b> > 1200px </b>    
-                            </td>
-                            <td>
-                                col-3
-                            </td>
-                        </tr>
+                     
                         <tr>
                             <td>
                                 xl
                             </td>
                             <td>
-                            <b> <=1200px </b>    
+                            <b> > 1280px </b>    
                             </td>
                             <td>
                                 col-w-xl-3
@@ -202,7 +192,7 @@
                                 lg
                             </td>
                             <td>
-                                <b> res < 992px </b>    
+                                <b> res > 1024 </b>    
                                 </td>
                             <td>
                                 col-w-lg-4
@@ -213,7 +203,7 @@
                                 md
                             </td>
                             <td>
-                                <b> res < 768px </b>    
+                                <b> res > 768px </b>    
                                 </td>
                             <td>
                                 col-w-md-6
@@ -224,10 +214,21 @@
                                 sm
                             </td>
                             <td>
-                                <b> res < 576px </b>    
+                                <b> res > 576px </b>    
                                 </td>
                             <td>
                                 col-w-xl-12
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                none
+                            </td>
+                            <td>
+                            <b> < 576px default </b>    
+                            </td>
+                            <td>
+                                col-3
                             </td>
                         </tr>
                     </tbody>
@@ -236,11 +237,11 @@
 
                 <div class="row bg-grey-200 p-4 mb-4">
 
-                    <div class="col b p-4 bg-grey-400 col-w-6 col-w-md-12 ">
-                        I'm a half width on md+ screen, but full width on md screen
+                    <div class="col b p-4 bg-grey-400 col-w-sm-12  col-w-md-6 ">
+                        I'm a half width on md+ screen, but full width on sm - screen
 
                     </div>
-                    <div class="col b p-4 bg-grey-400  col-w-4 col-w-md-6 col-w-sm-12 ">
+                    <div class="col b p-4 bg-grey-400  col-w-12  col-w-md-6 col-w-lg-4 ">
                         I'm 1/3 width on lg+ , I'm half on md and full on sm
                     </div>
 

@@ -62,19 +62,17 @@ p {
     width: 100%;
   }
 }
-
-@mixin create-columns-for-breakpoint($breakpoint, $prefix) {
-  @media (min-width: $breakpoint) {
-    @include create-columns($prefix);
-  }
-}
-
 @mixin create-columns($prefix) {
   @for $i from 1 through 12 {
     .col-w-#{$prefix}-#{$i} {
       flex: 8.33% * $i;
       max-width: 8.33% * $i;
     }
+  }
+}
+@mixin create-columns-for-breakpoint($breakpoint, $prefix) {
+  @media (min-width: $breakpoint) {
+    @include create-columns($prefix);
   }
 }
 
@@ -132,10 +130,9 @@ p {
 @include create-fraction-width(4);
 @include create-fraction-width(2);
 @include create-fraction-width(3);
-
-@include create-columns-for-breakpoint($lg-breakpoint, "lg");
-@include create-columns-for-breakpoint($md-breakpoint, "md");
 @include create-columns-for-breakpoint($sm-breakpoint, "sm");
+@include create-columns-for-breakpoint($md-breakpoint, "md");
+@include create-columns-for-breakpoint($lg-breakpoint, "lg");
 @include create-columns-for-breakpoint($xl-breakpoint, "xl");
 
 @mixin create-hide-show-from-breakpoint($breakpoint, $prefix) {
