@@ -64,7 +64,7 @@ p {
 }
 
 @mixin create-columns-for-breakpoint($breakpoint, $prefix) {
-  @media (max-width: $breakpoint) {
+  @media (min-width: $breakpoint) {
     @include create-columns($prefix);
   }
 }
@@ -139,7 +139,7 @@ p {
 @include create-columns-for-breakpoint($xl-breakpoint, "xl");
 
 @mixin create-hide-show-from-breakpoint($breakpoint, $prefix) {
-  @media (max-width: $breakpoint) {
+  @media (min-width: $breakpoint) {
     .hide-#{$prefix} {
       display: none;
     }
