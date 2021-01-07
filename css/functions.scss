@@ -53,6 +53,12 @@
   }
 }
 
+@mixin create-hover-for-theme($name, $color) {
+  .hover-#{$name}:hover {
+    background-color: $color;
+  }
+}
+
 @mixin create-text-for-theme($name, $color) {
   .text-#{$name} {
     color: $color !important;
@@ -65,4 +71,5 @@
   @include create-background-for-theme($name, $color);
   @include create-text-for-theme($name, $color);
   @include create-borders($name, $color);
+  @include create-hover-for-theme($name, $color);
 }

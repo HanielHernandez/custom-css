@@ -1,22 +1,56 @@
-
-@mixin  create-margin($margin-size) {
-    .m-#{$margin-size},.mx-#{$margin-size},.mr-#{$margin-size}{
-        margin-right: 0.25rem * $margin-size !important;
+@mixin create-margin-for-breakpoint($margin-size, $breakpoint, $prefix) {
+  @media (min-width: $breakpoint) {
+    .m-#{$prefix}-#{$margin-size},
+    .mx-#{$prefix}-#{$margin-size},
+    .mr-#{$prefix}-#{$margin-size} {
+      margin-right: 0.25rem * $margin-size;
     }
-    .m-#{$margin-size},.mx-#{$margin-size},.ml-#{$margin-size}{
-        margin-left:0.25rem * $margin-size !important;
+    .m-#{$prefix}-#{$margin-size},
+    .mx-#{$prefix}-#{$margin-size},
+    .ml-#{$prefix}-#{$margin-size} {
+      margin-left: 0.25rem * $margin-size;
     }
-    .m-#{$margin-size},.my-#{$margin-size},.mt-#{$margin-size}{
-        margin-top: 0.25rem * $margin-size !important;
+    .m-#{$prefix}-#{$margin-size},
+    .my-#{$prefix}-#{$margin-size},
+    .mt-#{$prefix}-#{$margin-size} {
+      margin-top: 0.25rem * $margin-size;
     }
-    .m-#{$margin-size},.my-#{$margin-size},.mb-#{$margin-size}{
-        margin-bottom: 0.25rem * $margin-size !important;
+    .m-#{$prefix}-#{$margin-size},
+    .my-#{$prefix}-#{$margin-size},
+    .mb-#{$prefix}-#{$margin-size} {
+      margin-bottom: 0.25rem * $margin-size;
     }
-
+  }
 }
 
+@mixin create-margin($margin-size) {
+  .m-#{$margin-size},
+  .mx-#{$margin-size},
+  .mr-#{$margin-size} {
+    margin-right: 0.25rem * $margin-size;
+  }
+  .m-#{$margin-size},
+  .mx-#{$margin-size},
+  .ml-#{$margin-size} {
+    margin-left: 0.25rem * $margin-size;
+  }
+  .m-#{$margin-size},
+  .my-#{$margin-size},
+  .mt-#{$margin-size} {
+    margin-top: 0.25rem * $margin-size;
+  }
+  .m-#{$margin-size},
+  .my-#{$margin-size},
+  .mb-#{$margin-size} {
+    margin-bottom: 0.25rem * $margin-size;
+  }
 
-@for $i from 0 through 24{
-    @include create-margin($i)
+  @include create-margin-for-breakpoint($margin-size, $lg-breakpoint, "lg");
+  @include create-margin-for-breakpoint($margin-size, $md-breakpoint, "md");
+  @include create-margin-for-breakpoint($margin-size, $sm-breakpoint, "sm");
+  @include create-margin-for-breakpoint($margin-size, $xl-breakpoint, "xl");
 }
 
+@for $i from 0 through 24 {
+  @include create-margin($i);
+}
