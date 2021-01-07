@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 /*----messages success----*/
 /*TABLES*/
+/*LIST*/
 .bg-white {
   background-color: #fff;
 }
@@ -16849,6 +16850,25 @@ pre code {
 
 pre code * {
   font-family: monospace;
+}
+
+.list {
+  list-style-type: none;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin-bottom: 1rem;
+}
+
+.list.list-border .item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.list .item {
+  padding: 0.5rem 1rem;
+}
+
+.list .item:hover {
+  background-color: #eee;
 }
 
 .p-0,
