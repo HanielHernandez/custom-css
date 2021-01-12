@@ -18373,6 +18373,11 @@ pre code * {
   border-bottom-left-radius: 5px;
 }
 
+.sidebar {
+  width: 350px;
+  position: relative;
+}
+
 .p-0,
 .px-0,
 .pr-0 {
