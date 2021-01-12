@@ -1,6 +1,8 @@
 @import "_colors-maps.scss";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+$default-border: 1px solid rgba(0, 0, 0, 0.12);
 
+//theme colors
 $theme-colors: (
   "dark": #212121,
   "light": #e0e0e0,
@@ -8,13 +10,13 @@ $theme-colors: (
   "transparent": rgba(0, 0, 0, 0),
   "white": #fff,
 );
-
+//font sizes use in letter
 $font-sizes: (
   "normal": 1rem,
   "small": 0.875,
   "caption": 0.75rem,
 );
-
+//font weights use un clasees
 $font-weights: (
   "thin": 100,
   "extralight": 200,
@@ -58,7 +60,7 @@ $viewport-to: 101;
 $default-border-color: rgba(0, 0, 0, 0.12);
 $default-border-radius: 0.5rem;
 
-$lop-size: 24; //breakpoints
+$lop-size: 24; //defines the amount of interations margin and padding does: example $lop-size: 20 will create  class  .m-{1-20} and .p-{1-20}
 
 $xl-breakpoint: 1280px;
 $lg-breakpoint: 1024px;
@@ -71,6 +73,8 @@ $breakpoints: (
   "lg": $lg-breakpoint,
   "xl": $xl-breakpoint,
 );
+
+$fractions: (12, 6, 4, 3, 2);
 
 $locations: (
   "t": top,
@@ -149,7 +153,7 @@ $button-padding: 0.5rem 1rem;
 $button-bg-color: #fff;
 $button-border-color: #e0e0e0;
 $button-radius: 0.25rem;
-
+$flat-button-hover-color: rgba(#000, 0.05);
 //Forms
 $form-field-margin-bottom: 1rem;
 $form-field-label-size: 1rem;
@@ -191,3 +195,24 @@ $list-border-radius: 5px;
 $list-item-padding: 0.5rem 1rem;
 $list-item-hover-color: #eee;
 $list-margin-bottom: 1rem;
+
+/*cards*/
+$card-padding: 1rem;
+$card-border-width: 1px;
+$card-border-style: solid;
+$card-border-color: rgba(0, 0, 0, 0.12);
+$card-border-radius: 5px;
+
+$card-title-font-size: 20px;
+$card-title-font-weight: 600;
+$card-title-font-color: rgba(0, 0, 0, 0.8);
+$card-title-line-height: 1.2;
+
+$card-subtitle-font-size: 16px;
+$card-subtitle-font-weight: 400;
+$card-subtitle-font-color: rgba(0, 0, 0, 0.53);
+$card-subtitle-line-height: 1.25;
+
+$card-avatar-width: 40px;
+$card-avatar-height: 40px;
+$card-avatar-margin-right: 1rem;

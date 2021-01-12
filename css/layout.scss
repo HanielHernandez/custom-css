@@ -70,11 +70,6 @@ p {
     }
   }
 }
-@mixin create-columns-for-breakpoint($breakpoint, $prefix) {
-  @media (min-width: $breakpoint) {
-    @include create-columns($prefix);
-  }
-}
 
 @for $i from 1 through 12 {
   .col-w-#{$i} {
@@ -83,9 +78,11 @@ p {
   }
 }
 
-@mixin create-width-fraction-for-breakpoint($breakpoint, $prefix, $width) {
-  @media (min-width: $breakpoint) {
-    .#{$prefix} {
+@mixin create-width-fractions-for-breakpoint($breakpoint-prefix, $base) {
+  @for $i from 1 through $base {
+    $width: $i * 100% / $base;
+    $fraction: #{$i}\/#{$base};
+    .w-#{$breakpoint-prefix}-#{$fraction} {
       width: $width;
       max-width: $width;
     }
@@ -114,42 +111,19 @@ p {
       height: $width;
       max-height: $width;
     }
-
-    @each $prefix, $value in $breakpoints {
-      @include create-width-fraction-for-breakpoint(
-        $value,
-        "w-" + $prefix + "-" + $fraction,
-        $width
-      );
-    }
   }
 }
 
-@include create-fraction-width(12);
-@include create-fraction-width(6);
-@include create-fraction-width(4);
 @include create-fraction-width(2);
 @include create-fraction-width(3);
-@include create-columns-for-breakpoint($sm-breakpoint, "sm");
-@include create-columns-for-breakpoint($md-breakpoint, "md");
-@include create-columns-for-breakpoint($lg-breakpoint, "lg");
-@include create-columns-for-breakpoint($xl-breakpoint, "xl");
+@include create-fraction-width(4);
+@include create-fraction-width(6);
+@include create-fraction-width(12);
 
-@mixin create-hide-show-from-breakpoint($breakpoint, $prefix) {
-  @media (min-width: $breakpoint) {
-    .hide-#{$prefix} {
-      display: none;
-    }
-    .show-#{$prefix} {
-      display: block;
-    }
+@each $prefix, $value in $breakpoints {
+  @media (min-width: $value) {
   }
 }
-
-@include create-hide-show-from-breakpoint($md-breakpoint, "md");
-@include create-hide-show-from-breakpoint($sm-breakpoint, "sm");
-@include create-hide-show-from-breakpoint($lg-breakpoint, "lg");
-@include create-hide-show-from-breakpoint($xl-breakpoint, "xl");
 
 $justify-positions: (
   start: flex-start,
