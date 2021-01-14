@@ -3,6 +3,255 @@
 /*TABLES*/
 /*LIST*/
 /*cards*/
+.spinner {
+  position: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-right: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.spinner.w-1 {
+  width: 8px;
+  height: 8px;
+}
+
+.spinner.t-1 {
+  border-width: 1px;
+}
+
+.spinner.w-2 {
+  width: 16px;
+  height: 16px;
+}
+
+.spinner.t-2 {
+  border-width: 2px;
+}
+
+.spinner.w-3 {
+  width: 24px;
+  height: 24px;
+}
+
+.spinner.t-3 {
+  border-width: 3px;
+}
+
+.spinner.w-4 {
+  width: 32px;
+  height: 32px;
+}
+
+.spinner.t-4 {
+  border-width: 4px;
+}
+
+.spinner.w-5 {
+  width: 40px;
+  height: 40px;
+}
+
+.spinner.t-5 {
+  border-width: 5px;
+}
+
+.spinner.w-6 {
+  width: 48px;
+  height: 48px;
+}
+
+.spinner.t-6 {
+  border-width: 6px;
+}
+
+.spinner.w-7 {
+  width: 56px;
+  height: 56px;
+}
+
+.spinner.t-7 {
+  border-width: 7px;
+}
+
+.spinner.w-8 {
+  width: 64px;
+  height: 64px;
+}
+
+.spinner.t-8 {
+  border-width: 8px;
+}
+
+.spinner.w-9 {
+  width: 72px;
+  height: 72px;
+}
+
+.spinner.t-9 {
+  border-width: 9px;
+}
+
+.spinner.w-10 {
+  width: 80px;
+  height: 80px;
+}
+
+.spinner.t-10 {
+  border-width: 10px;
+}
+
+.spinner.w-11 {
+  width: 88px;
+  height: 88px;
+}
+
+.spinner.t-11 {
+  border-width: 11px;
+}
+
+.spinner.w-12 {
+  width: 96px;
+  height: 96px;
+}
+
+.spinner.t-12 {
+  border-width: 12px;
+}
+
+.spinner.w-13 {
+  width: 104px;
+  height: 104px;
+}
+
+.spinner.t-13 {
+  border-width: 13px;
+}
+
+.spinner.w-14 {
+  width: 112px;
+  height: 112px;
+}
+
+.spinner.t-14 {
+  border-width: 14px;
+}
+
+.spinner.w-15 {
+  width: 120px;
+  height: 120px;
+}
+
+.spinner.t-15 {
+  border-width: 15px;
+}
+
+.spinner.w-16 {
+  width: 128px;
+  height: 128px;
+}
+
+.spinner.t-16 {
+  border-width: 16px;
+}
+
+.spinner.w-17 {
+  width: 136px;
+  height: 136px;
+}
+
+.spinner.t-17 {
+  border-width: 17px;
+}
+
+.spinner.w-18 {
+  width: 144px;
+  height: 144px;
+}
+
+.spinner.t-18 {
+  border-width: 18px;
+}
+
+.spinner.w-19 {
+  width: 152px;
+  height: 152px;
+}
+
+.spinner.t-19 {
+  border-width: 19px;
+}
+
+.spinner.w-20 {
+  width: 160px;
+  height: 160px;
+}
+
+.spinner.t-20 {
+  border-width: 20px;
+}
+
+.spinner.w-21 {
+  width: 168px;
+  height: 168px;
+}
+
+.spinner.t-21 {
+  border-width: 21px;
+}
+
+.spinner.w-22 {
+  width: 176px;
+  height: 176px;
+}
+
+.spinner.t-22 {
+  border-width: 22px;
+}
+
+.spinner.w-23 {
+  width: 184px;
+  height: 184px;
+}
+
+.spinner.t-23 {
+  border-width: 23px;
+}
+
+.spinner.w-24 {
+  width: 192px;
+  height: 192px;
+}
+
+.spinner.t-24 {
+  border-width: 24px;
+}
+
 .bg-white {
   background-color: #fff;
 }
@@ -19254,255 +19503,6 @@ table p {
 
 .inherit {
   position: inherit;
-}
-
-.spinner {
-  position: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
-  border: 2px solid rgba(0, 0, 0, 0.12);
-  border-right: 2px solid rgba(0, 0, 0, 0.8);
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-.spinner.w-1 {
-  width: 8px;
-  height: 8px;
-}
-
-.spinner.t-1 {
-  border-width: 1px;
-}
-
-.spinner.w-2 {
-  width: 16px;
-  height: 16px;
-}
-
-.spinner.t-2 {
-  border-width: 2px;
-}
-
-.spinner.w-3 {
-  width: 24px;
-  height: 24px;
-}
-
-.spinner.t-3 {
-  border-width: 3px;
-}
-
-.spinner.w-4 {
-  width: 32px;
-  height: 32px;
-}
-
-.spinner.t-4 {
-  border-width: 4px;
-}
-
-.spinner.w-5 {
-  width: 40px;
-  height: 40px;
-}
-
-.spinner.t-5 {
-  border-width: 5px;
-}
-
-.spinner.w-6 {
-  width: 48px;
-  height: 48px;
-}
-
-.spinner.t-6 {
-  border-width: 6px;
-}
-
-.spinner.w-7 {
-  width: 56px;
-  height: 56px;
-}
-
-.spinner.t-7 {
-  border-width: 7px;
-}
-
-.spinner.w-8 {
-  width: 64px;
-  height: 64px;
-}
-
-.spinner.t-8 {
-  border-width: 8px;
-}
-
-.spinner.w-9 {
-  width: 72px;
-  height: 72px;
-}
-
-.spinner.t-9 {
-  border-width: 9px;
-}
-
-.spinner.w-10 {
-  width: 80px;
-  height: 80px;
-}
-
-.spinner.t-10 {
-  border-width: 10px;
-}
-
-.spinner.w-11 {
-  width: 88px;
-  height: 88px;
-}
-
-.spinner.t-11 {
-  border-width: 11px;
-}
-
-.spinner.w-12 {
-  width: 96px;
-  height: 96px;
-}
-
-.spinner.t-12 {
-  border-width: 12px;
-}
-
-.spinner.w-13 {
-  width: 104px;
-  height: 104px;
-}
-
-.spinner.t-13 {
-  border-width: 13px;
-}
-
-.spinner.w-14 {
-  width: 112px;
-  height: 112px;
-}
-
-.spinner.t-14 {
-  border-width: 14px;
-}
-
-.spinner.w-15 {
-  width: 120px;
-  height: 120px;
-}
-
-.spinner.t-15 {
-  border-width: 15px;
-}
-
-.spinner.w-16 {
-  width: 128px;
-  height: 128px;
-}
-
-.spinner.t-16 {
-  border-width: 16px;
-}
-
-.spinner.w-17 {
-  width: 136px;
-  height: 136px;
-}
-
-.spinner.t-17 {
-  border-width: 17px;
-}
-
-.spinner.w-18 {
-  width: 144px;
-  height: 144px;
-}
-
-.spinner.t-18 {
-  border-width: 18px;
-}
-
-.spinner.w-19 {
-  width: 152px;
-  height: 152px;
-}
-
-.spinner.t-19 {
-  border-width: 19px;
-}
-
-.spinner.w-20 {
-  width: 160px;
-  height: 160px;
-}
-
-.spinner.t-20 {
-  border-width: 20px;
-}
-
-.spinner.w-21 {
-  width: 168px;
-  height: 168px;
-}
-
-.spinner.t-21 {
-  border-width: 21px;
-}
-
-.spinner.w-22 {
-  width: 176px;
-  height: 176px;
-}
-
-.spinner.t-22 {
-  border-width: 22px;
-}
-
-.spinner.w-23 {
-  width: 184px;
-  height: 184px;
-}
-
-.spinner.t-23 {
-  border-width: 23px;
-}
-
-.spinner.w-24 {
-  width: 192px;
-  height: 192px;
-}
-
-.spinner.t-24 {
-  border-width: 24px;
 }
 
 .navbar-dark {
