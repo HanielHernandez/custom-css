@@ -34,7 +34,9 @@ ul {
 p {
   display: block;
 }
-
+a {
+  text-decoration: none;
+}
 .container,
 .row,
 .col {
@@ -170,6 +172,9 @@ $align-positions: (
 p,
 table {
   margin-bottom: 1rem;
+}
+.container {
+  margin: 0px auto;
 }
 
 .container-xl {
