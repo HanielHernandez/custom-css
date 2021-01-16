@@ -4,7 +4,8 @@
   "description": "A css framework with utilities base classes as well as component",
   "main": "main.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-scss":""
   },
   "repository": {
     "type": "git",
