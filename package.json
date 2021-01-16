@@ -1,0 +1,25 @@
+{
+  "name": "customizable-css",
+  "version": "1.0.0",
+  "description": "A css framework with utilities base classes as well as component",
+  "main": "main.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanielHernandez/custom-css.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "responsive",
+    "css-components"
+  ],
+  "author": "Haniel <haniel1121@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanielHernandez/custom-css/issues"
+  },
+  "homepage": "https://github.com/HanielHernandez/custom-css#readme"
+}
