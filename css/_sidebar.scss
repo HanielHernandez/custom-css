@@ -1,4 +1,6 @@
 .sidebar {
   width: $sidebar-width;
   position: $sidebar-position;
+  border-right: $sidebar-border-width $sidebar-border-style
+    $sidebar-border-color;
 }
