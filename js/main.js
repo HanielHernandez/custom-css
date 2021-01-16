@@ -16,3 +16,28 @@ document.addEventListener("click", function ($event) {
         }
     }
 });
+ 
+function expand(){
+    const target = this.getAttribute("data-target");
+    const expandible =  document.getElementById(target);
+    const content = expandible.firstElementChild;
+    expandible.style.display = 'block';
+    if (expandible.style.height) {
+        expandible.style.height = null;
+        setTimeout(()=>{
+            expandible.style.display = '';
+        },300)
+    } else {
+        expandible.style.height = content.scrollHeight + "px";
+    }
+    /*if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    }*/
+}
+
+var expandibleTriggers = document.getElementsByClassName("expandible-trigger");
+for (var i = 0; i < expandibleTriggers.length; i++) {
+    expandibleTriggers[i].addEventListener('click', expand);
+}

@@ -26,6 +26,7 @@
             <ul class="nav ">
                 <li class="nav-item">
                     <a href="" class="nav-link">Home</a>
+                    
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-link">About</a>
@@ -44,14 +45,29 @@
             <div class="sidebar sticky" style="top:3.5rem; height: calc(100vh - 3.5rem)" >
 
                 <ul class="list">
-                    <li class="item">
-                        <a href="" class="bold">Layout</a>
+                    <li class="">
+
+                        <a href="#" class="expandible-trigger font-medium py-2 px-4" data-target="gridsMenu">
+                            Layout
+                        </a>
+                        <div class="expandible " id="gridsMenu">
+                            <ul class="list hoverable pr-2 ">
+                                <li class="item">
+                                    <a href="#grid">Grid</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#grid">Breakpoints</a>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                        
                     </li>
                     <li class="item">
-                        <a href=""  class="bold">Forms</a>
+                        <a href=""  class="font-medium">Forms</a>
                     </li>
                     <li class="item">
-                        <a href=""  class="bold">Utilities</a>
+                        <a href=""  class="font-medium">Utilities</a>
                     </li>
                 </ul>
             </div>

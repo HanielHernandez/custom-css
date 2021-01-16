@@ -65,7 +65,7 @@ $default-border-color: rgba(0, 0, 0, 0.12);
 $default-border-radius: 0.5rem !default;
 
 $lop-size: 24 !default; //defines the amount of interations margin and padding does: example $lop-size: 20 will create  class  .m-{1-20} and .p-{1-20}
-
+$xxl-breakpoint: 1400px !default;
 $xl-breakpoint: 1280px !default;
 $lg-breakpoint: 1024px !default;
 $md-breakpoint: 768px !default;
@@ -76,6 +76,7 @@ $breakpoints: (
   "md": $md-breakpoint,
   "lg": $lg-breakpoint,
   "xl": $xl-breakpoint,
+  "xxl": $xxl-breakpoint,
 );
 
 $fractions: (12, 6, 4, 3, 2);
@@ -249,3 +250,8 @@ $sidebar-border-color: $border-default-color !default;
 $sidebar-border-width: 1px !default;
 $sidebar-border-style: solid !default;
 $sidebar-background-color: rgba(0, 0, 0, 0);
+
+// Expandable
+$expandible-transtion: height !default;
+$expandible-transtion-time: 100ms !default;
+$expandible-transtion-ease: ease-in-out !default;
