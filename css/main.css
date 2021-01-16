@@ -19976,6 +19976,17 @@ pre code * {
   width: 350px;
   position: relative;
   border-right: 1px solid #e0e0e0;
+  background-color: #e0e0e0;
+}
+
+.sidebar.fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.sidebar .list {
+  border: none;
 }
 
 .p-0,

@@ -245,6 +245,7 @@ $spinner-animation: spin !default;
 //sidebar
 $sidebar-width: 350px !default;
 $sidebar-position: relative !default;
-$sidebar-border-color: $border-default-color;
-$sidebar-border-width: 1px;
-$sidebar-border-style: solid;
+$sidebar-border-color: $border-default-color !default;
+$sidebar-border-width: 1px !default;
+$sidebar-border-style: solid !default;
+$sidebar-background-color: #e0e0e0;
