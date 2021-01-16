@@ -28,8 +28,11 @@
 }
 
 @function set-border-color($color) {
-  @if ($color == rgba(0, 0, 0, 0)) {
+  @if ($color == rgba(0, 0, 0, 1)) {
     @return $color;
+  }
+  @if ($color == rgba(255, 255, 255, 1)) {
+    @return #e0e0e0;
   }
   @return lighten($color, 50%);
 }
