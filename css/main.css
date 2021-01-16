@@ -16881,6 +16881,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .col {
@@ -19972,6 +19975,7 @@ pre code * {
 .sidebar {
   width: 350px;
   position: relative;
+  border-right: 1px solid #e0e0e0;
 }
 
 .p-0,
