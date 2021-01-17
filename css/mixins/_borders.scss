@@ -1,8 +1,11 @@
-@mixin create-borders($theme-name, $color) {
-  .b-#{$theme-name} {
-    border-color: $color !important;
-  }
-  .hover\:b-#{$theme-name}:hover {
-    color: $color !important;
+@mixin create-borders($theme-name, $color, $is-hover: 0) {
+  @if ($is-hover == 0) {
+    .b-#{$theme-name} {
+      border-color: $color !important;
+    }
+  } @else {
+    .hover\:b-#{$theme-name}:hover {
+      color: $color !important;
+    }
   }
 }

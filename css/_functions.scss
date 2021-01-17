@@ -50,22 +50,29 @@
   }
 }
 
-@mixin create-background-for-theme($name, $color) {
-  .bg-#{$name} {
-    background-color: $color;
-    color: set-color($color);
-  }
-  .hover\:bg-#{$name}:hover {
-    color: $color !important;
+@mixin create-background-for-theme($name, $color, $is-hover: 0) {
+  @if ($is-hover == 0) {
+    .bg-#{$name} {
+      background-color: $color;
+      color: set-color($color);
+    }
+  } @else {
+    .hover\:bg-#{$name}:hover {
+      background-color: $color;
+      color: set-color($color);
+    }
   }
 }
 
-@mixin create-text-for-theme($name, $color) {
-  .text-#{$name} {
-    color: $color !important;
-  }
-  .hover\:text-#{$name}:hover {
-    color: $color !important;
+@mixin create-text-for-theme($name, $color, $is-hover: 0) {
+  @if ($is-hover == 0) {
+    .text-#{$name} {
+      color: $color !important;
+    }
+  } @else {
+    .hover\:text-#{$name}:hover {
+      color: $color !important;
+    }
   }
 }
 

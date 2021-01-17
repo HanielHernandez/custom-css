@@ -3,7 +3,4 @@
   .opcty-#{$prefix} {
     opacity: 0.05 * $i;
   }
-  .hover\:opcty-#{$name}:hover {
-    color: $color !important;
-  }
 }
