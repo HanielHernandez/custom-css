@@ -1,7 +1,8 @@
-
-
-@mixin create-borders($theme-name, $color){
-    .b-#{$theme-name}{
-        border-color: $color !important;
-    }
+@mixin create-borders($theme-name, $color) {
+  .b-#{$theme-name} {
+    border-color: $color !important;
+  }
+  .hover\:b-#{$theme-name}:hover {
+    color: $color !important;
+  }
 }
