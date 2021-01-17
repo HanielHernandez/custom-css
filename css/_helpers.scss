@@ -1,0 +1,9 @@
+@for $i from 0 through 20 {
+  $prefix: $i * 5;
+  .opcty-#{$prefix} {
+    opacity: 0.05 * $i;
+  }
+  .hover\:opcty-#{$name}:hover {
+    color: $color !important;
+  }
+}
