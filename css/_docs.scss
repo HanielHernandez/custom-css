@@ -1,0 +1,14 @@
+@media (min-width: 756px) {
+  .docs-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+}
+
+.sidebar {
+  .list {
+    a {
+      display: inline-block;
+    }
+  }
+}

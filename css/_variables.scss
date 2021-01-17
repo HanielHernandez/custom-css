@@ -65,7 +65,7 @@ $default-border-color: rgba(0, 0, 0, 0.12);
 $default-border-radius: 0.5rem !default;
 
 $lop-size: 24 !default; //defines the amount of interations margin and padding does: example $lop-size: 20 will create  class  .m-{1-20} and .p-{1-20}
-
+$xxl-breakpoint: 1400px !default;
 $xl-breakpoint: 1280px !default;
 $lg-breakpoint: 1024px !default;
 $md-breakpoint: 768px !default;
@@ -76,6 +76,7 @@ $breakpoints: (
   "md": $md-breakpoint,
   "lg": $lg-breakpoint,
   "xl": $xl-breakpoint,
+  "xxl": $xxl-breakpoint,
 );
 
 $fractions: (12, 6, 4, 3, 2);
@@ -185,10 +186,14 @@ $form-input-background-color: #fff !default;
 $form-input-active-border-width: $form-input-border-width !default;
 $form-input-active-border-color: rgba(0, 0, 0, 0.6) !default;
 $form-input-invalid-color: #b71c1c !default;
-
-$form-text-color: rgba(0, 0, 0, 0.6);
+$form-text-color: rgba(0, 0, 0, 0.6) !default;
 $form-text-size: 0.75rem !default;
-
+$form-input-sm-font-size: 0.865rem !default;
+$form-input-sm-padding: 0.5rem 0.75 !default;
+$form-input-lg-font-size: 1.25rem !default;
+$form-input-lg-padding: 0.75 1.25rem !default;
+$form-input-xl-font-size: 1.5rem !default;
+$form-input-xl-padding: 1rem 1.5rem !default;
 /*TABLES*/
 $table-bg-color: #fff !default;
 $table-heading-font-size: 1rem !default;
@@ -245,3 +250,12 @@ $spinner-animation: spin !default;
 //sidebar
 $sidebar-width: 350px !default;
 $sidebar-position: relative !default;
+$sidebar-border-color: $border-default-color !default;
+$sidebar-border-width: 1px !default;
+$sidebar-border-style: solid !default;
+$sidebar-background-color: rgba(0, 0, 0, 0);
+
+// Expandable
+$expandible-transtion: height !default;
+$expandible-transtion-time: 100ms !default;
+$expandible-transtion-ease: ease-in-out !default;

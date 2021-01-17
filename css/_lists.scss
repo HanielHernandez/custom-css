@@ -9,10 +9,14 @@
       border-bottom: $list-border;
     }
   }
-
+  ul {
+    margin-bottom: 0px;
+  }
   .item {
     padding: $list-item-padding;
-    &:hover {
+  }
+  &.hoverable {
+    .item:hover {
       background-color: $list-item-hover-color;
     }
   }

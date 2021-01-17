@@ -1,4 +1,17 @@
 .sidebar {
   width: $sidebar-width;
-  position: $sidebar-position;
+  /*border-right: $sidebar-border-width $sidebar-border-style
+    $sidebar-border-color;
+  background-color: $sidebar-background-color;*/
+  &.fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+  .list {
+    border: none;
+    a {
+      color: $font-color;
+    }
+  }
 }

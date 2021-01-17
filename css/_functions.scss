@@ -28,8 +28,11 @@
 }
 
 @function set-border-color($color) {
-  @if ($color == rgba(0, 0, 0, 0)) {
+  @if ($color == rgba(0, 0, 0, 1)) {
     @return $color;
+  }
+  @if ($color == rgba(255, 255, 255, 1)) {
+    @return #e0e0e0;
   }
   @return lighten($color, 50%);
 }
@@ -47,22 +50,29 @@
   }
 }
 
-@mixin create-background-for-theme($name, $color) {
-  .bg-#{$name} {
-    background-color: $color;
-    color: set-color($color);
+@mixin create-background-for-theme($name, $color, $is-hover: 0) {
+  @if ($is-hover == 0) {
+    .bg-#{$name} {
+      background-color: $color;
+      color: set-color($color);
+    }
+  } @else {
+    .hover\:bg-#{$name}:hover {
+      background-color: $color;
+      color: set-color($color);
+    }
   }
 }
 
-@mixin create-hover-for-theme($name, $color) {
-  .hover-#{$name}:hover {
-    background-color: $color;
-  }
-}
-
-@mixin create-text-for-theme($name, $color) {
-  .text-#{$name} {
-    color: $color !important;
+@mixin create-text-for-theme($name, $color, $is-hover: 0) {
+  @if ($is-hover == 0) {
+    .text-#{$name} {
+      color: $color !important;
+    }
+  } @else {
+    .hover\:text-#{$name}:hover {
+      color: $color !important;
+    }
   }
 }
 
@@ -72,6 +82,5 @@
   @include create-background-for-theme($name, $color);
   @include create-text-for-theme($name, $color);
   @include create-borders($name, $color);
-  @include create-hover-for-theme($name, $color);
   @include create-spinner-for-theme($name, $color);
 }

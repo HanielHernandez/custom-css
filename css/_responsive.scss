@@ -26,6 +26,9 @@
     .show-#{$prefix} {
       display: block;
     }
+    .container-#{$prefix} {
+      max-width: $breakpoint;
+    }
 
     @include create-columns($prefix);
     @include create-width-fractions-for-breakpoint($prefix, 12);

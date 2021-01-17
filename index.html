@@ -26,6 +26,7 @@
             <ul class="nav ">
                 <li class="nav-item">
                     <a href="" class="nav-link">Home</a>
+                    
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-link">About</a>
@@ -36,994 +37,822 @@
 
     </nav>
 
-    <div class="container h-100 pt-14   pb row w-12/12 justify-content-start">
+    <div class="container docs-container h-100 pt-14">
         <!--div class="col  w-1/4 p-4 bg-grey-100">
 
         </div-->
+        <aside class="b bt-0 bl-0 bb-0 b-grey-200">
+            <div class="sidebar sticky" style="top:3.5rem; height: calc(100vh - 3.5rem)" >
 
-        <div class="col px-4">
+                <ul class="list">
+                    <li class="">
 
-            <h1>
-                Custom css
-            </h1>
-            <p class="text-grey-600 mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur voluptatem eveniet voluptate
-                officiis. Illo enim totam, modi ab a quaerat expedita, praesentium vero vitae minima ipsum. Ut, expedita
-                distinctio.
-            </p>
+                        <a href="#" class="expandible-trigger font-medium py-2 px-4" data-target="gridsMenu">
+                            Layout
+                        </a>
+                        <div class="expandible " id="gridsMenu">
+                            <ul class="list hoverable pr-2 ">
+                                <li class="item">
+                                    <a href="#grid">Grid</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#grid">Breakpoints</a>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                        
+                    </li>
+                    <li class="">
+                        <a href="#"  class="py-2 px-4 font-medium expandible-trigger"  data-target="formsMenu">Forms</a>
+                        <div id="formsMenu" class="expandible">
+                            <ul class="list hoverable pr-2">
+                                <li class="item">
+                                    <a href=""> Form field</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">Foorm field with addon</a>
+                                </li>
+                              
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="#" class="py-2 px-4 font-medium expandible-trigger"  data-target="componentsMenu">
+                            Components
+                        </a>
+                        <div id="componentsMenu" class="expandible">
+                            <ul class="list hoverable pr-2">
+                                <li class="item">
+                                    <a href=""> Buttons</a>
+                                </li>
+                                <li class="item">
+                                    <a href=""> List</a>
+                                </li>
+                                <li class="item">
+                                    <a href=""> Cards</a>
+                                </li>
+                                <li class="item">
+                                    <a href=""> Tables</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="#" class="py-2 px-4 font-medium expandible-trigger"  data-target="utilitiesMenu">
+                            Utilities
+                        </a>
+                        <div id="utilitiesMenu" class="expandible">
+                            <ul class="list hoverable pr-2">
+                                <li class="item">
+                                    <a href="">Colors</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">Displays</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">Position</a>
+                                </li>
+                                <li class="item">
+                                    <a href=""> Overflow</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#padding_and_margin">Padding and Margin</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">Z-index</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">Shadows</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">Fonts and text</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">Hover</a>
+                                </li>
+                               
+                                <li class="item">
+                                    <a href=""> Transitions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+  
+        <main>
+            <div class="col px-4">
 
-            <h4 class="mb-4">
-                Grid sistem
-            </h4>
-            <!--###  GRID SYSTEM ### -->
-            <div id="grids">
-                <h5 class="text-grey-600">
-                    Row and col
-                </h5>
-                <p class="mb-4 w-12"> the <b>.row</b> set display to <b>flex</b> and <b> flex-direction</b> to
-                    <b>flex-row</b>
+                <h1>
+                    Custom css
+                </h1>
+                <p class="text-grey-600 mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur voluptatem eveniet voluptate
+                    officiis. Illo enim totam, modi ab a quaerat expedita, praesentium vero vitae minima ipsum. Ut, expedita
+                    distinctio.
                 </p>
-
-<pre>
-<code data-lang="html"><span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"row bg-grey-200 p-4 mb-4"</span> <span class="tag">></span>
-    <span class="tag">&lt;p </span><span class="prop">class=</span><span class="val">"mb-4 w-12"</span><span class="tag">></span> 
-        I'm a div .row
-    <span class="tag">&lt;/p></span>  
-    <span class="tag">&lt;div </span> <span class="prop">class=</span><span class="val">"col b p-4 bg-grey-400 col-w-4"</span><span class="tag">></span>
-        I'm a div .col
+    
+                <h4 class="mb-4">
+                    Grid sistem
+                </h4>
+                <!--###  GRID SYSTEM ### -->
+                <div id="grids">
+                    <h5 class="text-grey-600">
+                        Row and col
+                    </h5>
+                    <p class="mb-4 w-12"> the <b>.row</b> set display to <b>flex</b> and <b> flex-direction</b> to
+                        <b>flex-row</b>
+                    </p>
+    
+    <pre>
+    <code data-lang="html"><span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"row bg-grey-200 p-4 mb-4"</span> <span class="tag">></span>
+        <span class="tag">&lt;p </span><span class="prop">class=</span><span class="val">"mb-4 w-12"</span><span class="tag">></span> 
+            I'm a div .row
+        <span class="tag">&lt;/p></span>  
+        <span class="tag">&lt;div </span> <span class="prop">class=</span><span class="val">"col b p-4 bg-grey-400 col-w-4"</span><span class="tag">></span>
+            I'm a div .col
+        <span class="tag">&lt;/div> </span>
+        <span class="tag">&lt;div </span> <span class="prop">class=</span><span class="val">"col b p-4 bg-grey-400 col-w-4"</span><span class="tag">></span>
+            I'm a div .col
+        <span class="tag">&lt;/div> </span>
+        <span class="tag">&lt;div </span> <span class="prop">class=</span><span class="val">"col b p-4 bg-grey-400 col-w-4"</span><span class="tag">></span>
+            I'm a div .col
+        <span class="tag">&lt;/div> </span>
     <span class="tag">&lt;/div> </span>
-    <span class="tag">&lt;div </span> <span class="prop">class=</span><span class="val">"col b p-4 bg-grey-400 col-w-4"</span><span class="tag">></span>
-        I'm a div .col
-    <span class="tag">&lt;/div> </span>
-    <span class="tag">&lt;div </span> <span class="prop">class=</span><span class="val">"col b p-4 bg-grey-400 col-w-4"</span><span class="tag">></span>
-        I'm a div .col
-    <span class="tag">&lt;/div> </span>
-<span class="tag">&lt;/div> </span>
+    </code>
+    </pre>
+                    <!-- <div class="row bg-grey-200 p-4 mb-4">
+                                <p class="mb-4  w-12">
+                                    I'm a div .row
+                                </p>
+                                <div class="col b p-4 bg-grey-400  b  br  col-w-4">
+                                    I'm a div .col
+            
+                                </div>
+                                <div class="col b p-4 bg-grey-400  col-w-4">
+                                    I'm a div .col
+                                </div>
+                                <div class="col b p-4 bg-grey-400  col-w-4">
+                                    I'm a div .col
+                                </div>
+                            </div> -->
+                    <div class="row bg-grey-200 p-4 mb-4">
+                        <p class="mb-4  w-12">
+                            I'm a div .row
+                        </p>
+                        <div class="col b p-4 bg-grey-400  b  br  col-w-4">
+                            I'm a div .col
+    
+                        </div>
+                        <div class="col b p-4 bg-grey-400  col-w-4">
+                            I'm a div .col
+                        </div>
+                        <div class="col b p-4 bg-grey-400  col-w-4">
+                            I'm a div .col
+                        </div>
+                    </div>
+    
+                    <p class="mb-4"> the <b> .col </b> class set <b> display </b>to <b> flex</b> and <b>flex-direction</b>to
+                        <b> flex-column</b> </span>
+                    </p>
+                    <div class="row bg-grey-200 p-4 mb-4">
+                        <p class="mb-4  w-12">
+                            I'm a div .col
+                        </p>
+                        <div class="row b p-4 bg-grey-400  b  br  ">
+                            I'm a div .row
+    
+                        </div>
+                        <div class="row b p-4 bg-grey-400  ">
+                            I'm a div .row
+                        </div>
+                        <div class="row b p-4 bg-grey-400  ">
+                            I'm a div .col
+                        </div>
+                    </div>
+                    <p class="mb-4 w-12"> the class <b> .col-w-</b> follow by a number between <b> 1 and 12 </b>will ad a
+                        width base on the percentage presented on </p>
+                    <div class="row bg-grey-200 p-4 mb-4">
+    
+                        <div class="col b p-4 bg-grey-400  b  br  col-w-4">
+                            I'm a div .col-w-4
+    
+                        </div>
+                        <div class="col b p-4 bg-grey-400  col-w-8">
+                            I'm a div .col-w-8
+                        </div>
+    
+                    </div>
+    
+                    <h5 class="text-grey-600">
+                        Fractions
+                    </h5>
+                    <p class="mb-4 w-12"> you can also use fractions like <b> .w-1/2 , w-3/4, w-2/6 w-4/12</b> in oder to
+                        separete width and <b>h-1/2 h-3/4 etc</b> in </p>
+                    <div class=" bg-grey-200 p-4 mb-4">
+    
+                        <div class=" b p-4 bg-grey-400  b  br  w-3/4">
+                            I'm a div .w-3/4
+    
+                        </div>
+                        <div class=" b p-4 bg-grey-400  w-6/12">
+                            I'm a div .w-6/12
+                        </div>
+    
+                    </div>
+                    <h5 class="text-grey-600">
+                        Break points
+                    </h5>
+                    <p class="mb-4 w-12"> You can use breakpoints in order to hep with responvity </p>
+    
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Prefix</th>
+                                <th>Container width </th>
+                                <th>Example</th>
+    
+                            </tr>
+                        </thead>
+                        <tbody>
+                         
+                            <tr>
+                                <td>
+                                    xl
+                                </td>
+                                <td>
+                                <b> > 1280px </b>    
+                                </td>
+                                <td>
+                                    col-w-xl-3
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    lg
+                                </td>
+                                <td>
+                                    <b> res > 1024 </b>    
+                                    </td>
+                                <td>
+                                    col-w-lg-4
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    md
+                                </td>
+                                <td>
+                                    <b> res > 768px </b>    
+                                    </td>
+                                <td>
+                                    col-w-md-6
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    sm
+                                </td>
+                                <td>
+                                    <b> res > 576px </b>    
+                                    </td>
+                                <td>
+                                    col-w-xl-12
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    none
+                                </td>
+                                <td>
+                                <b> < 576px default </b>    
+                                </td>
+                                <td>
+                                    col-3
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+    
+                    <div class="row bg-grey-200 p-4 mb-4">
+    
+                        <div class="col b p-4 bg-grey-400 col-w-sm-12  col-w-md-6 ">
+                            I'm a half width on md+ screen, but full width on sm - screen
+    
+                        </div>
+                        <div class="col b p-4 bg-grey-400  col-w-12  col-w-md-6 col-w-lg-4 ">
+                            I'm 1/3 width on lg+ , I'm half on md and full on sm
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+    
+                <!--### BUTTONS SECTIONS ### -->
+                <div id="buttons" class="">
+    
+                    <h4 class="mb-4 ">
+                        Buttons
+                    </h4>
+    
+    
+                    <p class="mb-4">
+                        the class <b>.btn </b> can be use to create a button, you can make a theme button base outline by
+                        adding -outline to the main button class
+                    </p>
+                    <div class="mb-4">
+                        <a href="" class="btn">
+                            Default button
+                        </a>
+                        <a href="" class="btn btn-primary">
+                            Primary button
+                        </a>
+                        <a href="" class="btn btn-primary-outline">
+                            Outline button
+                        </a>
+                        <a href="" class="btn btn-dark">
+                            Dark button
+                        </a>
+                        <a href="" class="btn btn-dark-outline">
+                            Dark button
+                        </a>
+                    </div>
+                    <p class="mb-4">
+                        there are 6 buttons size from 1 (smallest) to 6 (biggest), been size-2 the default size for button
+                    </p>
+                    <div class="mb-4 ">
+    
+                        <a href="" class="btn btn-size-1 mb-4">
+                            button with btn-size-1
+                        </a>
+                        <a href="" class="btn btn-size-2 mb-4">
+                            button with btn-size-2
+                        </a>
+                        <a href="" class="btn btn-size-3 mb-4">
+                            button with btn-size-3
+                        </a>
+                        <a href="" class="btn btn-size-4 mb-4">
+                            button with btn-size-4
+                        </a>
+                        <a href="" class="btn btn-size-5 mb-4">
+                            button with btn-size-5
+                        </a>
+                        <a href="" class="btn btn-size-6 mb-4">
+                            button with btn-size-6
+                        </a>
+    
+                        <p class="mb-4 ">
+                            you can create button groups by using a div with class <b>.btn-group</b>
+                        </p>
+                        <div class="btn-group">
+                            <a href="" class="btn">1</a>
+                            <a href="" class="btn">2</a>
+    
+                            <a href="" class="btn">
+                                3
+                            </a>
+    
+                        </div>
+                        <div class="btn-group">
+                            <a href="" class="btn">1</a>
+                            <a href="" class="btn">2</a>
+    
+                            <a href="" class="btn btn-icon">
+                                <i class="material-icons">
+                                    add
+                                </i>
+                            </a>
+    
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <!--### FORMS SECTIONS ### -->
+                <div id="forms">
+                    <H4>Forms</H4>
+                    <h5 class="mb-4">Forms field</h4>
+    
+                    <div class="form-field">
+                        <label for="">Name</label>
+                        <input type="text" name="" placeholder="Write down your name" class="form-input" id="">
+                        <span class="form-text">
+                            this field is required
+                        </span>
+                    </div>
+                    <div class="form-field invalid">
+                        <label for="">Invalid field</label>
+                        <input type="text" name="" placeholder="" class="form-input" id="">
+    
+                    </div>
+                    <h5 class="mb-4">Forms Addons</h4>
+                        you can adds addons by adding the <b>.with-addons</b> class
+    
+    
+                </div>
+                <!-- ### TABLES ### -->
+                <div id="tables " class="mb-4">
+                    <h5 class="mb-4">
+                        Tables
+                    </h5>
+                    <p class="mb-4">table width <b>.table-hover </b> and <b> .table-with-border</b> class </p>
+                    <table class="table table-hover table-with-border mb-4">
+                        <thead>
+                            <tr>
+                                <th>Breakpoint</th>
+                                <th>Example</th>
+    
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    xl
+                                </td>
+                                <td>
+                                    col-w-xl-3
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    lg
+                                </td>
+                                <td>
+                                    col-w-lg-4
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    md
+                                </td>
+                                <td>
+                                    col-w-md-6
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    sm
+                                </td>
+                                <td>
+                                    col-w-xl-12
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Breakpoint</th>
+                                <th>Example</th>
+    
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    xl
+                                </td>
+                                <td>
+                                    col-w-xl-3
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    lg
+                                </td>
+                                <td>
+                                    col-w-lg-4
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    md
+                                </td>
+                                <td>
+                                    col-w-md-6
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    sm
+                                </td>
+                                <td>
+                                    col-w-xl-12
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- ### BORDERS ###  -->
+    
+                <div id="borders" class="mb-4">
+    
+                    <h5 class="mb-4">
+                        Borders
+                    </h5>
+    
+                    <div class="mb-4">
+                        <p>You can use borders helpers like the class <b>.b </b> in order to asing borders </p>
+                    </div>
+    
+                    <div class="b p-4 mb-4">
+                        <span class="text-gray-600"> div with .b class</span>
+                    </div>
+    
+    
+                    <div class="mb-4">
+                        <p>You can also change border-color to a theme color by using the class <b>.b-{theme-color} </b>
+                        </p>
+                    </div>
+                    <div class="b b-blue-600 p-4 mb-4">
+                        <span class="text-gray-600"> div with <b> .b + .b-blue-600</b> class</span>
+                    </div>
+                    <div class="mb-4">
+                        <p>The border radius can also be change by using the classes <b>.r</b> or <b>r-{number from 2 -
+                                12}</b> </b> </p>
+                    </div>
+                    <div class="b r p-4 mb-4">
+                        <span class="text-gray-600"> div with <b> .r </b> class</span>
+                    </div>
+                    <div class="b r-2 p-4 mb-4">
+                        <span class="text-gray-600"> div with <b> .r-2 </b> class</span>
+                    </div>
+                    <div class="b r-3 p-4 mb-4">
+                        <span class="text-gray-600"> div with <b> .r-3 </b> class</span>
+                    </div>
+                    <div class="b r-4 p-4 mb-4">
+                        <span class="text-gray-600"> div with <b> .r-4 </b> class</span>
+                    </div>
+                    <div class="mb-4">
+                        <p>You can change the border radius of and expecific radius by using <b>r-{t for top, b for bottom
+                                }-{ l for left , r for right}-{ number from 2 - 12} </b> class </b> </p>
+                    </div>
+                    <div class="b r-t-l-4 p-4 mb-4">
+                        <span class="text-gray-600"> div with a rounded top left corner, <b>.r-t-l</b> <b> </b> class</span>
+                    </div>
+    
+                    <div class="b r-t p-4 mb-4">
+                        <span class="text-gray-600"> div with rounded top corners, <b>.r-t</b> <b> </b> class</span>
+                    </div>
+    
+                    <div class="b r-b p-4 mb-4">
+                        <span class="text-gray-600"> div with rounded botom corners, <b>.r-b</b> <b> </b> class</span>
+                    </div>
+    
+                    <div class="b r r-t-l-4  p-4 mb-4">
+                        <span class="text-gray-600"> div with <b>.r </b> and </b> .r-t-l-4 </b> <b> </b> class</span>
+                    </div>
+                </div>
+    
+                <!-- ###  PADDING AND MARGIN ### -->
+                <div id="padding_and_margin" class="mb-4">
+    
+                    <h5 class="mb-4" id="margin">Padding and Margin</h5>
+    
+                    <p class="mb-4"> You can set padding and margin by using the class <b> p-{number from 1 to 12} </b> or
+                        <b>m-{number from 1 to 12}</b> , youn can also use modifers like b for botom or, t for top, r for
+                        right and l for left in order to spiciy the side of the div to add padding
+                    </p>
+    
+                    <table class="table table-with-border  mb-4">
+                        <thead>
+                            <tr>
+                                <th> Class </th>
+                                <th> Property </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    m-*{0-12} / p-*{0-12}
+                                </td>
+                                <td>
+                                    padding / margin: number * 0.25rem;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    mt-*{0-12} / pt-*{0-12}
+                                </td>
+                                <td>
+                                    padding-top / margin-top: number * 0.25rem;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    mb-*{0-12} / pb-*{0-12}
+                                </td>
+                                <td>
+                                    padding-bottom / margin-bottom: number * 0.25rem;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ml-*{0-12} / pl-*{0-12}
+                                </td>
+                                <td>
+                                    padding-left / / margin-left: number * 0.25rem;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    mr-*{0-12} / pr-*{0-12}
+                                </td>
+                                <td>
+                                    padding-right / margin-right: number * 0.25rem;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+                    <div class="b p-2 mb-4">
+                        im a div with <b>.p-2 </b> class
+                    </div>
+                    <div class="b p-4 mb-4">
+                        im a div with <b>.p-4 </b> class
+                    </div>
+    
+                    <div class="b p-8 mb-4">
+                        im a div with <b>.p-8 </b> class
+                    </div>
+    
+                    <div class="bg-grey-100 p-4 mb-4">
+                        <div class="b bg-white p-4 mb-2">
+                            im a div with <b>.mb-2 </b> class
+                        </div>
+    
+                        <div class="b bg-white p-4 mb-4">
+                            im a div with <b>.mb-4 </b> class
+                        </div>
+                        <div class="b bg-white p-6 mb-4">
+                            im a div with <b>.mb-6 </b> class
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <!-- ### POSITIONS ### -->
+                <div id="position">
+                    <h5 class="mb-4">Positions </h5>
+                    <p class="mb-4">
+                        you can set the position property of a div by using the classes <b>.fixed </b> <b>.sticky </b>.
+                        <b>.absolute</b> etc.
+                    </p>
+                </div>
+    
+                <!-- ### COLORS ### -->
+                <div id="colors">
+                    <h5 class="mb-4">Color </h5>
+                    <p class="mb-4">
+                        you change background color property of a div by using the classes <b>.bg-{theme name} </b>.
+                    </p>
+                    <div class="row mb-4">
+                        <div class="inline-block p-12 bg-dark w-1/2 w-md-12/12">
+                            <p class="">
+                                div with <b>.bg-dark</b>
+                            </p>
+                        </div>
+                        <div class="inline-block p-12 bg-primary w-1/2 w-md-12/12">
+                            <p class="">
+                                div with <b>.bg-primary</b>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="mb-4">
+                        you change text color property of a div by using the classes <b>.text-{theme name} </b>.
+                    </p>
+                    <div class="b p-4 mb-4">
+                        <p class="text-primary ">
+                            text with primary color
+                        </p>
+                        <p class="text-red-600 ">
+                            text with text-red-600 color
+                        </p>
+                        <p class="text-green-800 ">
+                            text with green 800
+                        </p>
+                    </div>
+                    <p class="mb-4">
+                        you can use a theme color to set hover color by using  <b>.hover-</b> follow by a theme color  </b>.
+    
+                        <div class="row p-4 r hover-grey-100 b ">
+                            I'am grey at hover , <b>.hover-grey-100</b>
+                        </div>
+    
+                    </p>
+    
+                </div>
+    
+                <!-- ### TRANSITIONS and HOVER ### -->
+    
+                <div id="transitions and hover" class="mb-4">
+                    <h4>
+                        Hover and Transitions
+                    </h4>
+                    <div id="hover" class="mb-4">
+                        <h5>Hover</h5>
+                        <p>you can change some properties on hover by using the <b>.hover:{border, bacground, text color class}</b> class follow by </p>
+<pre><code lang="html"> <span class="tag">&lt;div</span> <span class="prop">class=</span> <span class="val">"p-4 bg-blue-600 hover:bg-red-500 hover:text-grey-800"</span> 
+    Hover over me
+<span class="tag">&lt;div></span>    
 </code>
 </pre>
-                <!-- <div class="row bg-grey-200 p-4 mb-4">
-                            <p class="mb-4  w-12">
-                                I'm a div .row
-                            </p>
-                            <div class="col b p-4 bg-grey-400  b  br  col-w-4">
-                                I'm a div .col
-        
-                            </div>
-                            <div class="col b p-4 bg-grey-400  col-w-4">
-                                I'm a div .col
-                            </div>
-                            <div class="col b p-4 bg-grey-400  col-w-4">
-                                I'm a div .col
-                            </div>
-                        </div> -->
-                <div class="row bg-grey-200 p-4 mb-4">
-                    <p class="mb-4  w-12">
-                        I'm a div .row
-                    </p>
-                    <div class="col b p-4 bg-grey-400  b  br  col-w-4">
-                        I'm a div .col
-
+                        <div class="p-4 bg-blue-600 hover:bg-red-500 hover:text-grey-800">
+                            Hover over me
+                        </div>
                     </div>
-                    <div class="col b p-4 bg-grey-400  col-w-4">
-                        I'm a div .col
-                    </div>
-                    <div class="col b p-4 bg-grey-400  col-w-4">
-                        I'm a div .col
-                    </div>
-                </div>
-
-                <p class="mb-4"> the <b> .col </b> class set <b> display </b>to <b> flex</b> and <b>flex-direction</b>to
-                    <b> flex-column</b> </span>
-                </p>
-                <div class="row bg-grey-200 p-4 mb-4">
-                    <p class="mb-4  w-12">
-                        I'm a div .col
-                    </p>
-                    <div class="row b p-4 bg-grey-400  b  br  ">
-                        I'm a div .row
-
-                    </div>
-                    <div class="row b p-4 bg-grey-400  ">
-                        I'm a div .row
-                    </div>
-                    <div class="row b p-4 bg-grey-400  ">
-                        I'm a div .col
-                    </div>
-                </div>
-                <p class="mb-4 w-12"> the class <b> .col-w-</b> follow by a number between <b> 1 and 12 </b>will ad a
-                    width base on the percentage presented on </p>
-                <div class="row bg-grey-200 p-4 mb-4">
-
-                    <div class="col b p-4 bg-grey-400  b  br  col-w-4">
-                        I'm a div .col-w-4
-
-                    </div>
-                    <div class="col b p-4 bg-grey-400  col-w-8">
-                        I'm a div .col-w-8
-                    </div>
-
-                </div>
-
-                <h5 class="text-grey-600">
-                    Fractions
-                </h5>
-                <p class="mb-4 w-12"> you can also use fractions like <b> .w-1/2 , w-3/4, w-2/6 w-4/12</b> in oder to
-                    separete width and <b>h-1/2 h-3/4 etc</b> in </p>
-                <div class="row bg-grey-200 p-4 mb-4">
-
-                    <div class="col b p-4 bg-grey-400  b  br  w-3/4">
-                        I'm a div .w-3/4
-
-                    </div>
-                    <div class="col b p-4 bg-grey-400  w-6/12">
-                        I'm a div .w-6/12
-                    </div>
-
-                </div>
-                <h5 class="text-grey-600">
-                    Break points
-                </h5>
-                <p class="mb-4 w-12"> You can use breakpoints in order to hep with responvity </p>
-
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Prefix</th>
-                            <th>Container width </th>
-                            <th>Example</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                     
-                        <tr>
-                            <td>
-                                xl
-                            </td>
-                            <td>
-                            <b> > 1280px </b>    
-                            </td>
-                            <td>
-                                col-w-xl-3
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                lg
-                            </td>
-                            <td>
-                                <b> res > 1024 </b>    
-                                </td>
-                            <td>
-                                col-w-lg-4
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                md
-                            </td>
-                            <td>
-                                <b> res > 768px </b>    
-                                </td>
-                            <td>
-                                col-w-md-6
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                sm
-                            </td>
-                            <td>
-                                <b> res > 576px </b>    
-                                </td>
-                            <td>
-                                col-w-xl-12
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                none
-                            </td>
-                            <td>
-                            <b> < 576px default </b>    
-                            </td>
-                            <td>
-                                col-3
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
-                <div class="row bg-grey-200 p-4 mb-4">
-
-                    <div class="col b p-4 bg-grey-400 col-w-sm-12  col-w-md-6 ">
-                        I'm a half width on md+ screen, but full width on sm - screen
-
-                    </div>
-                    <div class="col b p-4 bg-grey-400  col-w-12  col-w-md-6 col-w-lg-4 ">
-                        I'm 1/3 width on lg+ , I'm half on md and full on sm
-                    </div>
-
-                </div>
-
-
-            </div>
-
-            <!--### BUTTONS SECTIONS ### -->
-            <div id="buttons" class="">
-
-                <h4 class="mb-4 ">
-                    Buttons
-                </h4>
-
-
-                <p class="mb-4">
-                    the class <b>.btn </b> can be use to create a button, you can make a theme button base outline by
-                    adding -outline to the main button class
-                </p>
-                <div class="mb-4">
-                    <a href="" class="btn">
-                        Default button
-                    </a>
-                    <a href="" class="btn btn-primary">
-                        Primary button
-                    </a>
-                    <a href="" class="btn btn-primary-outline">
-                        Outline button
-                    </a>
-                    <a href="" class="btn btn-dark">
-                        Dark button
-                    </a>
-                    <a href="" class="btn btn-dark-outline">
-                        Dark button
-                    </a>
-                </div>
-                <p class="mb-4">
-                    there are 6 buttons size from 1 (smallest) to 6 (biggest), been size-2 the default size for button
-                </p>
-                <div class="mb-4 ">
-
-                    <a href="" class="btn btn-size-1 mb-4">
-                        button with btn-size-1
-                    </a>
-                    <a href="" class="btn btn-size-2 mb-4">
-                        button with btn-size-2
-                    </a>
-                    <a href="" class="btn btn-size-3 mb-4">
-                        button with btn-size-3
-                    </a>
-                    <a href="" class="btn btn-size-4 mb-4">
-                        button with btn-size-4
-                    </a>
-                    <a href="" class="btn btn-size-5 mb-4">
-                        button with btn-size-5
-                    </a>
-                    <a href="" class="btn btn-size-6 mb-4">
-                        button with btn-size-6
-                    </a>
-
-                    <p class="mb-4 ">
-                        you can create button groups by using a div with class <b>.btn-group</b>
-                    </p>
-                    <div class="btn-group">
-                        <a href="" class="btn">1</a>
-                        <a href="" class="btn">2</a>
-
-                        <a href="" class="btn">
-                            3
-                        </a>
-
-                    </div>
-                    <div class="btn-group">
-                        <a href="" class="btn">1</a>
-                        <a href="" class="btn">2</a>
-
-                        <a href="" class="btn btn-icon">
-                            <i class="material-icons">
-                                add
-                            </i>
-                        </a>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <!--### FORMS SECTIONS ### -->
-            <div id="forms">
-                <H4>Forms</H4>
-                <h5 class="mb-4">Forms field</h4>
-
-                <div class="form-field">
-                    <label for="">Name</label>
-                    <input type="text" name="" placeholder="Write down your name" class="form-input" id="">
-                    <span class="form-text">
-                        this field is required
-                    </span>
-                </div>
-                <div class="form-field invalid">
-                    <label for="">Invalid field</label>
-                    <input type="text" name="" placeholder="" class="form-input" id="">
-
-                </div>
-                <h5 class="mb-4">Forms Addons</h4>
-                    you can adds addons by adding the <b>.with-addons</b> class
-
-
-            </div>
-            <!-- ### TABLES ### -->
-            <div id="tables " class="mb-4">
-                <h5 class="mb-4">
-                    Tables
-                </h5>
-                <p class="mb-4">table width <b>.table-hover </b> and <b> .table-border</b> class </p>
-                <table class="table table-hover table-border mb-4">
-                    <thead>
-                        <tr>
-                            <th>Breakpoint</th>
-                            <th>Example</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                xl
-                            </td>
-                            <td>
-                                col-w-xl-3
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                lg
-                            </td>
-                            <td>
-                                col-w-lg-4
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                md
-                            </td>
-                            <td>
-                                col-w-md-6
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                sm
-                            </td>
-                            <td>
-                                col-w-xl-12
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Breakpoint</th>
-                            <th>Example</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                xl
-                            </td>
-                            <td>
-                                col-w-xl-3
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                lg
-                            </td>
-                            <td>
-                                col-w-lg-4
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                md
-                            </td>
-                            <td>
-                                col-w-md-6
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                sm
-                            </td>
-                            <td>
-                                col-w-xl-12
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!-- ### BORDERS ###  -->
-
-            <div id="borders" class="mb-4">
-
-                <h5 class="mb-4">
-                    Borders
-                </h5>
-
-                <div class="mb-4">
-                    <p>You can use borders helpers like the class <b>.b </b> in order to asing borders </p>
-                </div>
-
-                <div class="b p-4 mb-4">
-                    <span class="text-gray-600"> div with .b class</span>
-                </div>
-
-
-                <div class="mb-4">
-                    <p>You can also change border-color to a theme color by using the class <b>.b-{theme-color} </b>
-                    </p>
-                </div>
-                <div class="b b-blue-600 p-4 mb-4">
-                    <span class="text-gray-600"> div with <b> .b + .b-blue-600</b> class</span>
-                </div>
-                <div class="mb-4">
-                    <p>The border radius can also be change by using the classes <b>.r</b> or <b>r-{number from 2 -
-                            12}</b> </b> </p>
-                </div>
-                <div class="b r p-4 mb-4">
-                    <span class="text-gray-600"> div with <b> .r </b> class</span>
-                </div>
-                <div class="b r-2 p-4 mb-4">
-                    <span class="text-gray-600"> div with <b> .r-2 </b> class</span>
-                </div>
-                <div class="b r-3 p-4 mb-4">
-                    <span class="text-gray-600"> div with <b> .r-3 </b> class</span>
-                </div>
-                <div class="b r-4 p-4 mb-4">
-                    <span class="text-gray-600"> div with <b> .r-4 </b> class</span>
-                </div>
-                <div class="mb-4">
-                    <p>You can change the border radius of and expecific radius by using <b>r-{t for top, b for bottom
-                            }-{ l for left , r for right}-{ number from 2 - 12} </b> class </b> </p>
-                </div>
-                <div class="b r-t-l-4 p-4 mb-4">
-                    <span class="text-gray-600"> div with a rounded top left corner, <b>.r-t-l</b> <b> </b> class</span>
-                </div>
-
-                <div class="b r-t p-4 mb-4">
-                    <span class="text-gray-600"> div with rounded top corners, <b>.r-t</b> <b> </b> class</span>
-                </div>
-
-                <div class="b r-b p-4 mb-4">
-                    <span class="text-gray-600"> div with rounded botom corners, <b>.r-b</b> <b> </b> class</span>
-                </div>
-
-                <div class="b r r-t-l-4  p-4 mb-4">
-                    <span class="text-gray-600"> div with <b>.r </b> and </b> .r-t-l-4 </b> <b> </b> class</span>
-                </div>
-            </div>
-
-            <!-- ###  PADDING AND MARGIN ### -->
-            <div id="padding_and_margin" class="mb-4">
-
-                <h5 class="mb-4">Padding and Margin</h5>
-
-                <p class="mb-4"> You can set padding and margin by using the class <b> p-{number from 1 to 12} </b> or
-                    <b>m-{number from 1 to 12}</b> , youn can also use modifers like b for botom or, t for top, r for
-                    right and l for left in order to spiciy the side of the div to add padding
-                </p>
-
-                <table class="table table-border  mb-4">
-                    <thead>
-                        <tr>
-                            <th> Class </th>
-                            <th> Property </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                m-*{0-12} / p-*{0-12}
-                            </td>
-                            <td>
-                                padding / margin: number * 0.25rem;
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                mt-*{0-12} / pt-*{0-12}
-                            </td>
-                            <td>
-                                padding-top / margin-top: number * 0.25rem;
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                mb-*{0-12} / pb-*{0-12}
-                            </td>
-                            <td>
-                                padding-bottom / margin-bottom: number * 0.25rem;
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                ml-*{0-12} / pl-*{0-12}
-                            </td>
-                            <td>
-                                padding-left / / margin-left: number * 0.25rem;
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                mr-*{0-12} / pr-*{0-12}
-                            </td>
-                            <td>
-                                padding-right / margin-right: number * 0.25rem;
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="b p-2 mb-4">
-                    im a div with <b>.p-2 </b> class
-                </div>
-                <div class="b p-4 mb-4">
-                    im a div with <b>.p-4 </b> class
-                </div>
-
-                <div class="b p-8 mb-4">
-                    im a div with <b>.p-8 </b> class
-                </div>
-
-                <div class="bg-grey-100 p-4 mb-4">
-                    <div class="b bg-white p-4 mb-2">
-                        im a div with <b>.mb-2 </b> class
-                    </div>
-
-                    <div class="b bg-white p-4 mb-4">
-                        im a div with <b>.mb-4 </b> class
-                    </div>
-                    <div class="b bg-white p-6 mb-4">
-                        im a div with <b>.mb-6 </b> class
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- ### POSITIONS ### -->
-            <div id="position">
-                <h5 class="mb-4">Positions </h5>
-                <p class="mb-4">
-                    you can set the position property of a div by using the classes <b>.fixed </b> <b>.sticky </b>.
-                    <b>.absolute</b> etc.
-                </p>
-            </div>
-
-            <!-- ### COLORS ### -->
-            <div id="colors">
-                <h5 class="mb-4">Color </h5>
-                <p class="mb-4">
-                    you change background color property of a div by using the classes <b>.bg-{theme name} </b>.
-                </p>
-                <div class="row mb-4">
-                    <div class="inline-block p-12 bg-dark w-1/2 w-md-12/12">
-                        <p class="">
-                            div with <b>.bg-dark</b>
-                        </p>
-                    </div>
-                    <div class="inline-block p-12 bg-primary w-1/2 w-md-12/12">
-                        <p class="">
-                            div with <b>.bg-primary</b>
-                        </p>
-                    </div>
-                </div>
-                <p class="mb-4">
-                    you change text color property of a div by using the classes <b>.text-{theme name} </b>.
-                </p>
-                <div class="b p-4 mb-4">
-                    <p class="text-primary ">
-                        text with primary color
-                    </p>
-                    <p class="text-red-600 ">
-                        text with text-red-600 color
-                    </p>
-                    <p class="text-green-800 ">
-                        text with green 800
-                    </p>
-                </div>
-                <p class="mb-4">
-                    you can use a theme color to set hover color by using  <b>.hover-</b> follow by a theme color  </b>.
-
-                    <div class="row p-4 r hover-grey-100 b ">
-                        I'am grey at hover , <b>.hover-grey-100</b>
-                    </div>
-
-                </p>
-
-            </div>
-
-            <!-- ### TRANSITIONS ### -->
-
-            <div id="transitions" class="mb-4">
-                <h5 class="mb-4">
-                    Transitions
-                </h5>
-                <p>You can send transitions-property property by using the class <b>.transition-all</b> </p>
-                <p>You can send transitions-duration property by using the class <b>.duration-{ number from 100 to
-                        1000}</b> </p>
-                <p>You can send transitions-timing property by using the class
-                    <b>.timing-{linear,ease-in,ease-out,easin-out}</b>
-                </p>
-
-            </div>
-            <!-- ### TEXT AND FONTS ### -->
-
-            <div id="text">
-                <h4 class="mb-4">
-                    Text and Typography
-                </h4>
-                <!-- Text aligment -->
-                <h5 class="mb-4 " id="text_aligment">
-                    Text aligment
-                </h5>
-
-                <table class="table w-12/12 table-border">
-                    <thead>
-
-                        <tr>
-                            <th>
-                                Aligment
-                            </th>
-                            <th>
-                                Result
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Left
-                            </td>
-                            <td>
-                                <p class="text-left">
-                                    .text-left
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Center
-                            </td>
-                            <td>
-                                <p class="text-center">
-                                    .text-center
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Right
-                            </td>
-                            <td>
-                                <p class="text-right">
-                                    .text-right
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Justified
-                            </td>
-                            <td>
-                                <p class="text-justify">
-                                    .text-justify d .text-justify d .text-justify
-                                </p>
-                            </td>
-                        </tr>
-                    </tbody>
-
-                </table>
-
-                <!-- Font Sizes -->
-
-                <div>
-                    <h5>
-                        Font sizes
+                    
+                    <h5 class="mb-4">
+                        Transitions
                     </h5>
-                    <p>
-                       You can use the default font sizes as follow
-                    </p>
-                    <table class="table-border table w-2/2">
+                    <p>You can send transitions-property property by using the class <b>.transition-all</b> </p>
+
+
+                    <table class="table table-with-border w-12/12">
                         <thead>
                             <tr>
                                 <th>
                                     Class
                                 </th>
                                 <th>
-                                    Result
+                                    Properties
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
+                                <td> <b>.transition-all</b> </td>
                                 <td>
-                                    <p class="bold">
-                                        .h1
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="h1">
-                                        I'm a div with .h1
-                                    </div>
+                                    all
                                 </td>
                             </tr>
                             <tr>
+                                <td> <b>.transition-colors</b> </td>
                                 <td>
-                                    <p class="bold">
-                                        .h2
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="h2">
-                                        I'm a div with .h2
-                                    </div>
+                                    color, background-color, border-color, opacity
                                 </td>
                             </tr>
                             <tr>
+                                <td> <b>.transition-width</b> </td>
                                 <td>
-                                    <p class="bold">
-                                        .h3
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="h3">
-                                        I'm a div with .h3
-                                    </div>
+                                   width
                                 </td>
                             </tr>
                             <tr>
+                                <td> <b>.transition-height</b> </td>
                                 <td>
-                                    <p class="bold">
-                                        .h4
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="h4">
-                                        I'm a div with .h4
-                                    </div>
+                                   width
                                 </td>
                             </tr>
                             <tr>
+                                <td> <b>.transition-size</b> </td>
                                 <td>
-                                    <p class="bold">
-                                        .h5
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="h5">
-                                        I'm a div with .h5
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bold">
-                                        .h6
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="h6">
-                                        I'm a div with .h6
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bold">
-                                        .normal
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="normal">
-                                        .I'm a text with .normal class
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bold">
-                                        .small
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="small">
-                                        I'm a text with .small class
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bold">
-                                        .caption
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="caption">
-                                        I'm a text with .caption class
-
-                                    </div>
+                                   width, height
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <p>
-                        Or your can use a font size base on rem values
-                    </p>
-                    
-                    <table class="table table-border w-12/12">
-                        <thead>
-                            <tr>
-                                <th>
-                                    Class
-                                </th>
-                                <th>
-                                    Result
-                                </th>
-                            </tr>
-                  
 
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="bold">
-                                    .font-xs
-                                </td>
-                                <td>
-                                    <p class="font-xs">
-                                        text with .font-xs
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="bold">
-                                    .font-sm
-                                </td>
-                                <td>
-                                    <p class="font-sm">
-                                        text with .font-sm
-                                    </p>
-                                </td>
-                             </tr>
-                             <tr>
-                                <td class="bold">
-                                    .font-normal
-                                </td>
-                                <td>
-                                    <p class="font-normal">
-                                        text with .font-normal
-                                    </p>
-                                </td>
-                             </tr>
-                             <tr>
-                                <td class="bold">
-                                    .font-lg
-                                </td>
-                                <td>
-                                    <p class="font-lg">
-                                        text with .font-lg
-                                    </p>
-                                </td>
-                             </tr>
-                             <tr>
-                                <td class="bold">
-                                    .font-xl
-                                </td>
-                                <td>
-                                    <p class="font-xl">
-                                        text with .font-xl
-                                    </p>
-                                </td>
-                             </tr>
-                             <tr>
-                                <td class="bold">
-                                    .font-2xl
-                                </td>
-                                <td>
-                                    <p class="font-2xl">
-                                        text with .font-2xl
-                                    </p>
-                                </td>
-                             </tr>
-                             <tr>
-                                <td class="bold">
-                                    .font-3xl
-                                </td>
-                                <td>
-                                    <p class="font-3xl">
-                                        text with .font-3xl
-                                    </p>
-                                </td>
-                             </tr>
-                             <tr>
-                                <td class="bold">
-                                    .font-4xl
-                                </td>
-                                <td>
-                                    <p class="font-4xl">
-                                        text with .font-4xl
-                                    </p>
-                                </td>
-                             </tr>
-                             <tr>
-                                <td class="bold">
-                                    .font-5xl
-                                </td>
-                                <td>
-                                    <p class="font-5xl">
-                                        text with .font-5xl
-                                    </p>
-                                </td>
-                             </tr>
-                             <tr>
-                                <td class="bold">
-                                    .font-6xl
-                                </td>
-                                <td>
-                                    <p class="font-6xl">
-                                        text with .font-6xl
-                                    </p>
-                                </td>
-                             </tr>
-                             <tr>
-                                <td class="bold">
-                                    .font-7xl
-                                </td>
-                                <td>
-                                    <p class="font-sm">
-                                        text with .font-7xl
-                                    </p>
-                                </td>
-                             </tr>
-                             <tr>
-                                <td class="bold">
-                                    .font-8xl
-                                </td>
-                                <td>
-                                    <p class="font-8xl">
-                                        text with .font-8xl
-                                    </p>
-                                </td>
-                             </tr>
-                             <tr>
-                                <td class="bold">
-                                    .font-9xl
-                                </td>
-                                <td>
-                                    <p class="font-9xl">
-                                        text with .font-9xl
-                                    </p>
-                                </td>
-                             </tr>
-                        </tbody>
-                    </table>
+                    <p>You can send transitions-duration property by using the class <b>.duration-{ number from 100 to
+                            1000}</b> </p>
+                    <p>You can send transitions-timing property by using the class
+                        <b>.timing-{linear,ease-in,ease-out,easin-out}</b>
+                    </p>
+<pre><code lang="html"> <span class="tag">&lt;div</span> <span class="prop">class=</span> <span class="val">"p-4 bg-blue-600 hover:bg-red-500 hover:text-grey-800 transtion-color duration-200 timing-linear"</span> 
+    Hover over me
+<span class="tag">&lt;div></span>    
+</code>
+</pre>
                     
+                    <div class="p-4 bg-blue-600 hover:bg-red-500 hover:text-grey-800 transtion-color duration-200 timing-linear">
+                        Hover over me
+                    </div>
+    
                 </div>
-            
-                <!--Font Weigth-->
-                <div>
-                    <h5>
-                        Font Weight
+
+              
+                <!-- ### TEXT AND FONTS ### -->
+    
+                <div id="text">
+                    <h4 class="mb-4">
+                        Text and Typography
+                    </h4>
+                    <!-- Text aligment -->
+                    <h5 class="mb-4 " id="text_aligment">
+                        Text aligment
                     </h5>
-                    
-                    <table class="table-border table w-2/2">
+    
+                    <table class="table w-12/12 table-with-border">
                         <thead>
+    
                             <tr>
                                 <th>
-                                    Class
+                                    Aligment
                                 </th>
                                 <th>
                                     Result
@@ -1033,249 +862,614 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <p class="bold">
-                                        .font-extra-black
-                                    </p>
+                                    Left
                                 </td>
                                 <td>
-                                    <div class="font-extra-black">
-                                        I'm a text with .font-extra-black
-                                    </div>
+                                    <p class="text-left">
+                                        .text-left
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p class="bold">
-                                        .font-black
-                                    </p>
+                                    Center
                                 </td>
                                 <td>
-                                    <div class="font-black">
-                                        I'm a text with .font-black
-                                    </div>
+                                    <p class="text-center">
+                                        .text-center
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p class="bold">
-                                        .font-bold
-                                    </p>
+                                    Right
                                 </td>
                                 <td>
-                                    <div class="font-bold">
-                                        I'm a text with .font-bold
-                                    </div>
+                                    <p class="text-right">
+                                        .text-right
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p class="bold">
-                                        .font-semibold
+                                    Justified
+                                </td>
+                                <td>
+                                    <p class="text-justify">
+                                        .text-justify d .text-justify d .text-justify
                                     </p>
                                 </td>
-                                <td>
-                                    <div class="font-semibold">
-                                        I'm a text with .font-semibold
-                                    </div>
-                                </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <p class="bold">
-                                        .font-medium
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="font-medium">
-                                        I'm a text with .font-medium
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bold">
+                        </tbody>
+    
+                    </table>
+    
+                    <!-- Font Sizes -->
+    
+                    <div>
+                        <h5>
+                            Font sizes
+                        </h5>
+                        <p>
+                           You can use the default font sizes as follow
+                        </p>
+                        <table class="table-with-border table w-2/2">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Class
+                                    </th>
+                                    <th>
+                                        Result
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .h1
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="h1">
+                                            I'm a div with .h1
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .h2
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="h2">
+                                            I'm a div with .h2
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .h3
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="h3">
+                                            I'm a div with .h3
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .h4
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="h4">
+                                            I'm a div with .h4
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .h5
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="h5">
+                                            I'm a div with .h5
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .h6
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="h6">
+                                            I'm a div with .h6
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .normal
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="normal">
+                                            .I'm a text with .normal class
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .small
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="small">
+                                            I'm a text with .small class
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .caption
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="caption">
+                                            I'm a text with .caption class
+    
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            Or your can use a font size base on rem values
+                        </p>
+                        
+                        <table class="table table-with-border w-12/12">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Class
+                                    </th>
+                                    <th>
+                                        Result
+                                    </th>
+                                </tr>
+                      
+    
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="bold">
+                                        .font-xs
+                                    </td>
+                                    <td>
+                                        <p class="font-xs">
+                                            text with .font-xs
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="bold">
+                                        .font-sm
+                                    </td>
+                                    <td>
+                                        <p class="font-sm">
+                                            text with .font-sm
+                                        </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="bold">
                                         .font-normal
-                                    </p>
-                                </td>
-                                <td>
-                                    <div class="font-normal">
-                                        I'm a text with .font-normal
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- #### LIST ####-->
-            <div id="list">
-                <H4>Lists</H4>
-                <p>you can order a list of items by using the class <b>.list</b></p>
-                <ul class="list">
-                    <li class="item">
-                        Lorem ipsum dolor 
-                    </li>
-                    <LI class="item">
-                        sit amet consectetur 
-                    </LI>
-                    <li class="item">
-                        adipisicing elit. Quae reiciendis
-                    </li>
-                    <li class="item">
-                        voluptas repellendus veritatis
-                    </li>
-                </ul>
-
-                <p class="mb-4">
-                    you can also add <b>.list-border </b> class in order to make list item bordered
-                </p>
-                <ul class="list list-border">
-                    <li class="item">
-                        Lorem ipsum dolor 
-                    </li>
-                    <LI class="item">
-                        sit amet consectetur 
-                    </LI>
-                    <li class="item">
-                        adipisicing elit. Quae reiciendis
-                    </li>
-                    <li class="item">
-                        voluptas repellendus veritatis
-                    </li>
-                </ul>
-            </div>
-
-            <!-- ### CARDS ###-->
-            <div id="cards">
-                <h4>
-                    Cards
-                </h4>
-                <p>
-                    youn can create cards by using the .card class
-                </p>
-
-                <div class="card">
-                    <div class="card-head">
-                        <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar">
-                        <div class="card-titles">
-                            <p class="card-title">
-                                Card title goes here
-                            </p>
-                            <p class="card-subtitle">
-                                some card subtitle
-                            </p>
-                        </div>
-
-                       
+                                    </td>
+                                    <td>
+                                        <p class="font-normal">
+                                            text with .font-normal
+                                        </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="bold">
+                                        .font-lg
+                                    </td>
+                                    <td>
+                                        <p class="font-lg">
+                                            text with .font-lg
+                                        </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="bold">
+                                        .font-xl
+                                    </td>
+                                    <td>
+                                        <p class="font-xl">
+                                            text with .font-xl
+                                        </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="bold">
+                                        .font-2xl
+                                    </td>
+                                    <td>
+                                        <p class="font-2xl">
+                                            text with .font-2xl
+                                        </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="bold">
+                                        .font-3xl
+                                    </td>
+                                    <td>
+                                        <p class="font-3xl">
+                                            text with .font-3xl
+                                        </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="bold">
+                                        .font-4xl
+                                    </td>
+                                    <td>
+                                        <p class="font-4xl">
+                                            text with .font-4xl
+                                        </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="bold">
+                                        .font-5xl
+                                    </td>
+                                    <td>
+                                        <p class="font-5xl">
+                                            text with .font-5xl
+                                        </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="bold">
+                                        .font-6xl
+                                    </td>
+                                    <td>
+                                        <p class="font-6xl">
+                                            text with .font-6xl
+                                        </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="bold">
+                                        .font-7xl
+                                    </td>
+                                    <td>
+                                        <p class="font-sm">
+                                            text with .font-7xl
+                                        </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="bold">
+                                        .font-8xl
+                                    </td>
+                                    <td>
+                                        <p class="font-8xl">
+                                            text with .font-8xl
+                                        </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="bold">
+                                        .font-9xl
+                                    </td>
+                                    <td>
+                                        <p class="font-9xl">
+                                            text with .font-9xl
+                                        </p>
+                                    </td>
+                                 </tr>
+                            </tbody>
+                        </table>
+                        
                     </div>
-                    <div class="card-content">
-                        <div class="card-body">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas architecto pariatur rem? Inventore, odit! Corporis nam voluptas labore iure commodi neque quam. At similique porro voluptates dolorum dolor vel fugiat.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="card-actions">
-                            <a href="" class="btn flat">
-                                action 1
-                            </a>
-                            <a href="" class="btn flat">
-                                action 2
-                            </a>
-                        </div>
-                    </div>
-                </div>  
                 
-                <div class="card w-sm-12 w-md-1/3 w-lg-1/4">
-                    <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-img">
-
-                    <div class="card-head">
-                        <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar">
-                        <div class="card-titles">
-                            <p class="card-title">
-                                Card title goes here
-                            </p>
-                            <p class="card-subtitle">
-                                some card subtitle
-                            </p>
-                        </div>
-
-                       
+                    <!--Font Weigth-->
+                    <div>
+                        <h5>
+                            Font Weight
+                        </h5>
+                        
+                        <table class="table-with-border table w-2/2">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Class
+                                    </th>
+                                    <th>
+                                        Result
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .font-extra-black
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="font-extra-black">
+                                            I'm a text with .font-extra-black
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .font-black
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="font-black">
+                                            I'm a text with .font-black
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .font-bold
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="font-bold">
+                                            I'm a text with .font-bold
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .font-semibold
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="font-semibold">
+                                            I'm a text with .font-semibold
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .font-medium
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="font-medium">
+                                            I'm a text with .font-medium
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .font-normal
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="font-normal">
+                                            I'm a text with .font-normal
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="card-content">
-                        <div class="card-body">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas architecto pariatur rem? Inventore, odit! Corporis nam voluptas labore iure commodi neque quam. At similique porro voluptates dolorum dolor vel fugiat.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="card-actions">
-                            <a href="" class="btn flat">
-                                action 1
-                            </a>
-                            <a href="" class="btn flat">
-                                action 2
-                            </a>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-
-            <!-- ### SPINNER / LOADER ###-->
-
-            <div id="spinner">
-                <H4>Spinner</H4>
-                <p>you can create a spinner for loading animations  by adding the class <b>.spinner </b> into a div </p>
-<pre><code data="html"><span class="tag">&lt;div</span><span class="prop"> class=</span><span class="val">"spinner"</span>>
-<span class="tag">&lt;/div></span></code></pre>
-            <div class="row justify-center mb-4">
-                <div class="spinner"></div>
-            </div>    
-            <p>youn can change spinner color by adding the class  <b>.spiner-{theme-color}</b></p>
-<pre><code data="html"><span class="tag">&lt;div</span><span class="prop"> class=</span><span class="val">"spinner spinner-primary"</span>>
-<span class="tag">&lt;/div></span></code>
-<code data="html"><span class="tag">&lt;div</span><span class="prop"> class=</span><span class="val">"spinner spinner-green-500"</span>>
-<span class="tag">&lt;/div></span></code></pre>
-            <div class="row justify-start mb-4">
-                <div class="spinner spinner-primary mr-4"></div>
-                <div class="spinner spinner-green-500"></div>
-
-            </div>    
-            <p>
-                you can change the width and tickness of a spinner by using the class <b>.w-{1-24}</b> and <b>.t-{1-24}</b>
-            </p>
-<pre><code data="html"><span class="tag">&lt;div</span><span class="prop"> class=</span><span class="val">"spinner w-5 t-6"</span>>
-<span class="tag">&lt;/div></span></code>
-<code data="html"><span class="tag">&lt;div</span><span class="prop"> class=</span><span class="val">"spinner w-12 t-2"</span>>
-<span class="tag">&lt;/div></span></code></pre>
-<div class="row p-4 justify-start align-center">
-    <div class="spinner w-5 t-6 mr-4">
-    </div>
-        <div class="spinner w-12 t-2">
-        </div>
-</div>
-        </div>
-
-        <div id="z-index">
-            <h4>Z- index</h4>
-            <p>
-                you can change the z-indez of a div by using the class <b>z-{5-120} </b> .
-            </p>
-
-            <div class="relative w-12/12 mb-4 bg-blue-600 p-8" >
-                <div class="z-15 bg-green-400 absolute p-4" style="top: 0px;left: 0px;">
-                    I'am a div with <b>z-15</b> 
                 </div>
-                <br>
-
-                I'am the parent div
-            </div>
+    
+                <!-- #### LIST ####-->
+                <div id="list">
+                    <H4>Lists</H4>
+                    <p>you can order a list of items by using the class <b>.list</b></p>
+                    <ul class="list">
+                        <li class="item">
+                            Lorem ipsum dolor 
+                        </li>
+                        <LI class="item">
+                            sit amet consectetur 
+                        </LI>
+                        <li class="item">
+                            adipisicing elit. Quae reiciendis
+                        </li>
+                        <li class="item">
+                            voluptas repellendus veritatis
+                        </li>
+                    </ul>
+    
+                    <p class="mb-4">
+                        you can also add <b>.list-border </b> class in order to make list item bordered
+                    </p>
+                    <ul class="list list-border">
+                        <li class="item">
+                            Lorem ipsum dolor 
+                        </li>
+                        <LI class="item">
+                            sit amet consectetur 
+                        </LI>
+                        <li class="item">
+                            adipisicing elit. Quae reiciendis
+                        </li>
+                        <li class="item">
+                            voluptas repellendus veritatis
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- ### CARDS ###-->
+                <div id="cards">
+                    <h4>
+                        Cards
+                    </h4>
+                    <p>
+                        youn can create cards by using the .card class
+                    </p>
+    
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar">
+                            <div class="card-titles">
+                                <p class="card-title">
+                                    Card title goes here
+                                </p>
+                                <p class="card-subtitle">
+                                    some card subtitle
+                                </p>
+                            </div>
+    
+                           
+                        </div>
+                        <div class="card-content">
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas architecto pariatur rem? Inventore, odit! Corporis nam voluptas labore iure commodi neque quam. At similique porro voluptates dolorum dolor vel fugiat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-actions">
+                                <a href="" class="btn flat">
+                                    action 1
+                                </a>
+                                <a href="" class="btn flat">
+                                    action 2
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                    
+                    <div class="card w-sm-12 w-md-1/3 w-lg-1/4">
+                        <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-img">
+    
+                        <div class="card-head">
+                            <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar">
+                            <div class="card-titles">
+                                <p class="card-title">
+                                    Card title goes here
+                                </p>
+                                <p class="card-subtitle">
+                                    some card subtitle
+                                </p>
+                            </div>
+    
+                           
+                        </div>
+                        <div class="card-content">
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas architecto pariatur rem? Inventore, odit! Corporis nam voluptas labore iure commodi neque quam. At similique porro voluptates dolorum dolor vel fugiat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-actions">
+                                <a href="" class="btn flat">
+                                    action 1
+                                </a>
+                                <a href="" class="btn flat">
+                                    action 2
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+    
+                <!-- ### SPINNER / LOADER ###-->
+    
+                <div id="spinner">
+                    <H4>Spinner</H4>
+                    <p>you can create a spinner for loading animations  by adding the class <b>.spinner </b> into a div </p>
+    <pre><code data="html"><span class="tag">&lt;div</span><span class="prop"> class=</span><span class="val">"spinner"</span>>
+    <span class="tag">&lt;/div></span></code></pre>
+                <div class="row justify-center mb-4">
+                    <div class="spinner"></div>
+                </div>    
+                <p>youn can change spinner color by adding the class  <b>.spiner-{theme-color}</b></p>
+    <pre><code data="html"><span class="tag">&lt;div</span><span class="prop"> class=</span><span class="val">"spinner spinner-primary"</span>>
+    <span class="tag">&lt;/div></span></code>
+    <code data="html"><span class="tag">&lt;div</span><span class="prop"> class=</span><span class="val">"spinner spinner-green-500"</span>>
+    <span class="tag">&lt;/div></span></code></pre>
+                <div class="row justify-start mb-4">
+                    <div class="spinner spinner-primary mr-4"></div>
+                    <div class="spinner spinner-green-500"></div>
+    
+                </div>    
+                <p>
+                    you can change the width and tickness of a spinner by using the class <b>.w-{1-24}</b> and <b>.t-{1-24}</b>
+                </p>
+    <pre><code data="html"><span class="tag">&lt;div</span><span class="prop"> class=</span><span class="val">"spinner w-5 t-6"</span>>
+    <span class="tag">&lt;/div></span></code>
+    <code data="html"><span class="tag">&lt;div</span><span class="prop"> class=</span><span class="val">"spinner w-12 t-2"</span>>
+    <span class="tag">&lt;/div></span></code></pre>
+    <div class="row p-4 justify-start align-center">
+        <div class="spinner w-5 t-6 mr-4">
         </div>
-
+            <div class="spinner w-12 t-2">
+            </div>
     </div>
+            </div>
+    
+            <div id="z-index">
+                <h4>Z- index</h4>
+                <p>
+                    you can change the z-indez of a div by using the class <b>z-{5-120} </b> .
+                </p>
+    
+                <div class="relative w-12/12 mb-4 bg-blue-600 p-8" >
+                    <div class="z-15 bg-green-400 absolute p-4" style="top: 0px;left: 0px;">
+                        I'am a div with <b>z-15</b> 
+                    </div>
+                    <br>
+    
+                    I'am the parent div
+                </div>
+            </div>
+
+            <div id="opacity">
+                <h4>
+                    Opacity
+                </h4>
+                <p>You can set opacity by using the class <b>opcty-{0 or multiple of 5}</b></p>
+                <div class="bg-blue-600 opcty-25 p-4">
+                    I have .opcty-25
+                </div>
+                <div class="bg-blue-600 opcty-50 p-4">
+                    I have .opcty-50
+                </div>
+                <div class="bg-blue-600 opcty-65 p-4">
+                    I have .opcty-65
+                </div>
+            </div>
+    
+       
+        </main>
+       </div>
 
 
     </div>
