@@ -105,22 +105,35 @@
                         <div id="utilitiesMenu" class="expandible">
                             <ul class="list hoverable pr-2">
                                 <li class="item">
-                                    <a href=""> Colors</a>
+                                    <a href="">Colors</a>
                                 </li>
                                 <li class="item">
-                                    <a href=""> Position</a>
+                                    <a href="">Displays</a>
                                 </li>
                                 <li class="item">
-                                    <a href=""> Margin</a>
+                                    <a href="">Position</a>
                                 </li>
                                 <li class="item">
-                                    <a href=""> Padding</a>
+                                    <a href=""> Overflow</a>
                                 </li>
                                 <li class="item">
-                                    <a href=""> Z-index</a>
+                                    <a href="#padding_and_margin">Padding and Margin</a>
                                 </li>
                                 <li class="item">
-                                    <a href=""> Fonts and text</a>
+                                    <a href="">Z-index</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">Shadows</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">Fonts and text</a>
+                                </li>
+                                <li class="item">
+                                    <a href="">Hover</a>
+                                </li>
+                               
+                                <li class="item">
+                                    <a href=""> Transitions</a>
                                 </li>
                             </ul>
                         </div>
@@ -238,13 +251,13 @@
                     </h5>
                     <p class="mb-4 w-12"> you can also use fractions like <b> .w-1/2 , w-3/4, w-2/6 w-4/12</b> in oder to
                         separete width and <b>h-1/2 h-3/4 etc</b> in </p>
-                    <div class="row bg-grey-200 p-4 mb-4">
+                    <div class=" bg-grey-200 p-4 mb-4">
     
-                        <div class="col b p-4 bg-grey-400  b  br  w-3/4">
+                        <div class=" b p-4 bg-grey-400  b  br  w-3/4">
                             I'm a div .w-3/4
     
                         </div>
-                        <div class="col b p-4 bg-grey-400  w-6/12">
+                        <div class=" b p-4 bg-grey-400  w-6/12">
                             I'm a div .w-6/12
                         </div>
     
@@ -446,8 +459,8 @@
                     <h5 class="mb-4">
                         Tables
                     </h5>
-                    <p class="mb-4">table width <b>.table-hover </b> and <b> .table-border</b> class </p>
-                    <table class="table table-hover table-border mb-4">
+                    <p class="mb-4">table width <b>.table-hover </b> and <b> .table-with-border</b> class </p>
+                    <table class="table table-hover table-with-border mb-4">
                         <thead>
                             <tr>
                                 <th>Breakpoint</th>
@@ -599,14 +612,14 @@
                 <!-- ###  PADDING AND MARGIN ### -->
                 <div id="padding_and_margin" class="mb-4">
     
-                    <h5 class="mb-4">Padding and Margin</h5>
+                    <h5 class="mb-4" id="margin">Padding and Margin</h5>
     
                     <p class="mb-4"> You can set padding and margin by using the class <b> p-{number from 1 to 12} </b> or
                         <b>m-{number from 1 to 12}</b> , youn can also use modifers like b for botom or, t for top, r for
                         right and l for left in order to spiciy the side of the div to add padding
                     </p>
     
-                    <table class="table table-border  mb-4">
+                    <table class="table table-with-border  mb-4">
                         <thead>
                             <tr>
                                 <th> Class </th>
@@ -735,20 +748,94 @@
     
                 </div>
     
-                <!-- ### TRANSITIONS ### -->
+                <!-- ### TRANSITIONS and HOVER ### -->
     
-                <div id="transitions" class="mb-4">
+                <div id="transitions and hover" class="mb-4">
+                    <h4>
+                        Hover and Transitions
+                    </h4>
+                    <div id="hover" class="mb-4">
+                        <h5>Hover</h5>
+                        <p>you can change some properties on hover by using the <b>.hover:{border, bacground, text color class}</b> class follow by </p>
+<pre><code lang="html"> <span class="tag">&lt;div</span> <span class="prop">class=</span> <span class="val">"p-4 bg-blue-600 hover:bg-red-500 hover:text-grey-800"</span> 
+    Hover over me
+<span class="tag">&lt;div></span>    
+</code>
+</pre>
+                        <div class="p-4 bg-blue-600 hover:bg-red-500 hover:text-grey-800">
+                            Hover over me
+                        </div>
+                    </div>
+                    
                     <h5 class="mb-4">
                         Transitions
                     </h5>
                     <p>You can send transitions-property property by using the class <b>.transition-all</b> </p>
+
+
+                    <table class="table table-with-border w-12/12">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Class
+                                </th>
+                                <th>
+                                    Properties
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> <b>.transition-all</b> </td>
+                                <td>
+                                    all
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <b>.transition-colors</b> </td>
+                                <td>
+                                    color, background-color, border-color, opacity
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <b>.transition-width</b> </td>
+                                <td>
+                                   width
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <b>.transition-height</b> </td>
+                                <td>
+                                   width
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <b>.transition-size</b> </td>
+                                <td>
+                                   width, height
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                     <p>You can send transitions-duration property by using the class <b>.duration-{ number from 100 to
                             1000}</b> </p>
                     <p>You can send transitions-timing property by using the class
                         <b>.timing-{linear,ease-in,ease-out,easin-out}</b>
                     </p>
+<pre><code lang="html"> <span class="tag">&lt;div</span> <span class="prop">class=</span> <span class="val">"p-4 bg-blue-600 hover:bg-red-500 hover:text-grey-800 transtion-color duration-200 timing-linear"</span> 
+    Hover over me
+<span class="tag">&lt;div></span>    
+</code>
+</pre>
+                    
+                    <div class="p-4 bg-blue-600 hover:bg-red-500 hover:text-grey-800 transtion-color duration-200 timing-linear">
+                        Hover over me
+                    </div>
     
                 </div>
+
+              
                 <!-- ### TEXT AND FONTS ### -->
     
                 <div id="text">
@@ -760,7 +847,7 @@
                         Text aligment
                     </h5>
     
-                    <table class="table w-12/12 table-border">
+                    <table class="table w-12/12 table-with-border">
                         <thead>
     
                             <tr>
@@ -826,7 +913,7 @@
                         <p>
                            You can use the default font sizes as follow
                         </p>
-                        <table class="table-border table w-2/2">
+                        <table class="table-with-border table w-2/2">
                             <thead>
                                 <tr>
                                     <th>
@@ -953,7 +1040,7 @@
                             Or your can use a font size base on rem values
                         </p>
                         
-                        <table class="table table-border w-12/12">
+                        <table class="table table-with-border w-12/12">
                             <thead>
                                 <tr>
                                     <th>
@@ -1108,7 +1195,7 @@
                             Font Weight
                         </h5>
                         
-                        <table class="table-border table w-2/2">
+                        <table class="table-with-border table w-2/2">
                             <thead>
                                 <tr>
                                     <th>

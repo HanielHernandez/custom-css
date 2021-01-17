@@ -186,10 +186,14 @@ $form-input-background-color: #fff !default;
 $form-input-active-border-width: $form-input-border-width !default;
 $form-input-active-border-color: rgba(0, 0, 0, 0.6) !default;
 $form-input-invalid-color: #b71c1c !default;
-
-$form-text-color: rgba(0, 0, 0, 0.6);
+$form-text-color: rgba(0, 0, 0, 0.6) !default;
 $form-text-size: 0.75rem !default;
-
+$form-input-sm-font-size: 0.865rem !default;
+$form-input-sm-padding: 0.5rem 0.75 !default;
+$form-input-lg-font-size: 1.25rem !default;
+$form-input-lg-padding: 0.75 1.25rem !default;
+$form-input-xl-font-size: 1.5rem !default;
+$form-input-xl-padding: 1rem 1.5rem !default;
 /*TABLES*/
 $table-bg-color: #fff !default;
 $table-heading-font-size: 1rem !default;

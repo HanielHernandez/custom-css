@@ -10,5 +10,8 @@
   }
   .list {
     border: none;
+    a {
+      color: $font-color;
+    }
   }
 }
