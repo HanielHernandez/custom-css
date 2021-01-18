@@ -30,11 +30,6 @@ function expand(){
     } else {
         expandible.style.height = content.scrollHeight + "px";
     }
-    /*if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-    } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-    }*/
 }
 
 var expandibleTriggers = document.getElementsByClassName("expandible-trigger");
