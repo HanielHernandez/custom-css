@@ -29,6 +29,10 @@ git clone https://github.com/HanielHernandez/custom-css.git
 
 Early documentation can be found [here](https://hanielhernandez.github.io/custom-css/) and it will be improved and updated as new feature are released.
 
-## About Creator
+## Creator
 
-Hi, I'am Haniel Hernández, a Front end developer from Nicaragua and I create this project as hobby and to practice my SASS skils, hope you found it usefull.
+Hi, I'am **Haniel Hernández**, a **Front end** developer from **Nicaragua** and I create this project as hobby and to practice my SASS skils, hope you found it usefull.
+
+if you wanto to take part of this project you can contact me by:
+
+-<https://github.com/HanielHernandez>
