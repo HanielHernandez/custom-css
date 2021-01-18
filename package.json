@@ -1,6 +1,6 @@
 {
   "name": "customizable-css",
-  "version": "0.0.3",
+  "version": "1.0.3",
   "description": "A css framework with utilities base classes as well as component",
   "main": "main.scss",
   "scripts": {
