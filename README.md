@@ -44,4 +44,4 @@ Hi, I'am **Haniel Hernández**, a **Front end** developer from **Nicaragua** and
 
 if you wanto to take part of this project you can contact me by:
 
--<https://github.com/HanielHernandez>
+- <https://github.com/HanielHernandez>
