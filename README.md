@@ -1,6 +1,6 @@
 # Customizable CSS
 
-Customizable css is a css framework with utility base classe and components
+Customizable css is a css framework with utility base classes as well as components
 
 [![node version](https://img.shields.io/npm/v/customizable-css.svg?style=flat-square)](https://www.npmjs.com/package/customizable-css/)
 [![downloads](https://img.shields.io/npm/dm/customizable-css.svg?style=flat-square)](https://www.npmjs.com/package/customizable-css/)
