@@ -47,7 +47,7 @@
                 <ul class="list">
                     <li class="">
 
-                        <a href="#" class="expandible-trigger font-medium py-2 px-4" data-target="gridsMenu">
+                        <a href="javascript:void(0);" class="expandible-trigger font-medium py-2 px-4" data-target="gridsMenu">
                             Layout
                         </a>
                         <div class="expandible " id="gridsMenu">
@@ -56,7 +56,7 @@
                                     <a href="#grid">Grid</a>
                                 </li>
                                 <li class="item">
-                                    <a href="#grid">Breakpoints</a>
+                                    <a href="#breakpoints">Breakpoints</a>
                                 </li>
                             </ul>
                         </div>
@@ -68,7 +68,7 @@
                         <div id="formsMenu" class="expandible">
                             <ul class="list hoverable pr-2">
                                 <li class="item">
-                                    <a href=""> Form field</a>
+                                    <a href="#form_field"> Form field</a>
                                 </li>
                                 <li class="item">
                                     <a href="">Foorm field with addon</a>
@@ -84,16 +84,16 @@
                         <div id="componentsMenu" class="expandible">
                             <ul class="list hoverable pr-2">
                                 <li class="item">
-                                    <a href=""> Buttons</a>
+                                    <a href="#buttons"> Buttons</a>
                                 </li>
                                 <li class="item">
-                                    <a href=""> List</a>
+                                    <a href="#list"> List</a>
                                 </li>
                                 <li class="item">
-                                    <a href=""> Cards</a>
+                                    <a href="#cards"> Cards</a>
                                 </li>
                                 <li class="item">
-                                    <a href=""> Tables</a>
+                                    <a href="#tables"> Tables</a>
                                 </li>
                             </ul>
                         </div>
@@ -105,36 +105,34 @@
                         <div id="utilitiesMenu" class="expandible">
                             <ul class="list hoverable pr-2">
                                 <li class="item">
-                                    <a href="">Colors</a>
+                                    <a href="#colors">Colors</a>
                                 </li>
                                 <li class="item">
-                                    <a href="">Displays</a>
+                                    <a href="#displays">Displays</a>
                                 </li>
                                 <li class="item">
-                                    <a href="">Position</a>
+                                    <a href="#position">Position</a>
                                 </li>
                                 <li class="item">
-                                    <a href=""> Overflow</a>
+                                    <a href="overflow"> Overflow</a>
                                 </li>
                                 <li class="item">
                                     <a href="#padding_and_margin">Padding and Margin</a>
                                 </li>
                                 <li class="item">
-                                    <a href="">Z-index</a>
+                                    <a href="#z_index">Z-index</a>
                                 </li>
                                 <li class="item">
-                                    <a href="">Shadows</a>
+                                    <a href="#shadows">Shadows</a>
                                 </li>
                                 <li class="item">
-                                    <a href="">Fonts and text</a>
+                                    <a href="#text">Fonts and text</a>
                                 </li>
                                 <li class="item">
-                                    <a href="">Hover</a>
+                                    <a href="transitions_and_hover">Transitions and Hover</a>
                                 </li>
                                
-                                <li class="item">
-                                    <a href=""> Transitions</a>
-                                </li>
+                                
                             </ul>
                         </div>
                     </li>
@@ -154,13 +152,13 @@
                     distinctio.
                 </p>
     
-                <h4 class="mb-4">
-                    Grid sistem
+                <h4 class="mb-4" id="layout">
+                    Layout 
                 </h4>
                 <!--###  GRID SYSTEM ### -->
-                <div id="grids">
-                    <h5 class="text-grey-600">
-                        Row and col
+                <div id="grid">
+                    <h5 class="">
+                       Grid
                     </h5>
                     <p class="mb-4 w-12"> the <b>.row</b> set display to <b>flex</b> and <b> flex-direction</b> to
                         <b>flex-row</b>
@@ -262,7 +260,7 @@
                         </div>
     
                     </div>
-                    <h5 class="text-grey-600">
+                    <h5 class="text-grey-600" id="breakpoints">
                         Break points
                     </h5>
                     <p class="mb-4 w-12"> You can use breakpoints in order to hep with responvity </p>
@@ -351,8 +349,40 @@
     
     
                 </div>
-    
-                <!--### BUTTONS SECTIONS ### -->
+          <!--### FORMS SECTIONS ### -->
+          <div id="forms">
+            <H4>Forms</H4>
+            <h5 class="mb-4">Forms field</h4>
+<pre>
+<code lang="html">
+    <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"form-field"</span> <span class="prop">id=</span><span class="val">"name"</span> <span class="tag">></span>
+        <span class="tag">&lt;label</span><span class="prop">for=</span><span class="val">"name"</span> <span class="tag">></span>Name <span class="tag">&lt;/label></span> 
+        <span class="tag">&lt;input </span> <span class="prop">class=</span><span class="val">"form-input"</span> <span class="prop">type=</span><span class="val">"text"</span> <span class="prop">name=</span><span class="val">"name"</span><span class="tag">></span>
+        <span class="tag">&lt;span </span> <span class="prop">class=</span> <span class="val">"form-text"</span> 
+            this field is required
+        <span class="tag">&lt;/span></span> 
+    <span class="tag">&lt;div></span>
+</code>
+</pre>
+
+            <div class="form-field">
+                <label for="">Name</label>
+                <input type="text" name="" placeholder="Write down your name" class="form-input" id="">
+                <span class="form-text">
+                    this field is required
+                </span>
+            </div>
+            <div class="form-field invalid">
+                <label for="">Invalid field</label>
+                <input type="text" name="" placeholder="" class="form-input" id="">
+
+            </div>
+            <h5 class="mb-4">Forms Addons</h4>
+            <p>you can adds addons by adding the <b>.with-addons</b> class</p>
+        </div>
+                <div id="components">
+                    <h3>Components</h3>
+                        <!--### BUTTONS SECTIONS ### -->
                 <div id="buttons" class="">
     
                     <h4 class="mb-4 ">
@@ -431,28 +461,119 @@
     
                     </div>
                 </div>
-    
-                <!--### FORMS SECTIONS ### -->
-                <div id="forms">
-                    <H4>Forms</H4>
-                    <h5 class="mb-4">Forms field</h4>
-    
-                    <div class="form-field">
-                        <label for="">Name</label>
-                        <input type="text" name="" placeholder="Write down your name" class="form-input" id="">
-                        <span class="form-text">
-                            this field is required
-                        </span>
-                    </div>
-                    <div class="form-field invalid">
-                        <label for="">Invalid field</label>
-                        <input type="text" name="" placeholder="" class="form-input" id="">
-    
-                    </div>
-                    <h5 class="mb-4">Forms Addons</h4>
-                        you can adds addons by adding the <b>.with-addons</b> class
-    
-    
+                <!-- #### LIST ####-->
+                <div id="list">
+                    <H4>Lists</H4>
+                    <p>you can order a list of items by using the class <b>.list</b></p>
+                    <ul class="list">
+                        <li class="item">
+                            Lorem ipsum dolor 
+                        </li>
+                        <LI class="item">
+                            sit amet consectetur 
+                        </LI>
+                        <li class="item">
+                            adipisicing elit. Quae reiciendis
+                        </li>
+                        <li class="item">
+                            voluptas repellendus veritatis
+                        </li>
+                    </ul>
+
+                    <p class="mb-4">
+                        you can also add <b>.list-border </b> class in order to make list item bordered
+                    </p>
+                    <ul class="list list-border">
+                        <li class="item">
+                            Lorem ipsum dolor 
+                        </li>
+                        <LI class="item">
+                            sit amet consectetur 
+                        </LI>
+                        <li class="item">
+                            adipisicing elit. Quae reiciendis
+                        </li>
+                        <li class="item">
+                            voluptas repellendus veritatis
+                        </li>
+                    </ul>
+                </div>
+                <!-- ### CARDS ###-->
+                <div id="cards">
+                    <h4>
+                        Cards
+                    </h4>
+                    <p>
+                        youn can create cards by using the .card class
+                    </p>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar">
+                            <div class="card-titles">
+                                <p class="card-title">
+                                    Card title goes here
+                                </p>
+                                <p class="card-subtitle">
+                                    some card subtitle
+                                </p>
+                            </div>
+
+                        
+                        </div>
+                        <div class="card-content">
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas architecto pariatur rem? Inventore, odit! Corporis nam voluptas labore iure commodi neque quam. At similique porro voluptates dolorum dolor vel fugiat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-actions">
+                                <a href="" class="btn flat">
+                                    action 1
+                                </a>
+                                <a href="" class="btn flat">
+                                    action 2
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                    
+                    <div class="card w-sm-12 w-md-1/3 w-lg-1/4">
+                        <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-img">
+
+                        <div class="card-head">
+                            <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar">
+                            <div class="card-titles">
+                                <p class="card-title">
+                                    Card title goes here
+                                </p>
+                                <p class="card-subtitle">
+                                    some card subtitle
+                                </p>
+                            </div>
+
+                        
+                        </div>
+                        <div class="card-content">
+                            <div class="card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas architecto pariatur rem? Inventore, odit! Corporis nam voluptas labore iure commodi neque quam. At similique porro voluptates dolorum dolor vel fugiat.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-actions">
+                                <a href="" class="btn flat">
+                                    action 1
+                                </a>
+                                <a href="" class="btn flat">
+                                    action 2
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
                 <!-- ### TABLES ### -->
                 <div id="tables " class="mb-4">
@@ -548,9 +669,15 @@
                         </tbody>
                     </table>
                 </div>
-                <!-- ### BORDERS ###  -->
-    
-                <div id="borders" class="mb-4">
+                </div>
+            
+
+            <div id="utilities">
+                <H3>
+                    Utilities
+                </H3>
+                  <!-- ### BORDERS ###  -->
+                  <div id="borders" class="mb-4">
     
                     <h5 class="mb-4">
                         Borders
@@ -608,7 +735,6 @@
                         <span class="text-gray-600"> div with <b>.r </b> and </b> .r-t-l-4 </b> <b> </b> class</span>
                     </div>
                 </div>
-    
                 <!-- ###  PADDING AND MARGIN ### -->
                 <div id="padding_and_margin" class="mb-4">
     
@@ -695,7 +821,6 @@
                     </div>
     
                 </div>
-    
                 <!-- ### POSITIONS ### -->
                 <div id="position">
                     <h5 class="mb-4">Positions </h5>
@@ -704,7 +829,6 @@
                         <b>.absolute</b> etc.
                     </p>
                 </div>
-    
                 <!-- ### COLORS ### -->
                 <div id="colors">
                     <h5 class="mb-4">Color </h5>
@@ -747,12 +871,10 @@
                     </p>
     
                 </div>
-    
                 <!-- ### TRANSITIONS and HOVER ### -->
-    
-                <div id="transitions and hover" class="mb-4">
+                <div id="transitions_and_hover" class="mb-4">
                     <h4>
-                        Hover and Transitions
+                        Transitions and hover"
                     </h4>
                     <div id="hover" class="mb-4">
                         <h5>Hover</h5>
@@ -834,11 +956,11 @@
                     </div>
     
                 </div>
-
-              
                 <!-- ### TEXT AND FONTS ### -->
-    
                 <div id="text">
+                    <H4>
+                        Font and Text
+                    </H4>
                     <h4 class="mb-4">
                         Text and Typography
                     </h4>
@@ -1283,126 +1405,9 @@
                         </table>
                     </div>
                 </div>
-    
-                <!-- #### LIST ####-->
-                <div id="list">
-                    <H4>Lists</H4>
-                    <p>you can order a list of items by using the class <b>.list</b></p>
-                    <ul class="list">
-                        <li class="item">
-                            Lorem ipsum dolor 
-                        </li>
-                        <LI class="item">
-                            sit amet consectetur 
-                        </LI>
-                        <li class="item">
-                            adipisicing elit. Quae reiciendis
-                        </li>
-                        <li class="item">
-                            voluptas repellendus veritatis
-                        </li>
-                    </ul>
-    
-                    <p class="mb-4">
-                        you can also add <b>.list-border </b> class in order to make list item bordered
-                    </p>
-                    <ul class="list list-border">
-                        <li class="item">
-                            Lorem ipsum dolor 
-                        </li>
-                        <LI class="item">
-                            sit amet consectetur 
-                        </LI>
-                        <li class="item">
-                            adipisicing elit. Quae reiciendis
-                        </li>
-                        <li class="item">
-                            voluptas repellendus veritatis
-                        </li>
-                    </ul>
-                </div>
-    
-                <!-- ### CARDS ###-->
-                <div id="cards">
-                    <h4>
-                        Cards
-                    </h4>
-                    <p>
-                        youn can create cards by using the .card class
-                    </p>
-    
-                    <div class="card">
-                        <div class="card-head">
-                            <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar">
-                            <div class="card-titles">
-                                <p class="card-title">
-                                    Card title goes here
-                                </p>
-                                <p class="card-subtitle">
-                                    some card subtitle
-                                </p>
-                            </div>
-    
-                           
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas architecto pariatur rem? Inventore, odit! Corporis nam voluptas labore iure commodi neque quam. At similique porro voluptates dolorum dolor vel fugiat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-actions">
-                                <a href="" class="btn flat">
-                                    action 1
-                                </a>
-                                <a href="" class="btn flat">
-                                    action 2
-                                </a>
-                            </div>
-                        </div>
-                    </div>  
-                    
-                    <div class="card w-sm-12 w-md-1/3 w-lg-1/4">
-                        <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-img">
-    
-                        <div class="card-head">
-                            <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar">
-                            <div class="card-titles">
-                                <p class="card-title">
-                                    Card title goes here
-                                </p>
-                                <p class="card-subtitle">
-                                    some card subtitle
-                                </p>
-                            </div>
-    
-                           
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas architecto pariatur rem? Inventore, odit! Corporis nam voluptas labore iure commodi neque quam. At similique porro voluptates dolorum dolor vel fugiat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-actions">
-                                <a href="" class="btn flat">
-                                    action 1
-                                </a>
-                                <a href="" class="btn flat">
-                                    action 2
-                                </a>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-    
                 <!-- ### SPINNER / LOADER ###-->
-    
                 <div id="spinner">
+
                     <H4>Spinner</H4>
                     <p>you can create a spinner for loading animations  by adding the class <b>.spinner </b> into a div </p>
     <pre><code data="html"><span class="tag">&lt;div</span><span class="prop"> class=</span><span class="val">"spinner"</span>>
@@ -1433,39 +1438,42 @@
             <div class="spinner w-12 t-2">
             </div>
     </div>
-            </div>
-    
-            <div id="z-index">
-                <h4>Z- index</h4>
-                <p>
-                    you can change the z-indez of a div by using the class <b>z-{5-120} </b> .
-                </p>
-    
-                <div class="relative w-12/12 mb-4 bg-blue-600 p-8" >
-                    <div class="z-15 bg-green-400 absolute p-4" style="top: 0px;left: 0px;">
-                        I'am a div with <b>z-15</b> 
+                </div>
+                <!-- ### Z-INDEX ###-->
+                <div id="z-index">
+                    <h4>Z- index</h4>
+                    <p>
+                        you can change the z-indez of a div by using the class <b>z-{5-120} </b> .
+                    </p>
+        
+                    <div class="relative w-12/12 mb-4 bg-blue-600 p-8" >
+                        <div class="z-15 bg-green-400 absolute p-4" style="top: 0px;left: 0px;">
+                            I'am a div with <b>z-15</b> 
+                        </div>
+                        <br>
+        
+                        I'am the parent div
                     </div>
-                    <br>
-    
-                    I'am the parent div
+                </div>
+                <!-- ### OPACITY ###-->
+                <div id="opacity">
+                    <h4>
+                        Opacity
+                    </h4>
+                    <p>You can set opacity by using the class <b>opcty-{0 or multiple of 5}</b></p>
+                    <div class="bg-blue-600 opcty-25 p-4">
+                        I have .opcty-25
+                    </div>
+                    <div class="bg-blue-600 opcty-50 p-4">
+                        I have .opcty-50
+                    </div>
+                    <div class="bg-blue-600 opcty-65 p-4">
+                        I have .opcty-65
+                    </div>
                 </div>
             </div>
-
-            <div id="opacity">
-                <h4>
-                    Opacity
-                </h4>
-                <p>You can set opacity by using the class <b>opcty-{0 or multiple of 5}</b></p>
-                <div class="bg-blue-600 opcty-25 p-4">
-                    I have .opcty-25
-                </div>
-                <div class="bg-blue-600 opcty-50 p-4">
-                    I have .opcty-50
-                </div>
-                <div class="bg-blue-600 opcty-65 p-4">
-                    I have .opcty-65
-                </div>
-            </div>
+              
+       
     
        
         </main>
