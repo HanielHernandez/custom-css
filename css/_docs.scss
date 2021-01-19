@@ -1,13 +1,10 @@
-@media (min-width: $lg-breakpoint) {
-  .docs-container {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas: "aside main";
-    gap: 1.5rem;
+.docs-container {
+  aside {
+    flex: none;
   }
-}
-@media (min-width: $md-breakpoint) {
-  .docs-container {
-    grid-template-columns: 1fr 3fr;
+  .main {
+    position: static;
+    width: 100%;
+    flex: 1 1 auto;
   }
 }
