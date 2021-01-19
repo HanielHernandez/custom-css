@@ -103,6 +103,7 @@ $body-background-color: rgba(0, 0, 0, 0) !default;
 $link-color: #1976d2 !default;
 $border-radius: 5px !default;
 //navs
+$nav-bar-height: 56px;
 $nav-bar-default-bg-color: #fff !default;
 $nav-bar-border-color: #e0e0e0 !default;
 $nav-bar-border-width: 1px !default;
@@ -161,11 +162,9 @@ $button-border-color: #e0e0e0 !default;
 $button-radius: 0.25rem !default;
 $button-focus-outline-style: solid !default;
 $button-focus-outline-width: 1px !default;
-$button-focus-outline-color: $default-border !default;
-
+$button-focus-outline-color: rgba(0, 0, 0, 12) !default;
 $button-focus-outline: $button-focus-outline-width $button-focus-outline-style
-  $button-focus-outline-color;
-
+  $button-focus-outline-color !default;
 $flat-button-hover-color: rgba(#000, 0.05);
 //Forms
 $form-field-margin-bottom: 1rem !default;
@@ -249,12 +248,17 @@ $spinner-animation: spin !default;
 
 //sidebar
 $sidebar-width: 300px !default;
+$sidebar-height: calc(100vh - #{$nav-bar-height} + 1px) !default;
 $sidebar-position: relative !default;
 $sidebar-border-color: $border-default-color !default;
 $sidebar-border-width: 1px !default;
 $sidebar-border-style: solid !default;
 $sidebar-background-color: rgba(0, 0, 0, 0);
-
+$sidebar-z-index: 30;
+$sidebar-transition-property: all !default;
+$sidebar-transition-duration: 0.3s !default;
+$sidebar-transition-ease: ease-in-out !default;
+$sidebar-expand-btn-width: 57px;
 // Expandable
 $expandible-transtion: height !default;
 $expandible-transtion-time: 100ms !default;

@@ -17136,7 +17136,7 @@ table {
   margin: 0px auto;
 }
 
-.container-xl {
+.container-xxl {
   max-width: 1440px;
 }
 
@@ -17146,6 +17146,10 @@ table {
 
 .container-md {
   max-width: 1024px;
+}
+
+a {
+  display: inline-block;
 }
 
 .display-inline {
@@ -17246,18 +17250,42 @@ table {
   display: inherit;
 }
 
-@media (min-width: 756px) {
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-no-wrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.flex-wrap-inehrit {
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit;
+}
+
+@media (min-width: 1024px) {
   .docs-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 5fr;
         grid-template-columns: 1fr 5fr;
+        grid-template-areas: "aside main";
     gap: 1.5rem;
   }
 }
 
-.sidebar .list a {
-  display: inline-block;
+@media (min-width: 768px) {
+  .docs-container {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+  }
 }
 
 *,
@@ -18595,7 +18623,7 @@ table {
   margin: 0px auto;
 }
 
-.container-xl {
+.container-xxl {
   max-width: 1440px;
 }
 
@@ -18605,6 +18633,10 @@ table {
 
 .container-md {
   max-width: 1024px;
+}
+
+a {
+  display: inline-block;
 }
 
 .display-inline {
@@ -18705,6 +18737,26 @@ table {
   display: inherit;
 }
 
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-no-wrap {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.flex-wrap-reverse {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+.flex-wrap-inehrit {
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit;
+}
+
 .btn {
   padding: 0.5rem 1rem;
   background-color: #fff;
@@ -18724,7 +18776,7 @@ table {
 }
 
 .btn:focus {
-  outline: 1px solid 1px solid rgba(0, 0, 0, 0.12);
+  outline: 1px solid black;
 }
 
 .btn {
@@ -20546,15 +20598,28 @@ pre code * {
 
 .sidebar {
   width: 300px;
-  /*border-right: $sidebar-border-width $sidebar-border-style
-    $sidebar-border-color;
-  background-color: $sidebar-background-color;*/
+  height: calc(100vh - 56px + 1px);
+  position: fixed;
+  z-index: 30;
+  left: 0px;
+  top: calc(56px + 1px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-right: 1px solid #e0e0e0;
 }
 
-.sidebar.fixed {
-  position: fixed;
-  top: 0px;
-  left: 0px;
+.sidebar:not(.expanded) {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+}
+
+.sidebar .expand-btn {
+  display: block;
+  position: absolute;
+  right: -57px;
+  border-left: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .sidebar .list {
@@ -29104,6 +29169,117 @@ pre code * {
   .font-sm-extra-black {
     font-weight: 900;
   }
+  h1 {
+    font-size: 6rem;
+  }
+  .h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 3.75rem;
+  }
+  .h2 {
+    font-size: 3.75rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  .h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  .h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  .h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
+  .h6 {
+    font-size: 1.25rem;
+  }
+  .font-xs {
+    font-size: 0.75rem;
+  }
+  .font-sm {
+    font-size: 0.875rem;
+  }
+  .font-normal {
+    font-size: 1rem;
+  }
+  .font-lg {
+    font-size: 1.125rem;
+  }
+  .font-xl {
+    font-size: 1.25rem;
+  }
+  .font-2xl {
+    font-size: 1.5rem;
+  }
+  .font-3xl {
+    font-size: 1.875rem;
+  }
+  .font-4xl {
+    font-size: 2.25rem;
+  }
+  .font-5xl {
+    font-size: 3rem;
+  }
+  .font-6xl {
+    font-size: 3.75rem;
+  }
+  .font-7xl {
+    font-size: 4.5rem;
+  }
+  .font-8xl {
+    font-size: 6rem;
+  }
+  .font-9xl {
+    font-size: 8rem;
+  }
+  .normal {
+    font-size: 1rem;
+  }
+  .small {
+    font-size: 0.875;
+  }
+  .caption {
+    font-size: 0.75rem;
+  }
+  .font-thin {
+    font-weight: 100;
+  }
+  .font-extralight {
+    font-weight: 200;
+  }
+  .font-light {
+    font-weight: 300;
+  }
+  .font-normal {
+    font-weight: 400;
+  }
+  .font-medium {
+    font-weight: 500;
+  }
+  .font-semibold {
+    font-weight: 600;
+  }
+  .font-bold {
+    font-weight: 700;
+  }
+  .font-black {
+    font-weight: 800;
+  }
+  .font-extra-black {
+    font-weight: 900;
+  }
 }
 
 @media (max-width: 768px) {
@@ -30304,6 +30480,117 @@ pre code * {
     font-weight: 800;
   }
   .font-md-extra-black {
+    font-weight: 900;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  .h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 3.75rem;
+  }
+  .h2 {
+    font-size: 3.75rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  .h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  .h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  .h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
+  .h6 {
+    font-size: 1.25rem;
+  }
+  .font-xs {
+    font-size: 0.75rem;
+  }
+  .font-sm {
+    font-size: 0.875rem;
+  }
+  .font-normal {
+    font-size: 1rem;
+  }
+  .font-lg {
+    font-size: 1.125rem;
+  }
+  .font-xl {
+    font-size: 1.25rem;
+  }
+  .font-2xl {
+    font-size: 1.5rem;
+  }
+  .font-3xl {
+    font-size: 1.875rem;
+  }
+  .font-4xl {
+    font-size: 2.25rem;
+  }
+  .font-5xl {
+    font-size: 3rem;
+  }
+  .font-6xl {
+    font-size: 3.75rem;
+  }
+  .font-7xl {
+    font-size: 4.5rem;
+  }
+  .font-8xl {
+    font-size: 6rem;
+  }
+  .font-9xl {
+    font-size: 8rem;
+  }
+  .normal {
+    font-size: 1rem;
+  }
+  .small {
+    font-size: 0.875;
+  }
+  .caption {
+    font-size: 0.75rem;
+  }
+  .font-thin {
+    font-weight: 100;
+  }
+  .font-extralight {
+    font-weight: 200;
+  }
+  .font-light {
+    font-weight: 300;
+  }
+  .font-normal {
+    font-weight: 400;
+  }
+  .font-medium {
+    font-weight: 500;
+  }
+  .font-semibold {
+    font-weight: 600;
+  }
+  .font-bold {
+    font-weight: 700;
+  }
+  .font-black {
+    font-weight: 800;
+  }
+  .font-extra-black {
     font-weight: 900;
   }
 }
@@ -31508,6 +31795,117 @@ pre code * {
   .font-lg-extra-black {
     font-weight: 900;
   }
+  h1 {
+    font-size: 6rem;
+  }
+  .h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 3.75rem;
+  }
+  .h2 {
+    font-size: 3.75rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  .h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  .h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  .h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
+  .h6 {
+    font-size: 1.25rem;
+  }
+  .font-xs {
+    font-size: 0.75rem;
+  }
+  .font-sm {
+    font-size: 0.875rem;
+  }
+  .font-normal {
+    font-size: 1rem;
+  }
+  .font-lg {
+    font-size: 1.125rem;
+  }
+  .font-xl {
+    font-size: 1.25rem;
+  }
+  .font-2xl {
+    font-size: 1.5rem;
+  }
+  .font-3xl {
+    font-size: 1.875rem;
+  }
+  .font-4xl {
+    font-size: 2.25rem;
+  }
+  .font-5xl {
+    font-size: 3rem;
+  }
+  .font-6xl {
+    font-size: 3.75rem;
+  }
+  .font-7xl {
+    font-size: 4.5rem;
+  }
+  .font-8xl {
+    font-size: 6rem;
+  }
+  .font-9xl {
+    font-size: 8rem;
+  }
+  .normal {
+    font-size: 1rem;
+  }
+  .small {
+    font-size: 0.875;
+  }
+  .caption {
+    font-size: 0.75rem;
+  }
+  .font-thin {
+    font-weight: 100;
+  }
+  .font-extralight {
+    font-weight: 200;
+  }
+  .font-light {
+    font-weight: 300;
+  }
+  .font-normal {
+    font-weight: 400;
+  }
+  .font-medium {
+    font-weight: 500;
+  }
+  .font-semibold {
+    font-weight: 600;
+  }
+  .font-bold {
+    font-weight: 700;
+  }
+  .font-black {
+    font-weight: 800;
+  }
+  .font-extra-black {
+    font-weight: 900;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -32708,6 +33106,117 @@ pre code * {
     font-weight: 800;
   }
   .font-xl-extra-black {
+    font-weight: 900;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  .h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 3.75rem;
+  }
+  .h2 {
+    font-size: 3.75rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  .h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  .h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  .h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
+  .h6 {
+    font-size: 1.25rem;
+  }
+  .font-xs {
+    font-size: 0.75rem;
+  }
+  .font-sm {
+    font-size: 0.875rem;
+  }
+  .font-normal {
+    font-size: 1rem;
+  }
+  .font-lg {
+    font-size: 1.125rem;
+  }
+  .font-xl {
+    font-size: 1.25rem;
+  }
+  .font-2xl {
+    font-size: 1.5rem;
+  }
+  .font-3xl {
+    font-size: 1.875rem;
+  }
+  .font-4xl {
+    font-size: 2.25rem;
+  }
+  .font-5xl {
+    font-size: 3rem;
+  }
+  .font-6xl {
+    font-size: 3.75rem;
+  }
+  .font-7xl {
+    font-size: 4.5rem;
+  }
+  .font-8xl {
+    font-size: 6rem;
+  }
+  .font-9xl {
+    font-size: 8rem;
+  }
+  .normal {
+    font-size: 1rem;
+  }
+  .small {
+    font-size: 0.875;
+  }
+  .caption {
+    font-size: 0.75rem;
+  }
+  .font-thin {
+    font-weight: 100;
+  }
+  .font-extralight {
+    font-weight: 200;
+  }
+  .font-light {
+    font-weight: 300;
+  }
+  .font-normal {
+    font-weight: 400;
+  }
+  .font-medium {
+    font-weight: 500;
+  }
+  .font-semibold {
+    font-weight: 600;
+  }
+  .font-bold {
+    font-weight: 700;
+  }
+  .font-black {
+    font-weight: 800;
+  }
+  .font-extra-black {
     font-weight: 900;
   }
 }
@@ -33911,6 +34420,138 @@ pre code * {
   }
   .font-xxl-extra-black {
     font-weight: 900;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  .h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 3.75rem;
+  }
+  .h2 {
+    font-size: 3.75rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  .h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  .h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  .h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1.25rem;
+  }
+  .h6 {
+    font-size: 1.25rem;
+  }
+  .font-xs {
+    font-size: 0.75rem;
+  }
+  .font-sm {
+    font-size: 0.875rem;
+  }
+  .font-normal {
+    font-size: 1rem;
+  }
+  .font-lg {
+    font-size: 1.125rem;
+  }
+  .font-xl {
+    font-size: 1.25rem;
+  }
+  .font-2xl {
+    font-size: 1.5rem;
+  }
+  .font-3xl {
+    font-size: 1.875rem;
+  }
+  .font-4xl {
+    font-size: 2.25rem;
+  }
+  .font-5xl {
+    font-size: 3rem;
+  }
+  .font-6xl {
+    font-size: 3.75rem;
+  }
+  .font-7xl {
+    font-size: 4.5rem;
+  }
+  .font-8xl {
+    font-size: 6rem;
+  }
+  .font-9xl {
+    font-size: 8rem;
+  }
+  .normal {
+    font-size: 1rem;
+  }
+  .small {
+    font-size: 0.875;
+  }
+  .caption {
+    font-size: 0.75rem;
+  }
+  .font-thin {
+    font-weight: 100;
+  }
+  .font-extralight {
+    font-weight: 200;
+  }
+  .font-light {
+    font-weight: 300;
+  }
+  .font-normal {
+    font-weight: 400;
+  }
+  .font-medium {
+    font-weight: 500;
+  }
+  .font-semibold {
+    font-weight: 600;
+  }
+  .font-bold {
+    font-weight: 700;
+  }
+  .font-black {
+    font-weight: 800;
+  }
+  .font-extra-black {
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    -webkit-transform: none;
+            transform: none;
+    border-right: 0px;
+    z-index: 0;
+  }
+  .sidebar:not(.expanded) {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .sidebar .expand-btn {
+    display: none;
+  }
+  .has-sidebar {
+    padding-left: 300px;
   }
 }
 /*# sourceMappingURL=main.css.map */

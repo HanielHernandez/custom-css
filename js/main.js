@@ -36,3 +36,15 @@ var expandibleTriggers = document.getElementsByClassName("expandible-trigger");
 for (var i = 0; i < expandibleTriggers.length; i++) {
     expandibleTriggers[i].addEventListener('click', expand);
 }
+
+function expandSidebar(){
+    const sidebar  =  document.getElementById('sidebarContainer');
+    if(sidebar.classList.contains('expanded'))
+    {
+        sidebar.classList.remove('expanded')
+    }else{
+        sidebar.classList.add('expanded');
+    }
+}
+const expandTrigger =  document.getElementById('expandTrigger');
+expandTrigger.addEventListener('click',expandSidebar)

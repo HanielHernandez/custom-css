@@ -1,15 +1,13 @@
-@media (min-width: 756px) {
+@media (min-width: $lg-breakpoint) {
   .docs-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-areas: "aside main";
     gap: 1.5rem;
   }
 }
-
-.sidebar {
-  .list {
-    a {
-      display: inline-block;
-    }
+@media (min-width: $md-breakpoint) {
+  .docs-container {
+    grid-template-columns: 1fr 3fr;
   }
 }

@@ -48,8 +48,53 @@
         $prefix
       );
     }
+
+    @each $text-font-target, $text-font-size in $heading-font-sizes {
+  #{$text-font-target} {
+    font-size: $text-font-size;
+  }
+  .#{$text-font-target} {
+    font-size: $text-font-size;
+  }
+}
+
+@each $font-size-prefix, $font-size in $text-font-sizes {
+  .font-#{$font-size-prefix} {
+    font-size: $font-size;
+  }
+}
+
+@each $font-size-name, $font-size in $font-sizes {
+  .#{$font-size-name} {
+    font-size: $font-size;
+  }
+}
+
+@each $font-weight-prefix, $font-weight in $font-weights {
+  .font-#{$font-weight-prefix} {
+    font-weight: $font-weight;
+  }
+}
   }
 }
 @each $prefix, $value in $breakpoints {
   @include create-columns-for-breakpoint($value, $prefix);
+}
+
+@media (min-width: $md-breakpoint) {
+  .sidebar {
+    position: sticky;
+    transform: none;
+    border-right: 0px;
+    z-index: 0;
+    &:not(.expanded) {
+      transform: none;
+    }
+    .expand-btn {
+      display: none;
+    }
+  }
+  .has-sidebar {
+    padding-left: $sidebar-width;
+  }
 }

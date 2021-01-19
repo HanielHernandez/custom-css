@@ -179,7 +179,7 @@ table {
   margin: 0px auto;
 }
 
-.container-xl {
+.container-xxl {
   max-width: 1440px;
 }
 
@@ -189,6 +189,9 @@ table {
 
 .container-md {
   max-width: 1024px;
+}
+a {
+  display: inline-block;
 }
 
 $displays-value: (
@@ -222,3 +225,18 @@ $displays-value: (
     display: $value;
   }
 }
+.flex-wrap{
+  flex-wrap: wrap
+}
+.flex-no-wrap{
+  flex-wrap: nowrap
+
+}
+.flex-wrap-reverse{
+  flex-wrap: wrap-reverse
+}
+.flex-wrap-inehrit{
+  flex-wrap: inherit
+}
+
+

@@ -1,12 +1,25 @@
 .sidebar {
   width: $sidebar-width;
-  /*border-right: $sidebar-border-width $sidebar-border-style
+  height: $sidebar-height;
+  position: fixed;
+  z-index: $sidebar-z-index;
+  left: 0px;
+  top: calc(#{$nav-bar-height} + 1px);
+  transition: $sidebar-transition-property $sidebar-transition-duration
+    $sidebar-transition-ease;
+  border-right: $sidebar-border-width $sidebar-border-style
     $sidebar-border-color;
-  background-color: $sidebar-background-color;*/
-  &.fixed {
-    position: fixed;
-    top: 0px;
-    left: 0px;
+
+  &:not(.expanded) {
+    transform: translateX(-$sidebar-width);
+  }
+  .expand-btn {
+    display: block;
+    position: absolute;
+    right: -$sidebar-expand-btn-width;
+    border-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
   .list {
     border: none;
@@ -15,3 +28,5 @@
     }
   }
 }
+
+

@@ -3,3 +3,10 @@
     font-weight: $weight;
   }
 }
+
+@mixin create-font-size($size, $prefix, $subfix:'') {
+  $subfix-width-dash: #{$subfix}-;
+  .font-#{$breakpoint-prefix}-#{$prefix} {
+    font-size: $weight;
+  }
+}
