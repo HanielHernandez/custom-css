@@ -48,7 +48,7 @@
         $prefix
       );
     }
-    .sidebar.sidebar-collapse-#{$prefix}{
+    .sidebar.sidebar-collapse-#{$prefix} {
       position: sticky;
       transform: none;
       border-right: 0px;
@@ -62,6 +62,17 @@
     }
     .has-sidebar {
       padding-left: $sidebar-width;
+    }
+
+    @each $font-size-name, $font-size in $font-sizes {
+      @include create-font-size($font-size, $prefix, -#{$font-size-name});
+    }
+
+    @each $font-size-name, $font-size in $text-font-sizes {
+      @include create-font-size($font-size, $prefix, -#{$font-size-name});
+    }
+    @each $font-size-name, $font-size in $heading-font-sizes {
+      @include create-font-size($font-size, $prefix, -#{$font-size-name});
     }
   }
 }

@@ -15489,15 +15489,15 @@ h6 {
   font-size: 8rem;
 }
 
-.normal {
+.font-normal {
   font-size: 1rem;
 }
 
-.small {
+.font-small {
   font-size: 0.875;
 }
 
-.caption {
+.font-caption {
   font-size: 0.75rem;
 }
 
@@ -29183,6 +29183,72 @@ pre code * {
   .has-sidebar {
     padding-left: 300px;
   }
+  .font-sm-normal {
+    font-size: 1rem;
+  }
+  .font-sm-small {
+    font-size: 0.875;
+  }
+  .font-sm-caption {
+    font-size: 0.75rem;
+  }
+  .font-sm-xs {
+    font-size: 0.75rem;
+  }
+  .font-sm-sm {
+    font-size: 0.875rem;
+  }
+  .font-sm-normal {
+    font-size: 1rem;
+  }
+  .font-sm-lg {
+    font-size: 1.125rem;
+  }
+  .font-sm-xl {
+    font-size: 1.25rem;
+  }
+  .font-sm-2xl {
+    font-size: 1.5rem;
+  }
+  .font-sm-3xl {
+    font-size: 1.875rem;
+  }
+  .font-sm-4xl {
+    font-size: 2.25rem;
+  }
+  .font-sm-5xl {
+    font-size: 3rem;
+  }
+  .font-sm-6xl {
+    font-size: 3.75rem;
+  }
+  .font-sm-7xl {
+    font-size: 4.5rem;
+  }
+  .font-sm-8xl {
+    font-size: 6rem;
+  }
+  .font-sm-9xl {
+    font-size: 8rem;
+  }
+  .font-sm-h1 {
+    font-size: 6rem;
+  }
+  .font-sm-h2 {
+    font-size: 3.75rem;
+  }
+  .font-sm-h3 {
+    font-size: 3rem;
+  }
+  .font-sm-h4 {
+    font-size: 2rem;
+  }
+  .font-sm-h5 {
+    font-size: 1.5rem;
+  }
+  .font-sm-h6 {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -30402,6 +30468,72 @@ pre code * {
   }
   .has-sidebar {
     padding-left: 300px;
+  }
+  .font-md-normal {
+    font-size: 1rem;
+  }
+  .font-md-small {
+    font-size: 0.875;
+  }
+  .font-md-caption {
+    font-size: 0.75rem;
+  }
+  .font-md-xs {
+    font-size: 0.75rem;
+  }
+  .font-md-sm {
+    font-size: 0.875rem;
+  }
+  .font-md-normal {
+    font-size: 1rem;
+  }
+  .font-md-lg {
+    font-size: 1.125rem;
+  }
+  .font-md-xl {
+    font-size: 1.25rem;
+  }
+  .font-md-2xl {
+    font-size: 1.5rem;
+  }
+  .font-md-3xl {
+    font-size: 1.875rem;
+  }
+  .font-md-4xl {
+    font-size: 2.25rem;
+  }
+  .font-md-5xl {
+    font-size: 3rem;
+  }
+  .font-md-6xl {
+    font-size: 3.75rem;
+  }
+  .font-md-7xl {
+    font-size: 4.5rem;
+  }
+  .font-md-8xl {
+    font-size: 6rem;
+  }
+  .font-md-9xl {
+    font-size: 8rem;
+  }
+  .font-md-h1 {
+    font-size: 6rem;
+  }
+  .font-md-h2 {
+    font-size: 3.75rem;
+  }
+  .font-md-h3 {
+    font-size: 3rem;
+  }
+  .font-md-h4 {
+    font-size: 2rem;
+  }
+  .font-md-h5 {
+    font-size: 1.5rem;
+  }
+  .font-md-h6 {
+    font-size: 1.25rem;
   }
 }
 
@@ -31623,6 +31755,72 @@ pre code * {
   .has-sidebar {
     padding-left: 300px;
   }
+  .font-lg-normal {
+    font-size: 1rem;
+  }
+  .font-lg-small {
+    font-size: 0.875;
+  }
+  .font-lg-caption {
+    font-size: 0.75rem;
+  }
+  .font-lg-xs {
+    font-size: 0.75rem;
+  }
+  .font-lg-sm {
+    font-size: 0.875rem;
+  }
+  .font-lg-normal {
+    font-size: 1rem;
+  }
+  .font-lg-lg {
+    font-size: 1.125rem;
+  }
+  .font-lg-xl {
+    font-size: 1.25rem;
+  }
+  .font-lg-2xl {
+    font-size: 1.5rem;
+  }
+  .font-lg-3xl {
+    font-size: 1.875rem;
+  }
+  .font-lg-4xl {
+    font-size: 2.25rem;
+  }
+  .font-lg-5xl {
+    font-size: 3rem;
+  }
+  .font-lg-6xl {
+    font-size: 3.75rem;
+  }
+  .font-lg-7xl {
+    font-size: 4.5rem;
+  }
+  .font-lg-8xl {
+    font-size: 6rem;
+  }
+  .font-lg-9xl {
+    font-size: 8rem;
+  }
+  .font-lg-h1 {
+    font-size: 6rem;
+  }
+  .font-lg-h2 {
+    font-size: 3.75rem;
+  }
+  .font-lg-h3 {
+    font-size: 3rem;
+  }
+  .font-lg-h4 {
+    font-size: 2rem;
+  }
+  .font-lg-h5 {
+    font-size: 1.5rem;
+  }
+  .font-lg-h6 {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -32843,6 +33041,72 @@ pre code * {
   .has-sidebar {
     padding-left: 300px;
   }
+  .font-xl-normal {
+    font-size: 1rem;
+  }
+  .font-xl-small {
+    font-size: 0.875;
+  }
+  .font-xl-caption {
+    font-size: 0.75rem;
+  }
+  .font-xl-xs {
+    font-size: 0.75rem;
+  }
+  .font-xl-sm {
+    font-size: 0.875rem;
+  }
+  .font-xl-normal {
+    font-size: 1rem;
+  }
+  .font-xl-lg {
+    font-size: 1.125rem;
+  }
+  .font-xl-xl {
+    font-size: 1.25rem;
+  }
+  .font-xl-2xl {
+    font-size: 1.5rem;
+  }
+  .font-xl-3xl {
+    font-size: 1.875rem;
+  }
+  .font-xl-4xl {
+    font-size: 2.25rem;
+  }
+  .font-xl-5xl {
+    font-size: 3rem;
+  }
+  .font-xl-6xl {
+    font-size: 3.75rem;
+  }
+  .font-xl-7xl {
+    font-size: 4.5rem;
+  }
+  .font-xl-8xl {
+    font-size: 6rem;
+  }
+  .font-xl-9xl {
+    font-size: 8rem;
+  }
+  .font-xl-h1 {
+    font-size: 6rem;
+  }
+  .font-xl-h2 {
+    font-size: 3.75rem;
+  }
+  .font-xl-h3 {
+    font-size: 3rem;
+  }
+  .font-xl-h4 {
+    font-size: 2rem;
+  }
+  .font-xl-h5 {
+    font-size: 1.5rem;
+  }
+  .font-xl-h6 {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -34062,6 +34326,72 @@ pre code * {
   }
   .has-sidebar {
     padding-left: 300px;
+  }
+  .font-xxl-normal {
+    font-size: 1rem;
+  }
+  .font-xxl-small {
+    font-size: 0.875;
+  }
+  .font-xxl-caption {
+    font-size: 0.75rem;
+  }
+  .font-xxl-xs {
+    font-size: 0.75rem;
+  }
+  .font-xxl-sm {
+    font-size: 0.875rem;
+  }
+  .font-xxl-normal {
+    font-size: 1rem;
+  }
+  .font-xxl-lg {
+    font-size: 1.125rem;
+  }
+  .font-xxl-xl {
+    font-size: 1.25rem;
+  }
+  .font-xxl-2xl {
+    font-size: 1.5rem;
+  }
+  .font-xxl-3xl {
+    font-size: 1.875rem;
+  }
+  .font-xxl-4xl {
+    font-size: 2.25rem;
+  }
+  .font-xxl-5xl {
+    font-size: 3rem;
+  }
+  .font-xxl-6xl {
+    font-size: 3.75rem;
+  }
+  .font-xxl-7xl {
+    font-size: 4.5rem;
+  }
+  .font-xxl-8xl {
+    font-size: 6rem;
+  }
+  .font-xxl-9xl {
+    font-size: 8rem;
+  }
+  .font-xxl-h1 {
+    font-size: 6rem;
+  }
+  .font-xxl-h2 {
+    font-size: 3.75rem;
+  }
+  .font-xxl-h3 {
+    font-size: 3rem;
+  }
+  .font-xxl-h4 {
+    font-size: 2rem;
+  }
+  .font-xxl-h5 {
+    font-size: 1.5rem;
+  }
+  .font-xxl-h6 {
+    font-size: 1.25rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

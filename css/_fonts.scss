@@ -39,15 +39,12 @@ p {
 }
 
 @each $font-size-prefix, $font-size in $text-font-sizes {
-  .font-#{$font-size-prefix} {
-    font-size: $font-size;
-  }
+  @include create-font-size($font-size, $font-size-prefix);
 }
 
 @each $font-size-name, $font-size in $font-sizes {
-  .#{$font-size-name} {
-    font-size: $font-size;
-  }
+    @include create-font-size($font-size, $font-size-name);
+
 }
 
 @each $font-weight-prefix, $font-weight in $font-weights {
