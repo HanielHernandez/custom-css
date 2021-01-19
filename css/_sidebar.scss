@@ -2,6 +2,7 @@
   width: $sidebar-width;
   height: $sidebar-height;
   position: fixed;
+  overflow-y: auto;
   z-index: $sidebar-z-index;
   left: 0px;
   top: calc(#{$nav-bar-height} + 1px);
@@ -28,5 +29,3 @@
     }
   }
 }
-
-

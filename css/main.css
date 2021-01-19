@@ -20596,6 +20596,7 @@ pre code * {
   width: 300px;
   height: calc(100vh - 56px + 1px);
   position: fixed;
+  overflow-y: auto;
   z-index: 30;
   left: 0px;
   top: calc(56px + 1px);
