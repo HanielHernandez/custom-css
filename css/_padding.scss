@@ -42,10 +42,7 @@
   .pb-#{$padding-size} {
     padding-bottom: 0.25rem * $padding-size;
   }
-  @include create-padding-for-breakpoint($padding-size, $sm-breakpoint, "sm");
-  @include create-padding-for-breakpoint($padding-size, $md-breakpoint, "md");
-  @include create-padding-for-breakpoint($padding-size, $lg-breakpoint, "lg");
-  @include create-padding-for-breakpoint($padding-size, $xl-breakpoint, "xl");
+ 
 }
 
 @for $i from 0 through 24 {
