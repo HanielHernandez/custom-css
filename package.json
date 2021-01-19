@@ -1,11 +1,10 @@
 {
   "name": "customizable-css",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A css framework with utilities base classes as well as component",
   "main": "main.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-scss":""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
