@@ -1,0 +1,34 @@
+@mixin create-background-for-theme($name, $color, $is-hover: 0) {
+    @if ($is-hover == 0) {
+      .bg-#{$name} {
+        background-color: $color;
+        color: set-color($color);
+      }
+    } @else {
+      .hover\:bg-#{$name}:hover {
+        background-color: $color;
+        color: set-color($color);
+      }
+    }
+  }
+  
+  @mixin create-text-for-theme($name, $color, $is-hover: 0) {
+    @if ($is-hover == 0) {
+      .text-#{$name} {
+        color: $color !important;
+      }
+    } @else {
+      .hover\:text-#{$name}:hover {
+        color: $color !important;
+      }
+    }
+  }
+  @mixin create-theme($name, $color) {
+    @include create-navbar($name, $color);
+    @include create-button-for-theme($name, $color);
+    @include create-background-for-theme($name, $color);
+    @include create-text-for-theme($name, $color);
+    @include create-borders($name, $color);
+    @include create-spinner-for-theme($name, $color);
+  }
+  
