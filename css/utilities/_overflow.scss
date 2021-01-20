@@ -1,0 +1,11 @@
+@each $overflow-value in $overflow-values{
+    .overflow-#{overflow-value}{
+        overflow: $overflow-value;
+    }
+    .overflow-y-#{overflow-value}{
+        overflow-y: $overflow-value;
+    }
+    .overflow-x-#{overflow-value}{
+        overflow-y: $overflow-value;
+    }
+}

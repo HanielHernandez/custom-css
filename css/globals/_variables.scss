@@ -22,7 +22,7 @@ $align-positions: (
   stretch: stretch,
   baseline: baseline,
 );
-
+// displays
 $displays-value: (
   inline,
   block,
@@ -49,7 +49,11 @@ $displays-value: (
   inherit
 );
 
+//overflow values
+$overflow-values: (visible, hidden, clip, scroll, auto);
+
 //==== END OF UTILITIES ===//
+
 //grid
 $grid-columns: 12;
 
@@ -309,10 +313,13 @@ $sidebar-z-index: 30;
 $sidebar-transition-property: all !default;
 $sidebar-transition-duration: 0.3s !default;
 $sidebar-transition-ease: ease-in-out !default;
-$sidebar-expand-btn-width: 57px;
+$sidebar-expand-btn-width: 57px !default;
+$sidebar-expand-btn-transform: rotate(180deg);
+
+$sidebar-overflow: visible !default;
 // Expandible
 $expandible-transtion: height !default;
 $expandible-transtion-time: 100ms !default;
 $expandible-transtion-ease: ease-in-out !default;
- // opacity
-$opacity-range:20;
+// opacity
+$opacity-range: 20;
