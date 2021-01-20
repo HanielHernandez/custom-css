@@ -48,3 +48,14 @@ function expandSidebar(){
 }
 const expandTrigger =  document.getElementById('expandTrigger');
 expandTrigger.addEventListener('click',expandSidebar)
+
+function showModal($event){
+    const target = document.getElementById( $event.target.dataset.target);
+    console.log(target.classList)
+    target.classList.add('show');
+    
+}
+const modalTriggers =  document.getElementsByClassName('modal-trigger');
+for (var i = 0; i < modalTriggers.length; i++) {
+    modalTriggers[i].addEventListener('click', showModal);
+}

@@ -1,6 +1,13 @@
 $max-width: map-get($modal-sizes, "default");
 .modal {
+  &:not(.show) {
+    .modal-background {
+      transform: scale(0);
+    }
+  }
+
   &-background {
+    transition: transform 0.3s ease-in-out;
     width: 100vw;
     height: 100vh;
     background-color: $modal-background-background-color;
@@ -20,15 +27,21 @@ $max-width: map-get($modal-sizes, "default");
   &-content {
     width: 100%;
     max-width: $max-width;
+    max-height: $modal-content-max-height;
     border-radius: $modal-content-boder-radius;
     background-color: $modal-content-background-color;
+    display: flex;
+    flex-direction: column;
   }
 
   &-header {
     padding: $modal-padding;
+    border-bottom: $modal-border;
   }
   &-body {
     padding: $modal-padding;
+    border-bottom: $modal-border;
+    overflow-y: auto;
   }
   &-footer {
     padding: $modal-padding;
@@ -36,5 +49,13 @@ $max-width: map-get($modal-sizes, "default");
   &-title {
     font-size: $modal-title-font-size;
     font-weight: $modal-title-font-weight;
+  }
+  &-close {
+    width: 32px;
+    height: 32px;
+  }
+
+  p {
+    margin-bottom: 0px;
   }
 }

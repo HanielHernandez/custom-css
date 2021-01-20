@@ -99,6 +99,11 @@ body {
   line-height: 1.42;
 }
 
+button {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
 p {
   display: block;
 }
@@ -1123,7 +1128,11 @@ a.btn {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.modal:not(.show) .modal-background {
+  transform: scale(0);
+}
 .modal-background {
+  transition: transform 0.3s ease-in-out;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.37);
@@ -1143,14 +1152,20 @@ a.btn {
 .modal-content {
   width: 100%;
   max-width: 600px;
+  max-height: 75vh;
   border-radius: 0.25rem;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 .modal-header {
   padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 .modal-body {
   padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  overflow-y: auto;
 }
 .modal-footer {
   padding: 1rem;
@@ -1158,6 +1173,13 @@ a.btn {
 .modal-title {
   font-size: 1.5rem;
   font-weight: 600;
+}
+.modal-close {
+  width: 32px;
+  height: 32px;
+}
+.modal p {
+  margin-bottom: 0px;
 }
 
 .bg-white {
@@ -15507,11 +15529,6 @@ h5 {
 .h6,
 h6 {
   font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-p {
-  width: 100%;
   margin-bottom: 1rem;
 }
 

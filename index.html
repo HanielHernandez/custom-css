@@ -2365,21 +2365,35 @@ Hover over me
             Modals
             </h4>
 
+            <button class="btn btn-primary modal-trigger" data-target="my-modal">
+                Show modal
+            </button>
 
-            <div class="modal">
+            <div class="modal" id="my-modal">
                 <div class="modal-background">
                     <div class="modal-container">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <p class="modal-title">
-                                    My Modal title
-                                </p>
+                                <div class="display-flex justify-between">
+                                    <p class="modal-title">
+                                        My Modal title
+                                    </p>
+                                    <button class="btn flat p-0 modal-close">
+                                        <span class="material-icons"> close</span>
+                                    </button>
+                                </div>
+                              
                             </div>
                             <div class="modal-body">
-                                
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, quae? Maxime dicta similique delectus molestiae cumque ratione quo libero placeat iste dolor? Alias dignissimos eos ea ullam deleniti officia facilis?
                             </div>
                             <div class="modal-footer">
-
+                                <button class="btn btn-primary p-2">
+                                    Option a
+                                </button>
+                            <button class="btn btn-primary-flat p-2">
+                                option B
+                            </button>
                             </div>
                         </div>
                     </div>
