@@ -50,9 +50,20 @@ const expandTrigger =  document.getElementById('expandTrigger');
 expandTrigger.addEventListener('click',expandSidebar)
 
 function showModal($event){
-    const target = document.getElementById( $event.target.dataset.target);
-    console.log(target.classList)
-    target.classList.add('show');
+    const target = document.getElementById($event.target.dataset.target);
+    console.log($event.target)
+    if(target.classList.contains('show')){
+        target.classList.remove('show');
+        setTimeout(()=>{
+            target.style.display = "none";
+        },300)
+    }else{
+        target.style.display = "block";
+        setTimeout(()=>{
+            target.classList.add('show');
+        },100)
+    }
+  
     
 }
 const modalTriggers =  document.getElementsByClassName('modal-trigger');

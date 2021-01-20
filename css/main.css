@@ -1128,11 +1128,25 @@ a.btn {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.modal {
+  display: none;
+}
 .modal:not(.show) .modal-background {
+  opacity: 0;
+}
+.modal:not(.show) .modal-content {
   transform: scale(0);
 }
+.modal.show .modal-background {
+  opacity: 1;
+}
+.modal.show .modal-content {
+  transform: scale(1);
+}
+.modal-background, .modal-content {
+  transition: all 0.3s ease-in-out;
+}
 .modal-background {
-  transition: transform 0.3s ease-in-out;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.37);
@@ -1177,6 +1191,28 @@ a.btn {
 .modal-close {
   width: 32px;
   height: 32px;
+  position: relative;
+  border: none;
+  background-color: none;
+}
+.modal-close::before, .modal-close::after {
+  border-radius: 1px;
+  background-color: rgba(0, 0, 0, 0.56);
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform-origin: center center;
+}
+.modal-close::before {
+  width: 50%;
+  height: 2px;
+}
+.modal-close::after {
+  width: 2px;
+  height: 50%;
 }
 .modal p {
   margin-bottom: 0px;
