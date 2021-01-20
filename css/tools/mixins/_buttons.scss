@@ -1,8 +1,12 @@
+/// Creates a button class (.bg-*) base on a name and color
+/// @param {String} $name name of the theme/color
+/// @param {String} $color color use on the theme
+/// @param {Number} $is-hover [0] 1 will create a hover class
+
 @mixin create-button-for-theme($name, $theme-color) {
   $hover-color: darken($theme-color, 12%);
   .btn-#{$name} {
-    background-color: $theme-color;
-    color: set-color($theme-color);
+    @include get-background-and-color($theme-color);
     border: 0px;
     &:hover {
       background-color: $hover-color;

@@ -1,3 +1,7 @@
+/// Creates a border class (.b-*) base on a name and color
+/// @param {String} $theme-name name of the theme/color
+/// @param {String} $color color use on the theme
+/// @param {Number} $is-hover [0] 1 will create a hover class
 @mixin create-borders($theme-name, $color, $is-hover: 0) {
   @if ($is-hover == 0) {
     .b-#{$theme-name} {

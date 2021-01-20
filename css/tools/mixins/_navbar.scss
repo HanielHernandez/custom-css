@@ -1,35 +1,33 @@
 @mixin create-navbar($name, $color) {
-    .navbar-#{$name} {
-      background-color: $color;
-      color: set-color($color);
-      border-bottom: $nav-bar-border-width solid set-border-color($color);
+  .navbar-#{$name} {
+    @include get-background-and-color($color);
+    border-bottom: $nav-bar-border-width solid set-border-color($color);
+    .nav {
+      &-link {
+        color: set-color($color);
+      }
+    }
+  }
+}
+@mixin create-navbar-collapse-for-breakpoint($subfix) {
+  .navbar {
+    &-collapse-#{$subfix} {
       .nav {
-        &-link {
-          color: set-color($color);
+        &-toggler {
+          display: inline-block;
+        }
+        &-menu {
+          width: $navbar-collapse-width;
+          position: $navbar-collpase-position;
+          transition: $navbar-collpase-transiton;
+          height: 100%;
+          max-height: 0px;
+          overflow: hidden;
+          .nav {
+            flex-direction: column;
+          }
         }
       }
     }
   }
-@mixin create-navbar-collapse-for-breakpoint($subfix){
-  .navbar{
-    &-collapse-#{$subfix} {
-    .nav{
-      &-toggler {
-      display: inline-block;
-      }
-      &-menu {
-        width: $navbar-collapse-width;
-        position: $navbar-collpase-position;
-        transition: $navbar-collpase-transiton  ;
-        height: 100%;
-        max-height: 0px;
-        overflow: hidden;
-        .nav {
-          flex-direction: column;
-        }
-      }
-  }
-}
-
-}
 }

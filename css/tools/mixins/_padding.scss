@@ -1,4 +1,7 @@
-@mixin create-padding-for-breakpoint($padding-size, $breakpoint, $prefix) {
+@mixin create-padding($padding-value, $padding-property: padding) {
+  #{$padding-property}: $padding-value;
+}
+@mixin create-padding-size-for-breakpoint($padding-size, $breakpoint, $prefix) {
   .p-#{$prefix}-#{$padding-size},
   .px-#{$prefix}-#{$padding-size},
   .pr-#{$prefix}-#{$padding-size} {
@@ -21,7 +24,7 @@
   }
 }
 
-@mixin create-padding($padding-size) {
+@mixin create-padding-size($padding-size) {
   .p-#{$padding-size},
   .px-#{$padding-size},
   .pr-#{$padding-size} {
@@ -42,5 +45,4 @@
   .pb-#{$padding-size} {
     padding-bottom: 0.25rem * $padding-size;
   }
- 
 }

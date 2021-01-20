@@ -1,5 +1,3 @@
-
-
-@for $i from 0 through $loop-size {
+@for $i from 0 through $lop-size {
   @include create-margin($i);
 }

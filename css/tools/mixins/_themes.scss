@@ -1,34 +1,35 @@
+/// Creates a background class (.bg-*) base on a name and color
+/// @param {String} $name name of the theme/color
+/// @param {String} $color color use on the theme
+/// @param {Number} $is-hover [0] 1 will create a hover class
 @mixin create-background-for-theme($name, $color, $is-hover: 0) {
-    @if ($is-hover == 0) {
-      .bg-#{$name} {
-        background-color: $color;
-        color: set-color($color);
-      }
-    } @else {
-      .hover\:bg-#{$name}:hover {
-        background-color: $color;
-        color: set-color($color);
-      }
+  @if ($is-hover == 0) {
+    .bg-#{$name} {
+      @include get-background-and-color($color);
+    }
+  } @else {
+    .hover\:bg-#{$name}:hover {
+      @include get-background-and-color($color);
     }
   }
-  
-  @mixin create-text-for-theme($name, $color, $is-hover: 0) {
-    @if ($is-hover == 0) {
-      .text-#{$name} {
-        color: $color !important;
-      }
-    } @else {
-      .hover\:text-#{$name}:hover {
-        color: $color !important;
-      }
+}
+
+@mixin create-text-for-theme($name, $color, $is-hover: 0) {
+  @if ($is-hover == 0) {
+    .text-#{$name} {
+      color: $color !important;
+    }
+  } @else {
+    .hover\:text-#{$name}:hover {
+      color: $color !important;
     }
   }
-  @mixin create-theme($name, $color) {
-    @include create-navbar($name, $color);
-    @include create-button-for-theme($name, $color);
-    @include create-background-for-theme($name, $color);
-    @include create-text-for-theme($name, $color);
-    @include create-borders($name, $color);
-    @include create-spinner-for-theme($name, $color);
-  }
-  
+}
+@mixin create-theme($name, $color) {
+  @include create-navbar($name, $color);
+  @include create-button-for-theme($name, $color);
+  @include create-background-for-theme($name, $color);
+  @include create-text-for-theme($name, $color);
+  @include create-borders($name, $color);
+  @include create-spinner-for-theme($name, $color);
+}
