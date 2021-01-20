@@ -157,7 +157,7 @@ $body-background-color: rgba(0, 0, 0, 0) !default;
 //links
 $link-color: #1976d2 !default;
 $border-radius: 5px !default;
-//navs
+//navbar
 $nav-bar-height: 56px;
 $nav-bar-default-bg-color: #fff !default;
 $nav-bar-border-color: #e0e0e0 !default;
@@ -165,12 +165,14 @@ $nav-bar-border-width: 1px !default;
 $nav-brand-font-size: 1.5rem !default;
 $nav-brand-font-weight: 700 !default;
 $nav-brand-padding: 0.5rem 1rem !default;
-
 $nav-link-padding: 1rem !default;
 $navbar-link-font-size: 1rem !default;
 $nav-link-default-color: #212121 !default;
 $nav-link-hover-bg-color: rgba(0, 0, 0, 0.12);
 $nav-line-height: 1.5 !default;
+$navbar-collpase-position: relative !default;
+$navbar-collapse-width: 100vw !default;
+$navbar-collpase-transiton: max-height 0.3s ease-in-out !default;
 //contianer
 $container-padding: 1rem !default;
 

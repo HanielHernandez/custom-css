@@ -767,11 +767,6 @@ nav {
   width: 100%;
 }
 
-.nav-toggler {
-  font-family: "Material-icons";
-  font-size: 24px;
-}
-
 .navbar {
   width: 100%;
   display: -webkit-box;
@@ -797,10 +792,6 @@ nav {
   list-style: none;
 }
 
-.navbar .nav-toggler {
-  display: none;
-}
-
 .navbar .brand {
   font-size: 1.5rem !important;
   padding: 0.5rem 1rem;
@@ -816,6 +807,14 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.navbar .nav-toggler {
+  display: none;
+  font-family: "Material-icons";
+  font-size: 24px;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
 }
 
 .navbar .nav-item,
@@ -24156,12 +24155,10 @@ span.material-icons {
 }
 
 @media (max-width: 576px) {
-  .nav-collapse-sm .nav-toggler {
+  .navbar-collapse-sm .nav-toggler {
     display: inline-block;
-    margin-top: 0.3125rem;
-    margin-bottom: 0.3125rem;
   }
-  .nav-collapse-sm .nav-menu {
+  .navbar-collapse-sm .nav-menu {
     width: 100vw;
     position: relative;
     -webkit-transition: max-height 0.3s ease-in-out;
@@ -24170,7 +24167,7 @@ span.material-icons {
     max-height: 0px;
     overflow: hidden;
   }
-  .nav-collapse-sm .nav-menu .nav {
+  .navbar-collapse-sm .nav-menu .nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -25439,12 +25436,10 @@ span.material-icons {
 }
 
 @media (max-width: 768px) {
-  .nav-collapse-md .nav-toggler {
+  .navbar-collapse-md .nav-toggler {
     display: inline-block;
-    margin-top: 0.3125rem;
-    margin-bottom: 0.3125rem;
   }
-  .nav-collapse-md .nav-menu {
+  .navbar-collapse-md .nav-menu {
     width: 100vw;
     position: relative;
     -webkit-transition: max-height 0.3s ease-in-out;
@@ -25453,7 +25448,7 @@ span.material-icons {
     max-height: 0px;
     overflow: hidden;
   }
-  .nav-collapse-md .nav-menu .nav {
+  .navbar-collapse-md .nav-menu .nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -26722,12 +26717,10 @@ span.material-icons {
 }
 
 @media (max-width: 1024px) {
-  .nav-collapse-lg .nav-toggler {
+  .navbar-collapse-lg .nav-toggler {
     display: inline-block;
-    margin-top: 0.3125rem;
-    margin-bottom: 0.3125rem;
   }
-  .nav-collapse-lg .nav-menu {
+  .navbar-collapse-lg .nav-menu {
     width: 100vw;
     position: relative;
     -webkit-transition: max-height 0.3s ease-in-out;
@@ -26736,7 +26729,7 @@ span.material-icons {
     max-height: 0px;
     overflow: hidden;
   }
-  .nav-collapse-lg .nav-menu .nav {
+  .navbar-collapse-lg .nav-menu .nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -28005,12 +27998,10 @@ span.material-icons {
 }
 
 @media (max-width: 1280px) {
-  .nav-collapse-xl .nav-toggler {
+  .navbar-collapse-xl .nav-toggler {
     display: inline-block;
-    margin-top: 0.3125rem;
-    margin-bottom: 0.3125rem;
   }
-  .nav-collapse-xl .nav-menu {
+  .navbar-collapse-xl .nav-menu {
     width: 100vw;
     position: relative;
     -webkit-transition: max-height 0.3s ease-in-out;
@@ -28019,7 +28010,7 @@ span.material-icons {
     max-height: 0px;
     overflow: hidden;
   }
-  .nav-collapse-xl .nav-menu .nav {
+  .navbar-collapse-xl .nav-menu .nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -29288,12 +29279,10 @@ span.material-icons {
 }
 
 @media (max-width: 1400px) {
-  .nav-collapse-xxl .nav-toggler {
+  .navbar-collapse-xxl .nav-toggler {
     display: inline-block;
-    margin-top: 0.3125rem;
-    margin-bottom: 0.3125rem;
   }
-  .nav-collapse-xxl .nav-menu {
+  .navbar-collapse-xxl .nav-menu {
     width: 100vw;
     position: relative;
     -webkit-transition: max-height 0.3s ease-in-out;
@@ -29302,7 +29291,7 @@ span.material-icons {
     max-height: 0px;
     overflow: hidden;
   }
-  .nav-collapse-xxl .nav-menu .nav {
+  .navbar-collapse-xxl .nav-menu .nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
