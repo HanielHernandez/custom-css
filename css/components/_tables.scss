@@ -5,9 +5,8 @@
 .table-fixed {
   table-layout: auto;
 }
-table.table-full {
-  width: 100%;
-}
+
+// table class
 .table {
   border-collapse: collapse;
   background-color: $table-bg-color;
@@ -18,26 +17,36 @@ table.table-full {
   th,
   td {
     padding: $table-cell-padding;
-    border-bottom: $table-border;
+    border-bottom: $table-border-width $table-border-style $table-border-color;
   }
-}
-.table-with-border {
-  border: $table-border;
-  td,
-  th {
-    border: $table-border;
+  &-full {
+    width: 100%;
   }
-}
-.table-striped {
-  tr:nth-child(2n) {
-    background-color: $table-striped-bg-color;
+
+  &-with-border {
+    border-width: $table-border-width;
+    border-style: $table-border-style;
+    border-color: $table-border-color;
+    td,
+    th {
+      border-width: $table-border-width;
+      border-style: $table-border-style;
+      border-color: $table-border-color;
+    }
   }
-}
-.table-hover {
-  tr {
-    transition: all 0.2s ease-in-out;
+
+  &-striped {
+    tr:nth-child(2n) {
+      background-color: $table-striped-bg-color;
+    }
   }
-  tr:hover {
-    background-color: $table-hover-bg-color;
+
+  &-hover {
+    tr {
+      transition: all 0.2s ease-in-out;
+    }
+    tr:hover {
+      background-color: $table-hover-bg-color;
+    }
   }
 }

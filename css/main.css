@@ -97,7 +97,7 @@ body {
   color: rgba(0, 0, 0, 0.8);
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.42;
 }
 
 p {
@@ -133,6 +133,22 @@ table {
 
 code {
   font-family: monospace;
+}
+
+*::-webkit-input-placeholder {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+*:-ms-input-placeholder {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+*::-ms-input-placeholder {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+*::placeholder {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
 }
 
 /*** Containers ***/
@@ -845,10 +861,6 @@ nav {
   table-layout: auto;
 }
 
-table.table-full {
-  width: 100%;
-}
-
 .table {
   border-collapse: collapse;
   background-color: #fff;
@@ -865,13 +877,21 @@ table.table-full {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
+.table-full {
+  width: 100%;
+}
+
 .table-with-border {
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
 }
 
 .table-with-border td,
 .table-with-border th {
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
 }
 
 .table-striped tr:nth-child(2n) {

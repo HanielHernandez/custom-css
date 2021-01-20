@@ -88,8 +88,8 @@ body {
   background-color: $body-background-color;
   color: $font-color;
   font-family: $font-family;
-  font-size: $base-font-size;
-  line-height: 1.4;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 p {
   display: block;
@@ -120,4 +120,7 @@ table {
 }
 code {
   font-family: monospace;
+}
+*::placeholder {
+  font-family: $font-family;
 }
