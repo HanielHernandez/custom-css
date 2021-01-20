@@ -2343,7 +2343,7 @@ Hover over me
                 </div>
             </div>
             <!-- ### OPACITY ###-->
-            <div id="opacity">
+            <div id="opacity" class="mb-4">
                 <h4>
                     Opacity
                 </h4>
@@ -2360,14 +2360,45 @@ Hover over me
             </div>
         </div>
           
-        <div id="modals">
-            <h4>
+        <div id="modals" class="mb-4">
+            <h4 class="mb-4">
             Modals
             </h4>
 
-            <button class="btn btn-primary modal-trigger" data-target="my-modal">
+            <button  class="mb-4 btn btn-primary modal-trigger" data-target="my-modal">
                 Show modal
             </button>
+<pre><code lang="html"> <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;modal&quot;</span> id=&quot;my-modal&quot;&gt;
+    &lt;div class=&quot;modal-background&quot;&gt;
+        &lt;div class=&quot;modal-container&quot;&gt;
+            &lt;div class=&quot;modal-content&quot;&gt;
+                &lt;div class=&quot;modal-header&quot;&gt;
+                    &lt;div class=&quot;display-flex justify-between&quot;&gt;
+                        &lt;p class=&quot;modal-title&quot;&gt;
+                            My Modal title
+                        &lt;/p&gt;
+                        &lt;button class=&quot;modal-close modal-trigger&quot; data-target=&quot;my-modal&quot;&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                  
+                &lt;/div&gt;
+                &lt;div class=&quot;modal-body&quot;&gt;
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, quae? Maxime dicta similique delectus molestiae cumque ratione quo libero placeat iste dolor? Alias dignissimos eos ea ullam deleniti officia facilis?
+                &lt;/div&gt;
+                &lt;div class=&quot;modal-footer&quot;&gt;
+                    &lt;button class=&quot;btn btn-primary p-2&quot;&gt;
+                        Option a
+                    &lt;/button&gt;
+                &lt;button class=&quot;btn btn-primary-flat p-2&quot;&gt;
+                    option B
+                &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+
 
             <div class="modal" id="my-modal">
                 <div class="modal-background">
@@ -2398,6 +2429,7 @@ Hover over me
                     </div>
                 </div>
             </div>
+            <p>you can add an animation buy adding the class <b>.modal-animated</b> to a <b>.modal</b> div  </p>
         </div>
         </div>
 

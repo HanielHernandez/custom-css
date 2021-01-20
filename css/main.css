@@ -1128,19 +1128,22 @@ a.btn {
   color: rgba(0, 0, 0, 0.8);
 }
 
+/**
+* Modal class
+*/
 .modal {
   display: none;
 }
-.modal:not(.show) .modal-background {
+.modal-animated:not(.show) .modal-background {
   opacity: 0;
 }
-.modal:not(.show) .modal-content {
+.modal-animated:not(.show) .modal-content {
   transform: scale(0);
 }
-.modal.show .modal-background {
+.modal-animated.show .modal-background {
   opacity: 1;
 }
-.modal.show .modal-content {
+.modal-animated.show .modal-content {
   transform: scale(1);
 }
 .modal-background, .modal-content {

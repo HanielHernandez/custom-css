@@ -51,20 +51,23 @@ expandTrigger.addEventListener('click',expandSidebar)
 
 function showModal($event){
     const target = document.getElementById($event.target.dataset.target);
-    console.log($event.target)
-    if(target.classList.contains('show')){
-        target.classList.remove('show');
-        setTimeout(()=>{
-            target.style.display = "none";
-        },300)
-    }else{
+    console.log(target.style.display)
+    if(target.style.display =="none" || target.style.display === ''){
         target.style.display = "block";
         setTimeout(()=>{
             target.classList.add('show');
         },100)
+    }else{
+        if(target.classList.contains('modal-animated')){
+            target.classList.remove('show');
+            setTimeout(()=>{
+                target.style.display = "none";
+            },300)
+        }else{
+            target.classList.remove('show');
+            target.style.display = "none";
+        }
     }
-  
-    
 }
 const modalTriggers =  document.getElementsByClassName('modal-trigger');
 for (var i = 0; i < modalTriggers.length; i++) {
