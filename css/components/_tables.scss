@@ -10,6 +10,8 @@
 .table {
   border-collapse: collapse;
   background-color: $table-bg-color;
+  border-color: $table-border-color;
+
   th {
     font-size: $table-heading-font-size;
     font-weight: $table-heading-font-weight;
@@ -17,7 +19,9 @@
   th,
   td {
     padding: $table-cell-padding;
-    border-bottom: $table-border-width $table-border-style $table-border-color;
+    border-bottom-width: $table-border-width;
+    border-bottom-style: $table-border-style;
+    border-bottom-color: inherit;
   }
   &-full {
     width: 100%;
@@ -26,12 +30,11 @@
   &-with-border {
     border-width: $table-border-width;
     border-style: $table-border-style;
-    border-color: $table-border-color;
     td,
     th {
       border-width: $table-border-width;
       border-style: $table-border-style;
-      border-color: $table-border-color;
+      border-color: inherit;
     }
   }
 
@@ -41,7 +44,7 @@
     }
   }
 
-  &-hover {
+  &-with-hover {
     tr {
       transition: all 0.2s ease-in-out;
     }

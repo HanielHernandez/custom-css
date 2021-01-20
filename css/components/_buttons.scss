@@ -18,6 +18,12 @@
   &:focus {
     outline: $button-focus-outline;
   }
+  &.flat {
+    border: none;
+    &:hover {
+      background-color: $flat-button-hover-color;
+    }
+  }
 }
 
 .btn {
@@ -57,9 +63,4 @@ a.btn {
   text-decoration: none;
 }
 
-.btn.flat {
-  border: none;
-  &:hover {
-    background-color: $flat-button-hover-color;
-  }
-}
+

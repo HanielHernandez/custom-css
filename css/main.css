@@ -686,8 +686,11 @@ code {
 }
 
 .card {
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
   border-radius: 5px;
+  overflow: hidden;
   margin-bottom: 1rem;
 }
 
@@ -744,18 +747,18 @@ code {
   line-height: 1.25;
 }
 
+.card-footer {
+  border-color: inherit;
+}
+
 .card-actions {
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-top-width: 1px;
+  border-top-color: inherit;
+  border-top-style: solid;
   /*.btn {
       padding: 1rem;
       margin: 0px;
     }*/
-}
-
-.card-actions .btn {
-  padding: 1rem;
-  border-radius: 0px;
-  margin: 0px;
 }
 
 .card-actions .btn:first-child {
@@ -864,6 +867,7 @@ nav {
 .table {
   border-collapse: collapse;
   background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.12);
 }
 
 .table th {
@@ -874,7 +878,9 @@ nav {
 .table th,
 .table td {
   padding: 0.5em 0.75em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
 }
 
 .table-full {
@@ -884,26 +890,25 @@ nav {
 .table-with-border {
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 0.12);
 }
 
 .table-with-border td,
 .table-with-border th {
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 0.12);
+  border-color: inherit;
 }
 
 .table-striped tr:nth-child(2n) {
   background-color: #f5f5f5;
 }
 
-.table-hover tr {
+.table-with-hover tr {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.table-hover tr:hover {
+.table-with-hover tr:hover {
   background-color: #e0e0e0;
 }
 
@@ -914,14 +919,14 @@ nav {
 }
 
 .btn {
-  background-color: #fff;
-  color: #212121;
+  background-color: rgba(0, 0, 0, 0);
+  color: #000;
   border: 1px solid #e0e0e0;
   text-align: center;
 }
 
 .btn:hover {
-  background-color: #e6e6e6;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .btn:last-child {
@@ -930,6 +935,14 @@ nav {
 
 .btn:focus {
   outline: 1px solid black;
+}
+
+.btn.flat {
+  border: none;
+}
+
+.btn.flat:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .btn {
@@ -991,14 +1004,6 @@ nav {
 
 a.btn {
   text-decoration: none;
-}
-
-.btn.flat {
-  border: none;
-}
-
-.btn.flat:hover {
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .spinner {
@@ -20558,6 +20563,10 @@ span.material-icons {
 
 .r-full {
   border-radius: 50%;
+}
+
+.r-0 {
+  border-radius: 0px;
 }
 
 .r {
