@@ -1,0 +1,8 @@
+
+@each $value in $displays-value {
+    .display-#{$value} {
+      display: $value;
+    }
+  }
+  
+  

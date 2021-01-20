@@ -1,0 +1,43 @@
+@mixin create-columns($prefix) {
+  @for $i from 1 through 12 {
+    .col-w-#{$prefix}-#{$i} {
+      flex: 8.33% * $i;
+      max-width: 8.33% * $i;
+    }
+  }
+}
+@mixin create-width-fractions-for-breakpoint($breakpoint-prefix, $base) {
+  @for $i from 1 through $base {
+    $width: $i * 100% / $base;
+    $fraction: #{$i}\/#{$base};
+    .w-#{$breakpoint-prefix}-#{$fraction} {
+      width: $width;
+      max-width: $width;
+    }
+  }
+}
+
+@mixin create-height-fraction-for-breakpoint($breakpoint, $prefix, $width) {
+  @media (min-width: $breakpoint) {
+    .#{$prefix} {
+      width: $width;
+      max-width: $width;
+    }
+  }
+}
+
+@mixin create-fraction-width($base) {
+  @for $i from 1 through $base {
+    $width: $i * 100% / $base;
+    $fraction: #{$i}\/#{$base};
+
+    .w-#{$fraction} {
+      width: $width;
+      max-width: $width;
+    }
+    .h-#{$fraction} {
+      height: $width;
+      max-height: $width;
+    }
+  }
+}

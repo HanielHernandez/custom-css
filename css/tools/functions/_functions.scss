@@ -34,3 +34,6 @@
   }
   @return lighten($color, 50%);
 }
+@mixin create-width($width) {
+  width: $width;
+}

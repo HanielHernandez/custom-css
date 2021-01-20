@@ -2,6 +2,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200!default;0,300!default;0,400!default;0,600!default;0,700!default;0,900!default;1,200!default;1,300!default;1,400!default;1,600!default;1,700!default;1,900&display=swap");
 $default-border: 1px solid rgba(0, 0, 0, 0.12);
 $font-color: rgba(0, 0, 0, 0.8) !default;
+
+//==== UTILITIES ===//
+
+// positions
+
+$justify-positions: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  around: space-around,
+  between: space-between,
+  evenly: space-evenly,
+);
+$align-positions: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch,
+  baseline: baseline,
+);
+
+$displays-value: (
+  inline,
+  block,
+  contents,
+  flex,
+  grid,
+  inline-block,
+  inline-flex,
+  inline-grid,
+  inline-table,
+  list-item,
+  run-in,
+  table,
+  table-caption,
+  table-column-group,
+  table-header-group,
+  table-footer-group,
+  table-row-group,
+  table-cell,
+  table-column,
+  table-row,
+  none,
+  initial,
+  inherit
+);
+
+//==== END OF UTILITIES ===//
+//grid
+$grid-columns: 12;
+
 //theme colors
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -259,8 +310,9 @@ $sidebar-transition-property: all !default;
 $sidebar-transition-duration: 0.3s !default;
 $sidebar-transition-ease: ease-in-out !default;
 $sidebar-expand-btn-width: 57px;
-
 // Expandible
 $expandible-transtion: height !default;
 $expandible-transtion-time: 100ms !default;
 $expandible-transtion-ease: ease-in-out !default;
+ // opacity
+$opacity-range:20;

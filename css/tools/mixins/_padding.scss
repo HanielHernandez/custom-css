@@ -44,7 +44,3 @@
   }
  
 }
-
-@for $i from 0 through 24 {
-  @include create-padding($i);
-}

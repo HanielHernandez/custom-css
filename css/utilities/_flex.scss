@@ -1,0 +1,14 @@
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex-wrap-inehrit {
+  flex-wrap: inherit;
+}
+@include just-align("align", "align-items", $align-positions);
+@include just-align("justify", "justify-content", $justify-positions);

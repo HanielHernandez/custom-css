@@ -1,0 +1,51 @@
+/*** Containers ***/
+.container {
+  margin: 0px auto;
+}
+
+.container-xxl {
+  max-width: 1440px;
+}
+
+.container-lg {
+  max-width: 1280px;
+}
+
+.container-md {
+  max-width: 1024px;
+}
+
+/** Rows and Columss**/
+.row,
+.col {
+  display: flex;
+  width: 100%;
+}
+.row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: top;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0%;
+}
+
+/** Columns width **/
+
+@for $i from 1 through $grid-columns {
+  $percentage: 100% / $grid-columns;
+  .col-w-#{$i} {
+    flex: 0 0 auto;
+    max-width: $percentage * $i;
+  }
+}
+
+@include create-fraction-width(2);
+@include create-fraction-width(3);
+@include create-fraction-width(4);
+@include create-fraction-width(6);
+@include create-fraction-width(12);

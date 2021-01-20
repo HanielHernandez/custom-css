@@ -6,29 +6,45 @@
 @import "tools/functions/functions";
 
 // Generic
-@import "_colors.scss";
-@import "_fonts.scss";
-@import "_transitions.scss";
-@import "_nav.scss";
-@import "layout.scss";
-@import "_docs.scss";
-@import "layout.scss";
-@import "_buttons.scss";
-@import "_forms.scss";
-@import "_borders.scss";
-@import "_tables.scss";
-@import "_positions.scss";
-@import "_spinner.scss";
-@import "_themes.scss";
-@import "_text.scss";
-@import "_pre.scss";
-@import "_cards.scss";
-@import "_sidebar.scss";
-@import "_padding.scss";
-@import "_margin.scss";
-@import "_lists.scss";
-@import "_utilities.scss";
-@import "_z-index.scss";
-@import "_helpers.scss";
-@import "_hover.scss";
-@import "_responsive.scss";
+@import "generic/reset";
+
+// Layout and Grid
+@import "layout/grid";
+
+// Forms
+@import "forms/forms";
+
+// Components
+@import "components/lists";
+@import "components/cards";
+@import "components/nav";
+@import "components/tables";
+@import "components/buttons";
+@import "components/spinner";
+@import "components/sidebar";
+
+// Utilities
+@import "utilities/colors";
+@import "utilities/fonts";
+@import "utilities/transitions";
+@import "utilities/hover";
+@import "utilities/borders";
+@import "utilities/positions";
+@import "utilities/text";
+@import "utilities/padding";
+@import "utilities/padding";
+@import "utilities/z-index";
+@import "utilities/displays";
+@import "utilities/flex";
+@import "utilities/sizing";
+@import "utilities/shadows";
+@import "utilities/opacity";
+@import "utilities/expandible";
+
+// Themes/
+@import "themes";
+@import "responsive";
+
+// Docs
+@import "_docs";
+@import "_pre";

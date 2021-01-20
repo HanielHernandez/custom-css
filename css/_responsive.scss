@@ -36,7 +36,7 @@
     @include create-width-fractions-for-breakpoint($prefix, 4);
     @include create-width-fractions-for-breakpoint($prefix, 3);
     @include create-width-fractions-for-breakpoint($prefix, 2);
-    
+
     @for $i from 1 through $lop-size {
       @include create-margin-for-breakpoint($i, $breakpoint, $prefix);
       @include create-padding-for-breakpoint($i, $breakpoint, $prefix);
@@ -49,6 +49,7 @@
         $prefix
       );
     }
+
     .sidebar.sidebar-collapse-#{$prefix} {
       position: sticky;
       transform: none;
@@ -60,9 +61,6 @@
       .expand-btn {
         display: none;
       }
-    }
-    .has-sidebar {
-      padding-left: $sidebar-width;
     }
 
     @each $font-size-name, $font-size in $font-sizes {
