@@ -2334,7 +2334,7 @@ Hover over me
                 </p>
     
                 <div class="relative w-12/12 mb-4 bg-blue-600 p-8" >
-                    <div class="z-15 bg-green-400 absolute p-4" style="top: 0px;left: 0px;">
+                    <div class="z-5 bg-green-400 absolute p-4" style="top: 0px;left: 0px;">
                         I'am a div with <b>z-15</b> 
                     </div>
                     <br>
@@ -2343,7 +2343,7 @@ Hover over me
                 </div>
             </div>
             <!-- ### OPACITY ###-->
-            <div id="opacity">
+            <div id="opacity" class="mb-4">
                 <h4>
                     Opacity
                 </h4>
@@ -2359,7 +2359,80 @@ Hover over me
                 </div>
             </div>
         </div>
-          
+          <!--###  MODALS ###-->
+        <div id="modals" class="mb-4">
+            <h4 class="mb-4">
+            Modals
+            </h4>
+
+            <button  class="mb-4 btn btn-primary modal-trigger" data-target="my-modal">
+                Show modal
+            </button>
+<pre><code lang="html"><span class="tag">&lt;button</span> <span class="prop">class=</span><span class="val">"mb-4 btn btn-primary modal-trigger"</span> <spab class="prop">data-target=</spab><span class="val">"my-modal"</span>&gt;
+<span class="tag">&lt;button</span>&gt;
+    <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;modal&quot;</span> id=&quot;my-modal&quot;&gt;
+    &lt;div class=&quot;modal-background&quot;&gt;
+        &lt;div class=&quot;modal-container&quot;&gt;
+            &lt;div class=&quot;modal-content&quot;&gt;
+                &lt;div class=&quot;modal-header&quot;&gt;
+                    &lt;div class=&quot;display-flex justify-between&quot;&gt;
+                        &lt;p class=&quot;modal-title&quot;&gt;
+                            My Modal title
+                        &lt;/p&gt;
+                        &lt;button class=&quot;modal-close modal-trigger&quot; data-target=&quot;my-modal&quot;&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                  
+                &lt;/div&gt;
+                &lt;div class=&quot;modal-body&quot;&gt;
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, quae? Maxime dicta similique delectus molestiae cumque ratione quo libero placeat iste dolor? Alias dignissimos eos ea ullam deleniti officia facilis?
+                &lt;/div&gt;
+                &lt;div class=&quot;modal-footer&quot;&gt;
+                    &lt;button class=&quot;btn btn-primary p-2&quot;&gt;
+                        Option a
+                    &lt;/button&gt;
+                &lt;button class=&quot;btn btn-primary-flat p-2&quot;&gt;
+                    option B
+                &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+
+
+            <div class="modal" id="my-modal">
+                <div class="modal-background">
+                    <div class="modal-container">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="display-flex justify-between">
+                                    <p class="modal-title">
+                                        My Modal title
+                                    </p>
+                                    <button class="modal-close modal-trigger" data-target="my-modal">
+                                    </button>
+                                </div>
+                              
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, quae? Maxime dicta similique delectus molestiae cumque ratione quo libero placeat iste dolor? Alias dignissimos eos ea ullam deleniti officia facilis?
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary p-2">
+                                    Option a
+                                </button>
+                            <button class="btn btn-primary-flat p-2">
+                                option B
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>you can add an animation buy adding the class <b>.modal-animated</b> to a <b>.modal</b> div , remember to use <b>.modal-trigger</b > in order to open or close the modal</p>
+        </div>
         </div>
 
        </div>

@@ -322,7 +322,6 @@ $sidebar-transition-duration: 0.3s !default;
 $sidebar-transition-ease: ease-in-out !default;
 $sidebar-expand-btn-width: 57px !default;
 $sidebar-expand-btn-transform: rotate(180deg);
-
 $sidebar-overflow: visible !default;
 // Expandible
 $expandible-transtion: height !default;
@@ -330,3 +329,26 @@ $expandible-transtion-time: 100ms !default;
 $expandible-transtion-ease: ease-in-out !default;
 // opacity
 $opacity-range: 20;
+
+// modals
+$modal-background-background-color: rgba(0, 0, 0, 0.37) !default;
+$modal-background-z-index: 12 !default;
+$modal-content-max-height: 75vh !default;
+$modal-content-background-color: #fff !default;
+$modal-content-boder-radius: 0.25rem !default;
+$modal-title-font-size: 1.5rem;
+$modal-title-font-weight: 600;
+$modal-sizes: () !default;
+$modal-padding: 1rem !default;
+$modal-border: $default-border;
+$modal-sizes: map-merge(
+  (
+    default: 600px,
+    xxl: 1400px,
+    xl: 1280px,
+    lg: 720px,
+    md: 480px,
+    sm: 300px,
+  ),
+  $modal-sizes
+);
