@@ -5,8 +5,10 @@
   margin-bottom: $list-margin-bottom;
 
   &.list-border {
-    .item:not(:last-child )  {
-      border-bottom: $list-border;
+    .item {
+      &:not(:last-child) {
+        border-bottom: $list-border;
+      }
     }
   }
   ul {
