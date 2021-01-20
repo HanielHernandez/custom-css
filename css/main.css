@@ -56,9 +56,6 @@ center,
 dl,
 dt,
 dd,
-ol,
-ul,
-li,
 fieldset,
 form,
 label,
@@ -98,6 +95,9 @@ video {
 body {
   background-color: rgba(0, 0, 0, 0);
   color: rgba(0, 0, 0, 0.8);
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 p {
@@ -111,11 +111,6 @@ a {
 
 table {
   border-collapse: collapse;
-}
-
-ol,
-ul {
-  list-style: none;
 }
 
 blockquote,
@@ -655,6 +650,7 @@ code {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   margin-bottom: 1rem;
+  padding: 0px;
 }
 
 .list.list-border .item:not(:last-child) {
@@ -720,7 +716,7 @@ code {
 .card-title {
   font-size: 20px;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.8);
+  color: inherit;
   line-height: 1.2;
   margin-bottom: 0px;
 }
@@ -728,7 +724,7 @@ code {
 .card-subtitle {
   font-size: 16px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.53);
+  opacity: 0.53;
   line-height: 1.25;
 }
 
@@ -1287,10 +1283,12 @@ a.btn {
 
 .bg-white {
   background-color: #fff;
+  color: #212121;
 }
 
 .bg-black {
   background-color: #000;
+  color: #ffffff;
 }
 
 .navbar-red-50 {
@@ -16591,11 +16589,6 @@ a.btn {
 .spinner-blue-grey-1000 {
   border-color: rgba(17, 23, 26, 0.12);
   border-right-color: rgba(17, 23, 26, 0.87);
-}
-
-* {
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-  font-size: 16px;
 }
 
 h1 {

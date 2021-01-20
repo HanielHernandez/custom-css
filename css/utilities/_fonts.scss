@@ -1,7 +1,4 @@
-* {
-  font-family: $font-family;
-  font-size: $base-font-size;
-}
+
 
 @for $i from 1 through 6 {
   h#{$i} {

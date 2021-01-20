@@ -3,7 +3,7 @@
   border-radius: $list-border-radius;
   border: $list-border;
   margin-bottom: $list-margin-bottom;
-
+  padding: 0px;
   &.list-border {
     .item {
       &:not(:last-child) {

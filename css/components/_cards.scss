@@ -32,14 +32,14 @@
   &-title {
     font-size: $card-title-font-size;
     font-weight: $card-title-font-weight;
-    color: $card-title-font-color;
+    color: inherit;
     line-height: $card-title-line-height;
     margin-bottom: 0px;
   }
   &-subtitle {
     font-size: $card-subtitle-font-size;
     font-weight: $card-subtitle-font-weight;
-    color: $card-subtitle-font-color;
+    opacity: $card-subtitle-opacity;
     line-height: $card-subtitle-line-height;
   }
   &-actions {

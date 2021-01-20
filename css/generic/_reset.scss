@@ -49,9 +49,6 @@ center,
 dl,
 dt,
 dd,
-ol,
-ul,
-li,
 fieldset,
 form,
 label,
@@ -90,6 +87,9 @@ video {
 body {
   background-color: $body-background-color;
   color: $font-color;
+  font-family: $font-family;
+  font-size: $base-font-size;
+  line-height: 1.4;
 }
 p {
   display: block;
@@ -102,10 +102,7 @@ a {
 table {
   border-collapse: collapse;
 }
-ol,
-ul {
-  list-style: none;
-}
+
 blockquote,
 q {
   quotes: none;

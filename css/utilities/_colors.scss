@@ -1,14 +1,11 @@
-
-
-
-.bg-white{
-  background-color: #fff;
+.bg-white {
+  @include get-background-and-color(#fff);
 }
-.bg-black{
-  background-color: #000; 
+.bg-black {
+  @include get-background-and-color(#000);
 }
 @each $color-name, $variants in $colors {
-  @each  $variant, $value in $variants{
-    @include create-theme(#{$color-name}-#{$variant},$value)
+  @each $variant, $value in $variants {
+    @include create-theme(#{$color-name}-#{$variant}, $value);
   }
 }
