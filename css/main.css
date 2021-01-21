@@ -106,6 +106,7 @@ button {
 
 p {
   display: block;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -15725,15 +15726,15 @@ h6 {
   font-size: 8rem;
 }
 
-.font-normal {
+.normal {
   font-size: 1rem;
 }
 
-.font-small {
-  font-size: 0.875;
+.small {
+  font-size: 0.875rem;
 }
 
-.font-caption {
+.caption {
   font-size: 0.75rem;
 }
 
@@ -24845,7 +24846,7 @@ span.material-icons {
   }
 
   .font-sm-small {
-    font-size: 0.875;
+    font-size: 0.875rem;
   }
 
   .font-sm-caption {
@@ -26358,7 +26359,7 @@ span.material-icons {
   }
 
   .font-md-small {
-    font-size: 0.875;
+    font-size: 0.875rem;
   }
 
   .font-md-caption {
@@ -27871,7 +27872,7 @@ span.material-icons {
   }
 
   .font-lg-small {
-    font-size: 0.875;
+    font-size: 0.875rem;
   }
 
   .font-lg-caption {
@@ -29384,7 +29385,7 @@ span.material-icons {
   }
 
   .font-xl-small {
-    font-size: 0.875;
+    font-size: 0.875rem;
   }
 
   .font-xl-caption {
@@ -30897,7 +30898,7 @@ span.material-icons {
   }
 
   .font-xxl-small {
-    font-size: 0.875;
+    font-size: 0.875rem;
   }
 
   .font-xxl-caption {

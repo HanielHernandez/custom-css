@@ -1,11 +1,12 @@
 document.addEventListener("click", function ($event) {
 
     const parent =  $event.target.parentNode;
+
     if (
         $event.target.classList.contains("nav-toggler") ||
         $event.target.classList.contains("nav-toggler-icon")
     ) {
-        
+         
         let toggler = $event.target;
         let menuId = toggler.dataset.target;
         let menu = document.getElementById(menuId);
@@ -21,6 +22,7 @@ document.addEventListener("click", function ($event) {
     if($event.target.classList.contains('modal-trigger')){
         showModal($event.target);
     }else{
+        // if elements does not contains class check if parent does.
         if(parent.classList.contains('modal-trigger')) {
             showModal(parent);
         }
