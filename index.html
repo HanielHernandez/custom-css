@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+    <!-- Navbar -->
     <nav class="text-grey-900 navbar fixed z-15 navbar-white navbar-collapse-md ">
 
 
@@ -35,12 +35,14 @@
         </div>
 
 
-    </nav>
+    </nav> <!-- End of navbar -->
 
+    <!-- Container -->
 
     <div class="docs-container container container-xxl  row flex-no-wrap h-100 pt-14">
 
-    
+        <!-- Sidebar -->
+
         <div id="sidebarContainer" class="col z-10 col-w-lg-3 sidebar sidebar-collapse-lg bg-white">
 
             <ul class="list">
@@ -144,7 +146,8 @@
                 <span class="material-icons"> chevron_right</span>
             </button>
         </div>
-
+        <!--End of Sidebar -->
+        <!--Mian content -->
         <div class="col col-w-12 col-w-lg-9 px-4">
 
             <h3 class="">
@@ -383,6 +386,7 @@
                     <h5 class="mb-4">Forms Addons</h4>
                         <p>you can adds addons by adding the <b>.with-addons</b> class</p>
             </div>
+
             <div id="components">
                 <h3>Components</h3>
                 <!--### BUTTONS SECTIONS ### -->
@@ -1819,7 +1823,7 @@ Hover over me
                     <p>You can send transitions-property property by using the class <b>.transition-all</b> </p>
 
 
-                    <table class="table table-with-border w-12/12">
+                    <table class="table table-with-border w-12/12 mb-4">
                         <thead>
                             <tr>
                                 <th>
@@ -1884,11 +1888,8 @@ Hover over me
                 <!-- ### TEXT AND FONTS ### -->
                 <div id="text">
                     <H4>
-                        Font and Text
+                        Fonts and Text
                     </H4>
-                    <h4 class="mb-4">
-                        Text and Typography
-                    </h4>
                     <!-- Text aligment -->
                     <h5 class="mb-4 " id="text_aligment">
                         Text aligment
@@ -1953,7 +1954,7 @@ Hover over me
 
                     <!-- Font Sizes -->
 
-                    <div>
+                    <div id="font_sizes">
                         <h5>
                             Font sizes
                         </h5>
@@ -2237,7 +2238,7 @@ Hover over me
                     </div>
 
                     <!--Font Weigth-->
-                    <div>
+                    <div id="font_weight" class="mb-4">
                         <h5>
                             Font Weight
                         </h5>
@@ -2476,12 +2477,13 @@ Hover over me
                     </div>
                 </div>
 
-                <p class="mb-4"> you can add an animation buy adding the class <b>.modal-animated</b> to a <b>.modal</b> div ,
+                <p class="mb-4"> you can add an animation buy adding the class <b>.modal-animated</b> to a <b>.modal</b>
+                    div ,
                     remember to use <b>.modal-trigger</b> in order to open or close the modal</p>
-            <p class="mb-4">
-                You can change the max width of the modal content by using on of the following classes
-            </p>
-                <table class="table w-12 w-md-6/12 ">
+                <p class="mb-4">
+                    You can change the max width of the modal content by using on of the following classes
+                </p>
+                <table class="table w-12 w-md-6/12 table-with-border ">
                     <thead>
                         <tr>
                             <th class="text-left">
@@ -2491,7 +2493,7 @@ Hover over me
                                 <span class="text-right">
                                     Width
                                 </span>
-                                
+
                             </th>
                         </tr>
                     </thead>
@@ -2500,7 +2502,7 @@ Hover over me
                             <td>
                                 <b>deafult</b>
                             </td>
-                            <td>    
+                            <td>
                                 600px
                             </td>
                         </tr>
@@ -2508,7 +2510,7 @@ Hover over me
                             <td>
                                 <b>.modal-xxl</b>
                             </td>
-                            <td>    
+                            <td>
                                 1400px
                             </td>
                         </tr>
@@ -2516,7 +2518,7 @@ Hover over me
                             <td>
                                 <b>.modal-xl</b>
                             </td>
-                            <td>    
+                            <td>
                                 1280px
                             </td>
                         </tr>
@@ -2524,7 +2526,7 @@ Hover over me
                             <td>
                                 <b>.modal-lg</b>
                             </td>
-                            <td>    
+                            <td>
                                 720
                             </td>
                         </tr>
@@ -2532,7 +2534,7 @@ Hover over me
                             <td>
                                 <b>.modal-sm</b>
                             </td>
-                            <td>    
+                            <td>
                                 350px
                             </td>
                         </tr>
@@ -2546,7 +2548,7 @@ Hover over me
                     Toast
                 </h4>
                 <p class="mb-4">Toast can be use to notify an action to a user</p>
-<pre><code lang="html"><span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"toast"</span>&gt;
+                <pre><code lang="html"><span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"toast"</span>&gt;
     <span class="tag">&lt;button</span> <span class="prop">class=</span><span class="val">"close"</span><span class="tag">&gt;&lt;/button&gt;</span>
     <span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"toast-title</span><span class="tag">&gt;</span>
         My toast title
@@ -2572,7 +2574,7 @@ Hover over me
                     </div>
                 </div>
 
-                <div class="toast-container top-18 right-4">
+                <!--div class="toast-container top-18 right-4">
                     <div class="toast bg-white">
                         <button class="close"></button>
                         <div class="toast-title">
@@ -2582,7 +2584,7 @@ Hover over me
                             Toast message goest here
                         </div>
                     </div>
-                </div>
+                </div-->
             </div>
         </div>
 

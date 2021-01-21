@@ -18,13 +18,18 @@
 .bold {
   font-weight: bold;
 }
+%is-h {
+  line-height: 1.2;
+}
 
 @each $text-font-target, $text-font-size in $heading-font-sizes {
   #{$text-font-target} {
     font-size: $text-font-size;
+    @extend %is-h;
   }
   .#{$text-font-target} {
     font-size: $text-font-size;
+    @extend %is-h;
   }
 }
 

@@ -1,7 +1,7 @@
 @for $i from 0 through $opacity-range {
   $percentage: 1 / $opacity-range;
   $prefix: $percentage * 100;
-  .opacity-#{$prefix} {
+  .opacity-#{5*$i} {
     @include create-opacity(0.05 * $i);
   }
 }
