@@ -43,42 +43,46 @@
 
         <!-- Sidebar -->
 
-        <div id="sidebarContainer" class="col z-10 col-w-lg-3 sidebar sidebar-collapse-lg bg-white">
-
-            <ul class="list">
-                <li class="">
-
-                    <a href="javascript:void(0);" class="expandible-trigger font-medium py-2 px-4"
-                        data-target="gridsMenu">
+        <div id="sidebarContainer" class="col py-2 z-10 col-w-lg-3 sidebar sidebar-collapse-lg bg-white">
+            <ul class="nav">
+                <li class="nav-item">
+                    <button href="javascript:void(0);" class="expandible-trigger font-medium btn flat" data-target="gridsMenu">
                         Layout
-                    </a>
+                    </button>
                     <div class="expandible " id="gridsMenu">
-                        <ul class="list hoverable pr-2 ">
-                            <li class="item">
-                                <a href="#grid">Grid</a>
+                        <ul class="nav pl-4">
+                            <li class="nav-item">
+                                <a href="#grid" class="nav-link">Grid</a>
                             </li>
-                            <li class="item">
-                                <a href="#breakpoints">Breakpoints</a>
+                            <li class="nav-tem">
+                                <a href="#breakpoints" class="nav-link">Breakpoints</a>
                             </li>
                         </ul>
                     </div>
-
-
                 </li>
+                <li class="nav-item">
+                    <button href="javascript:void(0);" class="expandible-trigger font-medium btn btn-primary-flat" data-target="formsMenu">
+                        Forms
+                    </button>
+                    <div id="formsMenu" class="expandible">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#form_field" class="nav-link"> Form field</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Foorm field with addon</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!--ul class="list">
+              
                 <li class="">
                     <a href="javascript:void(0);" class="py-2 px-4 font-medium expandible-trigger"
                         data-target="formsMenu">Forms</a>
-                    <div id="formsMenu" class="expandible">
-                        <ul class="list hoverable pr-2">
-                            <li class="item">
-                                <a href="#form_field"> Form field</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Foorm field with addon</a>
-                            </li>
-
-                        </ul>
-                    </div>
+                    
                 </li>
                 <li class="">
                     <a href="javascript:void(0);" class="py-2 px-4 font-medium expandible-trigger"
@@ -105,12 +109,15 @@
                 <li class="">
                     <a href="javascript:void(0);" class="py-2 px-4 font-medium expandible-trigger"
                         data-target="utilitiesMenu">
+                    
                         Utilities
                     </a>
                     <div id="utilitiesMenu" class="expandible">
                         <ul class="list hoverable pr-2">
                             <li class="item">
-                                <a href="#colors">Colors</a>
+                                <a href="#colors">
+                                   
+                                    Colors</a>
                             </li>
                             <li class="item">
                                 <a href="#displays">Displays</a>
@@ -141,7 +148,7 @@
                         </ul>
                     </div>
                 </li>
-            </ul>
+            </ul!-->
             <button class="btn expand-btn bg-white" id="expandTrigger">
                 <span class="material-icons"> chevron_right</span>
             </button>
@@ -358,18 +365,14 @@
             <!--### FORMS SECTIONS ### -->
             <div id="forms">
                 <H4>Forms</H4>
-                <h5 class="mb-4">Forms field</h4>
-                    <pre>
-<code lang="html">
-<span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"form-field"</span> <span class="prop">id=</span><span class="val">"name"</span> <span class="tag">></span>
+                <h5 class="mb-4" id="form_field">Forms field</h4>
+<pre><code lang="html"><span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"form-field"</span> <span class="prop">id=</span><span class="val">"name"</span> <span class="tag">></span>
     <span class="tag">&lt;label</span><span class="prop">for=</span><span class="val">"name"</span> <span class="tag">></span>Name <span class="tag">&lt;/label></span> 
     <span class="tag">&lt;input </span> <span class="prop">class=</span><span class="val">"form-input"</span> <span class="prop">type=</span><span class="val">"text"</span> <span class="prop">name=</span><span class="val">"name"</span><span class="tag">></span>
     <span class="tag">&lt;span </span> <span class="prop">class=</span> <span class="val">"form-text"</span> 
         this field is required
     <span class="tag">&lt;/span></span> 
-<span class="tag">&lt;div></span>
-</code>
-</pre>
+<span class="tag">&lt;div></span></code></pre>
 
                     <div class="form-field">
                         <label for="">Name</label>
@@ -378,13 +381,59 @@
                             this field is required
                         </span>
                     </div>
+
+                    <p>
+                        You can make horizontal fields by adding the class <b>.horizontal</b> into a form field
+                    </p>
+<pre><code lang="html"><span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"form-field horizontal"</span> <span class="prop">id=</span><span class="val">"name"</span> <span class="tag">></span>
+    <span class="tag">&lt;label</span><span class="prop">for=</span><span class="val">"name"</span> <span class="tag">></span>Name <span class="tag">&lt;/label></span> 
+    <span class="tag">&lt;input </span> <span class="prop">class=</span><span class="val">"form-input"</span> <span class="prop">type=</span><span class="val">"text"</span> <span class="prop">name=</span><span class="val">"name"</span><span class="tag">></span>
+    <span class="tag">&lt;span </span> <span class="prop">class=</span> <span class="val">"form-text"</span> 
+        this field is required
+    <span class="tag">&lt;/span></span> 
+<span class="tag">&lt;div></span></code></pre>
+                    <div class="form-field horizontal" >
+                        <label for="">Name</label>
+                        <input type="text" class="form-input" name="" id="">
+                    </div>
+
+                    <p >
+                        In order to indicate an invalid form field you can add the class <b>.invalid</b> to an exiting <b>.form-field</b>
+                    </p>
+<pre><code lang="html"><span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"form-field invalid"</span> <span class="prop">id=</span><span class="val">"name"</span> <span class="tag">></span>
+    <span class="tag">&lt;label</span><span class="prop">for=</span><span class="val">"name"</span> <span class="tag">></span>Name <span class="tag">&lt;/label></span> 
+    <span class="tag">&lt;input </span> <span class="prop">class=</span><span class="val">"form-input"</span> <span class="prop">type=</span><span class="val">"text"</span> <span class="prop">name=</span><span class="val">"name"</span><span class="tag">></span>
+    <span class="tag">&lt;span </span> <span class="prop">class=</span> <span class="val">"form-text"</span> 
+        this field is required
+    <span class="tag">&lt;/span></span> 
+<span class="tag">&lt;div></span></code></pre>
                     <div class="form-field invalid">
                         <label for="">Invalid field</label>
                         <input type="text" name="" placeholder="" class="form-input" id="">
 
                     </div>
                     <h5 class="mb-4">Forms Addons</h4>
-                        <p>you can adds addons by adding the <b>.with-addons</b> class</p>
+                        <p>you can adds addons by encapsulating the field and addon on a <b>div</b> with the <b>.with-addons</b> class</p>
+<pre><code lang="html"><span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"form-field"</span><span class="tag">&gt;</span> 
+    <span class="tag">&lt;label&gt;</span>Field<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"with-addon"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;input</span> <span class="prop">type=</span><span class="val">"text"</span> <span class="prop">class=</span><span class="val">"form-input"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;button</span> <span class="prop">class=</span><span class="val">"btn"</span><span class="tag">&gt;</span>Search<span class="tag">&lt;/button&gt;</span> 
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code></pre>
+
+                        
+                        <div class="form-field  w-12/12">
+                            <label for="">Field</label>
+                            <div class="with-addons">
+                                <input type="text" name="" class="form-input" id="">
+                                <button class="btn">
+                                    search
+                                </button>
+                            </div>
+                           
+                        </div>
+
             </div>
 
             <div id="components">
@@ -2585,6 +2634,41 @@ Hover over me
                         </div>
                     </div>
                 </div-->
+            </div>
+            <!-- ### END OF NOTIFICATIONS/TOAST ###-->
+            
+            <!-- ### NAVS  ###-->
+            <div id="navs">
+
+                <h5>
+                    Navs
+                </h5>
+                <p>
+                    You can use nav for navigation
+                </p>
+<pre><code lang="html"><span class="tag">&lt;ul&gt; </span><span class="prop">class=</span><span class="val">"nav"</span> <span class="tag">&gt; </span></code>
+    <span class="tag">&lt;li </span><span class="prop">class=</span><span class="val">"nav-item"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;a </span> <span class="prop">href=</span><span class="val">"#"</span> <span class="prop">class=</span><span class="val">"nav-link"</span><span class="tag">&gt;</span>Link a<span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li </span><span class="prop">class=</span><span class="val">"nav-item"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;a </span> <span class="prop">href=</span><span class="val">"#"</span> <span class="prop">class=</span><span class="val">"nav-link"</span><span class="tag">&gt;</span>Link a<span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li </span><span class="prop">class=</span><span class="val">"nav-item"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;a </span> <span class="prop">href=</span><span class="val">"#"</span> <span class="prop">class=</span><span class="val">"nav-link"</span><span class="tag">&gt;</span>Link a<span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span></pre>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link a</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link b</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link c</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
 

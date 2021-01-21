@@ -168,11 +168,16 @@ $nav-bar-border-width: 1px !default;
 $nav-brand-font-size: 1.5rem !default;
 $nav-brand-font-weight: 700 !default;
 $nav-brand-padding: 0.5rem 1rem !default;
-$nav-link-padding: 1rem !default;
-$navbar-link-font-size: 1rem !default;
+$navbar-link-padding: 1rem !default;
+$navbar-link-hover-bg-color: rgba(0, 0, 0, 0.12);
+
+// nav
 $nav-link-default-color: #212121 !default;
-$nav-link-hover-bg-color: rgba(0, 0, 0, 0.12);
+$nav-link-font-size: 1rem !default;
 $nav-line-height: 1.5 !default;
+$nav-link-padding: 0.5rem 1rem !default;
+$nav-link-hover-color: map-get(map-get($colors, "blue"), "600");
+
 $navbar-collpase-position: relative !default;
 $navbar-collapse-width: 100vw !default;
 $navbar-collpase-transiton: max-height 0.3s ease-in-out !default;
@@ -223,8 +228,7 @@ $button-radius: 0.25rem !default;
 $button-focus-outline-style: solid !default;
 $button-focus-outline-width: 1px !default;
 $button-focus-outline-color: rgba(0, 0, 0, 12) !default;
-$button-focus-outline: $button-focus-outline-width $button-focus-outline-style
-  $button-focus-outline-color !default;
+$button-focus-outline: none !default;
 $flat-button-hover-color: rgba(#000, 0.05);
 //Forms
 $form-field-margin-bottom: 1rem !default;
