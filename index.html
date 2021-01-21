@@ -61,7 +61,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <button href="javascript:void(0);" class="expandible-trigger font-medium btn btn-primary-flat" data-target="formsMenu">
+                    <button href="javascript:void(0);" class="expandible-trigger font-medium btn flat" data-target="formsMenu">
                         Forms
                     </button>
                     <div id="formsMenu" class="expandible">
@@ -70,85 +70,76 @@
                                 <a href="#form_field" class="nav-link"> Form field</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Foorm field with addon</a>
+                                <a href="$form_field_with_addons" class="nav-link">Foorm field with addon</a>
                             </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button href="javascript:void(0);" class="expandible-trigger font-medium btn flat" data-target="componentsMenu">
+                        Components
+                    </button>
+                    <div id="componentsMenu" class="expandible">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#buttons" class="nav-link" > Buttons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#list" class="nav-link"> List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#cards" class="nav-link"> Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#tables" class="nav-link"> Tables</a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button href="javascript:void(0);" class="expandible-trigger font-medium btn flat" data-target="utilitiesMenu">
+                        Utilities
+                    </button>
+                    <div class="expandible" id="utilitiesMenu">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#colors" class="nav-link">
+                                   
+                                    Colors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#displays" class="nav-link">Displays</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#position" class="nav-link">Position</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#overflow" class="nav-link" > Overflow</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#padding_and_margin" class="nav-link">Padding and Margin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#z_index" class="nav-link">Z-index</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#shadows" class="nav-link">Shadows</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#text" class="nav-link">Fonts and text</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#transitions_and_hover" class="nav-link">Transitions and Hover</a>
+                            </li>
+
 
                         </ul>
                     </div>
                 </li>
             </ul>
-            <!--ul class="list">
-              
-                <li class="">
-                    <a href="javascript:void(0);" class="py-2 px-4 font-medium expandible-trigger"
-                        data-target="formsMenu">Forms</a>
-                    
-                </li>
-                <li class="">
-                    <a href="javascript:void(0);" class="py-2 px-4 font-medium expandible-trigger"
-                        data-target="componentsMenu">
-                        Components
-                    </a>
-                    <div id="componentsMenu" class="expandible">
-                        <ul class="list hoverable pr-2">
-                            <li class="item">
-                                <a href="#buttons"> Buttons</a>
-                            </li>
-                            <li class="item">
-                                <a href="#list"> List</a>
-                            </li>
-                            <li class="item">
-                                <a href="#cards"> Cards</a>
-                            </li>
-                            <li class="item">
-                                <a href="#tables"> Tables</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="">
-                    <a href="javascript:void(0);" class="py-2 px-4 font-medium expandible-trigger"
-                        data-target="utilitiesMenu">
-                    
-                        Utilities
-                    </a>
-                    <div id="utilitiesMenu" class="expandible">
-                        <ul class="list hoverable pr-2">
-                            <li class="item">
-                                <a href="#colors">
-                                   
-                                    Colors</a>
-                            </li>
-                            <li class="item">
-                                <a href="#displays">Displays</a>
-                            </li>
-                            <li class="item">
-                                <a href="#position">Position</a>
-                            </li>
-                            <li class="item">
-                                <a href="#overflow"> Overflow</a>
-                            </li>
-                            <li class="item">
-                                <a href="#padding_and_margin">Padding and Margin</a>
-                            </li>
-                            <li class="item">
-                                <a href="#z_index">Z-index</a>
-                            </li>
-                            <li class="item">
-                                <a href="#shadows">Shadows</a>
-                            </li>
-                            <li class="item">
-                                <a href="#text">Fonts and text</a>
-                            </li>
-                            <li class="item">
-                                <a href="#transitions_and_hover">Transitions and Hover</a>
-                            </li>
-
-
-                        </ul>
-                    </div>
-                </li>
-            </ul!-->
+    
             <button class="btn expand-btn bg-white" id="expandTrigger">
                 <span class="material-icons"> chevron_right</span>
             </button>
@@ -412,7 +403,7 @@
                         <input type="text" name="" placeholder="" class="form-input" id="">
 
                     </div>
-                    <h5 class="mb-4">Forms Addons</h4>
+                    <h5 class="mb-4" id="form_field_with_addons"> Forms Addons</h4>
                         <p>you can adds addons by encapsulating the field and addon on a <b>div</b> with the <b>.with-addons</b> class</p>
 <pre><code lang="html"><span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"form-field"</span><span class="tag">&gt;</span> 
     <span class="tag">&lt;label&gt;</span>Field<span class="tag">&lt;/label&gt;</span>
