@@ -1,8 +1,6 @@
 @mixin create-columns-for-breakpoint($breakpoint, $prefix) {
-  @media (max-width: $breakpoint) {
-    @include create-navbar-collapse-for-breakpoint($prefix);
-  }
   @media (min-width: $breakpoint) {
+    @include create-navbar-collapse-for-breakpoint($prefix);
     .hide-#{$prefix} {
       display: none;
     }
