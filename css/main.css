@@ -1161,6 +1161,9 @@ a.btn {
 */
 .modal {
   display: none;
+  /*
+  * change sise fo modals content 
+  */
 }
 .modal-animated:not(.show) .modal-background {
   opacity: 0;
@@ -1221,6 +1224,21 @@ a.btn {
 }
 .modal p {
   margin-bottom: 0px;
+}
+.modal.modal-default .modal-content {
+  max-width: 600px;
+}
+.modal.modal-xxl .modal-content {
+  max-width: 1400px;
+}
+.modal.modal-xl .modal-content {
+  max-width: 1280px;
+}
+.modal.modal-lg .modal-content {
+  max-width: 720px;
+}
+.modal.modal-sm .modal-content {
+  max-width: 350px;
 }
 
 .toast {

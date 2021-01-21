@@ -80,4 +80,16 @@ $max-width: map-get($modal-sizes, "default");
   p {
     margin-bottom: 0px;
   }
+  /*
+  * change sise fo modals content 
+  */
+  @each $modal-size-prefix, $modal-size in $modal-sizes {
+    &.modal-#{$modal-size-prefix} {
+      .modal {
+        &-content {
+          max-width: $modal-size;
+        }
+      }
+    }
+  }
 }

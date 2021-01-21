@@ -1,4 +1,6 @@
 document.addEventListener("click", function ($event) {
+
+    const parent =  $event.target.parentNode;
     if (
         $event.target.classList.contains("nav-toggler") ||
         $event.target.classList.contains("nav-toggler-icon")
@@ -15,6 +17,15 @@ document.addEventListener("click", function ($event) {
             menu.style.maxHeight = content.scrollHeight + "px";
         }
     }
+    // if click on element with .modal-trigger open modal
+    if($event.target.classList.contains('modal-trigger')){
+        showModal($event.target);
+    }else{
+        if(parent.classList.contains('modal-trigger')) {
+            showModal(parent);
+        }
+    }
+
 });
  
 function expand(){
@@ -46,12 +57,13 @@ function expandSidebar(){
         sidebar.classList.add('expanded');
     }
 }
+
 const expandTrigger =  document.getElementById('expandTrigger');
 expandTrigger.addEventListener('click',expandSidebar)
 
-function showModal($event){
-    const target = document.getElementById($event.target.dataset.target);
-    console.log(target.style.display)
+function showModal(trigger){
+    const target = document.getElementById(trigger.dataset.target);
+    console.log(target)
     if(target.style.display =="none" || target.style.display === ''){
         target.style.display = "block";
         setTimeout(()=>{
@@ -69,7 +81,10 @@ function showModal($event){
         }
     }
 }
+
+/*
 const modalTriggers =  document.getElementsByClassName('modal-trigger');
+
 for (var i = 0; i < modalTriggers.length; i++) {
     modalTriggers[i].addEventListener('click', showModal);
-}
+}*/
