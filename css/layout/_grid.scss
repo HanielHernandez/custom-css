@@ -42,6 +42,10 @@
     flex: 0 0 auto;
     max-width: $percentage * $i;
   }
+  .w-#{$i} {
+    width: $percentage * $i;
+    max-width: $percentage * $i;
+  }
 }
 
 @include create-fraction-width(2);
