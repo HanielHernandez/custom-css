@@ -835,13 +835,13 @@ nav {
 }
 
 .btn {
-  background-color: rgba(0, 0, 0, 0);
-  color: #000;
+  background-color: white;
+  color: #212121;
   border: 1px solid #e0e0e0;
   text-align: center;
 }
 .btn:hover {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #e6e6e6;
 }
 .btn:last-child {
   margin-right: 0px;
