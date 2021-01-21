@@ -106,6 +106,7 @@ button {
 
 p {
   display: block;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -509,6 +510,34 @@ code {
 .h-12\/12 {
   height: 100%;
   max-height: 100%;
+}
+
+.close {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  background-color: inherit;
+  border: none;
+  background-color: none;
+}
+.close::before, .close::after {
+  border-radius: 1px;
+  background-color: rgba(0, 0, 0, 0.56);
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform-origin: center center;
+}
+.close::before {
+  width: 50%;
+  height: 2px;
+}
+.close::after {
+  width: 2px;
+  height: 50%;
 }
 
 .form-input {
@@ -1133,6 +1162,9 @@ a.btn {
 */
 .modal {
   display: none;
+  /*
+  * change sise fo modals content 
+  */
 }
 .modal-animated:not(.show) .modal-background {
   opacity: 0;
@@ -1191,34 +1223,49 @@ a.btn {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.modal-close {
-  width: 32px;
-  height: 32px;
-  position: relative;
-  border: none;
-  background-color: none;
-}
-.modal-close::before, .modal-close::after {
-  border-radius: 1px;
-  background-color: rgba(0, 0, 0, 0.56);
-  content: "";
-  display: block;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  transform-origin: center center;
-}
-.modal-close::before {
-  width: 50%;
-  height: 2px;
-}
-.modal-close::after {
-  width: 2px;
-  height: 50%;
-}
 .modal p {
   margin-bottom: 0px;
+}
+.modal.modal-default .modal-content {
+  max-width: 600px;
+}
+.modal.modal-xxl .modal-content {
+  max-width: 1400px;
+}
+.modal.modal-xl .modal-content {
+  max-width: 1280px;
+}
+.modal.modal-lg .modal-content {
+  max-width: 720px;
+}
+.modal.modal-sm .modal-content {
+  max-width: 350px;
+}
+
+.toast {
+  position: relative;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e0e0e0;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+.toast-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.toast .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.toast-container {
+  position: fixed;
 }
 
 .bg-white {
@@ -15679,15 +15726,15 @@ h6 {
   font-size: 8rem;
 }
 
-.font-normal {
+.normal {
   font-size: 1rem;
 }
 
-.font-small {
-  font-size: 0.875;
+.small {
+  font-size: 0.875rem;
 }
 
-.font-caption {
+.caption {
   font-size: 0.75rem;
 }
 
@@ -20247,6 +20294,406 @@ span.material-icons {
   position: inherit;
 }
 
+.top-0 {
+  top: 0rem;
+}
+
+.bottom-0 {
+  bottom: 0rem;
+}
+
+.left-0 {
+  left: 0rem;
+}
+
+.right-0 {
+  right: 0rem;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.left-1 {
+  left: 0.25rem;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.left-3 {
+  left: 0.75rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.top-5 {
+  top: 1.25rem;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.top-6 {
+  top: 1.5rem;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.left-6 {
+  left: 1.5rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.top-7 {
+  top: 1.75rem;
+}
+
+.bottom-7 {
+  bottom: 1.75rem;
+}
+
+.left-7 {
+  left: 1.75rem;
+}
+
+.right-7 {
+  right: 1.75rem;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
+.top-9 {
+  top: 2.25rem;
+}
+
+.bottom-9 {
+  bottom: 2.25rem;
+}
+
+.left-9 {
+  left: 2.25rem;
+}
+
+.right-9 {
+  right: 2.25rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.left-10 {
+  left: 2.5rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.top-11 {
+  top: 2.75rem;
+}
+
+.bottom-11 {
+  bottom: 2.75rem;
+}
+
+.left-11 {
+  left: 2.75rem;
+}
+
+.right-11 {
+  right: 2.75rem;
+}
+
+.top-12 {
+  top: 3rem;
+}
+
+.bottom-12 {
+  bottom: 3rem;
+}
+
+.left-12 {
+  left: 3rem;
+}
+
+.right-12 {
+  right: 3rem;
+}
+
+.top-13 {
+  top: 3.25rem;
+}
+
+.bottom-13 {
+  bottom: 3.25rem;
+}
+
+.left-13 {
+  left: 3.25rem;
+}
+
+.right-13 {
+  right: 3.25rem;
+}
+
+.top-14 {
+  top: 3.5rem;
+}
+
+.bottom-14 {
+  bottom: 3.5rem;
+}
+
+.left-14 {
+  left: 3.5rem;
+}
+
+.right-14 {
+  right: 3.5rem;
+}
+
+.top-15 {
+  top: 3.75rem;
+}
+
+.bottom-15 {
+  bottom: 3.75rem;
+}
+
+.left-15 {
+  left: 3.75rem;
+}
+
+.right-15 {
+  right: 3.75rem;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.left-16 {
+  left: 4rem;
+}
+
+.right-16 {
+  right: 4rem;
+}
+
+.top-17 {
+  top: 4.25rem;
+}
+
+.bottom-17 {
+  bottom: 4.25rem;
+}
+
+.left-17 {
+  left: 4.25rem;
+}
+
+.right-17 {
+  right: 4.25rem;
+}
+
+.top-18 {
+  top: 4.5rem;
+}
+
+.bottom-18 {
+  bottom: 4.5rem;
+}
+
+.left-18 {
+  left: 4.5rem;
+}
+
+.right-18 {
+  right: 4.5rem;
+}
+
+.top-19 {
+  top: 4.75rem;
+}
+
+.bottom-19 {
+  bottom: 4.75rem;
+}
+
+.left-19 {
+  left: 4.75rem;
+}
+
+.right-19 {
+  right: 4.75rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
+.left-20 {
+  left: 5rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
+.top-21 {
+  top: 5.25rem;
+}
+
+.bottom-21 {
+  bottom: 5.25rem;
+}
+
+.left-21 {
+  left: 5.25rem;
+}
+
+.right-21 {
+  right: 5.25rem;
+}
+
+.top-22 {
+  top: 5.5rem;
+}
+
+.bottom-22 {
+  bottom: 5.5rem;
+}
+
+.left-22 {
+  left: 5.5rem;
+}
+
+.right-22 {
+  right: 5.5rem;
+}
+
+.top-23 {
+  top: 5.75rem;
+}
+
+.bottom-23 {
+  bottom: 5.75rem;
+}
+
+.left-23 {
+  left: 5.75rem;
+}
+
+.right-23 {
+  right: 5.75rem;
+}
+
+.top-24 {
+  top: 6rem;
+}
+
+.bottom-24 {
+  bottom: 6rem;
+}
+
+.left-24 {
+  left: 6rem;
+}
+
+.right-24 {
+  right: 6rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -24399,7 +24846,7 @@ span.material-icons {
   }
 
   .font-sm-small {
-    font-size: 0.875;
+    font-size: 0.875rem;
   }
 
   .font-sm-caption {
@@ -25912,7 +26359,7 @@ span.material-icons {
   }
 
   .font-md-small {
-    font-size: 0.875;
+    font-size: 0.875rem;
   }
 
   .font-md-caption {
@@ -27425,7 +27872,7 @@ span.material-icons {
   }
 
   .font-lg-small {
-    font-size: 0.875;
+    font-size: 0.875rem;
   }
 
   .font-lg-caption {
@@ -28938,7 +29385,7 @@ span.material-icons {
   }
 
   .font-xl-small {
-    font-size: 0.875;
+    font-size: 0.875rem;
   }
 
   .font-xl-caption {
@@ -30451,7 +30898,7 @@ span.material-icons {
   }
 
   .font-xxl-small {
-    font-size: 0.875;
+    font-size: 0.875rem;
   }
 
   .font-xxl-caption {

@@ -3,3 +3,11 @@
     position: #{$position};
   }
 }
+
+@for $i from 0 through $lop-size {
+  @each $position in $fixed-positions {
+    .#{$position}-#{$i} {
+      #{$position}: $i * 0.25rem;
+    }
+  }
+}

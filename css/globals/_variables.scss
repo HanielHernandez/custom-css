@@ -72,7 +72,7 @@ $theme-colors: map-merge(
 //font sizes use in letter
 $font-sizes: (
   "normal": 1rem,
-  "small": 0.875,
+  "small": 0.875rem,
   "caption": 0.75rem,
 );
 //font weights use un clasees
@@ -347,8 +347,19 @@ $modal-sizes: map-merge(
     xxl: 1400px,
     xl: 1280px,
     lg: 720px,
-    md: 480px,
-    sm: 300px,
+    sm: 350px,
   ),
   $modal-sizes
 );
+
+// toast
+
+$toast-padding: 1rem !default;
+$toast-width: 300px !default;
+$toast-boder: 1px solid #e0e0e0 !default;
+$toast-shadow: 0 0 3px rgba(0, 0, 0, 0.12) !default;
+$toast-boder-radius: 0.25rem !default;
+$toast-title-font-weight: bold !default;
+$toast-title-font-size: 1.25rem !default;
+
+$fixed-positions: (top, bottom, left, right);

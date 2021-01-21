@@ -33,7 +33,10 @@
 }
 
 @each $font-size-name, $font-size in $font-sizes {
-  @include create-font-size($font-size, $font-size-name);
+  //@include create-font-size($font-size, $font-size-name);
+  .#{$font-size-name} {
+    font-size: $font-size;
+  }
 }
 
 @each $font-weight-prefix, $font-weight in $font-weights {
