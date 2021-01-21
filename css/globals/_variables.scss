@@ -6,7 +6,8 @@ $font-color: rgba(0, 0, 0, 0.8) !default;
 //==== UTILITIES ===//
 
 // positions
-
+$positions: ("fixed", "absolute", "relative", "sticky", "initial", "inherit");
+// flex
 $justify-positions: (
   start: flex-start,
   end: flex-end,
@@ -153,8 +154,6 @@ $sides: (
   "l": left,
   "r": right,
 );
-$positions: ("fixed", "absolute", "relative", "sticky", "initial", "inherit");
-$displays: ("fixed", "absolute", "relative", "sticky", "initial", "inherit");
 //body
 $body-background-color: rgba(0, 0, 0, 0) !default;
 //links

@@ -105,18 +105,19 @@
                     <div class="expandible" id="utilitiesMenu">
                         <ul class="nav">
                             <li class="nav-item">
-                                <a href="#colors" class="nav-link">
-                                   
-                                    Colors</a>
+                                <a href="#colors" class="nav-link">Colors</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#displays" class="nav-link">Displays</a>
                             </li>
                             <li class="nav-item">
+                                <a href="#flex_box" class="nav-link">Flex box</a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="#position" class="nav-link">Position</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#overflow" class="nav-link" > Overflow</a>
+                                <a href="#overflows" class="nav-link" > Overflow</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#padding_and_margin" class="nav-link">Padding and Margin</a>
@@ -941,16 +942,33 @@
 
                 </div>
                 <!-- ### POSITIONS ### -->
-                <div id="position">
-                    <h5 class="mb-4">Positions </h5>
+                <div id="position" class="mb-4">
+                    <h4 class="mb-4">Positions </h4>
                     <p class="mb-4">
-                        you can set the position property of a div by using the classes <b>.fixed </b> <b>.sticky </b>.
-                        <b>.absolute</b> etc.
+                        you can set the position property of a div by using one of the following classes
                     </p>
+                    <table id="positions_table" class="table table-with-border">
+                        
+                    </table>
+
+
                 </div>
+                <!-- ### END OF OSITIONS ### -->
+                <!-- ### OVERFLOWS ### -->
+                <div id="overflows">
+                    <h4 class="mb-4">Overflow property </h4>
+                    <p class="mb-4">
+                        you can set the overflow property of a div by using the follwing classes: </p>
+                    <table id="overflow_table" class="table table-with-border mb-4">
+                        
+                    </table>
+
+
+                </div>
+                <!-- ### END OF OVERFLOWS ### -->
                 <!-- ### COLORS ### -->
                 <div id="colors">
-                    <h5 class="mb-4">Color </h5>
+                    <h4 class="mb-4">Color </h4>
                     <p class="mb-4">
                         you change background color property of a div by using the classes <b>.bg-{theme name /color}
                         </b>.
@@ -1838,6 +1856,89 @@
 
 
                 </div>
+                <!-- ### END COLORS ### -->
+
+                <!-- ### DISPLAYS ### -->
+                <div id="displays" class="mb-4">
+                    <h4>
+                        Display Property
+                    </h4>
+                    <p> you can change the display property of an element by using the following class</p>
+                    <table class="table table-with-border">
+                        <thead>
+                            <tr>
+                                <td >
+                                   <span class="bold">
+                                    Class
+                                   </span>  
+                                </td>
+                                <td>
+                                    <span class="bold">
+                                    Display value
+                                       </span> 
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <b>.display-inline</b>
+                                </td>
+                                <td>
+                                     display: inline;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>.display-inline-block</b>
+                                </td>
+                                <td>
+                                     display: inline-block;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>.display-block</b>
+                                </td>
+                                <td>
+                                     display: block;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>.display-flex</b>
+                                </td>
+                                <td>
+                                     display: flex;
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td>
+                                    <b>.display-grid</b>
+                                </td>
+                                <td>
+                                     display: grid;
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- ### END DISPLAYS ### -->
+
+                <!-- ### FLEBOX BOX ### -->
+                <div id="flex_box">
+                    <h4>
+                        Flex box Utilities
+                    </h4>
+                    <p>By default you can use the class <b>.row</b> and <b>.col</b> to set flex direction </p>
+                    <p>You can change flexbox <b>justify-content</b> and <b>aling-items</b> with the following classes </p>
+                    <table class="flex_box_utilities_table" class="mb4">
+
+                    </table>
+                    
+                </div>
+                <!-- ### END OF FLEBOX BOX ### -->
+
                 <!-- ### TRANSITIONS and HOVER ### -->
                 <div id="transitions_and_hover" class="mb-4">
                     <h4>
@@ -2671,5 +2772,6 @@ Hover over me
 </body>
 
 <script src="js/main.js"></script>
+<script type="module" src="js/docs.js"></script>
 
 </html>
