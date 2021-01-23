@@ -30,7 +30,7 @@ git clone https://github.com/HanielHernandez/custom-css.git
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/customizable-css@1.0.3/css/main.min.css"
+  href="https://cdn.jsdelivr.net/npm/customizable-css@1.0.4/css/main.min.css"
 />
 ```
 
