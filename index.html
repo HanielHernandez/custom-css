@@ -479,6 +479,16 @@
                         there are 6 buttons size from 1 (smallest) to 6 (biggest), been size-2 the default size for
                         button
                     </p>
+<pre><code lang="html"><span class="tag">&lt;button </span><span class="prop">class=</span><span class="val">"btn btn-size-1"</span><span class="tag">&gt</span>
+    button with btn-size-1
+<span class="tag">&lt;button&gt;</span>
+<span class="tag">&lt;button </span><span class="prop">class=</span><span class="val">"btn btn-size-2"</span><span class="tag">&gt</span>
+    button with btn-size-2
+<span class="tag">&lt;button&gt;</span>
+<span class="tag">&lt;button </span><span class="prop">class=</span><span class="val">"btn btn-size-4"</span><span class="tag">&gt</span>
+    button with btn-size-3
+<span class="tag">&lt;button&gt;</span>
+</code></pre>
                     <div class="mb-4 ">
 
                         <a href="" class="btn btn-size-1 mb-4">
@@ -503,6 +513,11 @@
                         <p class="mb-4 ">
                             you can create button groups by using a div with class <b>.btn-group</b>
                         </p>
+<pre><code lang="html"><span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"btn-group"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;a</span> <span class="prop">class=</span><span class="val">"btn"</span><span class="tag">&gt;</span>1<span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;a</span> <span class="prop">class=</span><span class="val">"btn"</span><span class="tag">&gt;</span>2<span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;a</span> <span class="prop">class=</span><span class="val">"btn"</span><span class="tag">&gt;</span>3<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;/div&gt;</span></code></pre>
                         <div class="btn-group">
                             <a href="" class="btn">1</a>
                             <a href="" class="btn">2</a>
@@ -531,7 +546,7 @@
                     <H4>Lists</H4>
                     <p>you can order a list of items by using the class <b>.list</b></p>
                     <p>
-                        Normal list:
+                        Normal <b>ul</b></b> 
                     </p>
                     <ul class="mb-4">
                         <li>
@@ -544,40 +559,70 @@
                             item 3
                         </li>
                     </ul>
-
+                    <p><b>ul</b> with <b>.list</b></p>
+<pre><code lang="html"></code><span class="tag">&lt;ul</span> <span class="prop">class=</span><span class="val">"list"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
+        Lorem ipsum dolor
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
+        Lorem ipsum dolor
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
+        Lorem ipsum dolor
+    <span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+</pre>
                     <ul class="list">
                         <li class="item">
                             Lorem ipsum dolor
                         </li>
                         <LI class="item">
-                            sit amet consectetur
+                            Lorem ipsum dolor
                         </LI>
                         <li class="item">
-                            adipisicing elit. Quae reiciendis
-                        </li>
-                        <li class="item">
-                            voluptas repellendus veritatis
+                            Lorem ipsum dolor
                         </li>
                     </ul>
-
-                    <ul class="list separated mb-4">
+                    <p>If you want you can separete each liest item by adding the class <b>.list-separated</b></p>
+<pre><code lang="html"></code><span class="tag">&lt;ul</span> <span class="prop">class=</span><span class="val">"list separated"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
+        Lorem ipsum dolor
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
+        Lorem ipsum dolor
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
+        Lorem ipsum dolor
+    <span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+</pre>                   
+                    <ul class="list list-separated mb-4">
                         <li class="item">
                             Lorem ipsum dolor
                         </li>
                         <LI class="item">
-                            sit amet consectetur
+                            Lorem ipsum dolor
                         </LI>
                         <li class="item">
-                            adipisicing elit. Quae reiciendis
-                        </li>
-                        <li class="item">
-                            voluptas repellendus veritatis
+                            Lorem ipsum dolor
                         </li>
                     </ul>
 
                     <p class="mb-4">
-                        you can also add <b>.list-border </b> class in order to make list item bordered
+                        You can also add <b>.list-border </b> class in order to make list item bordered
                     </p>
+<pre><code lang="html"></code><span class="tag">&lt;ul</span> <span class="prop">class=</span><span class="val">"list list-border"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
+        Lorem ipsum dolor
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
+        Lorem ipsum dolor
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
+        Lorem ipsum dolor
+    <span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+</pre> 
                     <ul class="list list-border">
                         <li class="item">
                             Lorem ipsum dolor
@@ -601,10 +646,30 @@
                     <p>
                         youn can create cards by using the .card class
                     </p>
-
+<pre> <code lang="html"> <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card"</span><span class="tag">&gt;</span></code>
+    <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card-head"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;img</span> <span class="prop">class=</span><span class="val">"card avatar iamge"</span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card-titles"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card-title"</span><span class="tag">&gt;</span> ... <span class="tag">&lt;/div&gt;</span> 
+            <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card-subtitle"</span><span class="tag">&gt;</span> ... <span class="tag">&lt;/div&gt;</span> 
+        <span class="tag">&lt;/div&gt;</span> 
+    <span class="tag">&lt;/div&gt;</span> 
+    <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card-content"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card-body"</span><span class="tag">&gt;</span>
+            ...
+        <span class="tag">&lt;/div&gt;</span> 
+    <span class="tag">&lt;/div&gt;</span> 
+    <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card-footer"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card-actions"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;a</span> <span class="prop">class=</span><span class="val">"btn flat"</span><span class="tag">&gt;</span> ... <span class="tag">&lt;/a&gt;</span> 
+            <span class="tag">&lt;a</span> <span class="prop">class=</span><span class="val">"btn flat"</span><span class="tag">&gt;</span> ... <span class="tag">&lt;/a&gt;</span> 
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+</pre>
                     <div class="card">
                         <div class="card-head">
-                            <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar">
+                            <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar"/>
                             <div class="card-titles">
                                 <p class="card-title">
                                     Card title goes here

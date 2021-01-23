@@ -835,7 +835,7 @@ input {
   padding: 0px;
 }
 
-.list:not(.separated) {
+.list:not(.list-separated) {
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
@@ -851,7 +851,11 @@ input {
   background-color: #eee;
 }
 
-.list.separated .item {
+.list-separated {
+  border: none;
+}
+
+.list-separated .item {
   padding: 0.5rem 1rem;
   margin-bottom: 0.5rem;
   border: 1px solid rgba(0, 0, 0, 0.12);

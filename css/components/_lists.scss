@@ -3,7 +3,7 @@
   border-radius: $list-border-radius;
   margin-bottom: $list-margin-bottom;
   padding: 0px;
-  &:not(.separated) {
+  &:not(.list-separated) {
     border: $list-border;
   }
   &-border {
@@ -22,7 +22,8 @@
       background-color: $list-item-hover-color;
     }
   }
-  &.separated {
+  &-separated {
+    border: none;
     .item {
       padding: $list-item-separated-padding;
       margin-bottom: 0.5rem;
