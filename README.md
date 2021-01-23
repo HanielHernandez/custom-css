@@ -40,7 +40,7 @@ Early documentation can be found [here](https://hanielhernandez.github.io/custom
 
 ## Creator
 
-Hi, I'am **Haniel Hernández**, a **Front end** developer from **Nicaragua** and I create this project like a hobby and as a way to practice my sass, hope you found it usefull.
+Hi, I am **Haniel Hernández**, a **Front end** developer from **Nicaragua** and I create this project like a hobby and as a way to practice my sass, hope you found it usefull.
 
 if you wanto to take part of this project you can contact me by:
 
