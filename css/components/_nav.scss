@@ -7,10 +7,7 @@ ul.nav {
 }
 .nav {
   display: flex;
-  &:not(.horizontal),
-  &:not(.breadcrumbs) {
-    flex-direction: column;
-  }
+  flex-direction: column;
   &-link {
     padding: $nav-link-padding;
     &-is-active {

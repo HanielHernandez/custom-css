@@ -1,21 +1,12 @@
 document.addEventListener("click", function ($event) {
 
     const parent =  $event.target.parentNode;
-
-    if (
-        $event.target.classList.contains("nav-toggler") ||
-        $event.target.classList.contains("nav-toggler-icon")
-    ) {
-         
-        let toggler = $event.target;
-        let menuId = toggler.dataset.target;
-        let menu = document.getElementById(menuId);
-        let content = menu.getElementsByClassName("nav")[0];
-
-        if (menu.style.maxHeight) {
-            menu.style.maxHeight = null;
-        } else {
-            menu.style.maxHeight = content.scrollHeight + "px";
+    // nav toggler
+    if ($event.target.classList.contains("nav-toggler")) {
+            expandNavbar($event.target);
+    }else{
+        if(parent.classList.contains('nav-toggler')) {
+            expandNavbar(parent);
         }
     }
     // if click on element with .modal-trigger open modal
@@ -40,6 +31,17 @@ document.addEventListener("click", function ($event) {
 
 });
  
+function expandNavbar(element){
+    let menuId = element.dataset.target;
+    let menu = document.getElementById(menuId);
+    let content = menu.getElementsByClassName("nav")[0];
+
+    if (menu.style.maxHeight) {
+        menu.style.maxHeight = null;
+    } else {
+        menu.style.maxHeight = content.scrollHeight + "px";
+    }
+}
 function expandContent(element){
     const target = element.getAttribute("data-target");
     const expandible =  document.getElementById(target);
