@@ -147,6 +147,9 @@ ul {
   margin-inline-end: 0px;
   padding-inline-start: 1rem;
 }
+li {
+  margin-top: 0.25rem;
+}
 button {
   &:focus {
     outline: none;

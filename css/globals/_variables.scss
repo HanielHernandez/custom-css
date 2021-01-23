@@ -361,14 +361,27 @@ $modal-sizes: map-merge(
   $modal-sizes
 );
 
-// toast
+// shadows
+$box-shadow-sizes: () !default;
+$box-shadow-sizes: map-merge(
+  (
+    "sm": 0 0 0.25rem rgba(0, 0, 0, 0.12),
+    "md": 0 0 0.75rem rgba(0, 0, 0, 0.12),
+    "lg": 0 0 1.25rem rgba(0, 0, 0, 0.12),
+    "xl": 0 0 1.5rem rgba(0, 0, 0, 0.12),
+    "xxl": 0 0 2rem rgba(0, 0, 0, 0.12),
+  ),
+  $box-shadow-sizes
+);
 
-$toast-padding: 1rem !default;
-$toast-width: 300px !default;
-$toast-boder: 1px solid #e0e0e0 !default;
-$toast-shadow: 0 0 3px rgba(0, 0, 0, 0.12) !default;
-$toast-boder-radius: 0.25rem !default;
-$toast-title-font-weight: bold !default;
-$toast-title-font-size: 1.25rem !default;
+// notification
+
+$notification-padding: 1rem !default;
+$notification-width: 300px !default;
+$notification-boder: 1px solid #e0e0e0 !default;
+$notification-shadow: 0 0 3px rgba(0, 0, 0, 0.12) !default;
+$notification-boder-radius: 0.25rem !default;
+$notification-title-font-weight: bold !default;
+$notification-title-font-size: 1.25rem !default;
 
 $fixed-positions: (top, bottom, left, right);

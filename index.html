@@ -636,43 +636,45 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="card w-sm-12 w-md-1/3 w-lg-1/4">
-                        <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-img">
-
-                        <div class="card-head">
-                            <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar">
-                            <div class="card-titles">
-                                <p class="card-title">
-                                    Card title goes here
-                                </p>
-                                <p class="card-subtitle">
-                                    some card subtitle
-                                </p>
+                    <div>
+                        <div class="card" style="width:350px; margin: 0px auto;">
+                            <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-img">
+    
+                            <div class="card-head">
+                                <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar">
+                                <div class="card-titles">
+                                    <p class="card-title">
+                                        Card title goes here
+                                    </p>
+                                    <p class="card-subtitle">
+                                        some card subtitle
+                                    </p>
+                                </div>
+    
+    
                             </div>
-
-
-                        </div>
-                        <div class="card-content">
-                            <div class="card-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas architecto
-                                    pariatur rem? Inventore, odit! Corporis nam voluptas labore iure commodi neque quam.
-                                    At similique porro voluptates dolorum dolor vel fugiat.
-                                </p>
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas architecto
+                                        pariatur rem? Inventore, odit! Corporis nam voluptas labore iure commodi neque quam.
+                                        At similique porro voluptates dolorum dolor vel fugiat.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-footer">
-                            <div class="card-actions">
-                                <a href="" class="btn flat p-4 mr-0 r-0">
-                                    action 1
-                                </a>
-                                <a href="" class="btn flat p-4 r-0">
-                                    action 2
-                                </a>
+                            <div class="card-footer">
+                                <div class="card-actions">
+                                    <a href="" class="btn flat p-4 mr-0 r-0">
+                                        action 1
+                                    </a>
+                                    <a href="" class="btn flat p-4 r-0">
+                                        action 2
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                  
                 </div>
                 <!-- ### TABLES ### -->
                 <div id="tables " class="mb-4">
@@ -2754,44 +2756,44 @@ Hover over me
             </div>
 
             <!-- ### NOTIFICATIONS/TOAST ###-->
-            <div id="toast" class="mb-4">
+            <div id="notification" class="mb-4">
                 <h4>
-                    Toast
+                    Notification
                 </h4>
-                <p class="mb-4">Toast can be use to notify an action to a user</p>
-                <pre><code lang="html"><span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"toast"</span>&gt;
+                <p class="mb-4">Notification can be use to notify an action to a user</p>
+                <pre><code lang="html"><span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"notification"</span>&gt;
     <span class="tag">&lt;button</span> <span class="prop">class=</span><span class="val">"close"</span><span class="tag">&gt;&lt;/button&gt;</span>
-    <span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"toast-title</span><span class="tag">&gt;</span>
-        My toast title
+    <span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"notification-title</span><span class="tag">&gt;</span>
+        My notification title
     <span class="tag">&lt;/div&gt;</span>
-    <span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"toast-message</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"notification-message</span><span class="tag">&gt;</span>
         Toast message goest here
     <span class="tag">&lt;/div&gt;</span>
 <span class="tag">&lt;/div&gt;</span>
 </code></pre>
-                <div class="toast">
+                <div class="notification">
                     <button class="close"></button>
-                    <div class="toast-title">
-                        My toast title
+                    <div class="notification-title">
+                        My notification title
                     </div>
-                    <div class="toast-message">
+                    <div class="notification-message">
                         Toast message goest here
                     </div>
                 </div>
-                <div class="toast">
+                <div class="notification">
                     <button class="close"></button>
-                    <div class="toast-message">
+                    <div class="notification-message">
                         Toast message goest here
                     </div>
                 </div>
 
-                <!--div class="toast-container top-18 right-4">
-                    <div class="toast bg-white">
+                <!--div class="notification-container top-18 right-4">
+                    <div class="notification bg-white">
                         <button class="close"></button>
-                        <div class="toast-title">
-                            My toast title
+                        <div class="notification-title">
+                            My notification title
                         </div>
-                        <div class="toast-message">
+                        <div class="notification-message">
                             Toast message goest here
                         </div>
                     </div>
@@ -2862,6 +2864,31 @@ Hover over me
                     
                 </ul>
             </div>
+            <!-- ### END OF NAVS  ###-->
+            <!-- ### SHADOWS  ###-->
+            <div class="mb-4" id="shadows">
+                <h4>
+                    Shadows
+                </h4>
+                <p>
+                    You can use shadows by adding the class <b>.shadow</b>
+                </p>
+                <div class="row ">
+                    <div class="p-4 shadow-sm mb-4 mr-4 r" >
+                            I'm a div with <b>.shadow-sm</b>
+                    </div>
+                    <div class="p-4 shadow mb-4 mr-3 r" style="">
+                        I'm a div with <b>.shadow</b>
+                    </div>
+                    <div class="p-4 shadow-lg mb-4 mr-4 r" style="">
+                        I'm a div with <b>.shadow-lg</b>
+                    </div>
+                    <div class="p-4 shadow-xl mb-4 r" style="">
+                        I'm a div with <b>.shadow-xl</b>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
