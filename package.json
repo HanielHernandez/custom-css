@@ -1,7 +1,7 @@
 {
   "name": "customizable-css",
   "version": "1.1.0",
-  "description": "A css framework with utilities base classes as well as component",
+  "description": "A css framework with utilities based classes as well as component",
   "main": "main.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
