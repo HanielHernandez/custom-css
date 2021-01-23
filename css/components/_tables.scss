@@ -26,6 +26,11 @@
   &-full {
     width: 100%;
   }
+  &-container {
+    max-width: 100%;
+    overflow: auto;
+    overflow-y: hidden;
+  }
 
   &-with-border {
     border-width: $table-border-width;

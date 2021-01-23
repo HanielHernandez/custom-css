@@ -137,7 +137,7 @@ body {
   color: rgba(0, 0, 0, 0.8);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
-  line-height: 1.42;
+  line-height: 1.5;
 }
 
 button {
@@ -1108,6 +1108,12 @@ ul.nav {
 
 .table-full {
   width: 100%;
+}
+
+.table-container {
+  max-width: 100%;
+  overflow: auto;
+  overflow-y: hidden;
 }
 
 .table-with-border {
@@ -24585,63 +24591,63 @@ span.material-icons {
   opacity: 1;
 }
 
-.overflow-overflow-value {
+.overflow-visible {
   overflow: visible;
 }
 
-.overflow-y-overflow-value {
+.overflow-y-visible {
   overflow-y: visible;
 }
 
-.overflow-x-overflow-value {
+.overflow-x-visible {
   overflow-y: visible;
 }
 
-.overflow-overflow-value {
+.overflow-hidden {
   overflow: hidden;
 }
 
-.overflow-y-overflow-value {
+.overflow-y-hidden {
   overflow-y: hidden;
 }
 
-.overflow-x-overflow-value {
+.overflow-x-hidden {
   overflow-y: hidden;
 }
 
-.overflow-overflow-value {
+.overflow-clip {
   overflow: clip;
 }
 
-.overflow-y-overflow-value {
+.overflow-y-clip {
   overflow-y: clip;
 }
 
-.overflow-x-overflow-value {
+.overflow-x-clip {
   overflow-y: clip;
 }
 
-.overflow-overflow-value {
+.overflow-scroll {
   overflow: scroll;
 }
 
-.overflow-y-overflow-value {
+.overflow-y-scroll {
   overflow-y: scroll;
 }
 
-.overflow-x-overflow-value {
+.overflow-x-scroll {
   overflow-y: scroll;
 }
 
-.overflow-overflow-value {
+.overflow-auto {
   overflow: auto;
 }
 
-.overflow-y-overflow-value {
+.overflow-y-auto {
   overflow-y: auto;
 }
 
-.overflow-x-overflow-value {
+.overflow-x-auto {
   overflow-y: auto;
 }
 
@@ -31402,6 +31408,6 @@ pre code {
 }
 
 pre code * {
-  font-family: monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 /*# sourceMappingURL=main.css.map */

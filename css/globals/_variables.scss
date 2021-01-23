@@ -117,7 +117,7 @@ $viewport-from: 1 !default;
 $viewport-to: 101 !default;
 
 $font-size: 16px;
-$line-height: 1.42;
+$line-height: 1.5;
 
 $default-border-color: rgba(0, 0, 0, 0.12);
 $default-border-radius: 0.5rem !default;
@@ -272,7 +272,8 @@ $nav-bar-padding: 0.5rem 1rem !default;
 $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
   "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
   sans-serif;
-
+$font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+  "Courier New", monospace;
 /*LIST*/
 $list-border: 1px solid rgba(0, 0, 0, 0.12);
 $list-border-radius: 5px !default;

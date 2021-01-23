@@ -43,7 +43,7 @@
 
         <!-- Sidebar -->
 
-        <div id="sidebarContainer" class="col py-2 z-10 col-w-lg-3 sidebar sidebar-collapse-lg bg-white">
+        <div id="sidebarContainer" class="col p-2 z-10 col-w-lg-3 sidebar sidebar-collapse-lg bg-white">
             <ul class="nav">
                 <li class="nav-item">
                     <button href="javascript:void(0);" class="expandible-trigger font-medium btn flat" data-target="gridsMenu">
@@ -86,11 +86,18 @@
                                 <a href="#buttons" class="nav-link" > Buttons</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#list" class="nav-link"> List</a>
-                            </li>
-                            <li class="nav-item">
                                 <a href="#cards" class="nav-link"> Cards</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="#modals" class="nav-link">Modal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#modals" class="nav-link">Notifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#list" class="nav-link"> List</a>
+                            </li>
+                          
                             <li class="nav-item">
                                 <a href="#tables" class="nav-link"> Tables</a>
                             </li>
@@ -443,6 +450,17 @@
                         by
                         adding -outline to the main button class
                     </p>
+
+<pre><code lang="html"><span class="tag">&lt;button</span> <span class="prop">class=</span><span class="val">"btn"</span><span class="tag">&gt;</span>
+    Default button
+<span class="class tag">&lt;/button&gt;</span>
+<span class="tag">&lt;button</span> <span class="prop">class=</span><span class="val">"btn btn-primary"</span><span class="tag">&gt;</span>
+    Primary button
+<span class="class tag">&lt;/button&gt;</span>
+<span class="tag">&lt;button</span> <span class="prop">class=</span><span class="val">"btn btn-primary-outline""</span><span class="tag">&gt;</span>
+    Primary button
+<span class="class tag">&lt;/button&gt;</span></code></pre>
+
                     <div class="mb-4">
                         <a href="" class="btn">
                             Default button
@@ -453,11 +471,8 @@
                         <a href="" class="btn btn-primary-outline">
                             Outline button
                         </a>
-                        <a href="" class="btn btn-dark">
-                            Dark button
-                        </a>
-                        <a href="" class="btn btn-dark-outline">
-                            Dark button
+                        <a href="" class="btn flat">
+                            Flat button
                         </a>
                     </div>
                     <p class="mb-4">
@@ -2243,8 +2258,9 @@ Hover over me
                         <p>
                             Or your can use a font size base on rem values
                         </p>
+                        <div class="table-container mb-4">
 
-                        <table class="table table-with-border w-12/12 mb-4">
+                        <table class="table table-with-border w-12/12">
                             <thead>
                                 <tr>
                                     <th>
@@ -2257,139 +2273,142 @@ Hover over me
 
 
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="bold">
-                                        .font-xs
-                                    </td>
-                                    <td>
-                                        <p class="font-xs">
-                                            text with .font-xs
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="bold">
-                                        .font-sm
-                                    </td>
-                                    <td>
-                                        <p class="font-sm">
-                                            text with .font-sm
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="bold">
-                                        .font-normal
-                                    </td>
-                                    <td>
-                                        <p class="font-normal">
-                                            text with .font-normal
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="bold">
-                                        .font-lg
-                                    </td>
-                                    <td>
-                                        <p class="font-lg">
-                                            text with .font-lg
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="bold">
-                                        .font-xl
-                                    </td>
-                                    <td>
-                                        <p class="font-xl">
-                                            text with .font-xl
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="bold">
-                                        .font-2xl
-                                    </td>
-                                    <td>
-                                        <p class="font-2xl">
-                                            text with .font-2xl
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="bold">
-                                        .font-3xl
-                                    </td>
-                                    <td>
-                                        <p class="font-3xl">
-                                            text with .font-3xl
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="bold">
-                                        .font-4xl
-                                    </td>
-                                    <td>
-                                        <p class="font-4xl">
-                                            text with .font-4xl
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="bold">
-                                        .font-5xl
-                                    </td>
-                                    <td>
-                                        <p class="font-5xl">
-                                            text with .font-5xl
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="bold">
-                                        .font-6xl
-                                    </td>
-                                    <td>
-                                        <p class="font-6xl">
-                                            text with .font-6xl
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="bold">
-                                        .font-7xl
-                                    </td>
-                                    <td>
-                                        <p class="font-sm">
-                                            text with .font-7xl
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="bold">
-                                        .font-8xl
-                                    </td>
-                                    <td>
-                                        <p class="font-8xl">
-                                            text with .font-8xl
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="bold">
-                                        .font-9xl
-                                    </td>
-                                    <td>
-                                        <p class="font-9xl">
-                                            text with .font-9xl
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
+                                <tbody >
+                                    <tr>
+                                        <td class="bold">
+                                            .font-xs
+                                        </td>
+                                        <td>
+                                            <p class="font-xs">
+                                                text with .font-xs
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">
+                                            .font-sm
+                                        </td>
+                                        <td>
+                                            <p class="font-sm">
+                                                text with .font-sm
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">
+                                            .font-normal
+                                        </td>
+                                        <td>
+                                            <p class="font-normal">
+                                                text with .font-normal
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">
+                                            .font-lg
+                                        </td>
+                                        <td>
+                                            <p class="font-lg">
+                                                text with .font-lg
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">
+                                            .font-xl
+                                        </td>
+                                        <td>
+                                            <p class="font-xl">
+                                                text with .font-xl
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">
+                                            .font-2xl
+                                        </td>
+                                        <td>
+                                            <p class="font-2xl">
+                                                text with .font-2xl
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">
+                                            .font-3xl
+                                        </td>
+                                        <td>
+                                            <p class="font-3xl">
+                                                text with .font-3xl
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">
+                                            .font-4xl
+                                        </td>
+                                        <td>
+                                            <p class="font-4xl">
+                                                text with .font-4xl
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">
+                                            .font-5xl
+                                        </td>
+                                        <td>
+                                            <p class="font-5xl">
+                                                text with .font-5xl
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">
+                                            .font-6xl
+                                        </td>
+                                        <td>
+                                            <p class="font-6xl">
+                                                text with .font-6xl
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">
+                                            .font-7xl
+                                        </td>
+                                        <td>
+                                            <p class="font-sm">
+                                                text with .font-7xl
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">
+                                            .font-8xl
+                                        </td>
+                                        <td>
+                                            <p class="font-8xl">
+                                                text with .font-8xl
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">
+                                            .font-9xl
+                                        </td>
+                                        <td>
+                                            <p class="font-9xl">
+                                                text with .font-9xl
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                        
                         </table>
+                    </div>
+
 
                     </div>
 
@@ -2480,6 +2499,42 @@ Hover over me
                                     <td>
                                         <div class="font-normal">
                                             I'm a text with .font-normal
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .font-light
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="font-light">
+                                            I'm a text with .font-light
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .font-extralight
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="font-extralight">
+                                            I'm a text with .font-extralight
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="bold">
+                                            .font-thin
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="font-thin">
+                                            I'm a text with .font-thin
                                         </div>
                                     </td>
                                 </tr>
@@ -2683,7 +2738,7 @@ Hover over me
                                 <b>.modal-lg</b>
                             </td>
                             <td>
-                                720
+                                720px
                             </td>
                         </tr>
                         <tr>
