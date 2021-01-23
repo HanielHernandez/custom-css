@@ -27,9 +27,33 @@ document.addEventListener("click", function ($event) {
             showModal(parent);
         }
     }
+    
+    // if click on element with .expandible-trigger expand
+    if($event.target.classList.contains('expandible-trigger')){
+        expandContent($event.target);
+    }else{
+        // if elements does not contains class check if parent does.
+        if(parent.classList.contains('expandible-trigge')) {
+            expandContent(parent);
+        }
+    }
 
 });
  
+function expandContent(element){
+    const target = element.getAttribute("data-target");
+    const expandible =  document.getElementById(target);
+    const content = expandible.firstElementChild;
+    expandible.style.display = 'block';
+    if (expandible.style.height) {
+        expandible.style.height = null;
+        setTimeout(()=>{
+            expandible.style.display = '';
+        },300)
+    } else {
+        expandible.style.height = content.scrollHeight + "px";
+    }
+}
 function expand(){
     const target = this.getAttribute("data-target");
     const expandible =  document.getElementById(target);
@@ -45,10 +69,6 @@ function expand(){
     }
 }
 
-var expandibleTriggers = document.getElementsByClassName("expandible-trigger");
-for (var i = 0; i < expandibleTriggers.length; i++) {
-    expandibleTriggers[i].addEventListener('click', expand);
-}
 
 function expandSidebar(){
     const sidebar  =  document.getElementById('sidebarContainer');
@@ -60,8 +80,7 @@ function expandSidebar(){
     }
 }
 
-const expandTrigger =  document.getElementById('expandTrigger');
-expandTrigger.addEventListener('click',expandSidebar)
+
 
 function showModal(trigger){
     const target = document.getElementById(trigger.dataset.target);

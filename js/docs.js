@@ -6,7 +6,8 @@ tables.forEach(table => {
         populate(table.id,table.columns,table.values)
 });
 
-
+const expandTrigger =  document.getElementById('expandTrigger');
+expandTrigger.addEventListener('click',expandSidebar)
 
 
 

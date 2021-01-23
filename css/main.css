@@ -28215,7 +28215,7 @@ span.material-icons {
 }
 
 .overflow-x-visible {
-  overflow-y: visible;
+  overflow-x: visible;
 }
 
 .overflow-hidden {
@@ -28227,7 +28227,7 @@ span.material-icons {
 }
 
 .overflow-x-hidden {
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .overflow-clip {
@@ -28239,7 +28239,7 @@ span.material-icons {
 }
 
 .overflow-x-clip {
-  overflow-y: clip;
+  overflow-x: clip;
 }
 
 .overflow-scroll {
@@ -28251,7 +28251,7 @@ span.material-icons {
 }
 
 .overflow-x-scroll {
-  overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 .overflow-auto {
@@ -28263,7 +28263,7 @@ span.material-icons {
 }
 
 .overflow-x-auto {
-  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .expandible {

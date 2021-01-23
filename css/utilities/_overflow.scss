@@ -6,6 +6,6 @@
     overflow-y: $overflow-value;
   }
   .overflow-x-#{$overflow-value} {
-    overflow-y: $overflow-value;
+    overflow-x: $overflow-value;
   }
 }
