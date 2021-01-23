@@ -56,19 +56,26 @@ $overflow-values: (visible, hidden, clip, scroll, auto);
 
 //grid
 $grid-columns: 12;
-
+$pre-font-size: 0.875rem;
 //theme colors
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
     "dark": #212121,
     "light": #e0e0e0,
-    "primary": #1e88e5,
+    "danger": #b00020,
+    "success" "primary": #1e88e5,
     "transparent": rgba(0, 0, 0, 0),
     "white": #fff,
   ),
   $theme-colors
 );
+// fonts-families
+$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif !default;
+$font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+  "Courier New", monospace !default;
 //font sizes use in letter
 $font-sizes: (
   "normal": 1rem,
@@ -269,11 +276,7 @@ $table-striped-bg-color: #f5f5f5 !default;
 $table-hover-bg-color: #e0e0e0 !default;
 $font-size: 16px !default;
 $nav-bar-padding: 0.5rem 1rem !default;
-$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-  sans-serif;
-$font-family-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-  "Courier New", monospace;
+
 /*LIST*/
 $list-border: 1px solid rgba(0, 0, 0, 0.12);
 $list-border-radius: 5px !default;

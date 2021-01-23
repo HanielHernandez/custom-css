@@ -10,19 +10,18 @@
 .table {
   border-collapse: collapse;
   background-color: $table-bg-color;
-  border-color: $table-border-color;
 
   th {
-    font-size: $table-heading-font-size;
     font-weight: $table-heading-font-weight;
   }
+
   th,
   td {
+    font-size: $table-heading-font-size;
     padding: $table-cell-padding;
-    border-bottom-width: $table-border-width;
-    border-bottom-style: $table-border-style;
-    border-bottom-color: inherit;
+    border-bottom: $table-border-width $table-border-style $table-border-color;
   }
+
   &-full {
     width: 100%;
   }
@@ -33,13 +32,11 @@
   }
 
   &-with-border {
-    border-width: $table-border-width;
-    border-style: $table-border-style;
     td,
     th {
       border-width: $table-border-width;
       border-style: $table-border-style;
-      border-color: inherit;
+      border-color: $table-border-color;
     }
   }
 

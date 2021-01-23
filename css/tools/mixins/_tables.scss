@@ -1,0 +1,18 @@
+@mixin create-table-border-for-theme($theme-name, $color) {
+  $inverted-color: invert($color, 100%);
+  .table,
+  .table-with-border {
+    &.bg-#{$theme-name} {
+      td,
+      th {
+        border-color: rgba($inverted-color, 0.12);
+      }
+    }
+    &.b-#{$theme-name} {
+      td,
+      th {
+        border-color: $color;
+      }
+    }
+  }
+}

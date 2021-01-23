@@ -117,6 +117,7 @@ a {
 
 table {
   border-collapse: collapse;
+  border-spacing: 0;
 }
 
 blockquote,
@@ -135,21 +136,32 @@ table {
   border-spacing: 0;
 }
 code {
-  font-family: monospace;
+  font-family: $font-family-mono;
 }
 *::placeholder {
   font-family: $font-family-base;
 }
+
+ul.list,
+ul.nav,
+ul.breadcrumbs {
+  padding-inline-start: 0;
+  li {
+    margin-top: 0;
+  }
+}
+
 ul {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 1rem;
+  padding-inline-start: 1.5rem;
+  li {
+    margin-top: 0.25rem;
+  }
 }
-li {
-  margin-top: 0.25rem;
-}
+
 button {
   &:focus {
     outline: none;

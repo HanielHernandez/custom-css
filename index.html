@@ -70,7 +70,7 @@
                                 <a href="#form_field" class="nav-link"> Form field</a>
                             </li>
                             <li class="nav-item">
-                                <a href="$form_field_with_addons" class="nav-link">Foorm field with addon</a>
+                                <a href="#form_field_with_addons" class="nav-link">Foorm field with addon</a>
                             </li>
 
                         </ul>
@@ -190,23 +190,7 @@
         I'm a div .col
     <span class="tag">&lt;/div> </span>
 <span class="tag">&lt;/div> </span>
-</code>
-</pre>
-                <!-- <div class="row bg-grey-200 p-4 mb-4">
-                            <p class="mb-4  w-12">
-                                I'm a div .row
-                            </p>
-                            <div class="col b p-4 bg-grey-400  b  br  col-w-4">
-                                I'm a div .col
-        
-                            </div>
-                            <div class="col b p-4 bg-grey-400  col-w-4">
-                                I'm a div .col
-                            </div>
-                            <div class="col b p-4 bg-grey-400  col-w-4">
-                                I'm a div .col
-                            </div>
-                        </div> -->
+</code></pre>
                 <div class="row bg-grey-200 p-4 mb-4">
                     <p class="mb-4  w-12">
                         I'm a div .row
@@ -241,7 +225,7 @@
                         I'm a div .col
                     </div>
                 </div>
-                <p class="mb-4 w-12"> the class <b> .col-w-</b> follow by a number between <b> 1 and 12 </b>will ad a
+                <p class="mb-4 w-12"> the class <b> .col-w-</b> follow by a number between <b> 1 and 12 </b>will add a
                     width base on the percentage presented on </p>
                 <div class="row bg-grey-200 p-4 mb-4">
 
@@ -255,11 +239,11 @@
 
                 </div>
 
-                <h5 class="text-grey-600">
+                <h5 class="text-grey-900">
                     Fractions
                 </h5>
                 <p class="mb-4 w-12"> you can also use fractions like <b> .w-1/2 , w-3/4, w-2/6 w-4/12</b> in oder to
-                    separete width and <b>h-1/2 h-3/4 etc</b> in </p>
+                    separate width and <b>h-1/2 h-3/4 etc</b> in </p>
                 <div class=" bg-grey-200 p-4 mb-4">
 
                     <div class=" b p-4 bg-grey-400  b  br  w-3/4">
@@ -271,7 +255,7 @@
                     </div>
 
                 </div>
-                <h5 class="text-grey-600" id="breakpoints">
+                <h5 class="text-grey-900" id="breakpoints">
                     Break points
                 </h5>
                 <p class="mb-4 w-12"> You can use breakpoints in order to hep with responvity </p>
@@ -546,7 +530,7 @@
                     <H4>Lists</H4>
                     <p>you can order a list of items by using the class <b>.list</b></p>
                     <p>
-                        Normal <b>ul</b></b> 
+                        Normal <b>ul</b>:
                     </p>
                     <ul class="mb-4">
                         <li>
@@ -559,8 +543,8 @@
                             item 3
                         </li>
                     </ul>
-                    <p><b>ul</b> with <b>.list</b></p>
-<pre><code lang="html"></code><span class="tag">&lt;ul</span> <span class="prop">class=</span><span class="val">"list"</span><span class="tag">&gt;</span>
+                    <p class="mt-4"><b>ul</b> with <b>.list</b></p>
+<pre><code lang="html"><span class="tag">&lt;ul</span> <span class="prop">class=</span><span class="val">"list"</span><span class="tag">&gt;</span>
     <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
         Lorem ipsum dolor
     <span class="tag">&lt;/li&gt;</span>
@@ -570,8 +554,7 @@
     <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
         Lorem ipsum dolor
     <span class="tag">&lt;/li&gt;</span>
-<span class="tag">&lt;/ul&gt;</span>
-</pre>
+<span class="tag">&lt;/ul&gt;</span></code></pre>
                     <ul class="list">
                         <li class="item">
                             Lorem ipsum dolor
@@ -583,8 +566,8 @@
                             Lorem ipsum dolor
                         </li>
                     </ul>
-                    <p>If you want you can separete each liest item by adding the class <b>.list-separated</b></p>
-<pre><code lang="html"></code><span class="tag">&lt;ul</span> <span class="prop">class=</span><span class="val">"list separated"</span><span class="tag">&gt;</span>
+                    <p>If you want you can separate each list item by adding the class <b>.list-separated</b></p>
+<pre><code lang="html"><span class="tag">&lt;ul</span> <span class="prop">class=</span><span class="val">"list separated"</span><span class="tag">&gt;</span>
     <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
         Lorem ipsum dolor
     <span class="tag">&lt;/li&gt;</span>
@@ -594,8 +577,7 @@
     <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
         Lorem ipsum dolor
     <span class="tag">&lt;/li&gt;</span>
-<span class="tag">&lt;/ul&gt;</span>
-</pre>                   
+<span class="tag">&lt;/ul&gt;</span></code></pre>                  
                     <ul class="list list-separated mb-4">
                         <li class="item">
                             Lorem ipsum dolor
@@ -611,7 +593,7 @@
                     <p class="mb-4">
                         You can also add <b>.list-border </b> class in order to make list item bordered
                     </p>
-<pre><code lang="html"></code><span class="tag">&lt;ul</span> <span class="prop">class=</span><span class="val">"list list-border"</span><span class="tag">&gt;</span>
+<pre><code lang="html"><span class="tag">&lt;ul</span> <span class="prop">class=</span><span class="val">"list list-border"</span><span class="tag">&gt;</span>
     <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
         Lorem ipsum dolor
     <span class="tag">&lt;/li&gt;</span>
@@ -621,8 +603,7 @@
     <span class="tag">&lt;li</span> <span class="prop">class=</span><span class="val">"item"</span><span class="tag">&gt;</span>
         Lorem ipsum dolor
     <span class="tag">&lt;/li&gt;</span>
-<span class="tag">&lt;/ul&gt;</span>
-</pre> 
+<span class="tag">&lt;/ul&gt;</span></code></pre>
                     <ul class="list list-border">
                         <li class="item">
                             Lorem ipsum dolor
@@ -646,9 +627,9 @@
                     <p>
                         youn can create cards by using the .card class
                     </p>
-<pre> <code lang="html"> <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card"</span><span class="tag">&gt;</span></code>
+<pre> <code lang="html"> <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card"</span><span class="tag">&gt;</span>
     <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card-head"</span><span class="tag">&gt;</span>
-        <span class="tag">&lt;img</span> <span class="prop">class=</span><span class="val">"card avatar iamge"</span><span class="tag">/&gt;</span>
+        <span class="tag">&lt;img</span> <span class="prop">class=</span><span class="val">"card-avatar "</span><span class="tag">/&gt;</span>
         <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card-titles"</span><span class="tag">&gt;</span>
             <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card-title"</span><span class="tag">&gt;</span> ... <span class="tag">&lt;/div&gt;</span> 
             <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">"card-subtitle"</span><span class="tag">&gt;</span> ... <span class="tag">&lt;/div&gt;</span> 
@@ -665,8 +646,7 @@
             <span class="tag">&lt;a</span> <span class="prop">class=</span><span class="val">"btn flat"</span><span class="tag">&gt;</span> ... <span class="tag">&lt;/a&gt;</span> 
         <span class="tag">&lt;/div&gt;</span>
     <span class="tag">&lt;/div&gt;</span>
-<span class="tag">&lt;/div&gt;</span>
-</pre>
+<span class="tag">&lt;/div&gt;</span></code></pre>
                     <div class="card">
                         <div class="card-head">
                             <img src="https://via.placeholder.com/40" alt="card avatar image" class="card-avatar"/>
@@ -747,7 +727,15 @@
                         Tables
                     </h4>
                     <p>To implement a basic style over tables you can use class <b>.table</b></p>
-
+<pre><code lang="html"><span class="tag">&lt;table</span> <span class="prop">class=</span><span class="val">"table"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;thead&gt;</span> 
+        ...
+    <span class="tag">&lt;/thead&gt;</span> 
+    <span class="tag">&lt;tbody&gt;</span> 
+        ...
+    <span class="tag">&lt;/tbody&gt;</span> 
+<span class="tag">&lt;/table&gt;</span>
+</code></pre>
                     <table class="table mb-4">
                         <thead>
                             <tr>
@@ -791,8 +779,10 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p class="mb-4">You can add a hover effect by adding the class <b>.table-with-hover </b>
-
+<p class="mb-4">You can add a hover effect by adding the class <b>.table-with-hover </b>
+<pre><code lang="html"><span class="tag">&lt;table</span> <span class="prop">class=</span><span class="val">"table table-with-hover"</span><span class="tag">&gt;</span>
+    ...
+<span class="tag">&lt;/table&gt;</span></code></pre>
                     <table class="table table-with-hover mb-4">
                         <thead>
                             <tr>
@@ -837,7 +827,9 @@
                         </tbody>
                     </table>
                     <p class="mb-4">You can add collapsed border with the class <b>.table-with-boder </b>
-
+    <pre><code lang="html"><span class="tag">&lt;table</span> <span class="prop">class=</span><span class="val">"table table-with-border"</span><span class="tag">&gt;</span>
+        ...
+    <span class="tag">&lt;/table&gt;</span></code></pre>
                     <table class="table table-with-border">
                         <thead>
                             <tr>
@@ -2048,8 +2040,7 @@
                         <pre><code lang="html"> <span class="tag">&lt;div</span> <span class="prop">class=</span> <span class="val">"p-4 bg-blue-600 hover:bg-red-500 hover:text-grey-800"</span> 
 Hover over me
 <span class="tag">&lt;div></span>    
-</code>
-</pre>
+</code></pre>
                         <div class="p-4 bg-blue-600 hover:bg-red-500 hover:text-grey-800">
                             Hover over me
                         </div>
@@ -2114,8 +2105,7 @@ Hover over me
                     <pre><code lang="html"> <span class="tag">&lt;div</span> <span class="prop">class=</span> <span class="val">"p-4 bg-blue-600 hover:bg-red-500 hover:text-grey-800 transtion-color duration-200 timing-linear"</span> 
 Hover over me
 <span class="tag">&lt;div></span>    
-</code>
-</pre>
+</code></pre>
 
                     <div
                         class="p-4 bg-blue-600 hover:bg-red-500 hover:text-grey-800 transtion-color duration-200 timing-linear">
@@ -2649,7 +2639,7 @@ Hover over me
                 <div id="z_index">
                     <h4>Z- index</h4>
                     <p>
-                        you can change the z-indez of a div by using the class <b>z-{5-120} </b> .
+                        you can change the z-index of a div by using the class <b>.z-{5-120} </b> .
                     </p>
 
                     <div class="relative w-12/12 mb-4 bg-blue-600 p-8">
@@ -2691,36 +2681,31 @@ Hover over me
                 </button>
                 <pre><code lang="html"><span class="tag">&lt;button</span> <span class="prop">class=</span><span class="val">"mb-4 btn btn-primary modal-trigger"</span> <spab class="prop">data-target=</spab><span class="val">"my-modal"</span>&gt;
 <span class="tag">&lt;button</span>&gt;
-    <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;modal&quot;</span> id=&quot;my-modal&quot;&gt;
-    &lt;div class=&quot;modal-background&quot;&gt;
-        &lt;div class=&quot;modal-container&quot;&gt;
-            &lt;div class=&quot;modal-content&quot;&gt;
-                &lt;div class=&quot;modal-header&quot;&gt;
-                    &lt;div class=&quot;display-flex justify-between&quot;&gt;
-                        &lt;p class=&quot;modal-title&quot;&gt;
-                            My Modal title
-                        &lt;/p&gt;
-                        &lt;button class=&quot;close modal-trigger&quot; data-target=&quot;my-modal&quot;&gt;
-                        &lt;/button&gt;
-                    &lt;/div&gt;
-                  
-                &lt;/div&gt;
-                &lt;div class=&quot;modal-body&quot;&gt;
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, quae? Maxime dicta similique delectus molestiae cumque ratione quo libero placeat iste dolor? Alias dignissimos eos ea ullam deleniti officia facilis?
-                &lt;/div&gt;
-                &lt;div class=&quot;modal-footer&quot;&gt;
-                    &lt;button class=&quot;btn btn-primary p-2&quot;&gt;
-                        Option a
-                    &lt;/button&gt;
-                &lt;button class=&quot;btn btn-primary-flat p-2&quot;&gt;
+<span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val"><span class="val">&quot;modal&quot;</span></span> <span class="prop">id=</span><span class="val">&quot;my-modal&quot;</span><span class="tag">&gt;</span>
+<span class="tag">&lt;div </span> <span class="prop">class=</span><span class="val">&quot;modal-background&quot;</span> <span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;modal-container&quot;</span> <span class="tag">&gt;</span>
+        <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;modal-content&quot;</span> <span class="tag">&gt;</span>
+            <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;modal-header&quot;</span> <span class="tag">&gt;</span>
+                <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;display-flex justify-between&quot;</span> <span class="tag">&gt;</span>
+                    <span class="tag">&lt;p</span><span class="tag">&gt;</span>My Modal title<span class="tag">&lt;/p&gt;</span> 
+                    <span class="tag"> &lt;button <span class="prop">class=</span><span class="val">&quot;close modal-trigger&quot;</span> <span class="prop">data-target=</span><span class="val">&quot;my-modal&quot;&gt;</span>  </span>
+                    <span class="tag">&lt;/button&gt;</span> 
+                <span class="tag">&lt;/div&gt;</span> 
+            <span class="tag">&lt;/div&gt;</span> 
+            <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;modal-body&quot;</span><span class="tag">&gt;</span>
+                    Lorem ipsum dolor sit ...
+            <span class="tag">&lt;/div&gt;</span>
+            <span class="tag">&lt;div <span class="prop">class=</span><span class="val">"modal-footer&quot;</span>&gt;</span>
+                <span class="tag">&lt;button <span class="prop">class=</span><span class="val">"btn btn-primary-flat p-2&quot;</span>&gt; </span>
+                    Option a
+                <span class="tag">&lt;/button&gt;</span>
+                <span class="tag">button <span class="prop">class=</span><span class="val">"btn btn-primary-flat p-2&quot;</span>&gt; </span>
                     option B
-                &lt;/button&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code>
-</pre>
+                <span class="tag">&lt;/button&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span> 
+<span class="tag">&lt;/div&gt;</span></code></pre>
 
 
                 <div class="modal" id="my-modal">
@@ -2899,8 +2884,11 @@ Hover over me
                 </ul>
 
                 <p class="b-4">
-                    Nav horizontal
+                    You can change the direction of the nav by adding the class <b>.horizontal</b>
                 </p>
+<pre><code lang="html"><span class="tag">&lt;ul&gt; </span><span class="prop">class=</span><span class="val">"nav horizontal"</span> <span class="tag">&gt; </span></code>
+    ...
+<span class="tag">&lt;/ul&gt;</span></pre>
                 <ul class="nav horizontal mb-4">
                     <li class="nav-item">
                         <a href="" class="nav-link">Link a</a>
@@ -2913,9 +2901,19 @@ Hover over me
                     </li>
                 </ul>
                 <p class="b-4">
-                    Nav breadcrumbs
+                    You can use nav  as breadcrumbs by ading the class <b>.breadcrumbs</b>, you can also add the class <b>.is-active</b> to a <b>.nav-link</b>
+                    in order represent the curren position of breadcrumb.
                 </p>
-                
+<pre><code lang="html"><span class="tag">&lt;ul&gt; </span><span class="prop">class=</span><span class="val">"nav breadcrumbs"</span> <span class="tag">&gt; </span>
+    <span class="tag">&lt;li&gt; </span><span class="prop">class=</span><span class="val">"nav-item"</span> <span class="tag">&gt; </span>
+        <span class="tag">&lt;a&gt; </span><span class="prop">class=</span><span class="val">"nav-link"</span> <span class="tag">&gt; </span> ... <span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt; </span><span class="prop">class=</span><span class="val">"nav-item"</span> <span class="tag">&gt; </span>
+        <span class="tag">&lt;a&gt; </span><span class="prop">class=</span><span class="val">"nav-link is-active"</span> <span class="tag">&gt; </span> ... <span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+</code>   
+</pre>
                 <ul class="nav breadcrumbs mb-4">
                     <li class="nav-item">
                         <a href="" class="nav-link">Link a</a>
@@ -2938,6 +2936,15 @@ Hover over me
                 <p>
                     You can use shadows by adding the class <b>.shadow</b>
                 </p>
+<pre><code class="html"><span class="tag">&lt;div&gt; </span><span class="prop">class=</span><span class="val">"shadow-sm"</span><span class="tag">&gt; </span>
+    ...
+<span class="tag">&lt;/div&gt; </span>
+<span class="tag">&lt;div&gt; </span><span class="prop">class=</span><span class="val">"shadow"</span><span class="tag">&gt; </span>
+    ...
+<span class="tag">&lt;/div&gt; </span>
+<span class="tag">&lt;div&gt; </span><span class="prop">class=</span><span class="val">"shadow-lg"</span><span class="tag">&gt; </span>
+    ...
+<span class="tag">&lt;/div&gt; </span></code></pre>
                 <div class="row ">
                     <div class="p-4 shadow-sm mb-4 mr-4 r" >
                             I'm a div with <b>.shadow-sm</b>

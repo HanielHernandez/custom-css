@@ -32,4 +32,5 @@
   @include create-text-for-theme($name, $color);
   @include create-borders($name, $color);
   @include create-spinner-for-theme($name, $color);
+  @include create-table-border-for-theme($name, $color);
 }
