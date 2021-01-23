@@ -167,6 +167,8 @@ $nav-bar-border-width: 1px !default;
 $nav-brand-font-size: 1.5rem !default;
 $nav-brand-font-weight: 700 !default;
 $nav-brand-padding: 0.5rem 1rem !default;
+$nav-breacrumbs-link-color: rgb(33, 150, 243);
+$nav-breacrumbs-link-active-color: rgba(0, 0, 0, 0.53);
 $navbar-link-padding: 1rem !default;
 $navbar-link-hover-bg-color: rgba(0, 0, 0, 0.12);
 
@@ -276,7 +278,9 @@ $list-border-radius: 5px !default;
 $list-item-padding: 0.5rem 1rem !default;
 $list-item-hover-color: #eee !default;
 $list-margin-bottom: 1rem !default;
-
+$list-item-separated-padding: 0.5rem 1rem;
+$list-item-separated-border: $default-border;
+$list-item-serparates-radius: $border-radius;
 /*cards*/
 $card-padding: 1rem !default;
 $card-border-width: 1px !default;

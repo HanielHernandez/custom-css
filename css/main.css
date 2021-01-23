@@ -717,21 +717,30 @@ input {
 .list {
   list-style-type: none;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
   margin-bottom: 1rem;
   padding: 0px;
 }
-.list.list-border .item:not(:last-child) {
+.list:not(.separated) {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.list-border .item:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 .list ul {
   margin-bottom: 0px;
 }
-.list .item {
-  padding: 0.5rem 1rem;
-}
 .list.hoverable .item:hover {
   background-color: #eee;
+}
+.list.separated .item {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+}
+
+.item {
+  padding: 0.5rem 1rem;
 }
 
 .card {
@@ -807,11 +816,15 @@ ul.nav {
 
 .nav {
   display: flex;
+}
+.nav:not(.horizontal), .nav:not(.breadcrumbs) {
   flex-direction: column;
-  width: auto;
 }
 .nav-link {
   padding: 0.5rem 1rem;
+}
+.nav-link-is-active {
+  color: #2196f3;
 }
 .nav-horizontal {
   flex-direction: row;
@@ -828,6 +841,23 @@ ul.nav {
 }
 .nav-link:hover {
   color: #1e88e5;
+}
+.nav.breadcrumbs {
+  flex-direction: row;
+}
+.nav.breadcrumbs li a {
+  display: initial;
+  color: #2196f3;
+}
+.nav.breadcrumbs li a.is-active {
+  color: rgba(0, 0, 0, 0.53);
+}
+.nav.breadcrumbs li:not(:first-child)::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #6c757d;
+  content: "/";
 }
 
 .navbar {

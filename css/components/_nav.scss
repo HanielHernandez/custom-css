@@ -7,10 +7,15 @@ ul.nav {
 }
 .nav {
   display: flex;
-  flex-direction: column;
-  width: auto;
+  &:not(.horizontal),
+  &:not(.breadcrumbs) {
+    flex-direction: column;
+  }
   &-link {
     padding: $nav-link-padding;
+    &-is-active {
+      color: $nav-breacrumbs-link-color;
+    }
   }
   &-horizontal {
     flex-direction: row;
@@ -30,6 +35,27 @@ ul.nav {
 
     &:hover {
       color: $nav-link-hover-color;
+    }
+  }
+  &.breadcrumbs {
+    flex-direction: row;
+    li {
+      a {
+        display: initial;
+        color: $nav-breacrumbs-link-color;
+        &.is-active {
+          color: $nav-breacrumbs-link-active-color;
+        }
+      }
+      &:not(:first-child) {
+        &::before {
+          display: inline-block;
+          padding-right: 0.5rem;
+          padding-left: 0.5rem;
+          color: #6c757d;
+          content: "/";
+        }
+      }
     }
   }
 }
