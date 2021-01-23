@@ -98,12 +98,12 @@ video {
 body {
   background-color: $body-background-color;
   color: $font-color;
-  font-family: $font-family;
+  font-family: $font-family-base;
   font-size: $font-size;
   line-height: $line-height;
 }
 button {
-  font-family: $font-family;
+  font-family: $font-family-base;
   font-size: $font-size;
 }
 p {
@@ -138,7 +138,7 @@ code {
   font-family: monospace;
 }
 *::placeholder {
-  font-family: $font-family;
+  font-family: $font-family-base;
 }
 ul {
   margin-block-start: 0;
@@ -153,5 +153,5 @@ button {
   }
 }
 input {
-  font-family: $font-family;
+  font-family: $font-family-base;
 }
