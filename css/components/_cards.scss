@@ -7,16 +7,15 @@
   margin-bottom: 1rem;
   &-head {
     padding: $card-padding;
-    display: flex;
-    flex-direction: row;
+    @extend %is-flex;
     flex-wrap: nowrap;
   }
 
   &-body {
     padding: $card-padding;
-    padding-top: 0px;
+    padding-top:0;
     p {
-      margin-bottom: 0px;
+      margin-bottom:0;
     }
   }
   &-avatar {
@@ -26,7 +25,7 @@
   }
   &-title,
   &-subtitle {
-    margin-bottom: 0px;
+    margin-bottom:0;
   }
   &-img {
     width: 100%;
@@ -37,7 +36,7 @@
     font-weight: $card-title-font-weight;
     color: inherit;
     line-height: $card-title-line-height;
-    margin-bottom: 0px;
+    margin-bottom:0;
   }
   &-subtitle {
     font-size: $card-subtitle-font-size;
@@ -59,7 +58,7 @@
     }
     /*.btn {
       padding: 1rem;
-      margin: 0px;
+      margin:0;
     }*/
   }
 }

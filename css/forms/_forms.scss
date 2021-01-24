@@ -11,7 +11,6 @@
     background-color: $form-input-background-color;
     width: 100%;
     @extend %flex-1;
-
     &:active,
     &:focus {
       outline: none;
@@ -35,10 +34,7 @@
     }
   }
   &-field {
-    display: flex;
-    flex-direction: column;
     margin-bottom: $form-field-margin-bottom;
-
     label {
       font-size: $form-field-label-size;
       font-weight: $form-field-label-weigth;
@@ -46,7 +42,6 @@
       margin-bottom: $form-field-label-mb;
       color: $form-field-label-color;
     }
-
     &.invalid {
       label {
         color: $form-input-invalid-color;
@@ -57,11 +52,12 @@
     }
 
     &.horizontal {
+      display: flex;
       @extend %is-wrap-row;
-
       .label,
       label {
         margin-right: 1rem;
+        margin-bottom: 0;
       }
     }
   }
@@ -81,13 +77,13 @@
   @extend %flex-1;
 
   .form-input {
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     @extend %flex-1;
   }
   .btn {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     border-left: none;
   }
 }

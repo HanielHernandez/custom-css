@@ -7,7 +7,7 @@
   border-radius: $notification-boder-radius;
   margin-bottom: 1rem;
   &-title {
-    display: flex;
+    @extend %is-flex;
     justify-content: space-between;
     align-items: center;
     font-size: $notification-title-font-size;

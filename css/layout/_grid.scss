@@ -1,6 +1,6 @@
 /*** Containers ***/
 .container {
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .container-xxl {
@@ -18,7 +18,7 @@
 /** Rows and Columss**/
 .row,
 .col {
-  display: flex;
+  @extend %is-flex;
   width: 100%;
 }
 .row {
@@ -29,7 +29,7 @@
 }
 
 .col {
-  display: flex;
+  @extend %is-flex;
   flex-direction: column;
   flex: 1 0 0%;
 }

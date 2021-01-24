@@ -3,7 +3,6 @@
     font-weight: $weight;
   }
 }
-
 @mixin create-font-size($size, $prefix, $subfix: "") {
   .font-#{$prefix}#{$subfix} {
     font-size: $size;

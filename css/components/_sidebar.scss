@@ -4,7 +4,7 @@
   position: fixed;
   overflow-y: auto;
   z-index: $sidebar-z-index;
-  left: 0px;
+  left: 0;
   overflow: $sidebar-overflow;
   top: calc(#{$nav-bar-height} + 1px);
   transition: $sidebar-transition-property $sidebar-transition-duration
@@ -33,9 +33,9 @@
     position: absolute;
     top: calc(50vh - 22px);
     right: -$sidebar-expand-btn-width;
-    border-left: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
   .list {
     border: none;

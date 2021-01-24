@@ -1,12 +1,10 @@
-
 .expandible {
-    height: 0px;
-    overflow: hidden;
-    display: none;
-    transition: $expandible-transtion $expandible-transtion-time
+  height: 0;
+  overflow: hidden;
+  display: none;
+  transition: $expandible-transtion $expandible-transtion-time
     $expandible-transtion-ease;
-    .show {
-      display: block;
-    }
+  .show {
+    display: block;
   }
-  
+}

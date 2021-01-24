@@ -38,14 +38,14 @@ $max-width: map-get($modal-sizes, "default");
     height: 100vh;
     background-color: $modal-background-background-color;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: $modal-background-z-index;
   }
   &-container {
     width: 100%;
     height: 100%;
-    display: flex;
+    @extend %is-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -56,7 +56,7 @@ $max-width: map-get($modal-sizes, "default");
     max-height: $modal-content-max-height;
     border-radius: $modal-content-boder-radius;
     background-color: $modal-content-background-color;
-    display: flex;
+    @extend %is-flex;
     flex-direction: column;
   }
 
@@ -78,7 +78,7 @@ $max-width: map-get($modal-sizes, "default");
   }
 
   p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   /*
   * change sise fo modals content 

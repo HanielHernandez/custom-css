@@ -13,7 +13,7 @@
     background-color: darken($button-bg-color, 10%);
   }
   &:last-child {
-    margin-right: 0px;
+    margin-right: 0;
   }
   &:focus {
     outline: $button-focus-outline;
@@ -36,15 +36,15 @@
 
   .btn {
     &:not(:last-child) {
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
-      margin-right: 0px;
-      border-right: 0px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-right: 0;
+      border-right: 0;
     }
 
     &:not(:first-child) {
-      border-bottom-left-radius: 0px;
-      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
     }
   }
 }
@@ -62,5 +62,3 @@
 a.btn {
   text-decoration: none;
 }
-
-
