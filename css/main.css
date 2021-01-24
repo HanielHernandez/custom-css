@@ -964,11 +964,10 @@ ul.nav {
   color: #2196f3;
 }
 
-.nav-horizontal {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.nav.nav-horizontal, .nav.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav-item, .nav-link {
@@ -985,13 +984,6 @@ ul.nav {
 
 .nav-link:hover {
   color: #1e88e5;
-}
-
-.nav.breadcrumbs {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .nav.breadcrumbs li a {
