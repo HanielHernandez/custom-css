@@ -6,7 +6,6 @@
 @mixin create-button-for-theme($name, $theme-color) {
   $hover-color: darken($theme-color, 12%);
   .btn-#{$name} {
-    @include get-background-and-color($theme-color);
     border: 0;
     &:hover {
       background-color: $hover-color;
