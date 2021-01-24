@@ -22,8 +22,22 @@
             </i>
         </button>
 
-        <div class="nav-menu hidden" id="navbar_navigation">
+        <div class="nav-menu justify-end hidden" id="navbar_navigation">
             <ul class="nav ">
+                <li class="nav-item">
+                    <!--div href="#" class="nav-link dropdown">
+                        <a>
+                            About
+                        </a>
+                        <div class="dropdown-menu"> 
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link" >Test</a>
+                                </li>
+                            </ul>
+                        </div!-->
+                    </div>
+                </li>
                 <li class="nav-item">
                     <a href="" class="nav-link">Home</a>
 
@@ -31,6 +45,7 @@
                 <li class="nav-item">
                     <a href="" class="nav-link">About</a>
                 </li>
+               
             </ul>
         </div>
 
@@ -171,6 +186,7 @@
             <h3 class="">
                 Customizable css
             </h3>
+
             <p class="text-grey-600 mb-4">
                 Customizable css is a css framework that target utilities base class as well as components.
             </p>
@@ -237,8 +253,7 @@
                         I'm a div .col
                     </div>
                 </div>
-                <p class="mb-4 w-12"> the class <b> .col-w-</b> follow by a number between <b> 1 and 12 </b>will add a
-                    width base on the percentage presented on </p>
+                <p class="mb-4 w-12"> the class <b> .col-w-</b> follow by a number between <b> 1 and 12 </b>will change the width of a column </p>
                 <div class="row bg-grey-200 p-4 mb-4">
 
                     <div class="col b p-4 bg-grey-400  b  br  col-w-4">
@@ -270,7 +285,7 @@
                 <h5 class="text-grey-900" id="breakpoints">
                     Break points
                 </h5>
-                <p class="mb-4 w-12"> You can use breakpoints in order to hep with responvity </p>
+                <p class="mb-4 w-12"> You can use breakpoints in order to change the width of a column on diferent devices </p>
 
                 <table class="table">
                     <thead>
@@ -440,43 +455,6 @@
                         Navbar
                     </h4>
                     <p>
-                        You can create a nabvar by using the class <b>.navbar</b>, navbar use flex to in order to separate the elements (justify-content:space-between;).
-                    </p>
-<pre><code class="html"><span class="tag">&lt;nav </span><span class="prop">class=</span><span class="val">"navbar"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;a </span><span class="prop">class=</span><span class="val">"brand"</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;ul </span><span class="prop">class=</span><span class="val">"nav"</span><span class="tag">&gt;</span>
-        <span class="tag">&lt;li </span><span class="prop">class=</span><span class="val">"nav-link"</span><span class="tag">&gt;</span>
-            <span class="tag">&lt;a </span><span class="prop">class=</span><span class="val">"nav-item"</span><span class="tag">&gt;</span>
-                ...
-            <span class="tag">&lt;/a&gt;</span>
-        <span class="tag">&lt;/li&gt;</span>
-        <span class="tag">&lt;li </span><span class="prop">class=</span><span class="va">"nav-link"</span><span class="tag">&gt;</span>
-            <span class="tag">&lt;a </span><span class="prop">class=</span><span class="val">"nav-item"</span><span class="tag">&gt;</span>
-                ...
-            <span class="tag">&lt;/a&gt;</span>
-        <span class="tag">&lt;/li&gt;</span>
-        <span class="tag">&lt;li </span><span class="prop">class=</span><span class="val">"nav-link"</span><span class="tag">&gt;</span>
-            <span class="tag">&lt;a </span><span class="prop">class=</span><span class="val">"nav-item"</span><span class="tag">&gt;</span>
-                ...
-            <span class="tag">&lt;/a&gt;</span>
-        <span class="tag">&lt;/li&gt;</span>
-    <span class="tag">&lt;/ul&gt;</span>
-<span class="tag">&lt;/nav&gt;</span></code></pre>
-                    <div class="navbar mb-4">
-                        <a href="" class="brand">Brand</a>
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Link 1 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Link 2 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Link 3 </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <p>
                         You can create responsive navbar by adding a <b>.navbar-collapse-{breakpoint}</b>,
                          encapsulating the <b>.nav</b> element with a <b>.nav-menu</b> element, and a  adding a <b>.nav-toggler</b>  button
                         with a <b>data-target</b> perperty set to and id use by the <b>.nav-menu</b>, <b>.nav</b>  will be hidden until the collapse breakpoint is reach, your final sctructure should look like this <br>
@@ -502,7 +480,7 @@
                             </li>
                         </ul>
                     </p>
-<pre><code class="html"><span class="tag">&lt;nav </span><span class="prop">class=</span><span class="val">"navbar navbar-collapse-md"</span><span class="tag">&gt;</span>
+<pre><code class="html"><span class="tag">&lt;nav </span><span class="prop">class=</span><span class="val">"navbar b navbar-white navbar-collapse-md"</span><span class="tag">&gt;</span>
     <span class="tag">&lt;a </span><span class="prop">class=</span><span class="val">"brand"</span><span class="tag">&gt;</span>
         Brand
     <span class="tag">&lt;/a&gt;</span>
@@ -531,7 +509,7 @@
         <span class="tag">&lt;/ul&gt;</span>
     <span class="tag">&lt;/div&gt;</span>
 <span class="tag">&lt;/nav&gt;</span></code></pre>
-                    <div class="navbar navbar-collapse-md">
+                    <div class="navbar mb-4 b navbar-white navbar-collapse-md">
                         <a href="" class="brand">Brand</a>
                         <button class="btn nav-toggler" data-target="navbar_menu">
                             <i class="material-icons">
@@ -553,10 +531,58 @@
                         </dv>
                     </div>
                     </div>
+                    <h5>
+                        Position
+                    </h5>
+                    <p>
+                        you can change the position of the navigation by using some of the flexbox utilities
+                    </p>
 
+<pre><code class="html"><span class="tag">&lt;nav </span><span class="prop">class=</span><span class="val">"navbar b navbar-white navbar-collapse-md"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;a </span><span class="prop">class=</span><span class="val">"brand"</span><span class="tag">&gt;</span>
+        Brand
+    <span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;button </span><span class="prop">class=</span><span class="val">"btn nav-toggler"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;i </span><span class="prop">class=</span><span class="val">"material-icons"</span> <span class="prop">data-target=</span><span class="val">"nav_menu"</span><span class="tag">&gt;</span>
+            menu
+        <span class="tag">&lt;/i&gt;</span>
+    <span class="tag">&lt;/button&gt;</span>
+    <span class="tag">&lt;div </span><span class="prop">class=</span><span class="val">"nav-menu justify-end"</span> <span class="prop">id=</span><span class="val">"nav_menu"</span> <span class="tag">&gt;</span>
+        <span class="tag">&lt;ul </span><span class="prop">class=</span><span class="val">"nav "</span><span class="tag">&gt;</span>
+            ...
+        <span class="tag">&lt;/ul&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/nav&gt;</span></code></pre>
+                    <div class="navbar mb-4 b navbar-white navbar-collapse-md">
+                        <a href="" class="brand">Brand</a>
+                        <button class="btn nav-toggler" data-target="navbar_menu">
+                            <i class="material-icons">
+                                menu
+                            </i>
+                        </button>
+                        <div class="nav-menu justify-end" id="navbar_menu">
+                            <ul class="nav justify-end">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Link 1 </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Link 2 </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Link 3 </a>
+                                </li>
+                            </ul>
+                        </dv>
+                    </div>
+                    </div>
+                    <h5>
+                        Color
+                    </h5>
                     <p class="">
                         You can also change the color of a sidebar by using the class <b>.navbar-{ theme/color }</b>
                     </p>
+
+                    
 <pre><code class="html"><span class="tag">&lt;nav </span><span class="prop">class=</span><span class="val">"navbar navbar-primary"</span><span class="tag">&gt;</span> 
 <span class="tag">&lt;/nav&gt;</span>
 <span class="tag">&lt;nav </span><span class="prop">class=</span><span class="val">"navbar navbar-dark"</span><span class="tag">&gt;</span> 
@@ -564,47 +590,55 @@
 <span class="tag">&lt;nav </span><span class="prop">class=</span><span class="val">"navbar navbar-red-600"</span><span class="tag">&gt;</span> 
 <span class="tag">&lt;/nav&gt;</span></code></pre>
 
-                    <div class="navbar navbar-primary mb-4">
+                    <div class="navbar navbar-primary navbar-collapse-md mb-4">
                         <a href="" class="brand">Brand</a>
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Link 1 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Link 2 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Link 3 </a>
-                            </li>
-                        </ul>
+                        <div class="nav-menu">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Link 1 </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Link 2 </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Link 3 </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="navbar navbar-dark mb-4">
+                    <div class="navbar navbar-dark navbar-collapse-md mb-4">
                         <a href="" class="brand">Brand</a>
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Link 1 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Link 2 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Link 3 </a>
-                            </li>
-                        </ul>
+                        <div cclass="nav-menu">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Link 1 </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Link 2 </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Link 3 </a>
+                                </li>
+                            </ul>
+                        </div>
+                      
                     </div>
-                    <div class="navbar navbar-red-600 mb-4">
+                    <div class="navbar navbar-red-600 navbar-collapse-md mb-4">
                         <a href="" class="brand">Brand</a>
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Link 1 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Link 2 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"> Link 3 </a>
-                            </li>
-                        </ul>
+                        <div class="nav-menu">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Link 1 </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Link 2 </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"> Link 3 </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 <p>
                     Lastly you can set the position of a navbar to the top always by adding the class <b>.fixed</b> or <b>.sticky</b>, remember to add padding to the elements bellow otherwise the navbar elements will overlap
@@ -621,9 +655,7 @@
 
 
                     <p class="mb-4">
-                        the class <b>.btn </b> can be use to create a button, you can make a theme button base outline
-                        by
-                        adding -outline to the main button class
+                        the class <b>.btn </b> can be use to create a simple button, you can change the color of a button by using <b>.btn-{theme/color}</b>  
                     </p>
 
 <pre><code lang="html"><span class="tag">&lt;button</span> <span class="prop">class=</span><span class="val">"btn"</span><span class="tag">&gt;</span>

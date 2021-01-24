@@ -6,8 +6,6 @@ ul.nav {
   list-style: none;
 }
 .nav {
-  display: flex;
-  flex-direction: column;
   &-link {
     padding: $nav-link-padding;
     &-is-active {
