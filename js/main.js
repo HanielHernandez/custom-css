@@ -35,11 +35,10 @@ function expandNavbar(element){
     let menuId = element.dataset.target;
     let menu = document.getElementById(menuId);
     let content = menu.getElementsByClassName("nav")[0];
-
-    if (menu.style.maxHeight) {
-        menu.style.maxHeight = null;
+    if (menu.style.height) {
+        menu.style.height = null;
     } else {
-        menu.style.maxHeight = content.scrollHeight + "px";
+        menu.style.height = content.scrollHeight + "px";
     }
 }
 function expandContent(element){

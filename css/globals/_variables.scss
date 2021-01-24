@@ -172,7 +172,7 @@ $nav-bar-default-bg-color: #fff !default;
 $nav-bar-border-color: #e0e0e0 !default;
 $nav-bar-border-width: 1px !default;
 $nav-brand-font-size: 1.5rem !default;
-$nav-brand-font-weight: 700 !default;
+$nav-brand-font-weigh: 700 !default;
 $nav-brand-padding: 0.5rem 1rem !default;
 $nav-breacrumbs-link-color: rgb(33, 150, 243);
 $nav-breacrumbs-link-active-color: rgba(0, 0, 0, 0.53);
@@ -188,7 +188,7 @@ $nav-link-hover-color: map-get(map-get($colors, "blue"), "600");
 
 $navbar-collpase-position: relative !default;
 $navbar-collapse-width: 100vw !default;
-$navbar-collpase-transiton: max-height 0.3s ease-in-out !default;
+$navbar-collpase-transiton: all 0.3s ease-in-out !default;
 //contianer
 $container-padding: 1rem !default;
 
