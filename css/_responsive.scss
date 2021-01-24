@@ -44,6 +44,28 @@
       }
     }
 
+    @each $display in $displays-value {
+      .display-#{$prefix}-#{$display} {
+        display: $display;
+      }
+    }
+    @each $position in $positions {
+      .#{$position}-#{$prefix} {
+        position: $position;
+      }
+    }
+    @each $overflow in $overflow-values {
+      .overflow-#{$prefix}-#{$overflow} {
+        overflow: $overflow;
+      }
+      .overflow-x-#{$prefix}-#{$overflow} {
+        overflow-x: $overflow;
+      }
+      .overflow-y-#{$prefix}-#{$overflow} {
+        overflow-y: $overflow;
+      }
+    }
+
     @each $font-size-name, $font-size in $font-sizes {
       @include create-font-size($font-size, $prefix, -#{$font-size-name});
     }

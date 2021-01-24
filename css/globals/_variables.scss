@@ -5,7 +5,8 @@ $font-color: rgba(0, 0, 0, 0.8) !default;
 //==== UTILITIES ===//
 
 // positions
-$positions: ("fixed", "absolute", "relative", "sticky", "initial", "inherit");
+
+$positions: (fixed, absolute, relative, sticky, initial, inherit);
 // flex
 $justify-positions: (
   start: flex-start,
