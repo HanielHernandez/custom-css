@@ -1,11 +1,18 @@
 document.addEventListener("click", function ($event) {
+    const parent =  $event.target.parentNode;   
+    if($event.target.id == 'expandTrigger'){
+        expandSidebar()
+    }else{
+        if(parent.id == 'expandTrigger') {
+            expandSidebar()
+        }
+    }
 
-    const parent =  $event.target.parentNode;
     // nav toggler
     if ($event.target.classList.contains("nav-toggler")) {
             expandNavbar($event.target);
     }else{
-        if(parent & parent.classList && parent.classList.contains('nav-toggler')) {
+        if(parent.classList.contains('nav-toggler')) {
             expandNavbar(parent);
         }
     }
