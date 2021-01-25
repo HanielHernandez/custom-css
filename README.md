@@ -5,17 +5,17 @@ Customizable css is a css framework with utility base classes as well as compone
 [![node version](https://img.shields.io/npm/v/customizable-css.svg?style=flat-square)](https://www.npmjs.com/package/customizable-css/)
 [![downloads](https://img.shields.io/npm/dm/customizable-css.svg?style=flat-square)](https://www.npmjs.com/package/customizable-css/)
 
-#### Installation
+## Installation
 
 You can install the package with **NPM**
 
-##### NPM
+### NPM
 
 ```bash
 npm i customizable-css
 ```
 
-##### Import
+### Import on SASS
 
 If you want customize some variables you can then import the main sass file
 
@@ -23,7 +23,7 @@ If you want customize some variables you can then import the main sass file
 @import "~customizable-css/css/main.scss";
 ```
 
-##### CDN
+### CDN
 
 You can also use this **CDN**
 
@@ -40,7 +40,7 @@ You can also use this **CDN**
 ></script>
 ```
 
-##### Clone
+### Clone
 
 Or you can clone the entire repo
 
