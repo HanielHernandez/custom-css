@@ -5,7 +5,6 @@
   @include get-background-and-color(#000);
 }
 @each $color-name, $variants in $colors {
-  @each $variant, $value in $variants {
-    @include create-theme(#{$color-name}-#{$variant}, $value);
-  }
+  $main-color: map-get($variants, "600");
+  @include create-theme(#{$color-name}-600, $main-color);
 }
