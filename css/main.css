@@ -21397,51 +21397,51 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 2em;
 }
 
 .h1 {
-  font-size: 6rem;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 3.75rem;
+  font-size: 1.5em;
 }
 
 .h2 {
-  font-size: 3.75rem;
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 1.17em;
 }
 
 .h3 {
-  font-size: 3rem;
+  font-size: 1.17em;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1.12rem;
 }
 
 .h4 {
-  font-size: 2rem;
+  font-size: 1.12rem;
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 0.83em;
 }
 
 .h5 {
-  font-size: 1.5rem;
+  font-size: 0.83em;
 }
 
 h6 {
-  font-size: 1.25rem;
+  font-size: 0.75em;
 }
 
 .h6 {
-  font-size: 1.25rem;
+  font-size: 0.75em;
 }
 
 .font-xs {
@@ -30955,22 +30955,22 @@ span.material-icons {
     font-size: 8rem;
   }
   .font-sm-h1 {
-    font-size: 6rem;
+    font-size: 2em;
   }
   .font-sm-h2 {
-    font-size: 3.75rem;
+    font-size: 1.5em;
   }
   .font-sm-h3 {
-    font-size: 3rem;
+    font-size: 1.17em;
   }
   .font-sm-h4 {
-    font-size: 2rem;
+    font-size: 1.12rem;
   }
   .font-sm-h5 {
-    font-size: 1.5rem;
+    font-size: 0.83em;
   }
   .font-sm-h6 {
-    font-size: 1.25rem;
+    font-size: 0.75em;
   }
 }
 
@@ -32373,22 +32373,22 @@ span.material-icons {
     font-size: 8rem;
   }
   .font-md-h1 {
-    font-size: 6rem;
+    font-size: 2em;
   }
   .font-md-h2 {
-    font-size: 3.75rem;
+    font-size: 1.5em;
   }
   .font-md-h3 {
-    font-size: 3rem;
+    font-size: 1.17em;
   }
   .font-md-h4 {
-    font-size: 2rem;
+    font-size: 1.12rem;
   }
   .font-md-h5 {
-    font-size: 1.5rem;
+    font-size: 0.83em;
   }
   .font-md-h6 {
-    font-size: 1.25rem;
+    font-size: 0.75em;
   }
 }
 
@@ -33791,22 +33791,22 @@ span.material-icons {
     font-size: 8rem;
   }
   .font-lg-h1 {
-    font-size: 6rem;
+    font-size: 2em;
   }
   .font-lg-h2 {
-    font-size: 3.75rem;
+    font-size: 1.5em;
   }
   .font-lg-h3 {
-    font-size: 3rem;
+    font-size: 1.17em;
   }
   .font-lg-h4 {
-    font-size: 2rem;
+    font-size: 1.12rem;
   }
   .font-lg-h5 {
-    font-size: 1.5rem;
+    font-size: 0.83em;
   }
   .font-lg-h6 {
-    font-size: 1.25rem;
+    font-size: 0.75em;
   }
 }
 
@@ -35209,22 +35209,22 @@ span.material-icons {
     font-size: 8rem;
   }
   .font-xl-h1 {
-    font-size: 6rem;
+    font-size: 2em;
   }
   .font-xl-h2 {
-    font-size: 3.75rem;
+    font-size: 1.5em;
   }
   .font-xl-h3 {
-    font-size: 3rem;
+    font-size: 1.17em;
   }
   .font-xl-h4 {
-    font-size: 2rem;
+    font-size: 1.12rem;
   }
   .font-xl-h5 {
-    font-size: 1.5rem;
+    font-size: 0.83em;
   }
   .font-xl-h6 {
-    font-size: 1.25rem;
+    font-size: 0.75em;
   }
 }
 
@@ -36627,22 +36627,22 @@ span.material-icons {
     font-size: 8rem;
   }
   .font-xxl-h1 {
-    font-size: 6rem;
+    font-size: 2em;
   }
   .font-xxl-h2 {
-    font-size: 3.75rem;
+    font-size: 1.5em;
   }
   .font-xxl-h3 {
-    font-size: 3rem;
+    font-size: 1.17em;
   }
   .font-xxl-h4 {
-    font-size: 2rem;
+    font-size: 1.12rem;
   }
   .font-xxl-h5 {
-    font-size: 1.5rem;
+    font-size: 0.83em;
   }
   .font-xxl-h6 {
-    font-size: 1.25rem;
+    font-size: 0.75em;
   }
 }
 
