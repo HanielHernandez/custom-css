@@ -28,9 +28,14 @@
 @mixin create-theme($name, $color) {
   @include create-navbar($name, $color);
   @include create-button-for-theme($name, $color);
-  @include create-background-for-theme($name, $color);
   @include create-text-for-theme($name, $color);
   @include create-borders($name, $color);
   @include create-spinner-for-theme($name, $color);
   @include create-table-border-for-theme($name, $color);
+  .navbar-#{$name},
+  .bg-#{$name},
+  .hover\:bg-#{$name}:hover,
+  .btn-#{$name} {
+    @include get-background-and-color($color);
+  }
 }

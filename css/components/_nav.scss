@@ -12,10 +12,6 @@ ul.nav {
       color: $nav-breacrumbs-link-color;
     }
   }
-  &.nav-horizontal,
-  &.breadcrumbs {
-    display: flex;
-  }
 
   &-item,
   &-link {
@@ -53,4 +49,8 @@ ul.nav {
       }
     }
   }
+}
+.horizontal,
+.breadcrumbs {
+  display: flex;
 }
