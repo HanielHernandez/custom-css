@@ -35,3 +35,9 @@
 @mixin create-width($width) {
   width: $width;
 }
+
+@function getColor($color-name, $color-variant) {
+  $variants: mag-get($colors, $color-name);
+  $variant: map-merge($variants, $color-variant);
+  @return $variant;
+}
