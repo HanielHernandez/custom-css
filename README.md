@@ -20,7 +20,7 @@ npm i customizable-css
 If you want customize some variables you can then import the main sass file
 
 ```sass
-@import "~customizable-css/css/main.scss";
+@import "~customizable-css/css/main.scss" ;
 ```
 
 ### CDN
