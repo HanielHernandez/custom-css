@@ -36,7 +36,7 @@
   width: $width;
 }
 
-@function getColor($color-name, $color-variant) {
+@function get-color($color-name, $color-variant) {
   $variants: mag-get($colors, $color-name);
   $variant: map-merge($variants, $color-variant);
   @return $variant;
