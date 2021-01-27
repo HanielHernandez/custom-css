@@ -15,7 +15,8 @@
   .btn-#{$name}-outline {
     background-color: transparent;
     color: $theme-color;
-    border: 1px solid $theme-color;
+    border-color: $theme-color;
+    @extend %is-button-outline !optional; 
     &:hover {
       background-color: $theme-color;
       color: set-color($theme-color);

@@ -4,6 +4,7 @@
   display: inline-block;
 }
 
+
 .btn {
   @extend %button;
   @include get-background-and-color($button-bg-color);

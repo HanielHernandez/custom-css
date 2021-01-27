@@ -38,4 +38,7 @@
   .btn-#{$name} {
     @include get-background-and-color($color);
   }
+  /**.btn-outline-#{$name},{
+  
+  }**/
 }

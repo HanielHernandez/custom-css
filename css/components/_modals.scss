@@ -1,5 +1,8 @@
 $max-width: map-get($modal-sizes, "default");
-
+%modal-border-padding {
+  padding: $modal-padding;
+  border-bottom: $modal-border;
+}
 /**
 * Modal class
 */
@@ -61,12 +64,10 @@ $max-width: map-get($modal-sizes, "default");
   }
 
   &-header {
-    padding: $modal-padding;
-    border-bottom: $modal-border;
+   @extend %modal-border-padding;
   }
   &-body {
-    padding: $modal-padding;
-    border-bottom: $modal-border;
+    @extend %modal-border-padding;
     overflow-y: auto;
   }
   &-footer {
