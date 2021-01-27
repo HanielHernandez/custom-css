@@ -16,7 +16,7 @@
     @include create-width-fractions-for-breakpoint($prefix, 4);
     @include create-width-fractions-for-breakpoint($prefix, 3);
     @include create-width-fractions-for-breakpoint($prefix, 2);
-    @for $i from 1 through $lop-size {
+    @for $i from 0 through $lop-size {
       @include create-margin-for-breakpoint($i, $breakpoint, $prefix);
       @include create-padding-size-for-breakpoint($i, $breakpoint, $prefix);
     }
