@@ -10,5 +10,19 @@
 .flex-wrap-inehrit {
   flex-wrap: inherit;
 }
+
+@each $direction-name,$direction in $flex-directions {
+  .flex-direction-#{$direction-name}{
+    flex-direction: $direction;
+  }
+}
+
+
 @include just-align("align", "align-items", $align-positions);
 @include just-align("justify", "justify-content", $justify-positions);
+
+@for $i from 0 through $lop-size{
+  .gap-#{$i}{
+    gap: 0.25rem * $i;
+  }
+}

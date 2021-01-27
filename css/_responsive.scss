@@ -20,6 +20,7 @@
       @include create-margin-for-breakpoint($i, $breakpoint, $prefix);
       @include create-padding-size-for-breakpoint($i, $breakpoint, $prefix);
     }
+    //font wieghts
     @each $font-weight-name, $font-weight-value in $font-weights {
       @include font-weight-for-breakpoint(
         $font-weight-value,
@@ -27,6 +28,23 @@
         $prefix
       );
     }
+
+    //flex directions
+    @each $direction-name,$direction in $flex-directions {
+      .flex-direction-#{$direction-name}{
+        flex-direction: $direction;
+      }
+    }
+    
+    // gap
+    @for $i from 0 through $lop-size{
+      .gap-#{$prefix}-#{$i}{
+        gap: 0.25rem * $i;
+      }
+    }
+
+
+    // collapse sidebars
     .sidebar.sidebar-collapse-#{$prefix} {
       position: sticky;
       transform: none;
@@ -39,6 +57,7 @@
         display: none;
       }
     }
+    //display
     @each $display in $displays-value {
       .display-#{$prefix}-#{$display} {
         display: $display;

@@ -23,6 +23,13 @@ $align-positions: (
   stretch: stretch,
   baseline: baseline,
 );
+
+$flex-directions:(
+  "col":column,
+  "row":row,
+  "row-reverse": row-reverse,
+  "col-reverse": column-reverse,
+);
 // displays
 $displays-value: (
   inline,
