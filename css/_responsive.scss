@@ -28,7 +28,7 @@
 
     //flex directions
     @each $direction-name,$direction in $flex-directions {
-      .flex-direction-#{$direction-name}{
+      .flex-direction-#{$prefix}-#{$direction-name}{
         flex-direction: $direction;
       }
     }
