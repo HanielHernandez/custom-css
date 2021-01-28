@@ -14172,33 +14172,4 @@ span.material-icons {
     font-size: 0.75em;
   }
 }
-
-pre {
-  background-color: #eee;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  overflow: auto;
-  color: rgba(0, 0, 0, 0.8);
-}
-
-pre .tag {
-  color: #1e88e5;
-}
-
-pre .prop {
-  color: #ff8f00;
-}
-
-pre .val {
-  color: #ef5350;
-}
-
-pre span {
-  display: inline-block;
-}
-
-pre code {
-  direction: ltr;
-  font-size: 0.875rem;
-}
 /*# sourceMappingURL=main.css.map */
