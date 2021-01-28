@@ -197,16 +197,12 @@ code {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
-ul.list,
-ul.nav,
-ul.breadcrumbs {
+.padding-inline-0, .list, ul.nav {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
 }
 
-ul.list li,
-ul.nav li,
-ul.breadcrumbs li {
+.padding-inline-0 li, .list li, ul.nav li {
   margin-top: 0;
 }
 
@@ -951,8 +947,6 @@ nav {
 }
 
 ul.nav {
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
   list-style: none;
 }
 

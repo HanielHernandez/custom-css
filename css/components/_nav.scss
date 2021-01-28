@@ -2,7 +2,7 @@ nav {
   width: 100%;
 }
 ul.nav {
-  padding-inline-start: 0;
+  @extend .padding-inline-0;
   list-style: none;
 }
 .nav {
