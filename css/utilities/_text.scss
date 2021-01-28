@@ -5,3 +5,8 @@ $alignments: (left, center, right, justify);
     text-align: $aligment;
   }
 }
+ @mixin  create-text-for-color($name,$color) {
+    .text-#{$name}{
+      color:$color
+    }
+ }

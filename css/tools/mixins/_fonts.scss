@@ -8,3 +8,9 @@
     font-size: $size;
   }
 }
+
+@mixin  create-text-for-color($name,$color) {
+  .text-#{$name},.hover\:.text-#{$name}{
+    color:$color;
+  }
+}

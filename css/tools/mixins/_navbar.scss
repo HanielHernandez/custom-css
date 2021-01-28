@@ -1,5 +1,6 @@
-@mixin create-navbar($name, $color) {
-  .navbar-#{$name} {
+@mixin create-navbar-for-theme($name, $color) {
+  .navbar-#{$name}{
+    @extend .bg-#{$name};
     border-bottom: $nav-bar-border-width solid set-border-color($color);
     .brand, .nav-link {
       color: set-color($color);

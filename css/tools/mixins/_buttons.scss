@@ -5,23 +5,52 @@
 
 @mixin create-button-for-theme($name, $theme-color) {
   $hover-color: darken($theme-color, 12%);
-  .btn-#{$name}-outline, .btn-#{$name}-flat{
-    background-color: transparent;
-    @extend .text-#{$name}; 
+  $flat-hover-color:rgba($theme-color, 0.5);
+  .btn-#{$name}-outline,.btn-#{$name}-flat{
+    @extend .text-#{$name};
   }
 
+  .btn-#{$name},.btn-#{$name}-outline:hover{
+    @extend .bg-#{$name};
+  }
+  .btn-#{$name},.btn-#{$name}-outline{
+    @extend .b-#{$name};
+  }
+  .btn-#{$name}:hover{
+  background-color: $hover-color ;
+  }
+  .btn-#{$name}-flat{
+    @extend .flat;
+  }
+  .btn-#{$name}-flat:hover{
+    background-color:  $flat-hover-color;
+    border-color: $flat-hover-color;
+  }
+
+}
+
+@mixin create-button-for-color($name, $color){
+  .btn-#{$name}{
+    background: $color;
+    color:set-color($color)
+  }
   .btn-#{$name}-outline {
-    @extend %default-border-color !optional; 
+    color: $color;
+    border-color: $color; 
     &:hover {
-      @extend .bg-#{$name};
+      background-color: $color;
+      color:set-color($color);
     }
   }
   .btn-#{$name}-flat {
-    border: none;
+    color: $color;
+    border-color: transparent;
     &:hover {
-      background-color: rgba($theme-color, 0.5);
+      background-color: rgba($color, 0.5);
+      color: $color;
     }
   }
+
 }
 
 

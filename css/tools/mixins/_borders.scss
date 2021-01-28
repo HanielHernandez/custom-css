@@ -2,14 +2,13 @@
 /// @param {String} $theme-name name of the theme/color
 /// @param {String} $color color use on the theme
 /// @param {Number} $is-hover [0] 1 will create a hover class
-@mixin create-borders($theme-name, $color, $is-hover: 0) {
-  @if ($is-hover == 0) {
-    .b-#{$theme-name} {
-      border-color: $color !important;
+@mixin create-border-for-theme($name, $color, $is-hover: 0) {
+    .b-#{$name}, .hover\:b-#{$name}:hover{
+      border-color: $color;
     }
-  } @else {
-    .hover\:b-#{$theme-name}:hover {
-      color: $color !important;
-    }
+}
+@mixin  create-border-for-color($name,$color) {
+  .b-#{$name},.hover\:.b-#{$name}{
+    border-color:$color
   }
 }

@@ -4,8 +4,9 @@
 .shadow {
   box-shadow: map-get($box-shadow-sizes, md);
 }
-@each $shadow-size-prefix, $shadow in $box-shadow-sizes {
-  .shadow-#{$shadow-size-prefix} {
+
+@each $shadow-size, $shadow in $box-shadow-sizes {
+  .shadow-#{$shadow-size} {
     box-shadow: $shadow;
   }
 }

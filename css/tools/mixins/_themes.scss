@@ -11,23 +11,14 @@
 
 @mixin create-text-for-theme($name, $color, $is-hover: 0) {
     .text-#{$name},.hover\:text-#{$name}:hover {
-      color: $color !important;
+      color: $color;
     } 
 }
 @mixin create-theme($name, $color) {
-  @include create-navbar($name, $color);
-  @include create-button-for-theme($name, $color);
+  @include create-background-for-theme($name,$color);
   @include create-text-for-theme($name, $color);
+  @include create-border-for-theme($name,$color);
+  @include create-button-for-theme($name, $color);
+  @include create-navbar-for-theme($name, $color);
   @include create-spinner-for-theme($name, $color);
-
-  .navbar-#{$name},
-  .bg-#{$name},
-  .hover\:bg-#{$name}:hover,
-  .btn-#{$name} {
-    @include get-background-and-color($color);
-  }
-  .btn-#{$name}-outline,.b-#{$name},.b-#{$name},.hover\:b-#{name}:hover{
-    border-color: $color;
-  }
-
 }

@@ -4,3 +4,10 @@
   background-color: $color;
   color: set-color($color);
 }
+
+@mixin create-background-for-color($name,$color) {
+  .bg-#{$name},.hover\:.bg-#{$name}{
+    color:set-color($color);
+    background-color: $color;
+  }
+}
