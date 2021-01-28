@@ -51,30 +51,7 @@ $max-width: map-get($modal-sizes, "default");
   }
 
   
-  /*
-  &-background {
-    width: 100vw;
-    height: 100vh;
-    background-color: $modal-background-background-color;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: $modal-background-z-index;
-  }
 
-  /**
-  &-content {
-    width: 100%;
-    max-width: $max-width;
-    max-height: $modal-content-max-height;
-    border-radius: $modal-content-boder-radius;
-    background-color: $modal-content-background-color;
-    @extend %is-flex;
-    flex-direction: column;
-  }*/
 
   &-header {
    @extend %modal-border-padding;
@@ -84,7 +61,8 @@ $max-width: map-get($modal-sizes, "default");
     overflow-y: auto;
   }
   &-footer {
-    padding: $modal-padding;
+    @extend %modal-border-padding;
+    border-bottom-width: 0;
   }
   &-title {
     font-size: $modal-title-font-size;

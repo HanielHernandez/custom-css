@@ -1549,7 +1549,7 @@ a.btn {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.modal-header, .modal-body {
+.modal-header, .modal-body, .modal-footer {
   padding: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
@@ -1565,30 +1565,6 @@ a.btn {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.37);
-  /*
-  &-background {
-    width: 100vw;
-    height: 100vh;
-    background-color: $modal-background-background-color;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: $modal-background-z-index;
-  }
-
-  /**
-  &-content {
-    width: 100%;
-    max-width: $max-width;
-    max-height: $modal-content-max-height;
-    border-radius: $modal-content-boder-radius;
-    background-color: $modal-content-background-color;
-    @extend %is-flex;
-    flex-direction: column;
-  }*/
   /*
   * change sise fo modals content 
   */
@@ -1649,7 +1625,7 @@ a.btn {
 }
 
 .modal-footer {
-  padding: 1rem;
+  border-bottom-width: 0;
 }
 
 .modal-title {
