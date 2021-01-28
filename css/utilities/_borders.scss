@@ -50,12 +50,12 @@
 @each $breakpoint, $name in $breakpoints {
   $i: index($breakpoints, $breakpoint $name);
   .r-#{$breakpoint} {
-    border-radius: 0.5rem * $i;
+    border-radius: 0.25rem * $i;
   }
   @each $corner, $corner-name in $corners {
     @each $side, $side-name in $sides {
       .r-#{$corner}-#{$side}-#{$breakpoint} {
-        border-#{$corner-name}-#{$side-name}-radius: 0.5rem * $i;
+        border-#{$corner-name}-#{$side-name}-radius: 0.25rem * $i;
       }
       .r-#{$corner}-#{$side}-0 {
         border-#{$corner-name}-#{$side-name}-radius: 0;

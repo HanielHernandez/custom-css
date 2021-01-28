@@ -1,11 +1,10 @@
 nav {
   width: 100%;
 }
-ul.nav {
+
+.nav {
   @extend .padding-inline-0;
   list-style: none;
-}
-.nav {
   &-link {
     padding: $nav-link-padding;
     &-is-active {
@@ -49,8 +48,73 @@ ul.nav {
       }
     }
   }
+  // tabs
+  &.tabs{
+    @extend .bb;//adds border bottom
+    .nav{
+      &-link{
+        position: relative;
+        &:hover{
+          &::after {
+            background-color: $active-tab-background-color ;
+          }
+        }
+        &::after {
+          width: 0%;
+          content: "";
+          height: 1px;
+          display: block;
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          transition: $active-tab-transition;
+        }
+
+        &.is-active{
+          color: $active-tab-color;
+          &::after {
+            width: 100%;
+            background-color: $active-tab-background-color ;
+          }
+        }
+      }
+      
+    }
+
+    &.outline{
+      .nav{
+        &-link{
+          
+          &.is-active{
+            @extend .bt;
+            @extend .bx;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+
+            &::after{
+              transition: none;
+            }
+          }
+          
+          &::after{
+            transition: none;
+            background-color: white;
+          }
+        }
+    }
+  }}
 }
 .horizontal,
-.breadcrumbs {
+.breadcrumbs,.tabs{
   display: flex;
+  &.full{
+      width: 100%;
+     li{
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+    a{
+      text-align: center;
+    }
+  }
 }

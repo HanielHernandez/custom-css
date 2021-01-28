@@ -198,6 +198,14 @@ $nav-link-hover-color: map-get(map-get($colors, "blue"), "600");
 $navbar-collpase-position: relative !default;
 $navbar-collapse-width: 100vw !default;
 $navbar-collpase-transiton: all 0.3s ease-in-out !default;
+
+// nav tabs
+$tabs-padding:1rem 0.5rem;
+$active-tab-color:#2196f3;
+$active-tab-font-weigth: 500;
+$active-tab-background-color:#2196f3;
+$active-tab-transition:all 0.3s ease-in-out;
+
 //contianer
 $container-padding: 1rem !default;
 
