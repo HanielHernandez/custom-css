@@ -1,5 +1,5 @@
 @mixin create-columns($prefix) {
-  @for $i from 1 through 12 {
+  @for $i from 1 through $grid-columns {
     .col-w-#{$prefix}-#{$i} {
       flex: 8.33% * $i;
       max-width: 8.33% * $i;

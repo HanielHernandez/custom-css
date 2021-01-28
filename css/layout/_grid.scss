@@ -46,6 +46,9 @@
     width: $percentage * $i;
     max-width: $percentage * $i;
   }
+  .col-c-#{$i}{
+    column-count: $i;
+  }
 }
 
 @include create-fraction-width(2);

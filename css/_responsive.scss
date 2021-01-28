@@ -11,6 +11,14 @@
       max-width: $breakpoint;
     }
     @include create-columns($prefix);
+    //create coumns-count 
+
+    @for $i from 1 through $grid-columns {
+      .col-c-#{$prefix}-#{$i}{
+        column-count: $i;
+      }
+    }
+
     @include create-width-fractions-for-breakpoint($prefix, 12);
     @include create-width-fractions-for-breakpoint($prefix, 6);
     @include create-width-fractions-for-breakpoint($prefix, 4);

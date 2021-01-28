@@ -183,7 +183,19 @@
         </div>
         <!--End of Sidebar -->
         <!--Mian content -->
-        <div #id= class="col col-w-12 col-w-lg-9 px-4">
+        <div class="col col-w-12 col-w-lg-9 px-4">
+            <div class="row gap-4 ">
+                <div class="col col-w-4 p-4 bg-grey-600">
+                    col 
+                </div>
+                <div class="col col-w-4 p-4 bg-grey-600">
+                    col
+                </div>
+                <div class="col col-w-4 p-4 bg-grey-600">
+                    col
+                </div>
+            </div>
+
 
             <h1 class="">
                 Customizable css
@@ -870,37 +882,37 @@
                     <button class="mb-4 btn btn-primary modal-trigger" data-target="my-modal">
                         Show modal
                     </button>
-<pre><code lang="html"><span class="tag">&lt;button</span> <span class="prop">class=</span><span class="val">"mb-4 btn btn-primary modal-trigger"</span> <spab class="prop">data-target=</spab><span class="val">"my-modal"</span>&gt;
-<span class="tag">&lt;/button</span>&gt;
-<span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val"><span class="val">&quot;modal&quot;</span></span> <span class="prop">id=</span><span class="val">&quot;my-modal&quot;</span><span class="tag">&gt;</span>
-    <span class="tag">&lt;div </span> <span class="prop">class=</span><span class="val">&quot;modal-background&quot;</span> <span class="tag">&gt;</span>
-        <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;modal-container&quot;</span> <span class="tag">&gt;</span>
-            <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;modal-content&quot;</span> <span class="tag">&gt;</span>
-                <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;modal-header&quot;</span> <span class="tag">&gt;</span>
-                    <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;display-flex justify-between&quot;</span> <span class="tag">&gt;</span>
-                        <span class="tag">&lt;p </span><span class="prop">class=</span><span class="val">"modal-title"</span><span>&gt;</span>My Modal title<span class="tag">&lt;/p&gt;</span> 
-                        <span class="tag"> &lt;button <span class="prop">class=</span><span class="val">&quot;close modal-trigger&quot;</span> <span class="prop">data-target=</span><span class="val">&quot;my-modal&quot;&gt;</span>  </span>
-                        <span class="tag">&lt;/button&gt;</span> 
-                    <span class="tag">&lt;/div&gt;</span> 
-                <span class="tag">&lt;/div&gt;</span> 
-                <span class="tag">&lt;div</span> <span class="prop">class=</span><span class="val">&quot;modal-body&quot;</span><span class="tag">&gt;</span>
-                    Lorem ipsum dolor sit ...
-                <span class="tag">&lt;/div&gt;</span>
-                <span class="tag">&lt;div <span class="prop">class=</span><span class="val">"modal-footer&quot;</span>&gt;</span>
-                    <span class="tag">&lt;button <span class="prop">class=</span><span class="val">"btn btn-primary-flat p-2&quot;</span>&gt; </span>
-                        Option a
-                    <span class="tag">&lt;/button&gt;</span>
-                    <span class="tag">&lt;button <span class="prop">class=</span><span class="val">"btn btn-primary-flat p-2&quot;</span>&gt; </span>
-                        option B
-                    <span class="tag">&lt;/button&gt;</span>
-                <span class="tag">&lt;/div&gt;</span>
-            <span class="tag">&lt;/div&gt;</span>
-        <span class="tag">&lt;/div&gt;</span>
-    <span class="tag">&lt;/div&gt;</span> 
-<span class="tag">&lt;/div&gt;</span></code></pre>
 
 
                     <div class="modal modal-animated" id="my-modal">
+                        <div class="modal-container">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="display-flex justify-between">
+                                        <p class="modal-title">
+                                            My Modal title
+                                        </p>
+                                        <button class="close modal-trigger" data-target="my-modal">
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <div class="modal-body">
+                                        Modal body goes here
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary p-2">
+                                        Option a
+                                    </button>
+                                    <button class="btn btn-primary-flat p-2">
+                                        option B
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--div class="modal modal-animated" id="my-modal">
                         <div class="modal-background">
                             <div class="modal-container">
                                 <div class="modal-content">
@@ -930,7 +942,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div!-->
 
                     <p class="mb-4"> you can add an animation buy adding the class <b>.modal-animated</b> to a <b>.modal</b>
                         div ,

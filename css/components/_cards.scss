@@ -1,3 +1,6 @@
+%card-padding{
+  padding: $card-padding;
+}
 .card {
   border-width: $card-border-width;
   border-style: $card-border-style;
@@ -6,13 +9,13 @@
   overflow: hidden;
   margin-bottom: 1rem;
   &-head {
-    padding: $card-padding;
-    @extend %is-flex;
+    @extend %card-padding ;
+       @extend %is-flex;
     flex-wrap: nowrap;
   }
 
   &-body {
-    padding: $card-padding;
+    @extend %card-padding ;
     padding-top:0;
     p {
       margin-bottom:0;
