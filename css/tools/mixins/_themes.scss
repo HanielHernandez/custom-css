@@ -3,42 +3,31 @@
 /// @param {String} $color color use on the theme
 /// @param {Number} $is-hover [0] 1 will create a hover class
 @mixin create-background-for-theme($name, $color, $is-hover: 0) {
-  @if ($is-hover == 0) {
-    .bg-#{$name} {
-      @include get-background-and-color($color);
-    }
-  } @else {
+    .bg-#{$name} ,
     .hover\:bg-#{$name}:hover {
       @include get-background-and-color($color);
     }
-  }
 }
 
 @mixin create-text-for-theme($name, $color, $is-hover: 0) {
-  @if ($is-hover == 0) {
-    .text-#{$name} {
+    .text-#{$name},.hover\:text-#{$name}:hover {
       color: $color !important;
-    }
-  } @else {
-    .hover\:text-#{$name}:hover {
-      color: $color !important;
-    }
-  }
+    } 
 }
 @mixin create-theme($name, $color) {
   @include create-navbar($name, $color);
   @include create-button-for-theme($name, $color);
   @include create-text-for-theme($name, $color);
-  @include create-borders($name, $color);
   @include create-spinner-for-theme($name, $color);
-  @include create-table-border-for-theme($name, $color);
+
   .navbar-#{$name},
   .bg-#{$name},
   .hover\:bg-#{$name}:hover,
   .btn-#{$name} {
     @include get-background-and-color($color);
   }
-  /**.btn-outline-#{$name},{
-  
-  }**/
+  .btn-#{$name}-outline,.b-#{$name},.b-#{$name},.hover\:b-#{name}:hover{
+    border-color: $color;
+  }
+
 }

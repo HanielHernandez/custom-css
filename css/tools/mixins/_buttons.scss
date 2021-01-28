@@ -5,29 +5,23 @@
 
 @mixin create-button-for-theme($name, $theme-color) {
   $hover-color: darken($theme-color, 12%);
-  .btn-#{$name} {
-    border: 0;
-    &:hover {
-      background-color: $hover-color;
-      color: set-color($hover-color);
-    }
-  }
-  .btn-#{$name}-outline {
+  .btn-#{$name}-outline, .btn-#{$name}-flat{
     background-color: transparent;
-    color: $theme-color;
-    border-color: $theme-color;
-    @extend %is-button-outline !optional; 
+    @extend .text-#{$name}; 
+  }
+
+  .btn-#{$name}-outline {
+    @extend %default-border-color !optional; 
     &:hover {
-      background-color: $theme-color;
-      color: set-color($theme-color);
+      @extend .bg-#{$name};
     }
   }
   .btn-#{$name}-flat {
-    background-color: transparent;
-    color: $theme-color;
     border: none;
     &:hover {
       background-color: rgba($theme-color, 0.5);
     }
   }
 }
+
+

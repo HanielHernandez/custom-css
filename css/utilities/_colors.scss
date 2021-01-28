@@ -4,7 +4,9 @@
 .bg-black {
   @include get-background-and-color(#000);
 }
+
 @each $color-name, $variants in $colors {
+  
   $main-color: map-get($variants, "600");
   @include create-theme(#{$color-name}-600, $main-color);
 }

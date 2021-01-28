@@ -1,13 +1,8 @@
 @mixin create-navbar($name, $color) {
   .navbar-#{$name} {
     border-bottom: $nav-bar-border-width solid set-border-color($color);
-    .brand {
+    .brand, .nav-link {
       color: set-color($color);
-    }
-    .nav {
-      &-link {
-        color: set-color($color);
-      }
     }
   }
 }

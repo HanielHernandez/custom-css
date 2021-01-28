@@ -25,6 +25,9 @@
       background-color: $flat-button-hover-color;
     }
   }
+  &-outline{
+    border: 1px solid $default-border-color;
+  }
 }
 
 .btn {
