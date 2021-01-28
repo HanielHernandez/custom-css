@@ -2876,19 +2876,17 @@ span.material-icons {
 }
 
 .b {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #e0e0e0;
+  border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .bx {
-  border-left-width: 1px;
-  border-right-width: 1px;
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .by {
-  border-top-width: 1px;
-  border-bottom-width: 1px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .bx-0 {
@@ -2902,7 +2900,7 @@ span.material-icons {
 }
 
 .bt {
-  border-top-width: 1px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .bt-0 {
@@ -2910,7 +2908,7 @@ span.material-icons {
 }
 
 .bl {
-  border-left-width: 1px;
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .bl-0 {
@@ -2918,7 +2916,7 @@ span.material-icons {
 }
 
 .bb {
-  border-bottom-width: 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .bb-0 {
@@ -2926,7 +2924,7 @@ span.material-icons {
 }
 
 .br {
-  border-right-width: 1px;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .br-0 {

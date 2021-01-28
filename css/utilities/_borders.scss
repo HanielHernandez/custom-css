@@ -1,15 +1,17 @@
-.b {
-  border-width: 1px;
-  border-style: solid;
-  border-color: $border-default-color;
+
+
+.b{
+  border: $default-border;
 }
+
 .bx {
-  border-left-width: 1px;
-  border-right-width: 1px;
+  border-left:  $default-border;
+  border-right:  $default-border;
+
 }
 .by {
-  border-top-width: 1px;
-  border-bottom-width: 1px;
+  border-top: $default-border;
+  border-bottom: $default-border;
 }
 
 .bx-0 {
@@ -23,13 +25,15 @@
 
 @each $name, $location in $locations {
   .b#{$name} {
-    border-#{$location}-width: 1px;
+    border-#{$location}:$default-border;
   }
 
   .b#{$name}-0 {
     border-#{$location}-width: 0;
   }
 }
+
+// Border radius
 
 .r-full {
   border-radius: 50%;
