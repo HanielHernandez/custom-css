@@ -10,3 +10,24 @@ $alignments: (left, center, right, justify);
       color:$color
     }
  }
+ .trucate{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+ }
+ .overflow-elipsis{
+  text-overflow: ellipsis;
+ }
+ .overflow-clip	{
+  text-overflow: clip;
+ }
+ .text-break{
+  	overflow-wrap: normal;
+   word-break: normal;
+ }
+ .text-break-words{
+  overflow-wrap: break-word;
+ }
+ .text-break-all{
+  overflow-wrap:break-all:
+ }
