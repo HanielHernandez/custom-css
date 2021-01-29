@@ -21,6 +21,7 @@
 
     @include create-width-fractions-for-breakpoint($prefix, 12);
     @include create-width-fractions-for-breakpoint($prefix, 6);
+    @include create-width-fractions-for-breakpoint($prefix, 5);
     @include create-width-fractions-for-breakpoint($prefix, 4);
     @include create-width-fractions-for-breakpoint($prefix, 3);
     @include create-width-fractions-for-breakpoint($prefix, 2);
