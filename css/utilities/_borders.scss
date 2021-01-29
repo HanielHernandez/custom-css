@@ -7,15 +7,6 @@
   border: none;
 }
 
-.bx {
-  border-left:  $default-border;
-  border-right:  $default-border;
-
-}
-.by {
-  border-top: $default-border;
-  border-bottom: $default-border;
-}
 
 .bx-0 {
   border-left-width: 0;
@@ -34,6 +25,17 @@
   .b#{$name}-0 {
     border-#{$location}-width: 0;
   }
+}
+
+.bx {
+  //border-left:  $default-border;
+  //border-right:  $default-border;
+  @extend .br;
+  @extend .bl;
+}
+.by {
+  @extend .bt;
+  @extend .bb;
 }
 
 // Border radius

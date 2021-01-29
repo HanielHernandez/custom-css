@@ -407,3 +407,10 @@ $notification-title-font-weight: bold !default;
 $notification-title-font-size: 1.25rem !default;
 
 $fixed-positions: (top, bottom, left, right);
+
+// Sizing
+$sizes: (
+  (from:0.5,to:18,"size":0.25),
+  (from:20,to: 4,"size":1rem)
+  (from:0.5,to:18,"size":2rem)
+);

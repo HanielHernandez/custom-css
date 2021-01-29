@@ -10,11 +10,37 @@
 .flex-wrap-inehrit {
   flex-wrap: inherit;
 }
+.flex-1{
+  flex:  1 1 0%;
+}
+.flex-auto{
+  flex: 1 1 auto;
+}	
+.flex-initial{
+	flex: 0 1 auto;
+}
+.flex-none{
+  flex: none;
+}	
 
 @each $direction-name,$direction in $flex-directions {
   .flex-direction-#{$direction-name}{
     flex-direction: $direction;
   }
+}
+
+.flex-g-0	{
+  flex-grow: 0;
+}
+.flex-g	{
+  flex-grow: 1;
+}
+
+.flex-s{
+  flex-shrink: 1
+}
+.flex-s-0{
+  flex-shrink: 0
 }
 
 
