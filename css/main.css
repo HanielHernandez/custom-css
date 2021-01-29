@@ -4294,6 +4294,33 @@ span.material-icons {
   text-align: justify;
 }
 
+.trucate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.overflow-elipsis {
+  text-overflow: ellipsis;
+}
+
+.overflow-clip {
+  text-overflow: clip;
+}
+
+.text-break {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.text-break-words {
+  overflow-wrap: break-word;
+}
+
+.text-break-all {
+  overflow-wrap: break-all;
+}
+
 .p-0,
 .px-0,
 .pr-0 {
