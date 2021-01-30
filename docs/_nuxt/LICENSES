@@ -11,6 +11,13 @@
  */
 
 /*!
+ * clipboard.js v2.0.6
+ * https://clipboardjs.com/
+ * 
+ * Licensed MIT © Zeno Rocha
+ */
+
+/*!
  * vue-client-only v2.0.0
  * (c) 2019-present egoist <0x142857@gmail.com>
  * Released under the MIT License.
@@ -22,4 +29,15 @@
  * Released under the MIT License.
  */
 
+/*! algoliasearch-lite.umd.js | 4.8.4 | © Algolia, inc. | https://github.com/algolia/algoliasearch-client-javascript */
+
 /*! https://mths.be/punycode v1.4.1 by @mathias */
+
+/**
+ * Prism: Lightweight, robust, elegant syntax highlighting
+ *
+ * @license MIT <https://opensource.org/licenses/MIT>
+ * @author Lea Verou <https://lea.verou.me>
+ * @namespace
+ * @public
+ */
