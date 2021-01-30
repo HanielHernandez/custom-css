@@ -1,13 +1,13 @@
 /// Returns a bg color and a color base on a color
 /// @param {string} $color
 @mixin get-background-and-color($color) {
-  background-color: $color;
-  color: set-color($color);
+  background-color: $color!important;
+  
 }
 
 @mixin create-background-for-color($name,$color) {
   .bg-#{$name},.hover\:.bg-#{$name}{
     color:set-color($color);
-    background-color: $color;
+   // background-color: $color;
   }
 }

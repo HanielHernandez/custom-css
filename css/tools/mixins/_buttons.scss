@@ -6,6 +6,31 @@
 @mixin create-button-for-theme($name, $theme-color) {
   $hover-color: darken($theme-color, 12%);
   $flat-hover-color:rgba($theme-color, 0.5);
+
+  .btn-#{$name}{
+    color: set-color($theme-color);
+    background-color: $theme-color ;
+    border-color:transparent;
+    &:hover{
+      background-color: darken($theme-color,10%);
+    }
+    &-flat{
+      border-color:transparent;
+      color: $theme-color;
+      &:hover{
+        background-color: rgba($theme-color, 0.5);
+      }
+    }
+    &-outline{
+      color: $theme-color;
+      border-color: $theme-color;
+      &:hover{
+        color: set-color($theme-color);
+        background-color: $theme-color ;
+      }
+    }
+  }
+  /*
   .btn-#{$name}-outline,.btn-#{$name}-flat{
     @extend .text-#{$name};
   }
@@ -25,7 +50,7 @@
   .btn-#{$name}-flat:hover{
     background-color:  $flat-hover-color;
     border-color: $flat-hover-color;
-  }
+  }*/
 
 }
 

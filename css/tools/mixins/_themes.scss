@@ -11,7 +11,7 @@
 
 @mixin create-text-for-theme($name, $color, $is-hover: 0) {
     .text-#{$name},.hover\:text-#{$name}:hover {
-      color: $color;
+      color: $color!important;
     } 
 }
 @mixin create-theme($name, $color) {

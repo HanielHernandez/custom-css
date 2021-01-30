@@ -23,10 +23,14 @@
     
     }
   }
-  .brand {
-    font-size: $nav-brand-font-size;
-    font-weight: $nav-brand-font-weigh;
-    padding: $nav-brand-padding;
-    white-space: nowrap;
+ 
+}
+.brand {
+  font-size: $nav-brand-font-size;
+  font-weight: $nav-brand-font-weigh;
+  padding: $nav-brand-padding;
+  white-space: nowrap;
+  &:visited{
+    color: auto;
   }
 }
