@@ -6628,11 +6628,13 @@ span.material-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .navbar-collapse-sm .nav-toggler {
     display: none;
   }
   .navbar-collapse-sm .nav-menu {
+    width: auto;
     height: 100%;
     overflow-y: visible;
     display: -webkit-box;
@@ -8253,11 +8255,13 @@ span.material-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .navbar-collapse-md .nav-toggler {
     display: none;
   }
   .navbar-collapse-md .nav-menu {
+    width: auto;
     height: 100%;
     overflow-y: visible;
     display: -webkit-box;
@@ -9878,11 +9882,13 @@ span.material-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .navbar-collapse-lg .nav-toggler {
     display: none;
   }
   .navbar-collapse-lg .nav-menu {
+    width: auto;
     height: 100%;
     overflow-y: visible;
     display: -webkit-box;
@@ -11503,11 +11509,13 @@ span.material-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .navbar-collapse-xl .nav-toggler {
     display: none;
   }
   .navbar-collapse-xl .nav-menu {
+    width: auto;
     height: 100%;
     overflow-y: visible;
     display: -webkit-box;
@@ -13128,11 +13136,13 @@ span.material-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
   }
   .navbar-collapse-xxl .nav-toggler {
     display: none;
   }
   .navbar-collapse-xxl .nav-menu {
+    width: auto;
     height: 100%;
     overflow-y: visible;
     display: -webkit-box;
