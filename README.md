@@ -31,12 +31,12 @@ You can also use this **CDN**
 <!-- CSS -->
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/customizable-css@1.1.2/css/main.min.css"
+  href="https://cdn.jsdelivr.net/npm/customizable-css@1.2.0/css/main.min.css"
 />
 <!-- Optional Javascript for Components -->
 <script
   type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/customizable-css@1.1.2/js/main.js"
+  src="https://cdn.jsdelivr.net/npm/customizable-css@1.2.0/js/main.js"
 ></script>
 ```
 
