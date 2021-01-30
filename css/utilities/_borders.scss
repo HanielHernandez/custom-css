@@ -92,3 +92,11 @@
     }
   }
 }
+
+
+@for $i from 1 through 5{
+  .b-w-#{$i},.hover\:b-w-#{$i}:hover{
+    border-width: $i*1px;
+  }
+}
+

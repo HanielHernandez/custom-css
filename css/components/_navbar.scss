@@ -18,10 +18,9 @@
     &-link {
       padding: $navbar-link-padding;
       line-height: $nav-line-height;
+      font-weight: $navbar-link-font-weight;
       font-size: $nav-link-font-size;
-      &:hover {
-        background-color: $navbar-link-hover-bg-color;
-      }
+    
     }
   }
   .brand {

@@ -186,7 +186,8 @@ $nav-brand-padding: 0.5rem 1rem !default;
 $nav-breacrumbs-link-color: rgb(33, 150, 243);
 $nav-breacrumbs-link-active-color: rgba(0, 0, 0, 0.53);
 $navbar-link-padding: 1rem !default;
-$navbar-link-hover-bg-color: rgba(0, 0, 0, 0.12);
+$navbar-link-font-weight: 500 !default;
+$navbar-link-color: rgba(0, 0, 0, 53);
 
 // nav
 $nav-link-default-color: #212121 !default;
@@ -229,7 +230,7 @@ $color-error: #f44336 !default;
 $background: #fff !default;
 
 //headins h1
-$heading-font-weigth: 700 !default;
+$heading-font-weigth: 500 !default;
 $heading-font-base-size: 64px !default;
 $base-font-weigth: 400 !default;
 $base-font-size: 16px !default;

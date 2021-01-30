@@ -2,9 +2,7 @@
   .navbar-#{$name}{
     @extend .bg-#{$name};
     border-bottom: $nav-bar-border-width solid set-border-color($color);
-    .brand, .nav-link {
-      color: set-color($color);
-    }
+   
   }
 }
 @mixin create-navbar-collapse-for-breakpoint($subfix) {

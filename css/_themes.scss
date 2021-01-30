@@ -1,3 +1,6 @@
 @each $theme, $color in $theme-colors {
   @include create-theme($theme, $color);
+
 }
+
+@include create-theme('trasnparent', rgba(0,0,0,0));
