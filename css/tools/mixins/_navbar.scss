@@ -1,13 +1,16 @@
 @mixin create-navbar-for-theme($name, $color) {
   .navbar-#{$name}{
-    @extend .bg-#{$name};
+    background-color: $color;
     border-bottom: $nav-bar-border-width solid set-border-color($color);
     .brand{
       color: inherit;
     }
+    .brand{
+      color: set-color($color)
+    }
     .nav{
       &-link{
-        color: inherit;
+        color: set-color($color);
       }
     }
   }
