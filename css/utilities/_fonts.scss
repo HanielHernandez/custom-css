@@ -5,10 +5,8 @@
 }
 
 @for $i from 1 through 6 {
-  .h#{$i},
-  h#{$i} {
-    font-weight: $heading-font-weigth;
-    margin-bottom: 1rem;
+  .h#{$i}{
+    @extend h#{$i};
   }
 }
 

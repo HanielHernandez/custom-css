@@ -36,6 +36,7 @@
   &-field {
     margin-bottom: $form-field-margin-bottom;
     label {
+      display: inline-block;
       font-size: $form-field-label-size;
       font-weight: $form-field-label-weigth;
       line-height: $form-field-label-heigth;
