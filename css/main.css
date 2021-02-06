@@ -18,7 +18,7 @@
   margin-top: 0;
 }
 
-.form-field.horizontal, .with-addons {
+.form-field.horizontal, .form-field.with-addons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +30,7 @@
   width: 100%;
 }
 
-.form-field.horizontal, .with-addons {
+.form-field.horizontal, .form-field.with-addons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -925,14 +925,15 @@ input {
   border-color: #b71c1c;
 }
 
-.form-field.horizontal {
+.form-field.horizontal, .form-field.with-addons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.form-field.horizontal .label,
-.form-field.horizontal label {
+.form-field.horizontal .label, .form-field.with-addons .label,
+.form-field.horizontal label,
+.form-field.with-addons label {
   margin-right: 1rem;
   margin-bottom: 0;
 }
@@ -944,6 +945,12 @@ input {
   font-size: 0.75rem;
   line-height: normal;
   margin-top: 0.25em;
+}
+
+.with-addons {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .with-addons .form-input {
@@ -1164,19 +1171,19 @@ nav {
   background-color: white;
 }
 
-.horizontal,
+.horizontal, .with-addons,
 .breadcrumbs, .tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.horizontal.full,
+.horizontal.full, .full.with-addons,
 .breadcrumbs.full, .tabs.full {
   width: 100%;
 }
 
-.horizontal.full li,
+.horizontal.full li, .full.with-addons li,
 .breadcrumbs.full li, .tabs.full li {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1185,7 +1192,7 @@ nav {
       flex-shrink: 0;
 }
 
-.horizontal.full a,
+.horizontal.full a, .full.with-addons a,
 .breadcrumbs.full a, .tabs.full a {
   text-align: center;
 }

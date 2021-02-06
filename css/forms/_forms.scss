@@ -74,7 +74,8 @@
 }
 
 .with-addons {
-  @extend %is-wrap-row;
+  @extend .horizontal;
+  align-items: stretch;
   @extend %flex-1;
 
   .form-input {
