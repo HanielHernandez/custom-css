@@ -14,6 +14,7 @@
     &:active,
     &:focus {
       outline: none;
+      box-shadow: 0px 0px 4px rgba( $primary, 0.25) ;
       border-color: $form-input-active-border-color;
     }
 
@@ -49,6 +50,10 @@
       }
       .form-input {
         border-color: $form-input-invalid-color;
+        &:active,
+        &:focus {
+          box-shadow: 0px 0px 4px rgba( $danger, 0.25) ;
+        }
       }
     }
 

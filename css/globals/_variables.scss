@@ -65,20 +65,7 @@ $overflow-values: (visible, hidden, clip, scroll, auto);
 //grid
 $grid-columns: 12;
 $pre-font-size: 0.875rem;
-//theme colors
-$theme-colors: () !default;
-$theme-colors: map-merge(
-  (
-    "dark": #212121,
-    "light": #e0e0e0,
-    "danger": #b00020,
-    "success": #5cb85c,
-    "primary": #1e88e5,
-    "transparent": rgba(0, 0, 0, 0),
-    "white": #fff,
-  ),
-  $theme-colors
-);
+
 // fonts-families
 $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
   "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -235,9 +222,10 @@ $heading-font-base-size: 64px !default;
 $base-font-weigth: 400 !default;
 $base-font-size: 16px !default;
 
-//borders
+// Borders
 $border-default-color: #e0e0e0 !default;
 
+// Theme colors
 $primary: rgb(51, 133, 255);
 $secondary: #eee !default;
 $danger: rgb(255, 82, 82);
@@ -245,6 +233,24 @@ $success: rgb(60, 223, 114);
 $warning: rgb(255, 200, 20);
 $info: rgb(17, 227, 255);
 $bg-color: #fff !default;
+
+//theme colors
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "dark": #212121,
+    "light": #e0e0e0,
+    "info":$info,
+    "warning":$warning,
+    "danger": $danger,
+    "success": $success,
+    "secondary":$secondary,
+    "primary": $primary,
+    "transparent": rgba(0, 0, 0, 0),
+    "white": #fff,
+  ),
+  $theme-colors
+);
 
 //Buttons
 $button-padding: 0.5rem 1rem !default;
@@ -273,7 +279,7 @@ $form-input-border-color: $default-border-color !default;
 $form-input-border-radius: 0.25rem !default;
 $form-input-background-color: #fff !default;
 $form-input-active-border-width: $form-input-border-width !default;
-$form-input-active-border-color: rgba(0, 0, 0, 0.6) !default;
+$form-input-active-border-color: $primary!default;
 $form-input-invalid-color: #b71c1c !default;
 $form-text-color: rgba(0, 0, 0, 0.6) !default;
 $form-text-size: 0.75rem !default;
